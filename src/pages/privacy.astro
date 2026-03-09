@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import site from '../data/site.json';
+---
+
+<BaseLayout
+  title="Privacy Policy"
+  description={`Privacy policy for ${site.name}. Learn how we collect, use, and protect your information.`}
+>
+
+  <section class="py-16 md:py-20 bg-warm-white">
+    <div class="max-w-container mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="text-4xl font-display font-bold text-charcoal mb-8">Privacy Policy</h1>
+        <p class="text-gray mb-6">Last updated: March 2026</p>
+
+        <div class="prose prose-gray max-w-none space-y-6 text-gray leading-relaxed">
+          <h2 class="text-2xl font-display font-bold text-charcoal mt-8">Information We Collect</h2>
+          <p>
+            When you contact us through our website, phone, or email, we may collect your name, phone number, email address, property address, and details about your pest or wildlife situation. This information is used solely to provide our services and respond to your inquiries.
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-charcoal mt-8">How We Use Your Information</h2>
+          <p>We use the information you provide to:</p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Respond to your service requests and inquiries</li>
+            <li>Schedule and perform pest control and wildlife removal services</li>
+            <li>Send service-related communications such as appointment confirmations</li>
+            <li>Improve our website and services</li>
+            <li>Comply with legal obligations</li>
+          </ul>
+
+          <h2 class="text-2xl font-display font-bold text-charcoal mt-8">Information Sharing</h2>
+          <p>
+            We do not sell, trade, or rent your personal information to third parties. We may share your information with service providers who assist in operating our website or conducting our business, provided they agree to keep your information confidential.
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-charcoal mt-8">Cookies and Analytics</h2>
+          <p>
+            Our website may use cookies and analytics tools to understand how visitors use our site. This data is collected anonymously and used to improve the user experience. You can control cookie settings through your browser preferences.
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-charcoal mt-8">Data Security</h2>
+          <p>
+            We implement reasonable security measures to protect your personal information. However, no method of transmission over the internet or electronic storage is completely secure, and we cannot guarantee absolute security.
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-charcoal mt-8">Your Rights</h2>
+          <p>
+            You have the right to request access to, correction of, or deletion of your personal information. To exercise these rights, please contact us using the information below.
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-charcoal mt-8">Changes to This Policy</h2>
+          <p>
+            We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date.
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-charcoal mt-8">Contact Us</h2>
+          <p>
+            If you have questions about this privacy policy, please contact us:
+          </p>
+          <ul class="list-none space-y-1">
+            <li><strong>{site.name}</strong></li>
+            <li>Phone: <a href={`tel:${site.phoneTel}`} class="text-forest hover:text-forest-light">{site.phone}</a></li>
+            <li>Email: <a href={`mailto:${site.email}`} class="text-forest hover:text-forest-light">{site.email}</a></li>
+            <li>{site.address.full}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

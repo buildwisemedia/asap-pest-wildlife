@@ -1,0 +1,78 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import site from '../data/site.json';
+---
+
+<BaseLayout
+  title="Terms of Service"
+  description={`Terms of service for ${site.name}. Review our service terms, liability limitations, and policies.`}
+>
+
+  <section class="py-16 md:py-20 bg-warm-white">
+    <div class="max-w-container mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="text-4xl font-display font-bold text-charcoal mb-8">Terms of Service</h1>
+        <p class="text-gray mb-6">Last updated: March 2026</p>
+
+        <div class="prose prose-gray max-w-none space-y-6 text-gray leading-relaxed">
+          <h2 class="text-2xl font-display font-bold text-charcoal mt-8">Agreement to Terms</h2>
+          <p>
+            By using our website or engaging our services, you agree to these Terms of Service. If you do not agree, please do not use our website or services.
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-charcoal mt-8">Services</h2>
+          <p>
+            {site.name} provides pest control, wildlife removal, exclusion, disinfection, and related services in the Metro Atlanta, Georgia area. All services are performed by licensed technicians in accordance with Georgia state regulations.
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-charcoal mt-8">Service Estimates</h2>
+          <p>
+            We provide estimates based on inspection of the property and the scope of work required. Final pricing may vary if additional issues are discovered during service. We will communicate any changes before proceeding with additional work.
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-charcoal mt-8">Warranties</h2>
+          <p>
+            Exclusion work performed by {site.name} is backed by a warranty as described in your service agreement. Warranty terms and duration vary by service type. Warranties do not cover damage caused by new construction, remodeling, or acts of nature.
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-charcoal mt-8">Property Access</h2>
+          <p>
+            By scheduling service, you grant our technicians permission to access the areas of your property necessary to perform the agreed-upon work. You are responsible for securing pets and notifying us of any hazards on your property.
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-charcoal mt-8">Limitation of Liability</h2>
+          <p>
+            {site.name} will perform services with reasonable care and skill. Our liability is limited to the cost of the services provided. We are not liable for pre-existing damage, normal wear and tear, or conditions beyond our control.
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-charcoal mt-8">Cancellation Policy</h2>
+          <p>
+            We ask that you provide at least 24 hours notice if you need to cancel or reschedule an appointment. Emergency cancellations are understood and will not incur any fee.
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-charcoal mt-8">Website Use</h2>
+          <p>
+            The content on our website is for general informational purposes only. While we strive to keep information accurate and up to date, we make no warranties about the completeness or accuracy of the content.
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-charcoal mt-8">Changes to Terms</h2>
+          <p>
+            We reserve the right to modify these terms at any time. Changes will be posted on this page with an updated revision date. Continued use of our services after changes constitutes acceptance of the updated terms.
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-charcoal mt-8">Contact Us</h2>
+          <p>
+            Questions about these terms? Contact us:
+          </p>
+          <ul class="list-none space-y-1">
+            <li><strong>{site.name}</strong></li>
+            <li>Phone: <a href={`tel:${site.phoneTel}`} class="text-forest hover:text-forest-light">{site.phone}</a></li>
+            <li>Email: <a href={`mailto:${site.email}`} class="text-forest hover:text-forest-light">{site.email}</a></li>
+            <li>{site.address.full}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

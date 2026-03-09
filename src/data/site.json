@@ -1,0 +1,127 @@
+{
+  "name": "ASAP Pest and Wildlife Removal",
+  "schemaType": "PestControlService",
+  "legalName": "ASAP Pest and Wildlife Removal",
+  "tagline": "One call. Problem solved. Peace restored.",
+  "description": "Licensed pest control and humane wildlife removal serving Metro Atlanta. Available 24/6 with same-day service. Call (770) 691-3636.",
+  "url": "https://asap-pest-wildlife.pages.dev",
+  "phone": "(770) 691-3636",
+  "phoneTel": "+17706913636",
+  "email": "info@wildliferemovalasap.com",
+  "address": {
+    "street": "2990 Pine Canyon Dr. SW Unit 11",
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "30331",
+    "full": "2990 Pine Canyon Dr. SW Unit 11, Atlanta, GA 30331"
+  },
+  "hours": {
+    "display": "Mon-Sat: 24 Hours | Sun: Closed",
+    "schema": [
+      "Mo-Sa 00:00-23:59"
+    ]
+  },
+  "team": [
+    { "name": "Ray", "role": "Owner / Lead Technician" },
+    { "name": "Nehemiah", "role": "Wildlife Specialist" },
+    { "name": "Chaz", "role": "Pest Control Technician" }
+  ],
+  "licenses": [
+    "Georgia Department of Natural Resources",
+    "Georgia Department of Agriculture"
+  ],
+  "stats": {
+    "yearsExperience": "10+",
+    "customersServed": "2,000+",
+    "responseTime": "Same Day",
+    "satisfaction": "100%"
+  },
+  "process": [
+    {
+      "step": 1,
+      "title": "Inspect",
+      "description": "We thoroughly examine your property to identify the pest, find entry points, and assess the full scope of the problem."
+    },
+    {
+      "step": 2,
+      "title": "Trap",
+      "description": "Using humane, effective methods we safely capture and remove wildlife or eliminate pest populations from your property."
+    },
+    {
+      "step": 3,
+      "title": "Exclude",
+      "description": "We seal every entry point so animals and pests cannot return. This is the step most competitors skip."
+    },
+    {
+      "step": 4,
+      "title": "Disinfect",
+      "description": "We clean and sanitize affected areas, removing droppings, urine, and nesting materials to protect your family's health."
+    }
+  ],
+  "services": [
+    {
+      "title": "Wildlife Removal",
+      "slug": "wildlife-removal",
+      "description": "Humane removal of raccoons, squirrels, bats, snakes, opossums, and birds from your home or business.",
+      "icon": "shield"
+    },
+    {
+      "title": "Pest Control",
+      "slug": "pest-control",
+      "description": "Effective treatment for rats, mice, roaches, ants, termites, and other common household pests.",
+      "icon": "bug"
+    },
+    {
+      "title": "Exclusion Services",
+      "slug": "exclusion",
+      "description": "Permanent sealing of entry points to prevent wildlife and pests from returning to your property.",
+      "icon": "lock"
+    },
+    {
+      "title": "Disinfection & Cleanup",
+      "slug": "disinfection",
+      "description": "Professional cleaning of droppings, urine, and nesting materials. Full sanitization of affected areas.",
+      "icon": "sparkle"
+    },
+    {
+      "title": "Dead Animal Removal",
+      "slug": "dead-animal-removal",
+      "description": "Safe removal and proper disposal of deceased animals. Complete odor elimination treatment.",
+      "icon": "alert"
+    },
+    {
+      "title": "Commercial Services",
+      "slug": "commercial",
+      "description": "Discreet, professional pest and wildlife management for restaurants, offices, warehouses, and retail.",
+      "icon": "building"
+    }
+  ],
+  "serviceAreas": [
+    "Atlanta",
+    "East Point",
+    "College Park",
+    "Decatur",
+    "Marietta",
+    "Smyrna",
+    "Roswell",
+    "Alpharetta",
+    "Sandy Springs",
+    "Kennesaw",
+    "Lithonia",
+    "Stone Mountain",
+    "Lawrenceville",
+    "Duluth",
+    "Peachtree City",
+    "Stockbridge",
+    "McDonough",
+    "Conyers"
+  ],
+  "social": {},
+  "integrations": {
+    "gtmId": "",
+    "ga4Id": "",
+    "metaPixelId": "",
+    "gmbCid": "",
+    "calcomUrl": "https://cal-asap.buildwisemedia.com/asap-pest-wildlife/consultation"
+  }
+}

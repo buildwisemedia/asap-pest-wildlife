@@ -1,0 +1,109 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import site from '../../data/site.json';
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Dead Animal Removal",
+    "description": "Professional dead animal removal and odor elimination in Metro Atlanta. Safe removal, proper disposal, and complete sanitization.",
+    "provider": {
+      "@type": "LocalBusiness",
+      "@id": `${site.url}/#business`,
+      "name": site.name,
+    },
+    "areaServed": site.serviceAreas.map((area: string) => ({
+      "@type": "City",
+      "name": `${area}, GA`,
+    })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": site.url },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": `${site.url}/services/` },
+      { "@type": "ListItem", "position": 3, "name": "Dead Animal Removal" },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="Dead Animal Removal"
+  description="Professional dead animal removal and odor elimination in Metro Atlanta. Safe disposal, full sanitization. Call (770) 691-3636."
+  jsonLd={jsonLd}
+>
+
+  {/* Hero */}
+  <section class="bg-forest relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-forest to-dark/80 opacity-90"></div>
+    <div class="relative max-w-container mx-auto px-4 sm:px-6 py-16 md:py-24">
+      <div class="max-w-3xl">
+        <a href="/services/" class="inline-flex items-center gap-1 text-white/60 hover:text-white text-sm font-display mb-4 transition-colors">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M15 19l-7-7 7-7" /></svg>
+          All Services
+        </a>
+        <h1 class="text-4xl md:text-5xl font-display font-bold text-white mb-4">Dead Animal Removal</h1>
+        <p class="text-lg text-white/80 max-w-2xl">
+          Safe removal, proper disposal, and complete odor elimination. We handle this unpleasant situation so you do not have to.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {/* Content */}
+  <section class="py-16 md:py-20 bg-warm-white">
+    <div class="max-w-container mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-display font-bold text-charcoal mb-6">Quick, Respectful Service</h2>
+        <div class="space-y-4 text-gray leading-relaxed mb-10">
+          <p>
+            A deceased animal in or around your home creates an urgent situation. The odor is overwhelming, and the health risks are real. Bacteria, parasites, and insects are attracted to decomposing remains and can spread into your living spaces.
+          </p>
+          <p>
+            Our team responds quickly. We locate the animal -- even when it is hidden inside walls, under floors, or in tight crawl spaces. We remove it safely, dispose of it properly, and treat the area to eliminate all odor and contamination.
+          </p>
+        </div>
+
+        <h3 class="text-2xl font-display font-bold text-charcoal mb-4">What to Expect</h3>
+        <div class="space-y-4 mb-10">
+          {[
+            { title: "Fast Response", description: "We understand the urgency. Same-day service is available Monday through Saturday." },
+            { title: "Complete Location", description: "We find the source even when it is not visible. Wall cavities, attics, and crawl spaces are thoroughly checked." },
+            { title: "Safe Removal & Disposal", description: "We follow all state regulations for proper handling and disposal of animal remains." },
+            { title: "Odor Elimination", description: "We use professional-grade deodorizers and sanitizers to completely eliminate the smell, not just mask it." },
+            { title: "Sanitization", description: "The area is thoroughly cleaned and disinfected to remove all bacteria and parasites." },
+            { title: "Prevention", description: "We identify how the animal got in and seal the entry point to prevent it from happening again." }
+          ].map(item => (
+            <div class="bg-white rounded-lg p-5 border border-border">
+              <h4 class="font-display font-bold text-charcoal mb-1">{item.title}</h4>
+              <p class="text-gray text-sm">{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* CTA */}
+  <section class="bg-amber">
+    <div class="max-w-container mx-auto px-4 sm:px-6 py-12 md:py-16 text-center">
+      <h2 class="text-3xl md:text-4xl font-display font-bold text-dark mb-4">Dealing With a Bad Smell?</h2>
+      <p class="text-dark/70 text-lg mb-8 max-w-2xl mx-auto">
+        It might be a deceased animal. Call us for fast, professional removal and odor treatment.
+      </p>
+      <a
+        href={`tel:${site.phoneTel}`}
+        class="inline-flex items-center gap-3 bg-dark hover:bg-charcoal text-white font-display font-bold px-10 py-5 rounded-lg text-2xl transition-colors shadow-lg"
+      >
+        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        </svg>
+        {site.phone}
+      </a>
+    </div>
+  </section>
+
+</BaseLayout>

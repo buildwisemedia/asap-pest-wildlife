@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest: #2D6A4F;
+  --color-forest-light: #3A7D5F;
+  --color-warm-white: #FAF9F6;
+  --color-amber: #E8A317;
+  --color-dark: #1B1B1B;
+  --color-charcoal: #212121;
+  --color-gray: #6B7280;
+  --color-light: #F5F5F0;
+  --color-white: #FFFFFF;
+  --color-border: #E5E7EB;
+
+  --font-display: 'DM Sans', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  --max-width-container: 1320px;
+}
