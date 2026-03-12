@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wildlife Removal Atlanta | ASAP Pest &amp; Wildlife — 24/6 Emergency Service</title>
+  <meta name="description" content="Humane wildlife removal in Metro Atlanta. We inspect, trap, seal, and disinfect. Licensed. Available 24/6. Book your free inspection today.">
+  <link rel="canonical" href="https://wildliferemovalasap.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Wildlife Removal Atlanta | ASAP Pest &amp; Wildlife — 24/6 Emergency Service">
+  <meta property="og:description" content="Humane wildlife removal in Metro Atlanta. We inspect, trap, seal, and disinfect. Licensed. Available 24/6. Book your free inspection today.">
+  <meta property="og:url" content="https://wildliferemovalasap.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ASAP Pest &amp; Wildlife Removal">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wildlife Removal Atlanta | ASAP Pest &amp; Wildlife — 24/6 Emergency Service">
+  <meta name="twitter:description" content="Humane wildlife removal in Metro Atlanta. We inspect, trap, seal, and disinfect. Licensed. Available 24/6. Book your free inspection today.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: '#2D6A4F',
+            'forest-dark': '#1E4D38',
+            warmwhite: '#FAF9F6',
+            amber: '#E8A317',
+            'amber-dark': '#C98B12',
+            charcoal: '#1B1B1B',
+            'text-primary': '#212121',
+            'text-light': '#F0F0F0',
+            'light-gray': '#F5F5F0',
+          },
+          fontFamily: {
+            headline: ['Poppins', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; font-size: 18px; color: #212121; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+
+    /* Scroll animations */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .fade-up-delay-1 { transition-delay: 0.1s; }
+    .fade-up-delay-2 { transition-delay: 0.2s; }
+    .fade-up-delay-3 { transition-delay: 0.3s; }
+    .fade-up-delay-4 { transition-delay: 0.4s; }
+    .fade-up-delay-5 { transition-delay: 0.5s; }
+
+    /* Step connector line */
+    .step-line {
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      right: 40px;
+      height: 2px;
+      background: rgba(255,255,255,0.25);
+    }
+    @media (max-width: 767px) {
+      .step-line {
+        top: 0;
+        bottom: 0;
+        left: 40px;
+        right: auto;
+        width: 2px;
+        height: auto;
+      }
+    }
+
+    /* Hero pattern */
+    .hero-pattern {
+      background-image:
+        radial-gradient(circle at 20% 80%, rgba(45,106,79,0.04) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(232,163,23,0.04) 0%, transparent 50%),
+        linear-gradient(135deg, transparent 25%, rgba(45,106,79,0.02) 25%, rgba(45,106,79,0.02) 50%, transparent 50%, transparent 75%, rgba(45,106,79,0.02) 75%);
+      background-size: 100% 100%, 100% 100%, 48px 48px;
+    }
+
+    /* FAQ accordion */
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+    }
+    .faq-answer.open {
+      max-height: 400px;
+    }
+    .faq-toggle svg {
+      transition: transform 0.3s ease;
+    }
+    .faq-toggle.active svg {
+      transform: rotate(180deg);
+    }
+
+    /* Service card hover */
+    .service-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.10);
+    }
+
+    /* Testimonial quote mark */
+    .quote-mark {
+      font-family: 'Georgia', serif;
+      font-size: 72px;
+      line-height: 1;
+      color: #2D6A4F;
+      opacity: 0.15;
+      position: absolute;
+      top: -8px;
+      left: 16px;
+    }
+
+    /* Max line length for body text */
+    .readable { max-width: 65ch; }
+
+    /* Mobile menu */
+    .mobile-menu {
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+    }
+    .mobile-menu.open {
+      transform: translateX(0);
+    }
+
+    /* Hero CSS art */
+    .shield-shape {
+      position: relative;
+      width: 320px;
+      height: 360px;
+    }
+    .shield-shape::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, #2D6A4F 0%, #1E4D38 100%);
+      clip-path: polygon(50% 0%, 100% 15%, 100% 65%, 50% 100%, 0% 65%, 0% 15%);
+    }
+    .shield-shape::after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      background: linear-gradient(135deg, rgba(232,163,23,0.15) 0%, transparent 60%);
+      clip-path: polygon(50% 0%, 100% 15%, 100% 65%, 50% 100%, 0% 65%, 0% 15%);
+    }
+    .shield-inner-house {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+    .shield-inner-house .roof {
+      width: 0;
+      height: 0;
+      border-left: 64px solid transparent;
+      border-right: 64px solid transparent;
+      border-bottom: 48px solid #E8A317;
+      margin: 0 auto;
+    }
+    .shield-inner-house .walls {
+      width: 96px;
+      height: 64px;
+      background: #FAF9F6;
+      margin: 0 auto;
+      border-radius: 0 0 4px 4px;
+      position: relative;
+    }
+    .shield-inner-house .door {
+      width: 28px;
+      height: 40px;
+      background: #2D6A4F;
+      border-radius: 14px 14px 0 0;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .shield-ring {
+      position: absolute;
+      inset: -16px;
+      border: 3px solid rgba(232,163,23,0.3);
+      clip-path: polygon(50% 0%, 100% 15%, 100% 65%, 50% 100%, 0% 65%, 0% 15%);
+    }
+
+    @media (max-width: 767px) {
+      .shield-shape {
+        width: 200px;
+        height: 224px;
+      }
+    }
+
+    /* Trust badge */
+    .trust-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #212121;
+      background: #fff;
+    }
+  </style>
+
+  <!-- LocalBusiness JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ASAP Pest and Wildlife Removal",
+    "url": "https://wildliferemovalasap.com",
+    "telephone": "+17706913636",
+    "description": "Humane wildlife removal in Metro Atlanta. We inspect, trap, seal, and disinfect. Licensed. Available 24/6.",
+    "areaServed": {
+      "@type": "Place",
+      "name": "Metro Atlanta, Georgia"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    ],
+    "sameAs": [],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Wildlife &amp; Pest Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Wildlife Removal"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pest Control"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Exclusion & Sealing"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Disinfection & Cleanup"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Dead Animal Removal"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Services"}}
+      ]
+    }
+  }
+  </script>
+
+  <!-- FAQPage JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What animals do you remove?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We handle raccoons, squirrels, bats, snakes, opossums, rats, mice, birds, and more. Every removal uses humane, eco-friendly methods approved by Georgia DNR."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does your four-step process work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "First, we inspect your property to find the animal and entry points. Then we trap humanely. Next, we seal every entry point so nothing comes back. Finally, we disinfect affected areas to remove health hazards."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer a warranty?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We warranty our exclusion work. If an animal gets back in through a sealed entry point, we come back."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly can you come out?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We're available 24 hours a day, 6 days a week. For emergencies, we often provide same-day service."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it really humane?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We're licensed by the Georgia DNR and Department of Agriculture. We don't use poisons. We trap and relocate using state-approved methods."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does wildlife removal cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every job starts with an inspection. We assess the situation and give you multiple price options — good, better, and best — so you can pick what fits your budget."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-warmwhite text-text-primary">
+
+  <!-- ======================== NAV ======================== -->
+  <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 transition-shadow duration-300">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-[72px]">
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-2 font-headline font-bold text-xl text-forest">
+          <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-forest text-white text-sm font-bold">AP</span>
+          ASAP Pest &amp; Wildlife
+        </a>
+
+        <!-- Desktop links -->
+        <div class="hidden min-[960px]:flex items-center gap-8">
+          <a href="/services" class="text-text-primary hover:text-forest transition-colors font-medium text-base">Services</a>
+          <a href="/how-it-works" class="text-text-primary hover:text-forest transition-colors font-medium text-base">How It Works</a>
+          <a href="/about" class="text-text-primary hover:text-forest transition-colors font-medium text-base">About</a>
+          <a href="/results" class="text-text-primary hover:text-forest transition-colors font-medium text-base">Results</a>
+          <a href="tel:7706913636" class="text-forest font-semibold text-base hover:text-forest-dark transition-colors">(770) 691-3636</a>
+          <a href="/book" class="inline-flex items-center px-5 py-2.5 bg-amber hover:bg-amber-dark text-charcoal font-semibold rounded-lg transition-colors text-base">Book Your Free Inspection</a>
+        </div>
+
+        <!-- Hamburger -->
+        <button id="menu-toggle" class="min-[960px]:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5" aria-label="Open menu">
+          <span class="w-6 h-0.5 bg-charcoal rounded transition-transform" id="bar1"></span>
+          <span class="w-6 h-0.5 bg-charcoal rounded transition-opacity" id="bar2"></span>
+          <span class="w-6 h-0.5 bg-charcoal rounded transition-transform" id="bar3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 w-[280px] h-full bg-white shadow-2xl z-50 min-[960px]:hidden">
+      <div class="flex justify-end p-6">
+        <button id="menu-close" class="w-10 h-10 flex items-center justify-center" aria-label="Close menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="flex flex-col gap-6 px-8 pt-4">
+        <a href="/services" class="text-lg font-medium text-text-primary hover:text-forest">Services</a>
+        <a href="/how-it-works" class="text-lg font-medium text-text-primary hover:text-forest">How It Works</a>
+        <a href="/about" class="text-lg font-medium text-text-primary hover:text-forest">About</a>
+        <a href="/results" class="text-lg font-medium text-text-primary hover:text-forest">Results</a>
+        <a href="tel:7706913636" class="text-lg font-semibold text-forest">(770) 691-3636</a>
+        <a href="/book" class="inline-flex items-center justify-center px-6 py-3 bg-amber hover:bg-amber-dark text-charcoal font-semibold rounded-lg transition-colors text-lg mt-2">Book Your Free Inspection</a>
+      </div>
+    </div>
+    <div id="menu-overlay" class="fixed inset-0 bg-black/30 z-40 hidden min-[960px]:hidden"></div>
+  </nav>
+
+  <!-- ======================== HERO ======================== -->
+  <section class="hero-pattern min-h-[92vh] flex items-center pt-[72px]" style="padding-top: max(72px, 10vh); padding-bottom: 80px;">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full">
+      <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
+        <!-- Left content -->
+        <div class="flex-1 max-w-2xl">
+          <h1 class="font-headline font-extrabold text-4xl sm:text-5xl lg:text-[56px] leading-tight text-charcoal mb-6 fade-up">
+            Wildlife in Your Home?<br>One Call. Problem Solved.
+          </h1>
+          <p class="text-lg sm:text-xl text-text-primary/80 mb-4 readable fade-up fade-up-delay-1">
+            Metro Atlanta's humane wildlife removal experts. We inspect, trap, seal, and disinfect — so the problem is gone for good.
+          </p>
+          <p class="text-base sm:text-lg text-text-primary/65 mb-8 readable fade-up fade-up-delay-2">
+            Hear scratching in the attic? See droppings in the garage? We handle it — 24 hours a day, 6 days a week.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 fade-up fade-up-delay-3">
+            <a href="/book" class="inline-flex items-center justify-center px-8 py-4 bg-amber hover:bg-amber-dark text-charcoal font-bold rounded-xl text-lg transition-colors shadow-lg shadow-amber/20">
+              Book Your Free Inspection
+            </a>
+            <a href="/how-it-works" class="inline-flex items-center justify-center px-8 py-4 border-2 border-forest text-forest hover:bg-forest hover:text-white font-semibold rounded-xl text-lg transition-colors">
+              See How It Works
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: CSS art shield -->
+        <div class="flex-shrink-0 fade-up fade-up-delay-4 hidden md:block">
+          <div class="shield-shape">
+            <div class="shield-ring"></div>
+            <div class="shield-inner-house">
+              <div class="roof"></div>
+              <div class="walls">
+                <div class="door"></div>
+              </div>
+            </div>
+            <!-- Decorative dots -->
+            <div class="absolute top-[25%] left-[18%] w-3 h-3 rounded-full bg-amber/40"></div>
+            <div class="absolute top-[40%] right-[16%] w-2 h-2 rounded-full bg-amber/30"></div>
+            <div class="absolute bottom-[30%] left-[22%] w-2.5 h-2.5 rounded-full bg-white/30"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== TRUST BAR ======================== -->
+  <section class="bg-white border-b border-gray-100 py-16 sm:py-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
+        <div class="text-center fade-up">
+          <div class="font-headline font-bold text-4xl sm:text-5xl text-forest mb-2">
+            <span class="counter" data-target="100" data-suffix="+">0</span>
+          </div>
+          <p class="text-sm sm:text-base text-text-primary/70 font-medium">Five-Star Reviews</p>
+        </div>
+        <div class="text-center fade-up fade-up-delay-1">
+          <div class="font-headline font-bold text-4xl sm:text-5xl text-forest mb-2">24/6</div>
+          <p class="text-sm sm:text-base text-text-primary/70 font-medium">Emergency Availability</p>
+        </div>
+        <div class="text-center fade-up fade-up-delay-2">
+          <div class="font-headline font-bold text-4xl sm:text-5xl text-forest mb-2">
+            <span class="counter" data-target="3" data-suffix="x">0</span>
+          </div>
+          <p class="text-sm sm:text-base text-text-primary/70 font-medium">State Licensed &amp; Certified</p>
+        </div>
+        <div class="text-center fade-up fade-up-delay-3">
+          <div class="font-headline font-bold text-4xl sm:text-5xl text-forest mb-2">4-Step</div>
+          <p class="text-sm sm:text-base text-text-primary/70 font-medium">Complete Solution Process</p>
+        </div>
+      </div>
+      <!-- Badges -->
+      <div class="flex flex-wrap justify-center gap-4 fade-up">
+        <span class="trust-badge">
+          <svg class="w-5 h-5 text-forest" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          GA DNR Licensed
+        </span>
+        <span class="trust-badge">
+          <svg class="w-5 h-5 text-forest" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          Dept. of Agriculture
+        </span>
+        <span class="trust-badge">
+          <svg class="w-5 h-5 text-forest" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          State of Georgia
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== PROBLEM AGITATION ======================== -->
+  <section class="bg-light-gray py-20 sm:py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <h2 class="font-headline font-bold text-3xl sm:text-4xl lg:text-[44px] text-charcoal text-center mb-16 fade-up">Sound Familiar?</h2>
+      <div class="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto mb-12">
+        <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm fade-up">
+          <div class="w-10 h-10 rounded-full bg-amber/15 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-amber" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <p class="text-base sm:text-lg leading-relaxed text-text-primary/80">You hear scratching in the attic at 2 AM. You call three companies. One never answers. One quotes over the phone without seeing the problem. The third says two weeks.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm fade-up fade-up-delay-1">
+          <div class="w-10 h-10 rounded-full bg-amber/15 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-amber" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+          </div>
+          <p class="text-base sm:text-lg leading-relaxed text-text-primary/80">You paid someone to remove the squirrels last year. They're back. Because nobody sealed the holes.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm fade-up fade-up-delay-2">
+          <div class="w-10 h-10 rounded-full bg-amber/15 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-amber" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <p class="text-base sm:text-lg leading-relaxed text-text-primary/80">Nobody told you how the animals got in. Nobody explained the health risks from the droppings. You're left guessing.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm fade-up fade-up-delay-3">
+          <div class="w-10 h-10 rounded-full bg-amber/15 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-amber" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg>
+          </div>
+          <p class="text-base sm:text-lg leading-relaxed text-text-primary/80">You've tried the hardware store traps and YouTube tutorials. The problem is still there.</p>
+        </div>
+      </div>
+      <p class="text-center text-lg sm:text-xl font-semibold text-forest fade-up">If any of this sounds like you — you're in the right place.</p>
+    </div>
+  </section>
+
+  <!-- ======================== SOLUTION / 4-STEP ======================== -->
+  <section class="bg-forest py-20 sm:py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="font-headline font-bold text-3xl sm:text-4xl lg:text-[44px] text-white mb-4 fade-up">The Peace-of-Mind Wildlife Shield</h2>
+        <p class="text-lg text-white/70 readable mx-auto fade-up fade-up-delay-1">Our four-step process solves the problem permanently — not just temporarily.</p>
+      </div>
+      <div class="relative">
+        <!-- Connector line (desktop: horizontal, mobile: vertical) -->
+        <div class="step-line hidden md:block"></div>
+        <div class="grid md:grid-cols-4 gap-8 relative">
+          <div class="text-center fade-up">
+            <div class="w-20 h-20 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center mx-auto mb-6">
+              <span class="font-headline font-bold text-2xl text-amber">01</span>
+            </div>
+            <h3 class="font-headline font-bold text-xl text-white mb-3">Inspect</h3>
+            <p class="text-base text-white/70 leading-relaxed">Licensed technician identifies the animal, entry points, damage, and health risks.</p>
+          </div>
+          <div class="text-center fade-up fade-up-delay-1">
+            <div class="w-20 h-20 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center mx-auto mb-6">
+              <span class="font-headline font-bold text-2xl text-amber">02</span>
+            </div>
+            <h3 class="font-headline font-bold text-xl text-white mb-3">Trap</h3>
+            <p class="text-base text-white/70 leading-relaxed">Humane trapping based on animal movement patterns. No poisons. No cruelty.</p>
+          </div>
+          <div class="text-center fade-up fade-up-delay-2">
+            <div class="w-20 h-20 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center mx-auto mb-6">
+              <span class="font-headline font-bold text-2xl text-amber">03</span>
+            </div>
+            <h3 class="font-headline font-bold text-xl text-white mb-3">Exclude</h3>
+            <p class="text-base text-white/70 leading-relaxed">We seal every entry point and weak spot. This is the step most companies skip.</p>
+          </div>
+          <div class="text-center fade-up fade-up-delay-3">
+            <div class="w-20 h-20 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center mx-auto mb-6">
+              <span class="font-headline font-bold text-2xl text-amber">04</span>
+            </div>
+            <h3 class="font-headline font-bold text-xl text-white mb-3">Disinfect</h3>
+            <p class="text-base text-white/70 leading-relaxed">Attics, crawl spaces, and vents cleaned and disinfected. Health hazards removed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SERVICES ======================== -->
+  <section class="bg-white py-20 sm:py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <h2 class="font-headline font-bold text-3xl sm:text-4xl lg:text-[44px] text-charcoal text-center mb-16 fade-up">What We Handle</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <!-- Service 1 -->
+        <a href="/services/wildlife-removal" class="service-card block bg-warmwhite rounded-2xl p-8 border border-gray-100 fade-up">
+          <div class="w-14 h-14 rounded-xl bg-forest/10 flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-forest" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
+          </div>
+          <h3 class="font-headline font-bold text-xl text-charcoal mb-2">Wildlife Removal</h3>
+          <p class="text-base text-text-primary/70 mb-4 leading-relaxed">Raccoons, squirrels, bats, snakes, opossums — removed humanely.</p>
+          <span class="text-forest font-semibold text-sm inline-flex items-center gap-1">Learn More <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></span>
+        </a>
+        <!-- Service 2 -->
+        <a href="/services/pest-control" class="service-card block bg-warmwhite rounded-2xl p-8 border border-gray-100 fade-up fade-up-delay-1">
+          <div class="w-14 h-14 rounded-xl bg-forest/10 flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-forest" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 14.5M14.25 3.104c.251.023.501.05.75.082M19.8 14.5l-2.364 2.364a2.25 2.25 0 01-1.591.659H8.155a2.25 2.25 0 01-1.591-.659L4.2 14.5m15.6 0l.4.401a2.25 2.25 0 010 3.182L17.764 20.52a2.25 2.25 0 01-3.182 0l-.401-.4m0 0l-.401.4a2.25 2.25 0 01-3.182 0L8.236 18.08a2.25 2.25 0 010-3.182l.4-.4"/></svg>
+          </div>
+          <h3 class="font-headline font-bold text-xl text-charcoal mb-2">Pest Control</h3>
+          <p class="text-base text-text-primary/70 mb-4 leading-relaxed">Rats, mice, roaches, ants, and more — eco-friendly methods.</p>
+          <span class="text-forest font-semibold text-sm inline-flex items-center gap-1">Learn More <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></span>
+        </a>
+        <!-- Service 3 -->
+        <a href="/services/exclusion" class="service-card block bg-warmwhite rounded-2xl p-8 border border-gray-100 fade-up fade-up-delay-2">
+          <div class="w-14 h-14 rounded-xl bg-forest/10 flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-forest" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/></svg>
+          </div>
+          <h3 class="font-headline font-bold text-xl text-charcoal mb-2">Exclusion &amp; Sealing</h3>
+          <p class="text-base text-text-primary/70 mb-4 leading-relaxed">Every entry point sealed. Backed by warranty.</p>
+          <span class="text-forest font-semibold text-sm inline-flex items-center gap-1">Learn More <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></span>
+        </a>
+        <!-- Service 4 -->
+        <a href="/services/disinfection" class="service-card block bg-warmwhite rounded-2xl p-8 border border-gray-100 fade-up">
+          <div class="w-14 h-14 rounded-xl bg-forest/10 flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-forest" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/></svg>
+          </div>
+          <h3 class="font-headline font-bold text-xl text-charcoal mb-2">Disinfection &amp; Cleanup</h3>
+          <p class="text-base text-text-primary/70 mb-4 leading-relaxed">Droppings, urine, nesting materials — all removed safely.</p>
+          <span class="text-forest font-semibold text-sm inline-flex items-center gap-1">Learn More <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></span>
+        </a>
+        <!-- Service 5 -->
+        <a href="/services/dead-animal-removal" class="service-card block bg-warmwhite rounded-2xl p-8 border border-gray-100 fade-up fade-up-delay-1">
+          <div class="w-14 h-14 rounded-xl bg-forest/10 flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-forest" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
+          </div>
+          <h3 class="font-headline font-bold text-xl text-charcoal mb-2">Dead Animal Removal</h3>
+          <p class="text-base text-text-primary/70 mb-4 leading-relaxed">Found something dead? We remove, dispose, and deodorize.</p>
+          <span class="text-forest font-semibold text-sm inline-flex items-center gap-1">Learn More <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></span>
+        </a>
+        <!-- Service 6 -->
+        <a href="/services/commercial" class="service-card block bg-warmwhite rounded-2xl p-8 border border-gray-100 fade-up fade-up-delay-2">
+          <div class="w-14 h-14 rounded-xl bg-forest/10 flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-forest" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"/></svg>
+          </div>
+          <h3 class="font-headline font-bold text-xl text-charcoal mb-2">Commercial Services</h3>
+          <p class="text-base text-text-primary/70 mb-4 leading-relaxed">Discreet, professional pest management for businesses.</p>
+          <span class="text-forest font-semibold text-sm inline-flex items-center gap-1">Learn More <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SOCIAL PROOF ======================== -->
+  <section class="bg-warmwhite py-20 sm:py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <h2 class="font-headline font-bold text-3xl sm:text-4xl lg:text-[44px] text-charcoal text-center mb-16 fade-up">What Our Clients Say</h2>
+      <div class="grid md:grid-cols-3 gap-6 lg:gap-8 mb-12">
+        <!-- Testimonial 1 -->
+        <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm relative fade-up">
+          <span class="quote-mark">&ldquo;</span>
+          <div class="flex gap-0.5 mb-4 pt-4">
+            <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-base leading-relaxed text-text-primary/80 mb-6">"Ray was friendly, knowledgeable, helpful, and fixed the problem: found a bat in our basement and humanely removed it. Cannot recommend ASAP wildlife removal enough."</p>
+          <p class="text-sm font-semibold text-text-primary/50">— Verified Client</p>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm relative fade-up fade-up-delay-1">
+          <span class="quote-mark">&ldquo;</span>
+          <div class="flex gap-0.5 mb-4 pt-4">
+            <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-base leading-relaxed text-text-primary/80 mb-6">"Nehemiah was very responsive, professional, with focus on customer service. Job well done."</p>
+          <p class="text-sm font-semibold text-text-primary/50">— Verified Client</p>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm relative fade-up fade-up-delay-2">
+          <span class="quote-mark">&ldquo;</span>
+          <div class="flex gap-0.5 mb-4 pt-4">
+            <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-base leading-relaxed text-text-primary/80 mb-6">"Went above and beyond to make sure they protected my roofline after rats."</p>
+          <p class="text-sm font-semibold text-text-primary/50">— Verified Client</p>
+        </div>
+      </div>
+      <p class="text-center text-base sm:text-lg text-text-primary/60 font-medium fade-up">100+ Five-Star Reviews on Google, HomeAdvisor, Yelp, and Nextdoor</p>
+    </div>
+  </section>
+
+  <!-- ======================== EMERGENCY CTA ======================== -->
+  <section class="bg-amber py-16 sm:py-20">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <h2 class="font-headline font-bold text-3xl sm:text-4xl text-charcoal mb-4 fade-up">Hear Something in Your Attic? Call ASAP.</h2>
+      <a href="tel:7706913636" class="inline-block font-headline font-bold text-4xl sm:text-5xl lg:text-6xl text-charcoal hover:text-forest-dark transition-colors mb-4 fade-up fade-up-delay-1">(770) 691-3636</a>
+      <p class="text-lg text-charcoal/80 fade-up fade-up-delay-2">We answer 24 hours a day, 6 days a week.</p>
+    </div>
+  </section>
+
+  <!-- ======================== FAQ ======================== -->
+  <section class="bg-white py-20 sm:py-24 lg:py-32">
+    <div class="max-w-3xl mx-auto px-6 lg:px-8">
+      <h2 class="font-headline font-bold text-3xl sm:text-4xl lg:text-[44px] text-charcoal text-center mb-16 fade-up">Common Questions</h2>
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <div class="border border-gray-200 rounded-xl overflow-hidden fade-up">
+          <button class="faq-toggle w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false">
+            <span class="font-headline font-semibold text-lg text-charcoal pr-4">What animals do you remove?</span>
+            <svg class="w-5 h-5 text-text-primary/40 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p class="px-6 pb-5 text-base text-text-primary/70 leading-relaxed">We handle raccoons, squirrels, bats, snakes, opossums, rats, mice, birds, and more. Every removal uses humane, eco-friendly methods approved by Georgia DNR.</p>
+          </div>
+        </div>
+        <!-- FAQ 2 -->
+        <div class="border border-gray-200 rounded-xl overflow-hidden fade-up fade-up-delay-1">
+          <button class="faq-toggle w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false">
+            <span class="font-headline font-semibold text-lg text-charcoal pr-4">How does your four-step process work?</span>
+            <svg class="w-5 h-5 text-text-primary/40 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p class="px-6 pb-5 text-base text-text-primary/70 leading-relaxed">First, we inspect your property to find the animal and entry points. Then we trap humanely. Next, we seal every entry point so nothing comes back. Finally, we disinfect affected areas to remove health hazards.</p>
+          </div>
+        </div>
+        <!-- FAQ 3 -->
+        <div class="border border-gray-200 rounded-xl overflow-hidden fade-up fade-up-delay-2">
+          <button class="faq-toggle w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false">
+            <span class="font-headline font-semibold text-lg text-charcoal pr-4">Do you offer a warranty?</span>
+            <svg class="w-5 h-5 text-text-primary/40 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p class="px-6 pb-5 text-base text-text-primary/70 leading-relaxed">Yes. We warranty our exclusion work. If an animal gets back in through a sealed entry point, we come back.</p>
+          </div>
+        </div>
+        <!-- FAQ 4 -->
+        <div class="border border-gray-200 rounded-xl overflow-hidden fade-up">
+          <button class="faq-toggle w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false">
+            <span class="font-headline font-semibold text-lg text-charcoal pr-4">How quickly can you come out?</span>
+            <svg class="w-5 h-5 text-text-primary/40 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p class="px-6 pb-5 text-base text-text-primary/70 leading-relaxed">We're available 24 hours a day, 6 days a week. For emergencies, we often provide same-day service.</p>
+          </div>
+        </div>
+        <!-- FAQ 5 -->
+        <div class="border border-gray-200 rounded-xl overflow-hidden fade-up fade-up-delay-1">
+          <button class="faq-toggle w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false">
+            <span class="font-headline font-semibold text-lg text-charcoal pr-4">Is it really humane?</span>
+            <svg class="w-5 h-5 text-text-primary/40 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p class="px-6 pb-5 text-base text-text-primary/70 leading-relaxed">Yes. We're licensed by the Georgia DNR and Department of Agriculture. We don't use poisons. We trap and relocate using state-approved methods.</p>
+          </div>
+        </div>
+        <!-- FAQ 6 -->
+        <div class="border border-gray-200 rounded-xl overflow-hidden fade-up fade-up-delay-2">
+          <button class="faq-toggle w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false">
+            <span class="font-headline font-semibold text-lg text-charcoal pr-4">How much does wildlife removal cost?</span>
+            <svg class="w-5 h-5 text-text-primary/40 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p class="px-6 pb-5 text-base text-text-primary/70 leading-relaxed">Every job starts with an inspection. We assess the situation and give you multiple price options — good, better, and best — so you can pick what fits your budget.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="bg-charcoal text-text-light pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-12">
+        <!-- Services -->
+        <div>
+          <h4 class="font-headline font-bold text-base text-white mb-5">Services</h4>
+          <ul class="space-y-3">
+            <li><a href="/services/wildlife-removal" class="text-sm text-text-light/60 hover:text-white transition-colors">Wildlife Removal</a></li>
+            <li><a href="/services/pest-control" class="text-sm text-text-light/60 hover:text-white transition-colors">Pest Control</a></li>
+            <li><a href="/services/exclusion" class="text-sm text-text-light/60 hover:text-white transition-colors">Exclusion &amp; Sealing</a></li>
+            <li><a href="/services/disinfection" class="text-sm text-text-light/60 hover:text-white transition-colors">Disinfection &amp; Cleanup</a></li>
+            <li><a href="/services/dead-animal-removal" class="text-sm text-text-light/60 hover:text-white transition-colors">Dead Animal Removal</a></li>
+            <li><a href="/services/commercial" class="text-sm text-text-light/60 hover:text-white transition-colors">Commercial Services</a></li>
+          </ul>
+        </div>
+        <!-- Company -->
+        <div>
+          <h4 class="font-headline font-bold text-base text-white mb-5">Company</h4>
+          <ul class="space-y-3">
+            <li><a href="/about" class="text-sm text-text-light/60 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="/how-it-works" class="text-sm text-text-light/60 hover:text-white transition-colors">How It Works</a></li>
+            <li><a href="/results" class="text-sm text-text-light/60 hover:text-white transition-colors">Results</a></li>
+            <li><a href="/book" class="text-sm text-text-light/60 hover:text-white transition-colors">Book Inspection</a></li>
+            <li><a href="/privacy.html" class="text-sm text-text-light/60 hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="/terms.html" class="text-sm text-text-light/60 hover:text-white transition-colors">Terms of Service</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div>
+          <h4 class="font-headline font-bold text-base text-white mb-5">Contact</h4>
+          <ul class="space-y-3">
+            <li><a href="tel:7706913636" class="text-sm text-text-light/60 hover:text-white transition-colors">(770) 691-3636</a></li>
+            <li><span class="text-sm text-text-light/60">info@wildliferemovalasap.com</span></li>
+            <li><span class="text-sm text-text-light/60">Metro Atlanta, GA</span></li>
+          </ul>
+          <div class="mt-4">
+            <p class="text-sm text-text-light/60">24 Hours Mon–Sat</p>
+            <p class="text-sm text-text-light/60">Closed Sunday</p>
+          </div>
+        </div>
+        <!-- Service Area -->
+        <div>
+          <h4 class="font-headline font-bold text-base text-white mb-5">Service Area</h4>
+          <p class="text-sm text-text-light/60 leading-relaxed mb-4">Proudly serving Metro Atlanta and surrounding counties including Fulton, DeKalb, Cobb, Gwinnett, Cherokee, and Forsyth.</p>
+          <a href="/book" class="inline-flex items-center px-5 py-2.5 bg-amber hover:bg-amber-dark text-charcoal font-semibold rounded-lg transition-colors text-sm">Book Your Free Inspection</a>
+        </div>
+      </div>
+      <!-- Bottom -->
+      <div class="border-t border-white/10 pt-8">
+        <p class="text-sm text-text-light/40 mb-2">Licensed by Georgia DNR | Dept. of Agriculture | State of Georgia</p>
+        <p class="text-sm text-text-light/40">&copy; 2026 ASAP Pest and Wildlife Removal. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================== JAVASCRIPT ======================== -->
+  <script>
+    // Mobile menu toggle
+    (function() {
+      var toggle = document.getElementById('menu-toggle');
+      var menu = document.getElementById('mobile-menu');
+      var close = document.getElementById('menu-close');
+      var overlay = document.getElementById('menu-overlay');
+
+      function openMenu() {
+        menu.classList.add('open');
+        overlay.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeMenu() {
+        menu.classList.remove('open');
+        overlay.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+
+      toggle.addEventListener('click', openMenu);
+      close.addEventListener('click', closeMenu);
+      overlay.addEventListener('click', closeMenu);
+
+      // Close on link click
+      menu.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', closeMenu);
+      });
+    })();
+
+    // Nav shadow on scroll
+    (function() {
+      var nav = document.getElementById('main-nav');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 10) {
+          nav.classList.add('shadow-md');
+        } else {
+          nav.classList.remove('shadow-md');
+        }
+      });
+    })();
+
+    // IntersectionObserver for fade-up animations
+    (function() {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('.fade-up').forEach(function(el) {
+        observer.observe(el);
+      });
+    })();
+
+    // Counter animation
+    (function() {
+      var counters = document.querySelectorAll('.counter');
+      var animated = new Set();
+
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting && !animated.has(entry.target)) {
+            animated.add(entry.target);
+            var el = entry.target;
+            var target = parseInt(el.getAttribute('data-target'), 10);
+            var suffix = el.getAttribute('data-suffix') || '';
+            var duration = 1500;
+            var start = 0;
+            var startTime = null;
+
+            function step(timestamp) {
+              if (!startTime) startTime = timestamp;
+              var progress = Math.min((timestamp - startTime) / duration, 1);
+              var eased = 1 - Math.pow(1 - progress, 3);
+              var current = Math.floor(eased * target);
+              el.textContent = current + suffix;
+              if (progress < 1) {
+                requestAnimationFrame(step);
+              } else {
+                el.textContent = target + suffix;
+              }
+            }
+            requestAnimationFrame(step);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      counters.forEach(function(c) { observer.observe(c); });
+    })();
+
+    // FAQ accordion
+    (function() {
+      var toggles = document.querySelectorAll('.faq-toggle');
+      toggles.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var answer = btn.nextElementSibling;
+          var isOpen = answer.classList.contains('open');
+
+          // Close all
+          document.querySelectorAll('.faq-answer').forEach(function(a) { a.classList.remove('open'); });
+          document.querySelectorAll('.faq-toggle').forEach(function(b) {
+            b.classList.remove('active');
+            b.setAttribute('aria-expanded', 'false');
+          });
+
+          // Open clicked if it was closed
+          if (!isOpen) {
+            answer.classList.add('open');
+            btn.classList.add('active');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | ASAP Pest &amp; Wildlife — Metro Atlanta</title>
+  <meta name="description" content="Complete pest and wildlife solutions for Metro Atlanta. Humane wildlife removal, eco-friendly pest control, exclusion, disinfection, dead animal removal, and commercial services.">
+  <meta property="og:title" content="Services | ASAP Pest & Wildlife — Metro Atlanta">
+  <meta property="og:description" content="From raccoons in the attic to roaches in the kitchen — we handle it all with humane, eco-friendly methods.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wildliferemovalasap.com/services">
+  <link rel="canonical" href="https://wildliferemovalasap.com/services">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: '#2D6A4F',
+            'forest-dark': '#245A42',
+            warmwhite: '#FAF9F6',
+            amber: '#E8A317',
+            'amber-dark': '#D4940F',
+            dark: '#1B1B1B',
+            txt: '#212121',
+            'txt-light': '#F0F0F0',
+          },
+          fontFamily: {
+            headline: ['Poppins', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; font-size: 18px; color: #212121; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+    .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .nav-link { position: relative; }
+    .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: #E8A317; transition: width 0.3s; }
+    .nav-link:hover::after { width: 100%; }
+    .service-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .service-card:hover { transform: translateY(-8px); box-shadow: 0 20px 60px rgba(0,0,0,0.12); }
+    .dropdown-menu { opacity: 0; visibility: hidden; transform: translateY(8px); transition: all 0.25s ease; }
+    .dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-warmwhite">
+
+  <!-- Sticky Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-2">
+          <div class="w-10 h-10 bg-forest rounded-lg flex items-center justify-center">
+            <span class="text-white font-headline font-bold text-lg">A</span>
+          </div>
+          <span class="font-headline font-bold text-dark text-lg">ASAP Pest &amp; Wildlife</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden lg:flex items-center gap-8">
+          <div class="dropdown relative">
+            <button class="nav-link text-txt font-medium hover:text-forest transition-colors flex items-center gap-1">
+              Services
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="dropdown-menu absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 py-2">
+              <a href="/services/wildlife-removal" class="block px-4 py-2.5 text-sm text-txt hover:bg-forest/5 hover:text-forest transition-colors">Wildlife Removal</a>
+              <a href="/services/pest-control" class="block px-4 py-2.5 text-sm text-txt hover:bg-forest/5 hover:text-forest transition-colors">Pest Control</a>
+              <a href="/services/exclusion" class="block px-4 py-2.5 text-sm text-txt hover:bg-forest/5 hover:text-forest transition-colors">Exclusion</a>
+              <a href="/services/disinfection" class="block px-4 py-2.5 text-sm text-txt hover:bg-forest/5 hover:text-forest transition-colors">Disinfection</a>
+              <a href="/services/dead-animal-removal" class="block px-4 py-2.5 text-sm text-txt hover:bg-forest/5 hover:text-forest transition-colors">Dead Animal Removal</a>
+              <a href="/services/commercial" class="block px-4 py-2.5 text-sm text-txt hover:bg-forest/5 hover:text-forest transition-colors">Commercial</a>
+            </div>
+          </div>
+          <a href="/#how-it-works" class="nav-link text-txt font-medium hover:text-forest transition-colors">How It Works</a>
+          <a href="/#about" class="nav-link text-txt font-medium hover:text-forest transition-colors">About</a>
+          <a href="/#results" class="nav-link text-txt font-medium hover:text-forest transition-colors">Results</a>
+          <a href="tel:7706913636" class="font-headline font-bold text-forest text-lg">(770) 691-3636</a>
+          <a href="/book" class="bg-amber hover:bg-amber-dark text-dark font-headline font-bold px-6 py-3 rounded-full transition-colors shadow-lg shadow-amber/25">Book Your Free Inspection</a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
+          <svg class="w-7 h-7 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="menuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            <path id="menuClose" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-gray-100">
+      <div class="px-4 py-6 space-y-4">
+        <a href="/services/wildlife-removal" class="block text-txt font-medium py-2">Wildlife Removal</a>
+        <a href="/services/pest-control" class="block text-txt font-medium py-2">Pest Control</a>
+        <a href="/services/exclusion" class="block text-txt font-medium py-2">Exclusion</a>
+        <a href="/services/disinfection" class="block text-txt font-medium py-2">Disinfection</a>
+        <a href="/services/dead-animal-removal" class="block text-txt font-medium py-2">Dead Animal Removal</a>
+        <a href="/services/commercial" class="block text-txt font-medium py-2">Commercial</a>
+        <hr class="border-gray-200">
+        <a href="/#how-it-works" class="block text-txt font-medium py-2">How It Works</a>
+        <a href="/#about" class="block text-txt font-medium py-2">About</a>
+        <a href="/#results" class="block text-txt font-medium py-2">Results</a>
+        <div class="pt-4 space-y-3">
+          <a href="tel:7706913636" class="block text-center font-headline font-bold text-forest text-xl">(770) 691-3636</a>
+          <a href="/book" class="block text-center bg-amber hover:bg-amber-dark text-dark font-headline font-bold px-6 py-3 rounded-full transition-colors">Book Your Free Inspection</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="pt-32 pb-20 md:pt-40 md:pb-28 bg-forest relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-10 right-10 w-72 h-72 bg-amber rounded-full blur-3xl"></div>
+      <div class="absolute bottom-10 left-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <h1 class="font-headline font-extrabold text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-6">
+        Our Services — Complete Pest and Wildlife Solutions
+      </h1>
+      <p class="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-10 leading-relaxed">
+        From raccoons in the attic to roaches in the kitchen — we handle it all with humane, eco-friendly methods.
+      </p>
+      <a href="/book" class="inline-block bg-amber hover:bg-amber-dark text-dark font-headline font-bold px-8 py-4 rounded-full text-lg transition-colors shadow-xl shadow-amber/30">
+        Book Your Free Inspection
+      </a>
+    </div>
+  </header>
+
+  <!-- Services Grid -->
+  <section class="py-20 md:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Wildlife Removal -->
+        <a href="/services/wildlife-removal" class="service-card bg-white rounded-2xl p-8 border border-gray-100 shadow-sm block fade-up">
+          <div class="w-16 h-16 bg-forest/10 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-forest" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0v-6a1 1 0 011-1h2a1 1 0 011 1v6m-6 0h6"/></svg>
+          </div>
+          <h3 class="font-headline font-bold text-2xl text-dark mb-3">Wildlife Removal</h3>
+          <p class="text-txt/70 leading-relaxed mb-6">Raccoons, squirrels, bats, snakes, opossums — trapped humanely and relocated.</p>
+          <span class="text-forest font-semibold flex items-center gap-2">
+            Learn More
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </span>
+        </a>
+
+        <!-- Pest Control -->
+        <a href="/services/pest-control" class="service-card bg-white rounded-2xl p-8 border border-gray-100 shadow-sm block fade-up">
+          <div class="w-16 h-16 bg-forest/10 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-forest" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="font-headline font-bold text-2xl text-dark mb-3">Pest Control</h3>
+          <p class="text-txt/70 leading-relaxed mb-6">Rats, mice, roaches, ants, wasps — controlled without harmful chemicals.</p>
+          <span class="text-forest font-semibold flex items-center gap-2">
+            Learn More
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </span>
+        </a>
+
+        <!-- Exclusion & Sealing -->
+        <a href="/services/exclusion" class="service-card bg-white rounded-2xl p-8 border border-gray-100 shadow-sm block fade-up">
+          <div class="w-16 h-16 bg-forest/10 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-forest" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+          </div>
+          <h3 class="font-headline font-bold text-2xl text-dark mb-3">Exclusion &amp; Sealing</h3>
+          <p class="text-txt/70 leading-relaxed mb-6">Every entry point found and sealed. Backed by warranty.</p>
+          <span class="text-forest font-semibold flex items-center gap-2">
+            Learn More
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </span>
+        </a>
+
+        <!-- Disinfection & Cleanup -->
+        <a href="/services/disinfection" class="service-card bg-white rounded-2xl p-8 border border-gray-100 shadow-sm block fade-up">
+          <div class="w-16 h-16 bg-forest/10 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-forest" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          </div>
+          <h3 class="font-headline font-bold text-2xl text-dark mb-3">Disinfection &amp; Cleanup</h3>
+          <p class="text-txt/70 leading-relaxed mb-6">Animal waste, droppings, nesting materials — safely removed and sanitized.</p>
+          <span class="text-forest font-semibold flex items-center gap-2">
+            Learn More
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </span>
+        </a>
+
+        <!-- Dead Animal Removal -->
+        <a href="/services/dead-animal-removal" class="service-card bg-white rounded-2xl p-8 border border-gray-100 shadow-sm block fade-up">
+          <div class="w-16 h-16 bg-forest/10 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-forest" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+          <h3 class="font-headline font-bold text-2xl text-dark mb-3">Dead Animal Removal</h3>
+          <p class="text-txt/70 leading-relaxed mb-6">Deceased wildlife found and removed. Odor treated. Area disinfected.</p>
+          <span class="text-forest font-semibold flex items-center gap-2">
+            Learn More
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </span>
+        </a>
+
+        <!-- Commercial Services -->
+        <a href="/services/commercial" class="service-card bg-white rounded-2xl p-8 border border-gray-100 shadow-sm block fade-up">
+          <div class="w-16 h-16 bg-forest/10 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-forest" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          </div>
+          <h3 class="font-headline font-bold text-2xl text-dark mb-3">Commercial Services</h3>
+          <p class="text-txt/70 leading-relaxed mb-6">Discreet, professional pest management for businesses and properties.</p>
+          <span class="text-forest font-semibold flex items-center gap-2">
+            Learn More
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Context -->
+  <section class="py-20 md:py-28 bg-white fade-up">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="w-16 h-16 bg-amber/15 rounded-2xl flex items-center justify-center mx-auto mb-8">
+        <svg class="w-8 h-8 text-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      </div>
+      <h2 class="font-headline font-bold text-3xl md:text-4xl text-dark mb-6">Transparent, Fair Pricing</h2>
+      <p class="text-lg md:text-xl text-txt/70 leading-relaxed mb-10 max-w-2xl mx-auto">
+        Every job starts with an on-site inspection. We assess the situation and give you multiple options at different price points — good, better, and best. No surprises.
+      </p>
+      <a href="/book" class="inline-block bg-forest hover:bg-forest-dark text-white font-headline font-bold px-8 py-4 rounded-full text-lg transition-colors shadow-lg shadow-forest/25">
+        Book Your Free Inspection
+      </a>
+    </div>
+  </section>
+
+  <!-- Trust Section -->
+  <section class="py-20 md:py-28 bg-warmwhite fade-up">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-headline font-bold text-3xl md:text-4xl text-dark mb-12">Licensed. Certified. Trusted.</h2>
+      <div class="flex flex-wrap justify-center gap-8 md:gap-16">
+        <div class="flex flex-col items-center gap-3">
+          <div class="w-14 h-14 bg-forest/10 rounded-full flex items-center justify-center">
+            <svg class="w-7 h-7 text-forest" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <span class="text-sm font-semibold text-txt/70">GA DNR Licensed</span>
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <div class="w-14 h-14 bg-forest/10 rounded-full flex items-center justify-center">
+            <svg class="w-7 h-7 text-forest" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <span class="text-sm font-semibold text-txt/70">Dept of Agriculture</span>
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <div class="w-14 h-14 bg-forest/10 rounded-full flex items-center justify-center">
+            <svg class="w-7 h-7 text-forest" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <span class="text-sm font-semibold text-txt/70">State of Georgia</span>
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <div class="w-14 h-14 bg-forest/10 rounded-full flex items-center justify-center">
+            <svg class="w-7 h-7 text-forest" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <span class="text-sm font-semibold text-txt/70">24/6 Availability</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="py-20 md:py-28 bg-dark fade-up">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-headline font-bold text-3xl md:text-4xl text-white mb-6">Ready to Take Back Your Space?</h2>
+      <p class="text-lg md:text-xl text-white/70 leading-relaxed mb-10 max-w-2xl mx-auto">
+        We respond fast and get the job done right the first time. Call us now or book online — we're here for you.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/book" class="bg-amber hover:bg-amber-dark text-dark font-headline font-bold px-8 py-4 rounded-full text-lg transition-colors shadow-xl shadow-amber/30">
+          Book Your Free Inspection
+        </a>
+        <a href="tel:7706913636" class="border-2 border-white/30 hover:border-white text-white font-headline font-bold px-8 py-4 rounded-full text-lg transition-colors">
+          (770) 691-3636
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark border-t border-white/10 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-12">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-10 h-10 bg-forest rounded-lg flex items-center justify-center">
+              <span class="text-white font-headline font-bold text-lg">A</span>
+            </div>
+            <span class="font-headline font-bold text-white text-lg">ASAP Pest &amp; Wildlife</span>
+          </div>
+          <p class="text-white/60 leading-relaxed">Humane pest and wildlife removal for Metro Atlanta homes and businesses.</p>
+        </div>
+        <div>
+          <h4 class="font-headline font-bold text-white mb-4">Services</h4>
+          <nav class="space-y-2">
+            <a href="/services/wildlife-removal" class="block text-white/60 hover:text-amber transition-colors">Wildlife Removal</a>
+            <a href="/services/pest-control" class="block text-white/60 hover:text-amber transition-colors">Pest Control</a>
+            <a href="/services/exclusion" class="block text-white/60 hover:text-amber transition-colors">Exclusion &amp; Sealing</a>
+            <a href="/services/disinfection" class="block text-white/60 hover:text-amber transition-colors">Disinfection &amp; Cleanup</a>
+            <a href="/services/dead-animal-removal" class="block text-white/60 hover:text-amber transition-colors">Dead Animal Removal</a>
+            <a href="/services/commercial" class="block text-white/60 hover:text-amber transition-colors">Commercial Services</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="font-headline font-bold text-white mb-4">Contact</h4>
+          <div class="space-y-2 text-white/60">
+            <a href="tel:7706913636" class="block hover:text-amber transition-colors">(770) 691-3636</a>
+            <a href="mailto:info@wildliferemovalasap.com" class="block hover:text-amber transition-colors">info@wildliferemovalasap.com</a>
+            <p>2990 Pine Canyon Dr. SW Unit 11<br>Atlanta, GA 30331</p>
+            <p>Mon-Sat, 24 Hours</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-8 text-center text-white/40 text-sm">
+        &copy; 2026 ASAP Pest and Wildlife Removal. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuOpen = document.getElementById('menuOpen');
+    const menuClose = document.getElementById('menuClose');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuOpen.classList.toggle('hidden');
+      menuClose.classList.toggle('hidden');
+    });
+
+    // Scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

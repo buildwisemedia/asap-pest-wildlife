@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About ASAP Pest & Wildlife | Family-Run Wildlife Removal in Atlanta</title>
+  <meta name="description" content="Meet the team behind Metro Atlanta's humane wildlife removal service. Family-run, licensed, available 24/6. Learn our story.">
+  <link rel="canonical" href="https://wildliferemovalasap.com/about">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwindcss.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: '#2D6A4F',
+            'forest-dark': '#245A42',
+            warm: '#FAF9F6',
+            amber: '#E8A317',
+            'amber-dark': '#C98A0E',
+            dark: '#1B1B1B',
+            txt: '#212121',
+            'txt-light': '#F0F0F0',
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; font-size: 18px; color: #212121; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+    .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+  </style>
+
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ASAP Pest and Wildlife Removal",
+    "url": "https://wildliferemovalasap.com",
+    "telephone": "+17706913636",
+    "areaServed": {
+      "@type": "Place",
+      "name": "Metro Atlanta, Georgia"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Nehemiah"
+    },
+    "description": "Family-run humane wildlife removal and pest control serving Metro Atlanta. Licensed, insured, and available 24/6."
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wildliferemovalasap.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://wildliferemovalasap.com/about"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-warm text-txt">
+
+  <!-- ========== STICKY NAV ========== -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm transition-shadow duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-2 flex-shrink-0">
+          <div class="w-9 h-9 bg-forest rounded-lg flex items-center justify-center">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1h-2z"/></svg>
+          </div>
+          <span class="font-heading font-bold text-lg text-dark">ASAP Pest & Wildlife</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden min-[960px]:flex items-center gap-8">
+          <a href="/#services" class="text-txt hover:text-forest transition-colors font-medium text-base">Services</a>
+          <a href="/#how-it-works" class="text-txt hover:text-forest transition-colors font-medium text-base">How It Works</a>
+          <a href="/about" class="text-forest font-semibold text-base">About</a>
+          <a href="/#results" class="text-txt hover:text-forest transition-colors font-medium text-base">Results</a>
+          <a href="tel:7706913636" class="text-txt hover:text-forest transition-colors font-medium text-base">(770) 691-3636</a>
+          <a href="/book" class="inline-block bg-amber hover:bg-amber-dark text-dark font-heading font-bold px-6 py-3 rounded-lg transition-colors text-base">Book Your Free Inspection</a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button id="menu-toggle" class="min-[960px]:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5" aria-label="Toggle menu">
+          <span class="block w-6 h-0.5 bg-dark transition-transform duration-300" id="bar1"></span>
+          <span class="block w-6 h-0.5 bg-dark transition-opacity duration-300" id="bar2"></span>
+          <span class="block w-6 h-0.5 bg-dark transition-transform duration-300" id="bar3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden min-[960px]:hidden bg-white/95 backdrop-blur-md border-t border-gray-100">
+      <div class="px-4 py-6 space-y-4">
+        <a href="/#services" class="block text-txt hover:text-forest font-medium text-lg">Services</a>
+        <a href="/#how-it-works" class="block text-txt hover:text-forest font-medium text-lg">How It Works</a>
+        <a href="/about" class="block text-forest font-semibold text-lg">About</a>
+        <a href="/#results" class="block text-txt hover:text-forest font-medium text-lg">Results</a>
+        <a href="tel:7706913636" class="block text-txt hover:text-forest font-medium text-lg">(770) 691-3636</a>
+        <a href="/book" class="block text-center bg-amber hover:bg-amber-dark text-dark font-heading font-bold px-6 py-3 rounded-lg transition-colors text-lg">Book Your Free Inspection</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Spacer for sticky nav -->
+  <div class="h-16 lg:h-20"></div>
+
+  <!-- ========== HERO ========== -->
+  <section class="relative bg-forest overflow-hidden py-20 sm:py-24 lg:py-32">
+    <!-- Decorative shapes -->
+    <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/3"></div>
+    <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/3 -translate-x-1/4"></div>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <!-- Breadcrumb -->
+      <nav aria-label="Breadcrumb" class="mb-6">
+        <ol class="flex items-center justify-center gap-2 text-sm text-white/70">
+          <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+          <li><span class="mx-1">/</span></li>
+          <li class="text-white font-medium">About</li>
+        </ol>
+      </nav>
+
+      <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white leading-tight mb-6 fade-up">
+        Your Home. Your Peace of Mind. Our Mission.
+      </h1>
+      <p class="text-xl sm:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed fade-up">
+        We're a family-run wildlife removal team in Metro Atlanta. We treat every home like our own.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== OUR STORY ========== -->
+  <section class="py-20 sm:py-24 lg:py-32 bg-warm">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 fade-up">
+        <span class="inline-block text-amber font-heading font-bold text-sm uppercase tracking-widest mb-3">Our Story</span>
+        <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-dark">How We Got Started</h2>
+      </div>
+
+      <div class="space-y-6 text-lg leading-relaxed text-txt/80">
+        <p class="fade-up">
+          ASAP Pest and Wildlife started with a simple idea: wildlife removal should solve the whole problem — not just half of it.
+        </p>
+        <p class="fade-up">
+          Most companies trap the animal and leave. The entry points stay open. The droppings stay in the attic. And six months later, the animals are back.
+        </p>
+        <p class="fade-up">
+          We built our four-step process — inspect, trap, exclude, disinfect — because we believe you deserve a complete solution. One that works the first time.
+        </p>
+        <p class="fade-up">
+          We're family-run. That means when you call, you get real people who care about doing the job right. Not a call center. Not a franchise script.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MEET THE TEAM ========== -->
+  <section class="py-20 sm:py-24 lg:py-32 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-up">
+        <span class="inline-block text-amber font-heading font-bold text-sm uppercase tracking-widest mb-3">The People Behind the Work</span>
+        <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-dark">Meet the Team</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+        <!-- Nehemiah -->
+        <div class="text-center fade-up">
+          <div class="w-28 h-28 mx-auto mb-6 bg-forest rounded-full flex items-center justify-center shadow-lg">
+            <span class="font-heading font-bold text-4xl text-white">N</span>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-dark mb-1">Nehemiah</h3>
+          <p class="text-amber font-semibold text-sm uppercase tracking-wide mb-4">Founder</p>
+          <p class="text-txt/80 leading-relaxed">
+            Nehemiah founded ASAP Pest and Wildlife because he saw too many homeowners stuck dealing with the same problem twice. His approach: be available when people need you, explain everything, and never cut corners.
+          </p>
+        </div>
+
+        <!-- Ray -->
+        <div class="text-center fade-up">
+          <div class="w-28 h-28 mx-auto mb-6 bg-forest rounded-full flex items-center justify-center shadow-lg">
+            <span class="font-heading font-bold text-4xl text-white">R</span>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-dark mb-1">Ray</h3>
+          <p class="text-amber font-semibold text-sm uppercase tracking-wide mb-4">Technician</p>
+          <p class="text-txt/80 leading-relaxed">
+            Licensed, trained, and committed to humane methods. Ray brings reliability and care to every job.
+          </p>
+        </div>
+
+        <!-- Chaz -->
+        <div class="text-center fade-up">
+          <div class="w-28 h-28 mx-auto mb-6 bg-forest rounded-full flex items-center justify-center shadow-lg">
+            <span class="font-heading font-bold text-4xl text-white">C</span>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-dark mb-1">Chaz</h3>
+          <p class="text-amber font-semibold text-sm uppercase tracking-wide mb-4">Technician</p>
+          <p class="text-txt/80 leading-relaxed">
+            Licensed, trained, and committed to humane methods. Chaz goes the extra mile on every service call.
+          </p>
+        </div>
+      </div>
+
+      <p class="text-center text-txt/70 mt-12 text-lg fade-up">
+        Every technician on our team is licensed, trained, and committed to humane methods.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== OUR VALUES ========== -->
+  <section class="py-20 sm:py-24 lg:py-32 bg-warm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-up">
+        <span class="inline-block text-amber font-heading font-bold text-sm uppercase tracking-widest mb-3">What Drives Us</span>
+        <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-dark">Our Values</h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <!-- Value 1 -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 fade-up">
+          <div class="w-14 h-14 bg-forest/10 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-forest" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-dark mb-3">Humane & Eco-Friendly</h3>
+          <p class="text-txt/80 leading-relaxed">No poisons. No cruelty. Every removal follows state-approved methods.</p>
+        </div>
+
+        <!-- Value 2 -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 fade-up">
+          <div class="w-14 h-14 bg-forest/10 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-forest" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-dark mb-3">Complete Solutions</h3>
+          <p class="text-txt/80 leading-relaxed">Inspect, trap, exclude, disinfect. We don't skip steps.</p>
+        </div>
+
+        <!-- Value 3 -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 fade-up">
+          <div class="w-14 h-14 bg-forest/10 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-forest" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-dark mb-3">Honest Pricing</h3>
+          <p class="text-txt/80 leading-relaxed">Multiple price options for repairs. No hidden fees. No pressure.</p>
+        </div>
+
+        <!-- Value 4 -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 fade-up">
+          <div class="w-14 h-14 bg-forest/10 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-forest" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-dark mb-3">Always Available</h3>
+          <p class="text-txt/80 leading-relaxed">24 hours a day, 6 days a week. Wildlife emergencies don't wait — neither do we.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section class="py-20 sm:py-24 lg:py-32 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-up">
+        <span class="inline-block text-amber font-heading font-bold text-sm uppercase tracking-widest mb-3">Credentials You Can Trust</span>
+        <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-dark">Licensed & Certified</h2>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 lg:gap-8 mb-10">
+        <!-- Badge 1 -->
+        <div class="flex flex-col items-center text-center fade-up">
+          <div class="w-20 h-20 bg-forest rounded-2xl flex items-center justify-center mb-4 shadow-md">
+            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          </div>
+          <p class="font-heading font-bold text-sm text-dark leading-tight">Georgia DNR Licensed</p>
+        </div>
+
+        <!-- Badge 2 -->
+        <div class="flex flex-col items-center text-center fade-up">
+          <div class="w-20 h-20 bg-forest rounded-2xl flex items-center justify-center mb-4 shadow-md">
+            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          </div>
+          <p class="font-heading font-bold text-sm text-dark leading-tight">Dept. of Agriculture Licensed</p>
+        </div>
+
+        <!-- Badge 3 -->
+        <div class="flex flex-col items-center text-center fade-up">
+          <div class="w-20 h-20 bg-forest rounded-2xl flex items-center justify-center mb-4 shadow-md">
+            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          </div>
+          <p class="font-heading font-bold text-sm text-dark leading-tight">State of Georgia Licensed</p>
+        </div>
+
+        <!-- Badge 4 -->
+        <div class="flex flex-col items-center text-center fade-up">
+          <div class="w-20 h-20 bg-forest rounded-2xl flex items-center justify-center mb-4 shadow-md">
+            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          </div>
+          <p class="font-heading font-bold text-sm text-dark leading-tight">Fully Insured & Bonded</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICE AREA ========== -->
+  <section class="py-20 sm:py-24 lg:py-32 bg-warm">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-up">
+        <span class="inline-block text-amber font-heading font-bold text-sm uppercase tracking-widest mb-3">Where We Work</span>
+        <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-dark">Serving Metro Atlanta and Surrounding Areas</h2>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 max-w-3xl mx-auto">
+        <div class="flex items-center gap-2 fade-up">
+          <svg class="w-5 h-5 text-forest flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span class="font-medium text-txt">Atlanta</span>
+        </div>
+        <div class="flex items-center gap-2 fade-up">
+          <svg class="w-5 h-5 text-forest flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span class="font-medium text-txt">Marietta</span>
+        </div>
+        <div class="flex items-center gap-2 fade-up">
+          <svg class="w-5 h-5 text-forest flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span class="font-medium text-txt">Roswell</span>
+        </div>
+        <div class="flex items-center gap-2 fade-up">
+          <svg class="w-5 h-5 text-forest flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span class="font-medium text-txt">Alpharetta</span>
+        </div>
+        <div class="flex items-center gap-2 fade-up">
+          <svg class="w-5 h-5 text-forest flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span class="font-medium text-txt">Decatur</span>
+        </div>
+        <div class="flex items-center gap-2 fade-up">
+          <svg class="w-5 h-5 text-forest flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span class="font-medium text-txt">Sandy Springs</span>
+        </div>
+        <div class="flex items-center gap-2 fade-up">
+          <svg class="w-5 h-5 text-forest flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span class="font-medium text-txt">Kennesaw</span>
+        </div>
+        <div class="flex items-center gap-2 fade-up">
+          <svg class="w-5 h-5 text-forest flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span class="font-medium text-txt">Lawrenceville</span>
+        </div>
+        <div class="flex items-center gap-2 fade-up">
+          <svg class="w-5 h-5 text-forest flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span class="font-medium text-txt">Duluth</span>
+        </div>
+        <div class="flex items-center gap-2 fade-up">
+          <svg class="w-5 h-5 text-forest flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span class="font-medium text-txt">Smyrna</span>
+        </div>
+        <div class="flex items-center gap-2 fade-up">
+          <svg class="w-5 h-5 text-forest flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span class="font-medium text-txt">East Point</span>
+        </div>
+        <div class="flex items-center gap-2 fade-up">
+          <svg class="w-5 h-5 text-forest flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span class="font-medium text-txt">College Park</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA SECTION ========== -->
+  <section class="py-20 sm:py-24 lg:py-32 bg-forest relative overflow-hidden">
+    <div class="absolute inset-0">
+      <div class="absolute top-10 left-10 w-32 h-32 border-2 border-white/10 rounded-full"></div>
+      <div class="absolute bottom-10 right-10 w-48 h-48 border-2 border-white/10 rounded-full"></div>
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 border border-white/5 rounded-full"></div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-white mb-6 fade-up">
+        Ready to solve your wildlife problem for good?
+      </h2>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 fade-up">
+        <a href="/book" class="inline-block bg-amber hover:bg-amber-dark text-dark font-heading font-bold px-8 py-4 rounded-lg transition-colors text-lg shadow-lg">
+          Book Your Free Inspection
+        </a>
+        <a href="tel:7706913636" class="inline-flex items-center gap-2 text-white hover:text-amber transition-colors text-lg font-medium">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          (770) 691-3636
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-dark py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
+        <!-- Brand -->
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-8 h-8 bg-forest rounded-lg flex items-center justify-center">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1h-2z"/></svg>
+            </div>
+            <span class="font-heading font-bold text-white">ASAP Pest & Wildlife</span>
+          </div>
+          <p class="text-txt-light/60 text-sm leading-relaxed">
+            Family-run wildlife removal serving Metro Atlanta. Licensed, insured, and available 24/6.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-heading font-bold text-white mb-4 text-sm uppercase tracking-wide">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="/" class="text-txt-light/60 hover:text-white transition-colors text-sm">Home</a></li>
+            <li><a href="/#services" class="text-txt-light/60 hover:text-white transition-colors text-sm">Services</a></li>
+            <li><a href="/about" class="text-txt-light/60 hover:text-white transition-colors text-sm">About</a></li>
+            <li><a href="/book" class="text-txt-light/60 hover:text-white transition-colors text-sm">Book Inspection</a></li>
+          </ul>
+        </div>
+
+        <!-- Service Areas -->
+        <div>
+          <h4 class="font-heading font-bold text-white mb-4 text-sm uppercase tracking-wide">Service Areas</h4>
+          <ul class="space-y-2">
+            <li class="text-txt-light/60 text-sm">Atlanta</li>
+            <li class="text-txt-light/60 text-sm">Marietta</li>
+            <li class="text-txt-light/60 text-sm">Roswell</li>
+            <li class="text-txt-light/60 text-sm">Sandy Springs</li>
+            <li class="text-txt-light/60 text-sm">+ 8 more areas</li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="font-heading font-bold text-white mb-4 text-sm uppercase tracking-wide">Contact</h4>
+          <ul class="space-y-3">
+            <li>
+              <a href="tel:7706913636" class="flex items-center gap-2 text-txt-light/60 hover:text-white transition-colors text-sm">
+                <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                (770) 691-3636
+              </a>
+            </li>
+            <li class="text-txt-light/60 text-sm">Available 24/6</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 pt-8 text-center">
+        <p class="text-txt-light/40 text-sm">&copy; <span id="footer-year"></span> ASAP Pest and Wildlife Removal. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script>
+    // Footer year
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const bar1 = document.getElementById('bar1');
+    const bar2 = document.getElementById('bar2');
+    const bar3 = document.getElementById('bar3');
+    let menuOpen = false;
+
+    menuToggle.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+      mobileMenu.classList.toggle('hidden');
+      if (menuOpen) {
+        bar1.style.transform = 'rotate(45deg) translate(4px, 4px)';
+        bar2.style.opacity = '0';
+        bar3.style.transform = 'rotate(-45deg) translate(4px, -4px)';
+      } else {
+        bar1.style.transform = '';
+        bar2.style.opacity = '1';
+        bar3.style.transform = '';
+      }
+    });
+
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuOpen = false;
+        bar1.style.transform = '';
+        bar2.style.opacity = '1';
+        bar3.style.transform = '';
+      });
+    });
+
+    // Scroll animations via IntersectionObserver
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
