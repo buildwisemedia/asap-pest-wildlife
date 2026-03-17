@@ -1,108 +1,114 @@
-# ASAP Pest and Wildlife Removal — Full Context
+# ASAP Pest and Wildlife Removal — Full Reference
 
-## Business Overview
-ASAP Pest and Wildlife Removal is a family-run, humane wildlife removal and pest control company serving Metro Atlanta and surrounding areas in Georgia. The company specializes in a complete four-step process — inspect, trap, exclude, disinfect — that solves wildlife and pest problems permanently rather than temporarily. Available 24 hours a day, 6 days a week (Monday through Saturday).
+## About
+ASAP Pest and Wildlife Removal is a humane wildlife removal and pest control company serving Metro Atlanta and surrounding areas. Licensed by the Georgia Department of Natural Resources (DNR), Georgia Department of Agriculture, and the State of Georgia. The company operates from Atlanta, GA 30331 and is available 24 hours a day, Monday through Saturday. Closed Sunday.
 
-## Contact Information
-- Legal Name: ASAP Pest and Wildlife Removal
-- Friendly Name: ASAP Pest & Wildlife
-- Phone: (770) 691-3636
-- Email: info@wildliferemovalasap.com
-- Address: 2990 Pine Canyon Dr. SW Unit 11, Atlanta, GA 30331
-- Timezone: America/New_York
-- Hours: 24 hours Monday-Saturday; closed Sunday
-- Website: https://wildliferemovalasap.com
-- Booking: https://cal-asap.buildwisemedia.com/asap-pest-wildlife/consultation
-- Owner: Nehemiah
+ASAP specializes in humane methods — live trapping, safe relocation, and eco-friendly pest treatments. Every job follows a four-step process: Inspect, Trap, Exclude, Disinfect. The goal is not just removal but long-term prevention.
 
-## Services and Pricing
+## Certifications & Licensing
+- Georgia Department of Natural Resources (DNR) licensed
+- Georgia Department of Agriculture licensed
+- State of Georgia business license
+- Fully insured
+- Trained in humane wildlife handling and relocation
 
-### Wildlife Removal ($200-$600)
-Humane trapping and removal of raccoons, squirrels, bats, snakes, opossums, birds, rats, and mice. Methods approved by Georgia DNR. No poisons, no cruelty. Traps positioned based on animal movement patterns and monitored regularly.
+## Services
 
-### Pest Control ($100-$400)
-Eco-friendly pest control for rodents, insects, and general household pests. Safe for families, children, and pets. Addresses root cause, not just symptoms.
+### Wildlife Removal
+URL: https://wildliferemovalasap.com/services/wildlife-removal.html
+Humane trapping and relocation of nuisance wildlife including raccoons, squirrels, bats, snakes, opossums, birds, armadillos, and foxes. All animals are handled according to Georgia DNR guidelines. Live traps are checked regularly. Relocation sites comply with state regulations.
+Pricing: $200-$2,000 depending on species, number of animals, and complexity.
 
-### Exclusion & Sealing ($750-$2,000)
-Identification and sealing of all entry points: soffit gaps, roof returns, pipe penetrations, gable vents, foundation cracks. This is the step most competitors skip. Backed by exclusion warranty — if an animal re-enters through a sealed entry point, ASAP returns at no charge.
+### Pest Control
+URL: https://wildliferemovalasap.com/services/pest-control.html
+Treatment and elimination of common household pests: rats, mice, roaches, ants, spiders, silverfish, and centipedes. Eco-friendly and pet-safe treatment options available. Ongoing maintenance plans for recurring pest issues.
+Pricing: $150-$800 depending on pest type, infestation severity, and property size.
 
-### Disinfection & Cleanup ($500-$3,000)
-Cleaning and disinfection of attics, crawl spaces, and vents after wildlife removal. Removes droppings, urine, and nesting materials that carry health risks including raccoon roundworm (Baylisascaris), bat histoplasmosis, and rodent-borne hantavirus.
+### Exclusion & Sealing
+URL: https://wildliferemovalasap.com/services/exclusion.html
+Identification and sealing of all entry points used by wildlife and pests. Materials include galvanized steel mesh, metal flashing, expandable foam, and caulk. All exclusion work is warranty-backed. Prevents re-entry after removal is complete.
+Pricing: $500-$3,000 depending on number of entry points and property size.
 
-### Dead Animal Removal ($150-$500)
-Fast removal, proper disposal, and odor elimination for dead animals found in walls, attics, crawl spaces, or yards.
+### Disinfection & Cleanup
+URL: https://wildliferemovalasap.com/services/disinfection.html
+Full attic and crawl space cleanup after wildlife infestation. Removal of contaminated insulation, feces, urine, and nesting materials. Hospital-grade disinfection. Insulation replacement available. Addresses health hazards including histoplasmosis, leptospirosis, and roundworm.
+Pricing: $400-$3,000 depending on affected area and contamination level.
 
-### Commercial Services ($200-$2,000)
-Discreet, professional pest and wildlife management for apartment complexes, office buildings, retail spaces, and restaurants. Ongoing management plans with documentation and invoicing.
+### Dead Animal Removal
+URL: https://wildliferemovalasap.com/services/dead-animal-removal.html
+Location and removal of dead animals from walls, attics, crawl spaces, and yards. Full sanitization and odor elimination. Fast response to prevent further health risks and pest attraction.
+Pricing: $150-$500 depending on location and accessibility.
 
-### Full Exclusion Package ($750-$5,000+)
-Complete service: inspection + trapping + full entry point sealing + disinfection. Pricing based on scope: type of animal, extent of infestation, exclusion work needed, disinfection scope.
+### Commercial Services
+URL: https://wildliferemovalasap.com/services/commercial.html
+Pest and wildlife management for businesses including restaurants, warehouses, offices, retail spaces, and multi-unit properties. Custom maintenance plans. Compliance documentation available. Discreet service scheduling to minimize business disruption.
+Pricing: Custom plans from $300/month. One-time services quoted individually.
 
-### Bat Removal
-Small removal: $250-$600. Colony removal: $600-$1,500. Bat guano cleanup: $600-$8,500+. Note: Georgia prohibits bat exclusion during maternity season (May-August).
-
-## Pricing Model
-- Initial inspection fee credited toward total service if customer proceeds
-- Multiple price options offered for repairs (good/better/best)
-- Pricing not published — delivered after on-site inspection and assessment
-- Quotes valid for 30 days
-- Month-to-month, no long-term lock-in
-- Exclusion warranty included with sealing work
-
-## Process (The Peace-of-Mind Wildlife Shield)
-1. **Inspect** — Licensed technician inspects property to identify animal species, all entry points, existing damage, and health risks from droppings or nesting materials.
-2. **Trap** — Humane traps positioned based on animal movement patterns. Monitored regularly until animals are removed. No poisons. Methods approved by Georgia DNR.
-3. **Exclude** — Every entry point and potential weak spot sealed: soffit gaps, roof returns, pipe penetrations, gable vents, foundation cracks. Warranty-backed.
-4. **Disinfect** — Affected areas cleaned and disinfected to remove droppings, urine, and nesting materials carrying health risks.
-
-## Differentiators
-- Four-step complete process (most competitors only trap and leave)
-- 24/6 availability (most competitors operate 9-5 weekdays)
-- Humane, eco-friendly methods — no poisons, no cruelty
-- Family-run — personal accountability
-- Triple-licensed (DNR, Dept of Agriculture, State of Georgia)
-- Multiple price options (good/better/best)
-- Exclusion warranty on sealing work
-
-## Certifications
-- Georgia Department of Natural Resources (DNR) Wildlife License
-- Georgia Department of Agriculture Pest Control License
-- State of Georgia Business License
+## Four-Step Process
+1. Inspect — Thorough inspection of the property to identify animals, entry points, damage, and health hazards. Free for most services.
+2. Trap — Humane live trapping and/or targeted pest treatment. Traps checked regularly. DNR-compliant methods.
+3. Exclude — Seal all entry points with durable materials. Warranty-backed work to prevent re-entry.
+4. Disinfect — Clean and sanitize affected areas. Remove contaminated materials. Restore insulation if needed.
 
 ## Service Area
-Metro Atlanta and surrounding counties, Georgia. Includes communities inside and outside the perimeter.
+Metro Atlanta and surrounding areas including:
+- Atlanta, Decatur, East Point, College Park, Union City
+- Marietta, Smyrna, Kennesaw, Acworth
+- Lawrenceville, Duluth, Suwanee, Norcross
+- Roswell, Alpharetta, Johns Creek, Milton
+- Stockbridge, McDonough, Conyers, Lithonia
+- Douglasville, Lithia Springs, Austell
+Primary address: 2990 Pine Canyon Dr. SW Unit 11, Atlanta, GA 30331
 
-## Reviews
-- 5.0-star rating with 100+ reviews
-- Platforms: Google, HomeAdvisor, Yelp, Nextdoor
-- HomeAdvisor: 5.0 stars with multiple verified reviews
+## Contact
+Phone: (770) 691-3636
+Email: info@wildliferemovalasap.com
+Website: https://wildliferemovalasap.com
+Booking: https://cal-asap.buildwisemedia.com/asap-pest-wildlife/consultation
 
-## Common Wildlife in Metro Atlanta
-Raccoons, squirrels, bats, snakes, opossums, birds, rats, mice, bees, wasps, armadillos.
+## Hours
+24 hours Monday through Saturday. Closed Sunday. Emergency calls accepted during business hours.
 
-## Seasonal Patterns
-- Spring (Mar-May): Squirrel and raccoon breeding season, bird nesting, snake emergence
-- Summer (Jun-Aug): Bat maternity colonies, wasp/hornet nests, mosquito season
-- Fall (Sep-Nov): Pre-winter nesting, squirrels caching food, rat/mouse intrusion increases
-- Winter (Dec-Feb): Rodent infestations peak, squirrel wire damage, wildlife in chimneys
+## Pricing Summary
+| Service | Price Range |
+|---------|------------|
+| Wildlife Removal | $200-$2,000 |
+| Pest Control | $150-$800 |
+| Exclusion & Sealing | $500-$3,000 |
+| Disinfection & Cleanup | $400-$3,000 |
+| Dead Animal Removal | $150-$500 |
+| Commercial Plans | From $300/month |
 
-## Health Risks Addressed
-- Raccoon roundworm (Baylisascaris) from raccoon droppings
-- Histoplasmosis from bat guano
-- Hantavirus from rodent droppings
-- Leptospirosis from animal urine
-- Parasites and fleas from nesting materials
+All pricing is based on an on-site inspection. Multiple price options are presented to every customer. No hidden fees. Free inspections for most services.
 
-## Pages
-- Home: https://wildliferemovalasap.com/
-- About: https://wildliferemovalasap.com/about.html
-- Services: https://wildliferemovalasap.com/services.html
-- Wildlife Removal: https://wildliferemovalasap.com/services/wildlife-removal.html
-- Pest Control: https://wildliferemovalasap.com/services/pest-control.html
-- Exclusion & Sealing: https://wildliferemovalasap.com/services/exclusion.html
-- Disinfection & Cleanup: https://wildliferemovalasap.com/services/disinfection.html
-- Dead Animal Removal: https://wildliferemovalasap.com/services/dead-animal-removal.html
-- Commercial: https://wildliferemovalasap.com/services/commercial.html
-- How It Works: https://wildliferemovalasap.com/how-it-works.html
-- Results: https://wildliferemovalasap.com/results.html
-- Book Inspection: https://wildliferemovalasap.com/book.html
+## Frequently Asked Questions
+
+### How quickly can you respond?
+We offer same-day and next-day service for most calls. Emergency situations are prioritized. Available 24 hours, Monday through Saturday.
+
+### Are your methods humane?
+Yes. We use live traps and relocate animals according to Georgia DNR guidelines. No poisons are used for wildlife. Eco-friendly options available for pest control.
+
+### Do you offer warranties?
+Yes. All exclusion and sealing work comes with a warranty. Specific warranty terms are outlined in your service agreement before work begins.
+
+### What animals do you handle?
+Raccoons, squirrels, bats, snakes, opossums, birds, rats, mice, armadillos, foxes, roaches, ants, spiders, and more. If it's causing a problem on your property, we can help.
+
+### Do I need to be home during service?
+For the initial inspection, yes. For follow-up trap checks and some treatments, we can work with you on access arrangements.
+
+### Is there a fee for the inspection?
+Most inspections are free. Some specialized assessments (e.g., full attic contamination evaluations) may have a fee, which is applied as a credit toward service if you proceed.
+
+### Do you work with insurance companies?
+We can provide documentation for insurance claims related to wildlife damage. We do not bill insurance directly.
+
+### What areas do you serve?
+We serve Metro Atlanta and surrounding counties. See our full service area list above.
+
+### How do I book?
+Call (770) 691-3636 or book online at https://cal-asap.buildwisemedia.com/asap-pest-wildlife/consultation. Same-day appointments often available.
+
+### What payment methods do you accept?
+Cash, check, and major credit cards. Payment is due upon completion unless otherwise agreed in writing.

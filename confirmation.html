@@ -3,113 +3,169 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>You're Booked! — ASAP Pest &amp; Wildlife</title>
-  <meta name="robots" content="noindex, nofollow">
+  <title>You're Booked! | ASAP Pest & Wildlife</title>
+  <meta name="description" content="Your inspection is booked with ASAP Pest & Wildlife. Here's what to expect next.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://wildliferemovalasap.com/confirmation.html">
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="You're Booked! | ASAP Pest & Wildlife">
+  <meta property="og:description" content="Your inspection is confirmed. Here's what happens next.">
+  <meta property="og:url" content="https://wildliferemovalasap.com/confirmation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ASAP Pest & Wildlife">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD: BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://wildliferemovalasap.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Confirmation", "item": "https://wildliferemovalasap.com/confirmation" }
+      { "@type": "ListItem", "position": 2, "name": "Book Your Free Inspection", "item": "https://wildliferemovalasap.com/book.html" },
+      { "@type": "ListItem", "position": 3, "name": "Confirmed", "item": "https://wildliferemovalasap.com/confirmation.html" }
     ]
   }
-  </script>
-
-  <!-- DataLayer event for conversion tracking -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      'event': 'booking_confirmed',
-      'event_category': 'conversion',
-      'event_label': 'inspection_booking'
-    });
   </script>
 </head>
 <body>
 
-  <header class="site-header header-dark" style="background:rgba(255,255,255,.97);box-shadow:0 2px 20px rgba(0,0,0,.06);">
+  <!-- Header -->
+  <header class="site-header">
     <div class="header-inner">
-      <a href="/" class="logo"><div class="logo-icon">A</div><span class="logo-text" style="color:var(--green);">ASAP Pest &amp; Wildlife</span></a>
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="/services.html" class="nav-link">Services</a>
-        <a href="/how-it-works.html" class="nav-link">How It Works</a>
-        <a href="/results.html" class="nav-link">Results</a>
-        <a href="/about.html" class="nav-link">About</a>
-      </nav>
-      <div class="header-cta">
-        <a href="tel:7706913636" class="header-phone" style="color:var(--green);">(770) 691-3636</a>
-      </div>
-      <button class="mobile-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <a href="/" class="logo">ASAP <span style="font-weight:400;font-size:14px;opacity:0.7">Pest & Wildlife</span></a>
+      <ul class="nav-links">
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/how-it-works.html">How It Works</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/results.html">Results</a></li>
+      </ul>
+      <a href="tel:7706913636" class="header-phone">📞 (770) 691-3636</a>
+      <a href="/book.html" class="header-cta">Book Your Free Inspection</a>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </header>
+  <nav class="mobile-nav">
+    <a href="/services.html">Services</a>
+    <a href="/how-it-works.html">How It Works</a>
+    <a href="/about.html">About</a>
+    <a href="/results.html">Results</a>
+    <div class="mobile-phone"><a href="tel:7706913636">(770) 691-3636</a></div>
+    <a href="/book.html" class="mobile-cta">Book Your Free Inspection</a>
+  </nav>
 
-  <!-- Confirmation -->
-  <section style="padding:180px 0 80px;background:#fff;">
-    <div class="container" style="max-width:700px;text-align:center;">
-      <div style="font-size:64px;margin-bottom:24px;">&#9989;</div>
-      <h1 style="color:var(--green);">You're Booked!</h1>
-      <p style="font-size:20px;color:var(--text);margin-bottom:40px;">Your inspection is confirmed. Here's what happens next.</p>
+  <!-- Confirmation Hero -->
+  <section class="page-hero" style="padding-bottom:48px;">
+    <div class="container">
+      <div style="font-size:72px;margin-bottom:16px;">✅</div>
+      <h1>You're Booked!</h1>
+      <p>Your inspection is confirmed. Here's what happens next.</p>
+    </div>
+  </section>
 
-      <div style="text-align:left;background:var(--white);border-radius:12px;padding:40px;margin-bottom:40px;">
-        <h2 style="font-size:24px;margin-bottom:24px;">What to Expect</h2>
-        <ul style="display:flex;flex-direction:column;gap:20px;">
-          <li style="display:flex;gap:12px;align-items:flex-start;">
-            <span style="color:var(--green);font-weight:700;font-size:18px;flex-shrink:0;">1.</span>
-            <span><strong>Confirmation call or text</strong> — we'll reach out to confirm your appointment time and get a few details about what you're experiencing</span>
-          </li>
-          <li style="display:flex;gap:12px;align-items:flex-start;">
-            <span style="color:var(--green);font-weight:700;font-size:18px;flex-shrink:0;">2.</span>
-            <span><strong>On-site inspection</strong> — a licensed technician will inspect your property to identify the animal, entry points, damage, and health risks</span>
-          </li>
-          <li style="display:flex;gap:12px;align-items:flex-start;">
-            <span style="color:var(--green);font-weight:700;font-size:18px;flex-shrink:0;">3.</span>
-            <span><strong>Your options</strong> — we'll walk you through what we found and give you multiple price options so you choose what fits your budget</span>
-          </li>
-          <li style="display:flex;gap:12px;align-items:flex-start;">
-            <span style="color:var(--green);font-weight:700;font-size:18px;flex-shrink:0;">4.</span>
-            <span><strong>If you proceed</strong> — your inspection fee is credited toward the service, and we start the four-step process right away</span>
-          </li>
-        </ul>
+  <!-- Next Steps -->
+  <section class="section reveal">
+    <div class="container" style="max-width:760px;">
+      <div class="text-center mb-32">
+        <span class="section-label">Next Steps</span>
+        <h2>Before Your Appointment</h2>
       </div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:24px;">
+        <li style="display:flex;align-items:flex-start;gap:16px;font-size:18px;line-height:1.6;">
+          <span style="flex-shrink:0;width:44px;height:44px;background:var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Poppins',sans-serif;font-weight:700;font-size:18px;">1</span>
+          <span><strong>We'll call to confirm your appointment.</strong> Check your phone for a call from our team.</span>
+        </li>
+        <li style="display:flex;align-items:flex-start;gap:16px;font-size:18px;line-height:1.6;">
+          <span style="flex-shrink:0;width:44px;height:44px;background:var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Poppins',sans-serif;font-weight:700;font-size:18px;">2</span>
+          <span><strong>Write down where you've seen signs of animals or pests.</strong> The more detail, the faster we find the problem.</span>
+        </li>
+        <li style="display:flex;align-items:flex-start;gap:16px;font-size:18px;line-height:1.6;">
+          <span style="flex-shrink:0;width:44px;height:44px;background:var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Poppins',sans-serif;font-weight:700;font-size:18px;">3</span>
+          <span><strong>Note any noises — what time, what part of the house.</strong> This helps us zero in on the source.</span>
+        </li>
+        <li style="display:flex;align-items:flex-start;gap:16px;font-size:18px;line-height:1.6;">
+          <span style="flex-shrink:0;width:44px;height:44px;background:var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Poppins',sans-serif;font-weight:700;font-size:18px;">4</span>
+          <span><strong>Our technician will do a full inspection when they arrive.</strong> We check every entry point, top to bottom.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-      <div class="guarantee-box" style="margin-bottom:40px;">
-        <h3>You Made a Good Decision</h3>
-        <p style="color:var(--text-muted);margin:0;">ASAP Pest &amp; Wildlife is licensed by the Georgia DNR, Department of Agriculture, and State of Georgia. We use humane, eco-friendly methods — and we warranty our exclusion work. Your home is in good hands.</p>
+  <!-- Trust Reminder -->
+  <section class="section section-dark reveal">
+    <div class="container" style="max-width:760px;">
+      <div class="text-center">
+        <span class="section-label">The Complete Solution</span>
+        <h2>You Made a Good Call</h2>
+        <p class="section-subtitle mx-auto mt-16" style="font-size:18px;line-height:1.7;">We inspect, trap, seal, and disinfect — the complete solution. Most companies stop at trapping. We finish the job.</p>
       </div>
+    </div>
+  </section>
 
-      <p style="color:var(--text-muted);">Questions before your appointment? Call us anytime.</p>
-      <a href="tel:7706913636" style="display:inline-block;font-family:'Poppins',sans-serif;font-weight:700;font-size:28px;color:var(--green);">(770) 691-3636</a>
+  <!-- Guarantee -->
+  <section class="section reveal">
+    <div class="container text-center" style="max-width:760px;">
+      <div style="font-size:48px;margin-bottom:16px;">🛡️</div>
+      <h2>Backed by Our Warranty</h2>
+      <p class="section-subtitle mx-auto mt-16" style="font-size:18px;line-height:1.7;">Our exclusion work is backed by a warranty. If something gets back in through a sealed entry point, we come back.</p>
+    </div>
+  </section>
+
+  <!-- Emergency Contact -->
+  <section class="section section-amber reveal">
+    <div class="container text-center">
+      <h2>Need to Reach Us Before Your Appointment?</h2>
+      <a href="tel:7706913636" style="font-family:'Poppins',sans-serif;font-size:clamp(28px,5vw,48px);font-weight:700;display:block;color:#fff;margin:16px 0;">(770) 691-3636</a>
+      <p style="font-size:18px;opacity:0.9;">24 hours a day, 6 days a week.</p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="logo" style="margin-bottom:16px;"><div class="logo-icon">A</div><span class="logo-text">ASAP Pest &amp; Wildlife</span></div>
-          <p>Humane, eco-friendly wildlife removal and pest control for Metro Atlanta.</p>
-          <a href="tel:7706913636" class="footer-phone">(770) 691-3636</a>
-          <p class="footer-hours">24 hours Mon–Sat | Closed Sunday</p>
-        </div>
-        <div class="footer-col"><h4>Services</h4><a href="/services/wildlife-removal.html">Wildlife Removal</a><a href="/services/pest-control.html">Pest Control</a><a href="/services/exclusion.html">Exclusion &amp; Sealing</a><a href="/services/disinfection.html">Disinfection &amp; Cleanup</a><a href="/services/dead-animal-removal.html">Dead Animal Removal</a><a href="/services/commercial.html">Commercial</a></div>
-        <div class="footer-col"><h4>Company</h4><a href="/about.html">About Us</a><a href="/how-it-works.html">How It Works</a><a href="/results.html">Results</a><a href="/book.html">Book Inspection</a></div>
-        <div class="footer-col"><h4>Legal</h4><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms of Service</a></div>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo" style="color:#fff;">ASAP <span style="font-weight:400;font-size:14px;opacity:0.7">Pest & Wildlife</span></a>
+        <p>Metro Atlanta's trusted wildlife removal and pest control team. We inspect, trap, seal, and disinfect — the complete solution.</p>
+        <div class="footer-certs">Georgia Dept. of Natural Resources Licensed · Fully Insured · NWCOA Member</div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 ASAP Pest and Wildlife Removal. All rights reserved.</p>
-        <div class="footer-badges"><span>GA DNR Licensed</span><span>Dept. of Agriculture</span><span>State Licensed</span></div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="/services.html">All Services</a>
+        <a href="/services/wildlife-removal.html">Wildlife Removal</a>
+        <a href="/services/pest-control.html">Pest Control</a>
+        <a href="/services/exclusion-repairs.html">Exclusion & Repairs</a>
       </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about.html">About</a>
+        <a href="/how-it-works.html">How It Works</a>
+        <a href="/results.html">Results</a>
+        <a href="/book.html">Book Inspection</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:7706913636">(770) 691-3636</a>
+        <a href="mailto:info@wildliferemovalasap.com">Email Us</a>
+        <p style="font-size:14px;opacity:0.5;margin-top:8px;">Available 24/6</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 ASAP Pest & Wildlife. All rights reserved.</span>
+      <span>Serving Metro Atlanta, GA</span>
     </div>
   </footer>
 
-  <script src="/js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -3,59 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page Not Found — ASAP Pest &amp; Wildlife</title>
+  <title>Page Not Found | ASAP Pest & Wildlife</title>
   <meta name="robots" content="noindex, nofollow">
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 
-  <!-- DataLayer event for 404 tracking -->
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      'event': 'page_not_found',
-      'event_category': 'error',
-      'event_label': window.location.pathname
-    });
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'forest': '#2D6A4F',
+            'forest-dark': '#245A42',
+            'amber': '#E8A317',
+            'amber-dark': '#D09215',
+            'warm-white': '#FAF9F6',
+            'charcoal': '#1B1B1B',
+          },
+          fontFamily: {
+            'heading': ['Poppins', 'sans-serif'],
+            'body': ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
   </script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- GA4 Event Tracking Placeholder -->
+  <!-- gtag('event', '404_error', { page_path: window.location.pathname }); -->
+
+  <!-- Meta Pixel Event Tracking Placeholder -->
+  <!-- fbq('trackCustom', '404Error', { page: window.location.pathname }); -->
 </head>
-<body>
+<body class="bg-warm-white text-charcoal font-body">
 
-  <header class="site-header header-dark" style="background:rgba(255,255,255,.97);box-shadow:0 2px 20px rgba(0,0,0,.06);">
-    <div class="header-inner">
-      <a href="/" class="logo"><div class="logo-icon">A</div><span class="logo-text" style="color:var(--green);">ASAP Pest &amp; Wildlife</span></a>
-      <nav class="nav-links" aria-label="Main navigation"><a href="/services.html" class="nav-link">Services</a><a href="/how-it-works.html" class="nav-link">How It Works</a><a href="/results.html" class="nav-link">Results</a><a href="/about.html" class="nav-link">About</a></nav>
-      <div class="header-cta"><a href="tel:7706913636" class="header-phone" style="color:var(--green);">(770) 691-3636</a><a href="/book.html" class="btn btn-primary">Book Your Free Inspection</a></div>
-      <button class="mobile-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    </div>
-  </header>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo">ASAP <span style="font-weight:400;font-size:14px;opacity:0.7">Pest & Wildlife</span></a>
+    <ul class="nav-links">
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/how-it-works.html">How It Works</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/results.html">Results</a></li>
+    </ul>
+    <a href="tel:7706913636" class="header-phone">📞 (770) 691-3636</a>
+    <a href="/book.html" class="header-cta">Book Your Free Inspection</a>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav">
+  <a href="/services.html">Services</a>
+  <a href="/how-it-works.html">How It Works</a>
+  <a href="/about.html">About</a>
+  <a href="/results.html">Results</a>
+  <div class="mobile-phone"><a href="tel:7706913636">(770) 691-3636</a></div>
+  <a href="/book.html" class="mobile-cta">Book Your Free Inspection</a>
+</nav>
 
-  <section style="padding:200px 0 120px;background:#fff;text-align:center;">
-    <div class="container" style="max-width:600px;">
-      <h1 style="font-size:clamp(80px,12vw,140px);color:var(--green);margin-bottom:16px;line-height:1;">404</h1>
-      <h2 style="margin-bottom:16px;">This Page Went Into Hiding</h2>
-      <p style="color:var(--text-muted);font-size:18px;margin-bottom:40px;">The page you're looking for isn't here. But we're still here — 24 hours a day, 6 days a week.</p>
-      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-        <a href="/" class="btn btn-primary">Back to Home</a>
-        <a href="/book.html" class="btn btn-secondary">Book Your Free Inspection</a>
-      </div>
-      <p style="margin-top:40px;color:var(--text-muted);font-size:15px;">Need help now? Call <a href="tel:7706913636" style="color:var(--green);font-weight:600;">(770) 691-3636</a></p>
-    </div>
-  </section>
+<main class="max-w-2xl mx-auto px-6 py-32 text-center">
+  <p class="text-6xl mb-6">🦝</p>
+  <h1 class="font-heading text-4xl md:text-5xl font-bold text-charcoal mb-4">This Page Has Gone Wild</h1>
+  <p class="text-lg text-gray-600 mb-8">Looks like the page you're looking for has been removed, relocated, or escaped into the attic. Let's get you back on track.</p>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand"><div class="logo" style="margin-bottom:16px;"><div class="logo-icon">A</div><span class="logo-text">ASAP Pest &amp; Wildlife</span></div><p>Humane, eco-friendly wildlife removal and pest control for Metro Atlanta.</p><a href="tel:7706913636" class="footer-phone">(770) 691-3636</a><p class="footer-hours">24 hours Mon–Sat | Closed Sunday</p></div>
-        <div class="footer-col"><h4>Services</h4><a href="/services/wildlife-removal.html">Wildlife Removal</a><a href="/services/pest-control.html">Pest Control</a><a href="/services/exclusion.html">Exclusion &amp; Sealing</a><a href="/services/disinfection.html">Disinfection &amp; Cleanup</a><a href="/services/dead-animal-removal.html">Dead Animal Removal</a><a href="/services/commercial.html">Commercial</a></div>
-        <div class="footer-col"><h4>Company</h4><a href="/about.html">About Us</a><a href="/how-it-works.html">How It Works</a><a href="/results.html">Results</a><a href="/book.html">Book Inspection</a></div>
-        <div class="footer-col"><h4>Legal</h4><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms of Service</a></div>
-      </div>
-      <div class="footer-bottom"><p>&copy; 2026 ASAP Pest and Wildlife Removal. All rights reserved.</p><div class="footer-badges"><span>GA DNR Licensed</span><span>Dept. of Agriculture</span><span>State Licensed</span></div></div>
+  <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+    <a href="/" class="inline-block bg-forest hover:bg-forest-dark text-white font-semibold px-8 py-3 rounded-lg transition">Back to Home</a>
+    <a href="/book.html" class="inline-block bg-amber hover:bg-amber-dark text-charcoal font-semibold px-8 py-3 rounded-lg transition">Book Your Free Inspection</a>
+  </div>
+
+  <p class="text-gray-500">Need help right now? Call <a href="tel:7706913636" class="text-forest font-semibold hover:underline">(770) 691-3636</a> — we're available 24/7, Monday through Saturday.</p>
+</main>
+
+<footer class="bg-charcoal text-white py-10">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+    <p>&copy; 2026 ASAP Pest and Wildlife Removal. All rights reserved.</p>
+    <div class="flex gap-6">
+      <a href="/privacy.html" class="hover:text-white">Privacy Policy</a>
+      <a href="/terms.html" class="hover:text-white">Terms of Service</a>
+      <a href="/about.html" class="hover:text-white">About</a>
+      <a href="tel:7706913636" class="hover:text-white">(770) 691-3636</a>
     </div>
-  </footer>
-  <script src="/js/main.js"></script>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>

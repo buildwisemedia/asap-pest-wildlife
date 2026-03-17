@@ -3,92 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terms of Service — ASAP Pest &amp; Wildlife</title>
-  <meta name="description" content="Terms of service for ASAP Pest and Wildlife Removal.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://wildliferemovalasap.com/terms">
+  <title>Terms of Service | ASAP Pest & Wildlife</title>
+  <meta name="description" content="Terms of Service for ASAP Pest and Wildlife Removal. Read our service agreement, payment terms, and warranty information.">
+  <link rel="canonical" href="https://wildliferemovalasap.com/terms.html">
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'forest': '#2D6A4F',
+            'forest-dark': '#245A42',
+            'amber': '#E8A317',
+            'amber-dark': '#D09215',
+            'warm-white': '#FAF9F6',
+            'charcoal': '#1B1B1B',
+          },
+          fontFamily: {
+            'heading': ['Poppins', 'sans-serif'],
+            'body': ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="bg-warm-white text-charcoal font-body">
 
-  <header class="site-header header-dark" style="background:rgba(255,255,255,.97);box-shadow:0 2px 20px rgba(0,0,0,.06);">
-    <div class="header-inner">
-      <a href="/" class="logo"><div class="logo-icon">A</div><span class="logo-text" style="color:var(--green);">ASAP Pest &amp; Wildlife</span></a>
-      <nav class="nav-links" aria-label="Main navigation"><a href="/services.html" class="nav-link">Services</a><a href="/how-it-works.html" class="nav-link">How It Works</a><a href="/results.html" class="nav-link">Results</a><a href="/about.html" class="nav-link">About</a></nav>
-      <div class="header-cta"><a href="tel:7706913636" class="header-phone" style="color:var(--green);">(770) 691-3636</a><a href="/book.html" class="btn btn-primary">Book Your Free Inspection</a></div>
-      <button class="mobile-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo">ASAP <span style="font-weight:400;font-size:14px;opacity:0.7">Pest & Wildlife</span></a>
+    <ul class="nav-links">
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/how-it-works.html">How It Works</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/results.html">Results</a></li>
+    </ul>
+    <a href="tel:7706913636" class="header-phone">📞 (770) 691-3636</a>
+    <a href="/book.html" class="header-cta">Book Your Free Inspection</a>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav">
+  <a href="/services.html">Services</a>
+  <a href="/how-it-works.html">How It Works</a>
+  <a href="/about.html">About</a>
+  <a href="/results.html">Results</a>
+  <div class="mobile-phone"><a href="tel:7706913636">(770) 691-3636</a></div>
+  <a href="/book.html" class="mobile-cta">Book Your Free Inspection</a>
+</nav>
+
+<main class="max-w-3xl mx-auto px-6 py-20">
+  <h1 class="font-heading text-3xl md:text-4xl font-bold text-charcoal mb-4">Terms of Service</h1>
+  <p class="text-sm text-gray-500 mb-10">Last updated: March 2026</p>
+
+  <p class="mb-6">These Terms of Service ("Terms") govern your use of the website wildliferemovalasap.com and the services provided by ASAP Pest and Wildlife Removal ("we," "us," or "our"). By using our website or hiring us for services, you agree to these Terms.</p>
+
+  <h2 class="font-heading text-xl font-semibold mt-10 mb-3">Agreement to Terms</h2>
+  <p class="mb-6">By accessing our website or booking our services, you confirm that you are at least 18 years old and agree to be bound by these Terms. If you do not agree, please do not use our website or services.</p>
+
+  <h2 class="font-heading text-xl font-semibold mt-10 mb-3">Services</h2>
+  <p class="mb-4">ASAP Pest and Wildlife Removal provides pest control, wildlife removal, exclusion, disinfection, and related services to residential and commercial properties in the Metro Atlanta area. Our services include but are not limited to:</p>
+  <ul class="list-disc pl-6 mb-6 space-y-2">
+    <li>Wildlife trapping and humane relocation</li>
+    <li>Pest control and extermination</li>
+    <li>Entry point exclusion and sealing</li>
+    <li>Attic and crawl space disinfection and cleanup</li>
+    <li>Dead animal removal and sanitization</li>
+    <li>Commercial pest and wildlife management</li>
+  </ul>
+  <p class="mb-6">All services are performed by licensed professionals in compliance with Georgia Department of Natural Resources and Georgia Department of Agriculture regulations. Service scope and pricing are determined after an on-site inspection.</p>
+
+  <h2 class="font-heading text-xl font-semibold mt-10 mb-3">Payment Terms</h2>
+  <ul class="list-disc pl-6 mb-6 space-y-2">
+    <li>A free initial inspection is provided for most services.</li>
+    <li>After inspection, you will receive a written estimate with pricing options.</li>
+    <li>Payment is due upon completion of service unless otherwise agreed in writing.</li>
+    <li>We accept cash, check, and major credit cards.</li>
+    <li>Past-due accounts may be subject to collection fees and interest as permitted by Georgia law.</li>
+  </ul>
+
+  <h2 class="font-heading text-xl font-semibold mt-10 mb-3">Warranty</h2>
+  <p class="mb-6">Exclusion and sealing work is backed by a warranty as specified in your service agreement. Warranty terms vary by project and are outlined in writing before work begins. Warranty coverage applies only to entry points sealed by ASAP Pest and Wildlife Removal and does not cover new entry points created after service completion.</p>
+
+  <h2 class="font-heading text-xl font-semibold mt-10 mb-3">Limitation of Liability</h2>
+  <p class="mb-4">To the fullest extent permitted by Georgia law:</p>
+  <ul class="list-disc pl-6 mb-6 space-y-2">
+    <li>ASAP Pest and Wildlife Removal is not liable for indirect, incidental, or consequential damages arising from our services.</li>
+    <li>Our total liability for any claim related to our services shall not exceed the amount you paid for the specific service in question.</li>
+    <li>We are not responsible for pre-existing damage to your property discovered during inspection or service.</li>
+    <li>Wildlife behavior is unpredictable. While we use proven methods, we cannot guarantee that animals will not return to your property after exclusion work is completed.</li>
+  </ul>
+
+  <h2 class="font-heading text-xl font-semibold mt-10 mb-3">Governing Law</h2>
+  <p class="mb-6">These Terms are governed by the laws of the State of Georgia. Any disputes arising from these Terms or our services shall be resolved in the courts of Fulton County, Georgia.</p>
+
+  <h2 class="font-heading text-xl font-semibold mt-10 mb-3">Contact Us</h2>
+  <p class="mb-2">If you have questions about these Terms, contact us at:</p>
+  <ul class="list-none mb-6 space-y-1">
+    <li><strong>ASAP Pest and Wildlife Removal</strong></li>
+    <li>2990 Pine Canyon Dr. SW Unit 11, Atlanta, GA 30331</li>
+    <li>Phone: <a href="tel:7706913636" class="text-forest hover:underline">(770) 691-3636</a></li>
+    <li>Email: <a href="mailto:info@wildliferemovalasap.com" class="text-forest hover:underline">info@wildliferemovalasap.com</a></li>
+  </ul>
+</main>
+
+<footer class="bg-charcoal text-white py-10">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+    <p>&copy; 2026 ASAP Pest and Wildlife Removal. All rights reserved.</p>
+    <div class="flex gap-6">
+      <a href="/privacy.html" class="hover:text-white">Privacy Policy</a>
+      <a href="/terms.html" class="hover:text-white">Terms of Service</a>
+      <a href="/about.html" class="hover:text-white">About</a>
+      <a href="tel:7706913636" class="hover:text-white">(770) 691-3636</a>
     </div>
-  </header>
+  </div>
+</footer>
 
-  <section class="hero hero-interior" style="min-height:auto;padding:160px 0 60px;">
-    <div class="container"><div class="hero-content" style="max-width:700px;"><h1>Terms of Service</h1><p class="hero-sub">Last updated: March 2026</p></div></div>
-  </section>
-
-  <section style="background:#fff;padding:60px 0 100px;">
-    <div class="container legal-content">
-
-      <h2>Agreement to Terms</h2>
-      <p>By accessing or using the website wildliferemovalasap.com, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our website.</p>
-
-      <h2>Services</h2>
-      <p>ASAP Pest and Wildlife Removal provides pest control and wildlife removal services in the Metro Atlanta area. All services are subject to availability and scheduling. Service scope, pricing, and terms are determined during on-site inspection and documented in a service agreement before work begins.</p>
-
-      <h2>Inspections and Pricing</h2>
-      <p>Initial inspections may carry a fee that is credited toward your service if you choose to proceed. All pricing is provided after on-site inspection and assessment. We provide multiple price options for repair and exclusion work. Quotes are valid for 30 days unless otherwise stated.</p>
-
-      <h2>Scheduling and Cancellation</h2>
-      <p>Appointments can be scheduled through our website calendar or by calling (770) 691-3636. We ask for at least 24 hours notice for cancellations or rescheduling. Emergency services are available 24 hours a day, Monday through Saturday.</p>
-
-      <h2>Warranty</h2>
-      <p>Exclusion work performed by ASAP Pest and Wildlife includes a warranty. If an animal re-enters your property through a sealed entry point during the warranty period, we will return and address the issue. Warranty terms are specified in your service agreement. The warranty does not cover new entry points, damage from storms or construction, or failure to follow maintenance recommendations.</p>
-
-      <h2>Service Relationship</h2>
-      <p>Our services are provided month-to-month with no long-term lock-in. You are not obligated to continue services beyond the scope of each individual service agreement.</p>
-
-      <h2>Licensing</h2>
-      <p>ASAP Pest and Wildlife Removal is licensed by the Georgia Department of Natural Resources, the Georgia Department of Agriculture, and the State of Georgia. All work is performed in compliance with applicable Georgia wildlife and pest control regulations.</p>
-
-      <h2>Limitation of Liability</h2>
-      <p>To the extent permitted by law, ASAP Pest and Wildlife Removal shall not be liable for indirect, incidental, special, or consequential damages arising from the use of our services or website. Our total liability shall not exceed the amount paid for the specific service in question.</p>
-
-      <h2>Website Use</h2>
-      <p>The content on this website is provided for informational purposes. While we strive for accuracy, we do not guarantee that all information is current or complete. Wildlife behavior, regulations, and pricing may change.</p>
-
-      <h2>Intellectual Property</h2>
-      <p>All content on this website — including text, images, logos, and design — is the property of ASAP Pest and Wildlife Removal and may not be reproduced without permission.</p>
-
-      <h2>Governing Law</h2>
-      <p>These terms are governed by the laws of the State of Georgia. Any disputes arising from these terms or our services shall be resolved in the courts of Fulton County, Georgia.</p>
-
-      <h2>Changes to These Terms</h2>
-      <p>We may update these terms from time to time. The updated version will be indicated by the "Last updated" date at the top of this page. Continued use of the website constitutes acceptance of the updated terms.</p>
-
-      <h2>Contact Us</h2>
-      <p>Questions about these terms? Contact us:</p>
-      <ul>
-        <li>Email: info@wildliferemovalasap.com</li>
-        <li>Phone: (770) 691-3636</li>
-        <li>Address: 2990 Pine Canyon Dr. SW Unit 11, Atlanta, GA 30331</li>
-      </ul>
-
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand"><div class="logo" style="margin-bottom:16px;"><div class="logo-icon">A</div><span class="logo-text">ASAP Pest &amp; Wildlife</span></div><p>Humane, eco-friendly wildlife removal and pest control for Metro Atlanta.</p><a href="tel:7706913636" class="footer-phone">(770) 691-3636</a><p class="footer-hours">24 hours Mon–Sat | Closed Sunday</p></div>
-        <div class="footer-col"><h4>Services</h4><a href="/services/wildlife-removal.html">Wildlife Removal</a><a href="/services/pest-control.html">Pest Control</a><a href="/services/exclusion.html">Exclusion &amp; Sealing</a><a href="/services/disinfection.html">Disinfection &amp; Cleanup</a><a href="/services/dead-animal-removal.html">Dead Animal Removal</a><a href="/services/commercial.html">Commercial</a></div>
-        <div class="footer-col"><h4>Company</h4><a href="/about.html">About Us</a><a href="/how-it-works.html">How It Works</a><a href="/results.html">Results</a><a href="/book.html">Book Inspection</a></div>
-        <div class="footer-col"><h4>Legal</h4><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms of Service</a></div>
-      </div>
-      <div class="footer-bottom"><p>&copy; 2026 ASAP Pest and Wildlife Removal. All rights reserved.</p><div class="footer-badges"><span>GA DNR Licensed</span><span>Dept. of Agriculture</span><span>State Licensed</span></div></div>
-    </div>
-  </footer>
-  <script src="/js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

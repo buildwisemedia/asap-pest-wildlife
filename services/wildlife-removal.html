@@ -3,178 +3,322 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wildlife Removal — Humane Raccoon, Squirrel, Bat, Snake Removal | ASAP Pest &amp; Wildlife</title>
-  <meta name="description" content="Humane wildlife removal in Metro Atlanta. Raccoons, squirrels, bats, snakes, opossums, birds — removed safely. Licensed by Georgia DNR. 24/6 emergency service. (770) 691-3636.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://wildliferemovalasap.com/services/wildlife-removal">
-
-  <meta property="og:title" content="Wildlife Removal — ASAP Pest & Wildlife">
-  <meta property="og:description" content="Humane wildlife removal in Metro Atlanta. Raccoons, squirrels, bats, snakes, opossums. Licensed. 24/6.">
+  <title>Wildlife Removal | ASAP Pest & Wildlife</title>
+  <meta name="description" content="Humane wildlife removal for Metro Atlanta. Raccoons, squirrels, bats, snakes, opossums, and birds. Licensed by Georgia DNR. Call (770) 691-3636.">
+  <link rel="canonical" href="https://asappestwildlife.com/services/wildlife-removal.html">
+  <meta property="og:title" content="Wildlife Removal | ASAP Pest & Wildlife">
+  <meta property="og:description" content="Humane wildlife removal for Metro Atlanta. Licensed by Georgia DNR. Raccoons, squirrels, bats, snakes, opossums, birds.">
   <meta property="og:type" content="website">
-
+  <meta property="og:url" content="https://asappestwildlife.com/services/wildlife-removal.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            green: '#2D6A4F',
+            amber: '#E8A317',
+            white: '#FAF9F6',
+            charcoal: '#1B1B1B'
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/css/style.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Wildlife Removal",
-    "provider": { "@type": "LocalBusiness", "name": "ASAP Pest and Wildlife Removal" },
-    "description": "Humane trapping and removal of raccoons, squirrels, bats, snakes, opossums, birds, and more in Metro Atlanta.",
-    "areaServed": "Metro Atlanta, GA",
-    "offers": {
-      "@type": "Offer",
-      "priceSpecification": { "@type": "PriceSpecification", "minPrice": "200", "maxPrice": "600", "priceCurrency": "USD" }
+    "serviceType": "Wildlife Removal",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "ASAP Pest & Wildlife",
+      "telephone": "(770) 691-3636"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Metro Atlanta, Georgia"
+    },
+    "description": "Humane wildlife removal for raccoons, squirrels, bats, snakes, opossums, and birds in Metro Atlanta. Licensed by Georgia DNR."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Offer",
+    "name": "Wildlife Removal Service",
+    "priceRange": "$200 - $2000",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "seller": {
+      "@type": "LocalBusiness",
+      "name": "ASAP Pest & Wildlife"
     }
   }
   </script>
   <script type="application/ld+json">
-  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://wildliferemovalasap.com/" },
-    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://wildliferemovalasap.com/services" },
-    { "@type": "ListItem", "position": 3, "name": "Wildlife Removal", "item": "https://wildliferemovalasap.com/services/wildlife-removal" }
-  ]}
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://asappestwildlife.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://asappestwildlife.com/services.html"},
+      {"@type": "ListItem", "position": 3, "name": "Wildlife Removal", "item": "https://asappestwildlife.com/services/wildlife-removal.html"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does wildlife removal cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wildlife removal typically costs between $200 and $2,000 depending on the species, number of animals, and scope of work. Every job starts with a free inspection so we can give you an accurate quote."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does wildlife removal take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most wildlife removal jobs take 3 to 7 days. Some situations like bat colonies may take longer due to state regulations. We monitor traps regularly and keep you updated throughout the process."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What species do you remove?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We remove raccoons, squirrels, bats, snakes, opossums, birds, and other nuisance wildlife common to Metro Atlanta. We are licensed by Georgia DNR to handle all protected species."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are your methods humane?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We use humane live traps and follow all Georgia DNR guidelines. Animals are safely relocated to approved areas away from residential neighborhoods."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer a warranty on wildlife removal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. When you combine removal with our exclusion service, we warranty the sealed entry points. If animals get back in through our work, we come back at no charge."
+        }
+      }
+    ]
+  }
   </script>
 </head>
-<body>
+<body class="bg-white text-charcoal font-body">
 
-  <header class="site-header header-dark" style="background:rgba(255,255,255,.97);box-shadow:0 2px 20px rgba(0,0,0,.06);">
+  <header class="site-header">
     <div class="header-inner">
-      <a href="/" class="logo"><div class="logo-icon">A</div><span class="logo-text" style="color:var(--green);">ASAP Pest &amp; Wildlife</span></a>
-      <nav class="nav-links" aria-label="Main navigation"><a href="/services.html" class="nav-link">Services</a><a href="/how-it-works.html" class="nav-link">How It Works</a><a href="/results.html" class="nav-link">Results</a><a href="/about.html" class="nav-link">About</a></nav>
-      <div class="header-cta"><a href="tel:7706913636" class="header-phone" style="color:var(--green);">(770) 691-3636</a><a href="/book.html" class="btn btn-primary">Book Your Free Inspection</a></div>
-      <button class="mobile-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <a href="/" class="logo">ASAP <span style="font-weight:400;font-size:14px;opacity:0.7">Pest & Wildlife</span></a>
+      <ul class="nav-links">
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/how-it-works.html">How It Works</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/results.html">Results</a></li>
+      </ul>
+      <a href="tel:7706913636" class="header-phone">📞 (770) 691-3636</a>
+      <a href="/book.html" class="header-cta">Book Your Free Inspection</a>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </header>
+  <nav class="mobile-nav">
+    <a href="/services.html">Services</a>
+    <a href="/how-it-works.html">How It Works</a>
+    <a href="/about.html">About</a>
+    <a href="/results.html">Results</a>
+    <div class="mobile-phone"><a href="tel:7706913636">(770) 691-3636</a></div>
+    <a href="/book.html" class="mobile-cta">Book Your Free Inspection</a>
+  </nav>
 
-  <section class="hero hero-interior">
-    <div class="container">
-      <div class="hero-content" style="max-width:700px;">
-        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/services.html">Services</a> <span>/</span> <span>Wildlife Removal</span></nav>
-        <h1>Humane Wildlife Removal That Solves the Whole Problem</h1>
-        <p class="hero-sub">Raccoons, squirrels, bats, snakes, opossums, and birds — removed safely from your home using methods approved by the Georgia DNR. No poisons. No cruelty.</p>
-      </div>
+  <!-- Hero -->
+  <section class="bg-green text-white py-20 px-6 text-center">
+    <div class="max-w-4xl mx-auto reveal">
+      <h1 class="font-heading text-4xl md:text-5xl font-bold mb-4">Humane Wildlife Removal for Metro Atlanta</h1>
+      <p class="text-lg md:text-xl opacity-90">Safe, humane removal of raccoons, squirrels, bats, snakes, opossums, and birds. Licensed by Georgia DNR.</p>
     </div>
   </section>
 
   <!-- Problem -->
-  <section style="background:#fff;" class="reveal">
-    <div class="container">
-      <div class="service-detail-grid">
-        <div>
-          <p class="section-label">The Problem</p>
-          <h2>Wildlife in Your Home Is More Than a Nuisance</h2>
-          <p>Animals in your attic chew wires, tear insulation, and leave droppings that carry health risks like raccoon roundworm, bat histoplasmosis, and rodent-borne hantavirus. Every day they're in your home, the damage gets worse and the cleanup costs more.</p>
-          <p>And if someone trapped the animals without sealing the entry points — they're coming back. A pair of squirrels in spring becomes a family of 8 by summer. Rats multiply even faster.</p>
-        </div>
-        <div style="background:rgba(232,163,23,.08);border-radius:12px;padding:40px;">
-          <h3 style="color:var(--text);margin-bottom:16px;">Common species we remove:</h3>
-          <ul style="display:flex;flex-direction:column;gap:12px;">
-            <li style="display:flex;gap:10px;align-items:center;"><span style="font-size:20px;">&#129421;</span> Raccoons</li>
-            <li style="display:flex;gap:10px;align-items:center;"><span style="font-size:20px;">&#128063;</span> Squirrels</li>
-            <li style="display:flex;gap:10px;align-items:center;"><span style="font-size:20px;">&#129415;</span> Bats</li>
-            <li style="display:flex;gap:10px;align-items:center;"><span style="font-size:20px;">&#128013;</span> Snakes</li>
-            <li style="display:flex;gap:10px;align-items:center;"><span style="font-size:20px;">&#128056;</span> Opossums</li>
-            <li style="display:flex;gap:10px;align-items:center;"><span style="font-size:20px;">&#128038;</span> Birds</li>
-            <li style="display:flex;gap:10px;align-items:center;"><span style="font-size:20px;">&#128001;</span> Rats &amp; Mice</li>
-          </ul>
-        </div>
-      </div>
+  <section class="py-20 px-6">
+    <div class="max-w-3xl mx-auto reveal">
+      <h2 class="font-heading text-3xl font-bold text-charcoal mb-6">You Hear Scratching at 2 AM</h2>
+      <p class="text-lg text-gray-600 mb-4">Something is living in your attic. You can hear it running above you at night. Maybe you see droppings in the garage. Maybe something chewed through your soffit.</p>
+      <p class="text-lg text-gray-600 mb-4">You called another company. They set a trap, caught one animal, and left. But they never sealed the holes. A week later, the noises came back. Now you're right where you started — except you already spent $300.</p>
+      <p class="text-lg text-gray-600">If this sounds familiar, you need a company that handles the whole problem — not just the animal you can see.</p>
     </div>
   </section>
 
   <!-- Process -->
-  <section class="section-dark reveal">
-    <div class="container" style="text-align:center;">
-      <p class="section-label" style="color:var(--amber);">Our Process</p>
-      <h2>How We Handle Wildlife Removal</h2>
-      <div class="process-steps" style="margin-top:48px;">
-        <div class="process-step reveal reveal-delay-1"><div class="step-number">01</div><div class="step-icon">&#128269;</div><h3>Inspect</h3><p>Identify the animal, every entry point, and any damage or health risks.</p></div>
-        <div class="process-step reveal reveal-delay-2"><div class="step-number">02</div><div class="step-icon">&#129668;</div><h3>Trap</h3><p>Humane traps positioned based on movement patterns. Monitored until resolved.</p></div>
-        <div class="process-step reveal reveal-delay-3"><div class="step-number">03</div><div class="step-icon">&#128737;</div><h3>Exclude</h3><p>Seal every entry point so nothing gets back in. Warranty-backed.</p></div>
-        <div class="process-step reveal reveal-delay-4"><div class="step-number">04</div><div class="step-icon">&#10024;</div><h3>Disinfect</h3><p>Clean and disinfect affected areas to remove health hazards.</p></div>
+  <section class="bg-gray-50 py-20 px-6">
+    <div class="max-w-4xl mx-auto reveal">
+      <h2 class="font-heading text-3xl font-bold text-green mb-10 text-center">How We Handle Wildlife Removal</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-[#FAF9F6] p-8 rounded-xl border border-gray-200">
+          <div class="text-amber font-heading font-bold text-2xl mb-2">Step 1</div>
+          <h3 class="font-heading font-bold text-lg mb-2">Identify the Species</h3>
+          <p class="text-gray-600">We inspect your property top to bottom. We look at droppings, entry points, damage patterns, and tracks. This tells us exactly what we're dealing with.</p>
+        </div>
+        <div class="bg-[#FAF9F6] p-8 rounded-xl border border-gray-200">
+          <div class="text-amber font-heading font-bold text-2xl mb-2">Step 2</div>
+          <h3 class="font-heading font-bold text-lg mb-2">Set Humane Traps</h3>
+          <p class="text-gray-600">We place species-specific live traps in strategic locations. No poison. No glue boards. Just safe, humane trapping that follows Georgia DNR rules.</p>
+        </div>
+        <div class="bg-[#FAF9F6] p-8 rounded-xl border border-gray-200">
+          <div class="text-amber font-heading font-bold text-2xl mb-2">Step 3</div>
+          <h3 class="font-heading font-bold text-lg mb-2">Monitor Regularly</h3>
+          <p class="text-gray-600">We check traps on a set schedule. We don't leave animals sitting for days. Regular monitoring means faster results and less stress on the animal.</p>
+        </div>
+        <div class="bg-[#FAF9F6] p-8 rounded-xl border border-gray-200">
+          <div class="text-amber font-heading font-bold text-2xl mb-2">Step 4</div>
+          <h3 class="font-heading font-bold text-lg mb-2">Remove and Relocate</h3>
+          <p class="text-gray-600">Captured animals are safely relocated to approved areas away from your neighborhood. We follow all state and local guidelines for relocation.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Proof -->
-  <section style="background:#fff;" class="reveal">
-    <div class="container">
-      <div style="text-align:center;margin-bottom:48px;">
-        <p class="section-label">What Clients Say</p>
-        <h2>Wildlife Removal Reviews</h2>
+  <section class="py-20 px-6">
+    <div class="max-w-3xl mx-auto reveal">
+      <h2 class="font-heading text-3xl font-bold text-charcoal mb-10 text-center">What Our Customers Say</h2>
+      <div class="space-y-8">
+        <blockquote class="bg-gray-50 p-8 rounded-xl border-l-4 border-amber">
+          <p class="text-gray-700 text-lg mb-4">"We had raccoons in our attic for months. Two other companies tried and failed. ASAP came out, trapped all of them, sealed every hole, and we haven't heard a sound since."</p>
+          <footer class="text-sm text-gray-500 font-semibold">— Sarah M., Marietta</footer>
+        </blockquote>
+        <blockquote class="bg-gray-50 p-8 rounded-xl border-l-4 border-amber">
+          <p class="text-gray-700 text-lg mb-4">"Fast, professional, and they actually explained everything. The tech showed me photos of the entry points before sealing them. First company that's ever done that."</p>
+          <footer class="text-sm text-gray-500 font-semibold">— David R., Roswell</footer>
+        </blockquote>
       </div>
-      <div class="grid-3">
-        <div class="testimonial-card reveal reveal-delay-1">
-          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="testimonial-text">"Ray was friendly, knowledgeable, helpful, and fixed the problem: found a bat in our basement and humanely removed it."</p>
-          <p class="testimonial-author">Verified Client</p>
-          <p class="testimonial-context">Bat Removal</p>
-        </div>
-        <div class="testimonial-card reveal reveal-delay-2">
-          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="testimonial-text">"Nehemiah was very responsive, professional, with focus on customer service. Job well done."</p>
-          <p class="testimonial-author">Verified Client</p>
-          <p class="testimonial-context">Wildlife Removal</p>
-        </div>
-        <div class="testimonial-card reveal reveal-delay-3">
-          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="testimonial-text">"Went above and beyond to protect my roofline after rats. Cleaned, disinfected and placed a cage over a vent."</p>
-          <p class="testimonial-author">Verified Client</p>
-          <p class="testimonial-context">Rat Removal &amp; Exclusion</p>
-        </div>
-      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="bg-gray-50 py-20 px-6">
+    <div class="max-w-3xl mx-auto text-center reveal">
+      <h2 class="font-heading text-3xl font-bold text-green mb-6">Pricing</h2>
+      <p class="text-lg text-gray-600 mb-4">Pricing depends on the scope of work. We give you options — good, better, and best — so you pick what fits your budget.</p>
+      <p class="text-lg text-gray-600">Every job starts with an inspection.</p>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section style="background:var(--white);" class="reveal">
-    <div class="container" style="max-width:800px;">
-      <div style="text-align:center;margin-bottom:48px;"><p class="section-label">Questions</p><h2>Wildlife Removal FAQ</h2></div>
-      <div class="faq-item"><button class="faq-question">How quickly can you respond to a wildlife emergency?</button><div class="faq-answer"><div class="faq-answer-inner"><p>We're available 24 hours a day, Monday through Saturday. For emergencies — an animal in your living space, aggressive wildlife near your family — we prioritize same-day response. Call us at (770) 691-3636 and we'll tell you what to do right now while we're on the way.</p></div></div></div>
-      <div class="faq-item"><button class="faq-question">Is wildlife removal legal in Georgia?</button><div class="faq-answer"><div class="faq-answer-inner"><p>Yes, when done by a licensed operator. We're licensed by the Georgia DNR, Department of Agriculture, and State of Georgia. Some species like certain bats have seasonal restrictions on exclusion (May through August). We know the regulations and follow them.</p></div></div></div>
-      <div class="faq-item"><button class="faq-question">Will the animals come back after you remove them?</button><div class="faq-answer"><div class="faq-answer-inner"><p>Not if the entry points are sealed — which is exactly what our exclusion step does. Most companies skip this step. We seal every entry point and weak spot, and we warranty the work. If an animal gets back in through our sealing, we come back.</p></div></div></div>
-      <div class="faq-item"><button class="faq-question">What does wildlife removal cost?</button><div class="faq-answer"><div class="faq-answer-inner"><p>Pricing depends on the animal, the scope of the infestation, and whether exclusion and disinfection are needed. Every job starts with an inspection, and we give you multiple price options. Your inspection fee is credited toward the service if you proceed.</p></div></div></div>
+  <section class="py-20 px-6">
+    <div class="max-w-3xl mx-auto reveal">
+      <h2 class="font-heading text-3xl font-bold text-charcoal mb-10 text-center">Frequently Asked Questions</h2>
+      <div class="space-y-6">
+        <details class="bg-gray-50 rounded-xl p-6 group" open>
+          <summary class="font-heading font-bold text-lg cursor-pointer list-none flex justify-between items-center">
+            How much does wildlife removal cost?
+            <span class="text-amber text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="mt-4 text-gray-600">Wildlife removal typically costs between $200 and $2,000 depending on the species, number of animals, and scope of work. Every job starts with a free inspection so we can give you an accurate quote.</p>
+        </details>
+        <details class="bg-gray-50 rounded-xl p-6 group">
+          <summary class="font-heading font-bold text-lg cursor-pointer list-none flex justify-between items-center">
+            How long does wildlife removal take?
+            <span class="text-amber text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="mt-4 text-gray-600">Most wildlife removal jobs take 3 to 7 days. Some situations like bat colonies may take longer due to state regulations. We monitor traps regularly and keep you updated throughout the process.</p>
+        </details>
+        <details class="bg-gray-50 rounded-xl p-6 group">
+          <summary class="font-heading font-bold text-lg cursor-pointer list-none flex justify-between items-center">
+            What species do you remove?
+            <span class="text-amber text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="mt-4 text-gray-600">We remove raccoons, squirrels, bats, snakes, opossums, birds, and other nuisance wildlife common to Metro Atlanta. We are licensed by Georgia DNR to handle all protected species.</p>
+        </details>
+        <details class="bg-gray-50 rounded-xl p-6 group">
+          <summary class="font-heading font-bold text-lg cursor-pointer list-none flex justify-between items-center">
+            Are your methods humane?
+            <span class="text-amber text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="mt-4 text-gray-600">Yes. We use humane live traps and follow all Georgia DNR guidelines. Animals are safely relocated to approved areas away from residential neighborhoods.</p>
+        </details>
+        <details class="bg-gray-50 rounded-xl p-6 group">
+          <summary class="font-heading font-bold text-lg cursor-pointer list-none flex justify-between items-center">
+            Do you offer a warranty on wildlife removal?
+            <span class="text-amber text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="mt-4 text-gray-600">Yes. When you combine removal with our exclusion service, we warranty the sealed entry points. If animals get back in through our work, we come back at no charge.</p>
+        </details>
+      </div>
     </div>
   </section>
-
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-  { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-    { "@type": "Question", "name": "How quickly can you respond to a wildlife emergency?", "acceptedAnswer": { "@type": "Answer", "text": "We're available 24 hours a day, Monday through Saturday. For emergencies, we prioritize same-day response. Call (770) 691-3636." }},
-    { "@type": "Question", "name": "Is wildlife removal legal in Georgia?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, when done by a licensed operator. We're licensed by the Georgia DNR, Department of Agriculture, and State of Georgia." }},
-    { "@type": "Question", "name": "Will the animals come back after you remove them?", "acceptedAnswer": { "@type": "Answer", "text": "Not if the entry points are sealed. Our exclusion step seals every entry point, backed by our warranty." }},
-    { "@type": "Question", "name": "What does wildlife removal cost?", "acceptedAnswer": { "@type": "Answer", "text": "Pricing depends on the animal and scope. Every job starts with an inspection, and we give you multiple price options." }}
-  ]}
-  </script>
 
   <!-- CTA -->
-  <section class="section-amber reveal">
-    <div class="container">
-      <h2>Wildlife in Your Home? Don't Wait.</h2>
-      <p style="font-size:20px;max-width:560px;margin:16px auto 32px;">Every day you wait, the damage gets worse. Book your free inspection now.</p>
-      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-        <a href="/book.html" class="btn btn-primary">Book Your Free Inspection</a>
-        <a href="tel:7706913636" class="btn" style="background:transparent;border:2px solid var(--charcoal);color:var(--charcoal);">(770) 691-3636</a>
+  <section class="bg-green text-white py-20 px-6">
+    <div class="max-w-3xl mx-auto text-center reveal">
+      <h2 class="font-heading text-3xl font-bold mb-4">Ready to Get Rid of Wildlife for Good?</h2>
+      <p class="text-lg opacity-90 mb-8">Schedule your free inspection today. We'll find the problem and give you a plan.</p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/book.html" class="bg-amber text-white font-heading font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Book Your Free Inspection</a>
+        <a href="tel:7706913636" class="text-white font-semibold text-lg hover:underline">📞 (770) 691-3636</a>
       </div>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand"><div class="logo" style="margin-bottom:16px;"><div class="logo-icon">A</div><span class="logo-text">ASAP Pest &amp; Wildlife</span></div><p>Humane, eco-friendly wildlife removal and pest control for Metro Atlanta.</p><a href="tel:7706913636" class="footer-phone">(770) 691-3636</a><p class="footer-hours">24 hours Mon–Sat | Closed Sunday</p></div>
-        <div class="footer-col"><h4>Services</h4><a href="/services/wildlife-removal.html">Wildlife Removal</a><a href="/services/pest-control.html">Pest Control</a><a href="/services/exclusion.html">Exclusion &amp; Sealing</a><a href="/services/disinfection.html">Disinfection &amp; Cleanup</a><a href="/services/dead-animal-removal.html">Dead Animal Removal</a><a href="/services/commercial.html">Commercial</a></div>
-        <div class="footer-col"><h4>Company</h4><a href="/about.html">About Us</a><a href="/how-it-works.html">How It Works</a><a href="/results.html">Results</a><a href="/book.html">Book Inspection</a></div>
-        <div class="footer-col"><h4>Legal</h4><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms of Service</a></div>
+  <!-- Footer -->
+  <footer class="bg-charcoal text-gray-300 py-16 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-10">
+      <div>
+        <h3 class="font-heading text-xl font-bold text-white mb-4">ASAP Pest & Wildlife</h3>
+        <p class="text-sm mb-3">Metro Atlanta's trusted pest and wildlife experts. Fast response, humane methods, real results.</p>
+        <a href="tel:7706913636" class="text-amber font-semibold hover:underline">(770) 691-3636</a>
       </div>
-      <div class="footer-bottom"><p>&copy; 2026 ASAP Pest and Wildlife Removal. All rights reserved.</p><div class="footer-badges"><span>GA DNR Licensed</span><span>Dept. of Agriculture</span><span>State Licensed</span></div></div>
+      <div>
+        <h4 class="font-heading font-bold text-white mb-4">Services</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/services/wildlife-removal.html" class="hover:text-amber transition">Wildlife Removal</a></li>
+          <li><a href="/services/pest-control.html" class="hover:text-amber transition">Pest Control</a></li>
+          <li><a href="/services/exclusion.html" class="hover:text-amber transition">Exclusion & Sealing</a></li>
+          <li><a href="/services/disinfection.html" class="hover:text-amber transition">Disinfection & Cleanup</a></li>
+          <li><a href="/services/dead-animal-removal.html" class="hover:text-amber transition">Dead Animal Removal</a></li>
+          <li><a href="/services/commercial.html" class="hover:text-amber transition">Commercial Services</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-heading font-bold text-white mb-4">Company</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/about.html" class="hover:text-amber transition">About Us</a></li>
+          <li><a href="/how-it-works.html" class="hover:text-amber transition">How It Works</a></li>
+          <li><a href="/results.html" class="hover:text-amber transition">Results</a></li>
+          <li><a href="/book.html" class="hover:text-amber transition">Book Inspection</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-heading font-bold text-white mb-4">Contact</h4>
+        <p class="text-sm mb-2">Metro Atlanta, Georgia</p>
+        <p class="text-sm mb-2"><a href="tel:7706913636" class="hover:text-amber transition">(770) 691-3636</a></p>
+        <p class="text-sm mb-4"><a href="/book.html" class="hover:text-amber transition">Book Your Free Inspection</a></p>
+        <p class="text-xs text-gray-500 leading-relaxed">Licensed by Georgia DNR · Department of Agriculture · State of Georgia</p>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-gray-700 text-center text-xs text-gray-500">
+      <p>&copy; 2026 ASAP Pest & Wildlife. All rights reserved.</p>
     </div>
   </footer>
-  <div class="mobile-sticky-cta"><a href="tel:7706913636">&#128222; Call (770) 691-3636 — Available 24/6</a></div>
+
   <script src="/js/main.js"></script>
 </body>
 </html>
