@@ -119,6 +119,21 @@
           });
           observer.observe(calEl, { childList: true, subtree: true });
         }
+
+        // Send booking data to BWM CRM on successful Cal.com booking
+        document.addEventListener("Cal:bookingSuccessful", function(e) {
+          fetch("https://bwm-form-handler.robert-ba0.workers.dev/booking", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              client_slug: "asap-pest-wildlife",
+              name: e.detail.booking.attendees?.[0]?.name || "",
+              email: e.detail.booking.attendees?.[0]?.email || "",
+              event_type: "consultation",
+              booking_source: "cal_embed"
+            })
+          }).catch(() => {});
+        });
       </script>
     </div>
   </section>
