@@ -8,15 +8,25 @@ import site from '../data/site.json';
   description="Meet the ASAP Pest and Wildlife Removal team. Family-run, Georgia-licensed, and committed to humane wildlife removal in Metro Atlanta."
 >
 
-  {/* Hero */}
+  {/* Hero with real photo */}
   <section class="bg-forest relative overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-br from-forest to-dark/80 opacity-90"></div>
     <div class="relative max-w-container mx-auto px-4 sm:px-6 py-16 md:py-24">
-      <div class="max-w-3xl">
-        <h1 class="text-4xl md:text-5xl font-display font-bold text-white mb-4">About ASAP</h1>
-        <p class="text-lg text-white/80 max-w-2xl">
-          A family-run team built on trust, training, and doing the job right the first time.
-        </p>
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <div class="lg:w-[60%]">
+          <h1 class="text-4xl md:text-5xl font-display font-bold text-white mb-4">About ASAP</h1>
+          <p class="text-lg text-white/80 max-w-2xl">
+            A family-run team built on trust, training, and doing the job right the first time.
+          </p>
+        </div>
+        <div class="lg:w-[40%]">
+          <img
+            src="/assets/images/photos/asap-technician-truck-hero.jpg"
+            alt="Nehemiah from ASAP Pest and Wildlife Removal with the company truck"
+            class="rounded-2xl shadow-2xl w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
       </div>
     </div>
   </section>
@@ -54,11 +64,20 @@ import site from '../data/site.json';
         </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-        {site.team.map(member => (
+        {site.team.map((member, i) => (
           <div class="bg-white rounded-xl p-8 text-center border border-border">
-            <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-forest/10 flex items-center justify-center">
-              <span class="text-2xl font-display font-bold text-forest">{member.name.charAt(0)}</span>
-            </div>
+            {i === 1 ? (
+              <img
+                src="/assets/images/photos/asap-technician-about.jpg"
+                alt={`${member.name} - ${member.role}`}
+                class="w-20 h-20 mx-auto mb-4 rounded-full object-cover"
+                loading="lazy"
+              />
+            ) : (
+              <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-forest/10 flex items-center justify-center">
+                <span class="text-2xl font-display font-bold text-forest">{member.name.charAt(0)}</span>
+              </div>
+            )}
             <h3 class="text-xl font-display font-bold text-charcoal mb-1">{member.name}</h3>
             <p class="text-gray text-sm">{member.role}</p>
           </div>
@@ -85,6 +104,44 @@ import site from '../data/site.json';
             <p class="text-gray text-sm leading-relaxed">{value.description}</p>
           </div>
         ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Real Work Gallery */}
+  <section class="py-16 md:py-20 bg-light">
+    <div class="max-w-container mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-display font-bold text-charcoal mb-4">Our Work in the Field</h2>
+        <p class="text-gray text-lg max-w-2xl mx-auto">
+          Real photos from real jobs. Humane trapping and safe wildlife removal across Metro Atlanta.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="rounded-xl overflow-hidden shadow-md">
+          <img
+            src="/assets/images/photos/slider-1.png"
+            alt="Raccoon safely captured in a humane live trap by ASAP"
+            class="w-full h-64 object-cover"
+            loading="lazy"
+          />
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-md">
+          <img
+            src="/assets/images/photos/slider-2.png"
+            alt="Opossum safely captured in a humane cage trap by ASAP"
+            class="w-full h-64 object-cover"
+            loading="lazy"
+          />
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-md">
+          <img
+            src="/assets/images/photos/slider-3.png"
+            alt="Snake safely identified and removed by ASAP wildlife team"
+            class="w-full h-64 object-cover"
+            loading="lazy"
+          />
+        </div>
       </div>
     </div>
   </section>
