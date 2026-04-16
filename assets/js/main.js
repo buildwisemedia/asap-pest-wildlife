@@ -1,5 +1,10 @@
-// Mobile Menu Toggle
+// ASAP Pest & Wildlife — Main JS (v4.1 Visual Rework)
+
 document.addEventListener('DOMContentLoaded', function() {
+
+  // ============================================
+  // Mobile Menu Toggle
+  // ============================================
   const menuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
   const menuIcon = document.getElementById('menu-icon');
@@ -16,7 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // ============================================
   // Contact Form Handler
+  // ============================================
   const form = document.getElementById('contact-form');
   if (form) {
     form.addEventListener('submit', async function(e) {
@@ -25,11 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
       const errorEl = document.getElementById('form-error');
       const submitBtn = form.querySelector('button[type="submit"]');
 
-      // Hide previous messages
       successEl.classList.add('hidden');
       errorEl.classList.add('hidden');
-
-      // Disable button
       submitBtn.disabled = true;
       submitBtn.textContent = 'Submitting...';
 
@@ -57,4 +61,97 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+
+  // ============================================
+  // FAQ Accordion (About page)
+  // ============================================
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(function(item) {
+    const trigger = item.querySelector('.faq-trigger');
+    if (trigger) {
+      trigger.addEventListener('click', function() {
+        // Close all other items
+        faqItems.forEach(function(other) {
+          if (other !== item) other.classList.remove('open');
+        });
+        // Toggle current
+        item.classList.toggle('open');
+      });
+    }
+  });
+
+  // ============================================
+  // Photo Gallery Slider (About page)
+  // ============================================
+  const sliderTrack = document.getElementById('about-slider');
+  const sliderDots = document.querySelectorAll('.slider-dot');
+  let currentSlide = 0;
+
+  if (sliderTrack && sliderDots.length > 0) {
+    function goToSlide(index) {
+      currentSlide = index;
+      sliderTrack.style.transform = 'translateX(-' + (index * 100) + '%)';
+      sliderDots.forEach(function(dot, i) {
+        dot.classList.toggle('active', i === index);
+      });
+    }
+
+    sliderDots.forEach(function(dot) {
+      dot.addEventListener('click', function() {
+        goToSlide(parseInt(dot.dataset.slide));
+      });
+    });
+
+    // Auto-advance every 5s
+    setInterval(function() {
+      var next = (currentSlide + 1) % sliderDots.length;
+      goToSlide(next);
+    }, 5000);
+  }
+
+  // ============================================
+  // Lightbox (Wildlife page photo gallery)
+  // ============================================
+  var lightboxOverlay = document.getElementById('lightbox-overlay');
+  var lightboxImg = document.getElementById('lightbox-img');
+  var lightboxTriggers = document.querySelectorAll('[data-lightbox]');
+
+  if (lightboxOverlay && lightboxImg && lightboxTriggers.length > 0) {
+    lightboxTriggers.forEach(function(trigger) {
+      trigger.addEventListener('click', function() {
+        lightboxImg.src = trigger.dataset.lightbox;
+        lightboxOverlay.classList.add('active');
+      });
+    });
+
+    lightboxOverlay.addEventListener('click', function(e) {
+      if (e.target === lightboxOverlay || e.target.id === 'lightbox-close') {
+        lightboxOverlay.classList.remove('active');
+        lightboxImg.src = '';
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && lightboxOverlay.classList.contains('active')) {
+        lightboxOverlay.classList.remove('active');
+        lightboxImg.src = '';
+      }
+    });
+  }
+
+  // ============================================
+  // "Other" type field toggle (form)
+  // ============================================
+  var issueSelect = document.getElementById('issue');
+  var otherField = document.getElementById('other-type-wrapper');
+  if (issueSelect && otherField) {
+    issueSelect.addEventListener('change', function() {
+      if (issueSelect.value === 'Other') {
+        otherField.classList.remove('hidden');
+      } else {
+        otherField.classList.add('hidden');
+      }
+    });
+  }
+
 });
