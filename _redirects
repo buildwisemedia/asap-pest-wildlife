@@ -1,0 +1,6 @@
+# Cloudflare Pages redirects
+# Redirect www to non-www
+# https://www.removeasap.com/* https://removeasap.com/:splat 301
+
+# Legacy path redirects (if any)
+/home /  301
