@@ -3,6 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Performance hints (VDR §14) -->
+  <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preload" as="image" href="/assets/images/backgrounds/home-hero-bg.svg" type="image/svg+xml" fetchpriority="high">
+  <link rel="preload" as="image" href="/assets/images/logos/logo-orange.png" type="image/png" fetchpriority="high">
+
   <title>ASAP Pest & Wildlife Removal | Atlanta Wildlife & Pest Control</title>
   <meta name="description" content="ASAP Pest & Wildlife Removal provides expert wildlife removal and pest control services in Metro Atlanta. Giving peace of mind one person at a time. Call (770) 691-3636.">
   <link rel="canonical" href="https://removeasap.com/">
@@ -84,6 +92,35 @@
     }
   }
   </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Wildlife Removal and Pest Control",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "ASAP Pest & Wildlife Removal",
+      "telephone": "(770) 691-3636",
+      "url": "https://removeasap.com"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Atlanta",
+      "containedInPlace": { "@type": "State", "name": "Georgia" }
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "ASAP Pest & Wildlife Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wildlife Removal", "url": "https://removeasap.com/wildlife/" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pest Control", "url": "https://removeasap.com/pest-control-services/" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Services", "url": "https://removeasap.com/commercial-services/" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warranty Assurance", "url": "https://removeasap.com/warranty-assurance/" } }
+      ]
+    }
+  }
+  </script>
 </head>
 <body class="bg-cream text-dark-text font-sans">
   <!-- GTM noscript -->
@@ -94,11 +131,11 @@
     <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap justify-between items-center">
       <div class="flex items-center gap-4 flex-wrap">
         <a href="tel:7706913636" class="flex items-center gap-1 hover:text-orange transition-colors">
-          <img src="/assets/images/icons/speechbubble.svg" alt="" class="w-4 h-4 invert">
+          <img src="/assets/images/icons/speechbubble.svg" alt="" width="37" height="44" class="w-4 h-4 invert">
           <span class="uppercase tracking-wider text-xs font-bold">Call now: 770-691-3636</span>
         </a>
         <a href="mailto:info@wildliferemovalasap.com?subject=ASAP%20wildlife%20removal" class="flex items-center gap-1 hover:text-orange transition-colors">
-          <img src="/assets/images/icons/email.svg" alt="" class="w-4 h-4 invert">
+          <img src="/assets/images/icons/email.svg" alt="" width="37" height="37" class="w-4 h-4 invert">
           <span class="uppercase tracking-wider text-xs font-bold">Or Email us for quote</span>
         </a>
       </div>
@@ -111,7 +148,7 @@
       <div class="flex items-center justify-between h-20">
         <!-- Logo -->
         <a href="/" class="flex-shrink-0">
-          <img src="/assets/images/logos/logo-orange.png" alt="ASAP Pest & Wildlife Removal - Home" class="h-16 w-auto">
+          <img src="/assets/images/logos/logo-orange.png" alt="ASAP Pest & Wildlife Removal - Home" width="2550" height="1754" class="h-16 w-auto">
         </a>
 
         <!-- Desktop Navigation -->
@@ -153,14 +190,14 @@
     <section class="bg-cream relative overflow-hidden py-16 md:py-24 lg:py-32">
       <!-- Background SVG pattern — prominent, matching the live site's organic leaf texture -->
       <div class="absolute inset-0 opacity-50">
-        <img src="/assets/images/backgrounds/home-hero-bg.svg" alt="" class="w-full h-full object-cover">
+        <img src="/assets/images/backgrounds/home-hero-bg.svg" alt="" width="2624" height="2544" class="w-full h-full object-cover">
       </div>
 
       <!-- Scattered animal illustrations -->
-      <img src="/assets/images/animals/raccoon.png" alt="" class="hidden md:block absolute top-8 right-[10%] w-40 lg:w-52 opacity-90 z-10" loading="lazy">
-      <img src="/assets/images/animals/bat.svg" alt="" class="hidden md:block absolute top-4 right-[35%] w-24 lg:w-32 opacity-80 z-10" loading="lazy">
-      <img src="/assets/images/animals/groundhog.png" alt="" class="hidden md:block absolute bottom-8 left-[5%] w-36 lg:w-44 opacity-90 z-10" loading="lazy">
-      <img src="/assets/images/animals/armadillo.png" alt="" class="hidden md:block absolute bottom-12 left-[20%] w-32 lg:w-40 opacity-90 z-10" loading="lazy">
+      <img src="/assets/images/animals/raccoon.png" width="778" height="580" alt="" class="hidden md:block absolute top-8 right-[10%] w-40 lg:w-52 opacity-90 z-10" loading="lazy">
+      <img src="/assets/images/animals/bat.svg" width="805" height="688" alt="" class="hidden md:block absolute top-4 right-[35%] w-24 lg:w-32 opacity-80 z-10" loading="lazy">
+      <img src="/assets/images/animals/groundhog.png" width="428" height="829" alt="" class="hidden md:block absolute bottom-8 left-[5%] w-36 lg:w-44 opacity-90 z-10" loading="lazy">
+      <img src="/assets/images/animals/armadillo.png" width="1278" height="408" alt="" class="hidden md:block absolute bottom-12 left-[20%] w-32 lg:w-40 opacity-90 z-10" loading="lazy">
 
       <div class="max-w-7xl mx-auto px-4 relative z-20">
         <h1 class="font-heading font-black leading-[0.9]">
@@ -187,33 +224,33 @@
     <section class="bg-cream py-16 md:py-24 relative overflow-hidden">
       <!-- Continuing background pattern from hero -->
       <div class="absolute inset-0 opacity-40">
-        <img src="/assets/images/backgrounds/home-hero-bg.svg" alt="" class="w-full h-full object-cover" style="transform: scaleX(-1);">
+        <img src="/assets/images/backgrounds/home-hero-bg.svg" width="2624" height="2544" alt="" class="w-full h-full object-cover" style="transform: scaleX(-1);">
       </div>
       <div class="max-w-7xl mx-auto px-4 relative z-10">
         <p class="text-navy uppercase tracking-[0.2em] font-bold text-sm mb-6">We Remove &amp; Exclude</p>
         <div class="space-y-0">
           <a href="/peace-of-mind-from/rodents/" class="group flex items-center gap-4 md:gap-8">
             <span class="font-heading font-black text-navy text-5xl md:text-7xl lg:text-[7rem] uppercase leading-[1.1] tracking-[0.02em] group-hover:text-orange transition-colors">RODENTS</span>
-            <img src="/assets/images/animals/rat-navy.png" alt="Rodent removal" class="hidden md:block w-20 lg:w-28 opacity-80" loading="lazy">
+            <img src="/assets/images/animals/rat-navy.png" width="1333" height="961" alt="Rodent removal" class="hidden md:block w-20 lg:w-28 opacity-80" loading="lazy">
           </a>
           <a href="/wildlife/gray-squirrel/" class="group flex items-center gap-4 md:gap-8">
             <span class="font-heading font-black text-navy text-5xl md:text-7xl lg:text-[7rem] uppercase leading-[1.1] tracking-[0.02em] group-hover:text-orange transition-colors">SQUIRRELS</span>
-            <img src="/assets/images/animals/squirrel.webp" alt="Squirrel removal" class="hidden md:block w-20 lg:w-28 opacity-80" loading="lazy">
+            <img src="/assets/images/animals/squirrel.webp" width="2865" height="3250" alt="Squirrel removal" class="hidden md:block w-20 lg:w-28 opacity-80" loading="lazy">
           </a>
           <div class="py-2">
-            <img src="/assets/images/icons/ampersand.svg" alt="" class="w-12 h-12 md:w-16 md:h-16 opacity-60">
+            <img src="/assets/images/icons/ampersand.svg" width="177" height="182" alt="" class="w-12 h-12 md:w-16 md:h-16 opacity-60">
           </div>
           <a href="/peace-of-mind-from/bees-wasps-and-hornets/" class="group flex items-center gap-4 md:gap-8">
             <span class="font-heading font-black text-navy text-5xl md:text-7xl lg:text-[7rem] uppercase leading-[1.1] tracking-[0.02em] group-hover:text-orange transition-colors">BEES</span>
-            <img src="/assets/images/animals/bee.png" alt="Bee removal" class="hidden md:block w-20 lg:w-28 opacity-80" loading="lazy">
+            <img src="/assets/images/animals/bee.png" width="1013" height="1370" alt="Bee removal" class="hidden md:block w-20 lg:w-28 opacity-80" loading="lazy">
           </a>
           <a href="/pest-control-services/" class="group flex items-center gap-4 md:gap-8">
             <span class="font-heading font-black text-navy text-5xl md:text-7xl lg:text-[7rem] uppercase leading-[1.1] tracking-[0.02em] group-hover:text-orange transition-colors">BUGS</span>
-            <img src="/assets/images/animals/ant.webp" alt="Bug extermination" class="hidden md:block w-20 lg:w-28 opacity-80" loading="lazy">
+            <img src="/assets/images/animals/ant.webp" width="3508" height="2481" alt="Bug extermination" class="hidden md:block w-20 lg:w-28 opacity-80" loading="lazy">
           </a>
           <a href="/wildlife/" class="group flex items-center gap-4 md:gap-8">
             <span class="font-heading font-black text-navy text-5xl md:text-7xl lg:text-[7rem] uppercase leading-[1.1] tracking-[0.02em] group-hover:text-orange transition-colors">MORE</span>
-            <img src="/assets/images/animals/andmore.png" alt="More services" class="hidden md:block w-20 lg:w-28 opacity-80" loading="lazy">
+            <img src="/assets/images/animals/andmore.png" width="1422" height="1453" alt="More services" class="hidden md:block w-20 lg:w-28 opacity-80" loading="lazy">
           </a>
         </div>
       </div>
@@ -222,7 +259,7 @@
     <!-- Wildlife Carousel — thin bordered cards with hover navy overlay -->
     <section class="bg-cream py-16 relative overflow-hidden">
       <div class="absolute inset-0 opacity-30">
-        <img src="/assets/images/backgrounds/home-mission-bg.svg" alt="" class="w-full h-full object-cover">
+        <img src="/assets/images/backgrounds/home-mission-bg.svg" width="1920" height="1214" alt="" class="w-full h-full object-cover">
       </div>
       <div class="max-w-7xl mx-auto px-4 relative z-10">
         <p class="text-navy uppercase tracking-[0.2em] font-bold text-sm mb-8">Wildlife</p>
@@ -230,7 +267,7 @@
           <!-- Armadillo -->
           <a href="/wildlife/armadillo/" class="wildlife-card group relative overflow-hidden rounded-2xl border border-navy/20">
             <div class="bg-cream p-8 flex flex-col items-center text-center min-h-[320px]">
-              <img src="/assets/images/wildlife-grid/armadillo.png" alt="Armadillo" class="w-48 h-48 object-contain mb-4" loading="lazy">
+              <img src="/assets/images/wildlife-grid/armadillo.png" width="2047" height="653" alt="Armadillo" class="w-48 h-48 object-contain mb-4" loading="lazy">
               <h3 class="font-heading font-black text-navy text-xl uppercase tracking-[0.1em]">Armadillo</h3>
             </div>
             <div class="wildlife-card-overlay absolute inset-0 bg-navy/90 flex items-center justify-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -243,7 +280,7 @@
           <!-- Bat -->
           <a href="/wildlife/bats/" class="wildlife-card group relative overflow-hidden rounded-2xl border border-navy/20">
             <div class="bg-cream p-8 flex flex-col items-center text-center min-h-[320px]">
-              <img src="/assets/images/wildlife-grid/bat.png" alt="Bat" class="w-48 h-48 object-contain mb-4" loading="lazy">
+              <img src="/assets/images/wildlife-grid/bat.png" width="1021" height="676" alt="Bat" class="w-48 h-48 object-contain mb-4" loading="lazy">
               <h3 class="font-heading font-black text-navy text-xl uppercase tracking-[0.1em]">Bat</h3>
             </div>
             <div class="wildlife-card-overlay absolute inset-0 bg-navy/90 flex items-center justify-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -256,7 +293,7 @@
           <!-- Beaver -->
           <a href="/wildlife/beaver/" class="wildlife-card group relative overflow-hidden rounded-2xl border border-navy/20">
             <div class="bg-cream p-8 flex flex-col items-center text-center min-h-[320px]">
-              <img src="/assets/images/wildlife-grid/beaver.png" alt="Beaver" class="w-48 h-48 object-contain mb-4" loading="lazy">
+              <img src="/assets/images/wildlife-grid/beaver.png" width="1149" height="496" alt="Beaver" class="w-48 h-48 object-contain mb-4" loading="lazy">
               <h3 class="font-heading font-black text-navy text-xl uppercase tracking-[0.1em]">Beaver</h3>
             </div>
             <div class="wildlife-card-overlay absolute inset-0 bg-navy/90 flex items-center justify-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -269,7 +306,7 @@
           <!-- Coyote -->
           <a href="/wildlife/coyote/" class="wildlife-card group relative overflow-hidden rounded-2xl border border-navy/20">
             <div class="bg-cream p-8 flex flex-col items-center text-center min-h-[320px]">
-              <img src="/assets/images/wildlife-grid/coyote.png" alt="Coyote" class="w-48 h-48 object-contain mb-4" loading="lazy">
+              <img src="/assets/images/wildlife-grid/coyote.png" width="468" height="926" alt="Coyote" class="w-48 h-48 object-contain mb-4" loading="lazy">
               <h3 class="font-heading font-black text-navy text-xl uppercase tracking-[0.1em]">Coyote</h3>
             </div>
             <div class="wildlife-card-overlay absolute inset-0 bg-navy/90 flex items-center justify-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -282,7 +319,7 @@
           <!-- Raccoon -->
           <a href="/wildlife/raccoon/" class="wildlife-card group relative overflow-hidden rounded-2xl border border-navy/20">
             <div class="bg-cream p-8 flex flex-col items-center text-center min-h-[320px]">
-              <img src="/assets/images/wildlife-grid/raccoon.png" alt="Raccoon" class="w-48 h-48 object-contain mb-4" loading="lazy">
+              <img src="/assets/images/wildlife-grid/raccoon.png" width="778" height="580" alt="Raccoon" class="w-48 h-48 object-contain mb-4" loading="lazy">
               <h3 class="font-heading font-black text-navy text-xl uppercase tracking-[0.1em]">Raccoon</h3>
             </div>
             <div class="wildlife-card-overlay absolute inset-0 bg-navy/90 flex items-center justify-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -295,7 +332,7 @@
           <!-- Snake -->
           <a href="/wildlife/snake/" class="wildlife-card group relative overflow-hidden rounded-2xl border border-navy/20">
             <div class="bg-cream p-8 flex flex-col items-center text-center min-h-[320px]">
-              <img src="/assets/images/wildlife-grid/snake.png" alt="Snake" class="w-48 h-48 object-contain mb-4" loading="lazy">
+              <img src="/assets/images/wildlife-grid/snake.png" width="526" height="894" alt="Snake" class="w-48 h-48 object-contain mb-4" loading="lazy">
               <h3 class="font-heading font-black text-navy text-xl uppercase tracking-[0.1em]">Snake</h3>
             </div>
             <div class="wildlife-card-overlay absolute inset-0 bg-navy/90 flex items-center justify-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -319,74 +356,74 @@
         <div class="flex flex-wrap items-center gap-4 mb-10">
           <p class="text-cream uppercase tracking-[0.2em] font-bold text-sm">Customer Reviews</p>
           <div class="flex items-center gap-2">
-            <img src="/assets/images/icons/5-stars.svg" alt="5 star rating" class="h-5">
+            <img src="/assets/images/icons/5-stars.svg" width="200" height="29" alt="5 star rating" class="h-5">
             <span class="text-cream text-sm">5-star Rating on Google</span>
           </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Review 1: Mark Carroll -->
           <div class="bg-navy border border-cream/20 rounded-lg p-6">
-            <img src="/assets/images/icons/quotes.svg" alt="" class="w-8 h-8 mb-4 opacity-60">
-            <img src="/assets/images/icons/5-stars.svg" alt="5 stars" class="h-4 mb-4">
+            <img src="/assets/images/icons/quotes.svg" width="119" height="111" alt="" class="w-8 h-8 mb-4 opacity-60">
+            <img src="/assets/images/icons/5-stars.svg" width="200" height="29" alt="5 stars" class="h-4 mb-4">
             <p class="text-cream font-bold uppercase tracking-wider text-sm mb-1">"Amazing!"</p>
             <p class="text-cream/70 text-sm leading-relaxed mb-4">The service was excellent! Arrived on time. Gave me a detailed overview of the problem and rodents that invaded the house. Gave me 3 different price options for repair and installed the first phase immediately. Wish I've known them sooner but I will refer ASAP to all my neighbors, friends, and family!</p>
             <div class="flex items-center gap-3">
-              <img src="/assets/images/reviews/mark.png" alt="Mark Carroll" class="w-10 h-10 rounded-full object-cover">
+              <img src="/assets/images/reviews/mark.png" width="309" height="315" alt="Mark Carroll" class="w-10 h-10 rounded-full object-cover">
               <span class="text-cream text-sm font-bold">Mark Carroll</span>
             </div>
           </div>
           <!-- Review 2: Kelsey Monaghan -->
           <div class="bg-navy border border-cream/20 rounded-lg p-6">
-            <img src="/assets/images/icons/quotes.svg" alt="" class="w-8 h-8 mb-4 opacity-60">
-            <img src="/assets/images/icons/5-stars.svg" alt="5 stars" class="h-4 mb-4">
+            <img src="/assets/images/icons/quotes.svg" width="119" height="111" alt="" class="w-8 h-8 mb-4 opacity-60">
+            <img src="/assets/images/icons/5-stars.svg" width="200" height="29" alt="5 stars" class="h-4 mb-4">
             <p class="text-cream font-bold uppercase tracking-wider text-sm mb-1">"Outstanding"</p>
             <p class="text-cream/70 text-sm leading-relaxed mb-4">If you have ANY concerns with unwanted animals in/around your home, do yourself a favor and call Chaz! He has taken care of two separate issues at my house and both jobs were completed quickly &amp; thoroughly. Chaz is very professional and is wonderful to work with!</p>
             <div class="flex items-center gap-3">
-              <img src="/assets/images/reviews/kelsey.png" alt="Kelsey Monaghan" class="w-10 h-10 rounded-full object-cover">
+              <img src="/assets/images/reviews/kelsey.png" width="309" height="315" alt="Kelsey Monaghan" class="w-10 h-10 rounded-full object-cover">
               <span class="text-cream text-sm font-bold">Kelsey Monaghan</span>
             </div>
           </div>
           <!-- Review 3: Fred Perry -->
           <div class="bg-navy border border-cream/20 rounded-lg p-6">
-            <img src="/assets/images/icons/quotes.svg" alt="" class="w-8 h-8 mb-4 opacity-60">
-            <img src="/assets/images/icons/5-stars.svg" alt="5 stars" class="h-4 mb-4">
+            <img src="/assets/images/icons/quotes.svg" width="119" height="111" alt="" class="w-8 h-8 mb-4 opacity-60">
+            <img src="/assets/images/icons/5-stars.svg" width="200" height="29" alt="5 stars" class="h-4 mb-4">
             <p class="text-cream font-bold uppercase tracking-wider text-sm mb-1">"Great guys!"</p>
             <p class="text-cream/70 text-sm leading-relaxed mb-4">ASAP is an excellent service provider with a team of highly skilled and professional technicians. I'd highly recommend.</p>
             <div class="flex items-center gap-3">
-              <img src="/assets/images/reviews/fred.png" alt="Fred Perry" class="w-10 h-10 rounded-full object-cover">
+              <img src="/assets/images/reviews/fred.png" width="309" height="315" alt="Fred Perry" class="w-10 h-10 rounded-full object-cover">
               <span class="text-cream text-sm font-bold">Fred Perry</span>
             </div>
           </div>
           <!-- Review 4: Charlie Cichetti -->
           <div class="bg-navy border border-cream/20 rounded-lg p-6">
-            <img src="/assets/images/icons/quotes.svg" alt="" class="w-8 h-8 mb-4 opacity-60">
-            <img src="/assets/images/icons/5-stars.svg" alt="5 stars" class="h-4 mb-4">
+            <img src="/assets/images/icons/quotes.svg" width="119" height="111" alt="" class="w-8 h-8 mb-4 opacity-60">
+            <img src="/assets/images/icons/5-stars.svg" width="200" height="29" alt="5 stars" class="h-4 mb-4">
             <p class="text-cream font-bold uppercase tracking-wider text-sm mb-1">"Great guys!"</p>
             <p class="text-cream/70 text-sm leading-relaxed mb-4">No more squirrels getting into my attic, thanks ASAP!</p>
             <div class="flex items-center gap-3">
-              <img src="/assets/images/reviews/charlie.png" alt="Charlie Cichetti" class="w-10 h-10 rounded-full object-cover">
+              <img src="/assets/images/reviews/charlie.png" width="306" height="306" alt="Charlie Cichetti" class="w-10 h-10 rounded-full object-cover">
               <span class="text-cream text-sm font-bold">Charlie Cichetti</span>
             </div>
           </div>
           <!-- Review 5: Yashica Marshall -->
           <div class="bg-navy border border-cream/20 rounded-lg p-6">
-            <img src="/assets/images/icons/quotes.svg" alt="" class="w-8 h-8 mb-4 opacity-60">
-            <img src="/assets/images/icons/5-stars.svg" alt="5 stars" class="h-4 mb-4">
+            <img src="/assets/images/icons/quotes.svg" width="119" height="111" alt="" class="w-8 h-8 mb-4 opacity-60">
+            <img src="/assets/images/icons/5-stars.svg" width="200" height="29" alt="5 stars" class="h-4 mb-4">
             <p class="text-cream font-bold uppercase tracking-wider text-sm mb-1">"Outstanding"</p>
             <p class="text-cream/70 text-sm leading-relaxed mb-4">They are extremely professional and respectful of your home &amp; property.</p>
             <div class="flex items-center gap-3">
-              <img src="/assets/images/reviews/yashica.png" alt="Yashica Marshall" class="w-10 h-10 rounded-full object-cover">
+              <img src="/assets/images/reviews/yashica.png" width="306" height="306" alt="Yashica Marshall" class="w-10 h-10 rounded-full object-cover">
               <span class="text-cream text-sm font-bold">Yashica Marshall</span>
             </div>
           </div>
           <!-- Review 6: Benjamin Olmstead -->
           <div class="bg-navy border border-cream/20 rounded-lg p-6">
-            <img src="/assets/images/icons/quotes.svg" alt="" class="w-8 h-8 mb-4 opacity-60">
-            <img src="/assets/images/icons/5-stars.svg" alt="5 stars" class="h-4 mb-4">
+            <img src="/assets/images/icons/quotes.svg" width="119" height="111" alt="" class="w-8 h-8 mb-4 opacity-60">
+            <img src="/assets/images/icons/5-stars.svg" width="200" height="29" alt="5 stars" class="h-4 mb-4">
             <p class="text-cream font-bold uppercase tracking-wider text-sm mb-1">"Great!"</p>
             <p class="text-cream/70 text-sm leading-relaxed mb-4">Went above and beyond to make sure they protected my roofline after rats.</p>
             <div class="flex items-center gap-3">
-              <img src="/assets/images/reviews/benjamin.png" alt="Benjamin Olmstead" class="w-10 h-10 rounded-full object-cover">
+              <img src="/assets/images/reviews/benjamin.png" width="306" height="306" alt="Benjamin Olmstead" class="w-10 h-10 rounded-full object-cover">
               <span class="text-cream text-sm font-bold">Benjamin Olmstead</span>
             </div>
           </div>
@@ -400,7 +437,7 @@
     <!-- Mission Section — with background SVG -->
     <section class="bg-cream py-16 md:py-24 relative overflow-hidden">
       <div class="absolute inset-0 opacity-40">
-        <img src="/assets/images/backgrounds/home-mission-bg.svg" alt="" class="w-full h-full object-cover">
+        <img src="/assets/images/backgrounds/home-mission-bg.svg" width="1920" height="1214" alt="" class="w-full h-full object-cover">
       </div>
       <div class="max-w-4xl mx-auto px-4 relative z-10">
         <p class="text-outlined-orange font-heading font-black text-3xl md:text-5xl uppercase tracking-[0.1em] mb-2">Peaceful Mission.</p>
@@ -424,15 +461,15 @@
       <div class="max-w-7xl mx-auto px-4">
         <h3 class="font-heading font-bold text-navy text-lg uppercase tracking-[0.1em] text-center mb-8">Check out our client and partner companies!</h3>
         <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-          <img src="/assets/images/partners/tps.svg" alt="TPS" class="h-12 w-auto object-contain" loading="lazy">
-          <img src="/assets/images/partners/ksm.svg" alt="KSM" class="h-12 w-auto object-contain" loading="lazy">
-          <img src="/assets/images/partners/cw.svg" alt="C&W" class="h-12 w-auto object-contain" loading="lazy">
-          <img src="/assets/images/partners/gfl.svg" alt="GFL" class="h-12 w-auto object-contain" loading="lazy">
-          <img src="/assets/images/partners/ccm.svg" alt="CCM" class="h-12 w-auto object-contain" loading="lazy">
-          <img src="/assets/images/partners/nmsdc-2024.png" alt="NMSDC Certified 2024" class="h-12 w-auto object-contain" loading="lazy">
-          <img src="/assets/images/partners/chick-fil-a.png" alt="Chick-fil-A" class="h-12 w-auto object-contain" loading="lazy">
-          <img src="/assets/images/partners/bank-of-america.png" alt="Bank of America" class="h-12 w-auto object-contain" loading="lazy">
-          <img src="/assets/images/partners/partner-misc.png" alt="Partner" class="h-12 w-auto object-contain" loading="lazy">
+          <img src="/assets/images/partners/tps.svg" width="236" height="152" alt="TPS" class="h-12 w-auto object-contain" loading="lazy">
+          <img src="/assets/images/partners/ksm.svg" width="148" height="225" alt="KSM" class="h-12 w-auto object-contain" loading="lazy">
+          <img src="/assets/images/partners/cw.svg" width="242" height="51" alt="C&W" class="h-12 w-auto object-contain" loading="lazy">
+          <img src="/assets/images/partners/gfl.svg" width="155" height="137" alt="GFL" class="h-12 w-auto object-contain" loading="lazy">
+          <img src="/assets/images/partners/ccm.svg" width="221" height="89" alt="CCM" class="h-12 w-auto object-contain" loading="lazy">
+          <img src="/assets/images/partners/nmsdc-2024.png" width="560" height="524" alt="NMSDC Certified 2024" class="h-12 w-auto object-contain" loading="lazy">
+          <img src="/assets/images/partners/chick-fil-a.png" width="707" height="353" alt="Chick-fil-A" class="h-12 w-auto object-contain" loading="lazy">
+          <img src="/assets/images/partners/bank-of-america.png" width="747" height="334" alt="Bank of America" class="h-12 w-auto object-contain" loading="lazy">
+          <img src="/assets/images/partners/partner-misc.png" width="459" height="110" alt="Partner" class="h-12 w-auto object-contain" loading="lazy">
         </div>
       </div>
     </section>
@@ -447,19 +484,19 @@
             <p class="text-cream/70 mb-8">You have a question? A comment or a suggestion? You need our services? Please contact our team and it will be a pleasure to help you!</p>
             <div class="space-y-4">
               <div class="flex items-center gap-3">
-                <img src="/assets/images/icons/clock.svg" alt="" class="w-6 h-6 invert">
+                <img src="/assets/images/icons/clock.svg" width="37" height="37" alt="" class="w-6 h-6 invert">
                 <span class="text-cream">24 hours a day, 6 days a week</span>
               </div>
               <div class="flex items-center gap-3">
-                <img src="/assets/images/icons/speechbubble.svg" alt="" class="w-6 h-6 invert">
+                <img src="/assets/images/icons/speechbubble.svg" width="37" height="44" alt="" class="w-6 h-6 invert">
                 <a href="tel:7706913636" class="text-cream hover:text-orange transition-colors">(770) 691-3636</a>
               </div>
               <div class="flex items-center gap-3">
-                <img src="/assets/images/icons/email.svg" alt="" class="w-6 h-6 invert">
+                <img src="/assets/images/icons/email.svg" width="37" height="37" alt="" class="w-6 h-6 invert">
                 <a href="mailto:info@removeasap.com" class="text-cream hover:text-orange transition-colors">info@removeasap.com</a>
               </div>
             </div>
-            <img src="/assets/images/mascots/orange-mascot.svg" alt="" class="mt-8 w-24 opacity-80" loading="lazy">
+            <img src="/assets/images/mascots/orange-mascot.svg" width="68" height="68" alt="" class="mt-8 w-24 opacity-80" loading="lazy">
           </div>
 
           <!-- Right column: form -->
@@ -567,6 +604,29 @@
       </div>
     </section>
   </main>
+
+  <footer class="bg-navy text-cream py-10">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+      <div>&copy; 2026 ASAP Pest &amp; Wildlife Removal. All rights reserved.</div>
+      <nav aria-label="Footer" class="flex flex-wrap gap-x-6 gap-y-2 justify-center">
+        <a href="/" class="hover:text-orange">Home</a>
+        <a href="/about/" class="hover:text-orange">About</a>
+        <a href="/wildlife/" class="hover:text-orange">Wildlife</a>
+        <a href="/pest-control-services/" class="hover:text-orange">Pest Control</a>
+        <a href="/commercial-services/" class="hover:text-orange">Commercial</a>
+        <a href="/contact/" class="hover:text-orange">Contact</a>
+        <a href="/privacy/" class="hover:text-orange">Privacy Policy</a>
+        <a href="/terms/" class="hover:text-orange">Terms of Service</a>
+      </nav>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 mt-4 text-xs text-cream/60">
+      <a href="tel:+17706913636" class="hover:text-orange">(770) 691-3636</a>
+      &middot;
+      <a href="mailto:info@removeasap.com" class="hover:text-orange">info@removeasap.com</a>
+      &middot;
+      2990 Pine Canyon Dr SW, Unit 11, Atlanta, GA 30331
+    </div>
+  </footer>
 
   <script src="/assets/js/main.js"></script>
 </body>

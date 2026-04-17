@@ -2,6 +2,16 @@
    Matches the live removeasap.com Webflow aesthetic */
 
 /* ============================================
+   FONT LOADING
+   Web fonts must swap to the fallback stack while loading
+   to prevent FOIT (flash of invisible text) — VDR §14.3.
+   ============================================ */
+@font-face {
+  font-family: "urw-din";
+  font-display: swap;
+}
+
+/* ============================================
    OUTLINED TEXT EFFECTS
    The signature visual — transparent fill with stroked border
    ============================================ */
