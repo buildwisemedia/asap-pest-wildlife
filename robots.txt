@@ -1,4 +1,52 @@
+# robots.txt for removeasap.com
+# AI-permissive: we want AI assistants and search engines to understand our services.
+
 User-agent: *
+Allow: /
+Disallow: /confirmation/
+
+# Mainstream search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI crawlers / assistants (allowlisted per BWM AI-readiness standard)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
 Allow: /
 
 Sitemap: https://removeasap.com/sitemap.xml
