@@ -1,0 +1,154 @@
+name: ship
+
+# Emits a `build.shipped` event into BWM's operational_events log on every
+# tag push matching `v*`. Tag shape follows BWM's convention:
+#
+#     v{N}-full-build-{date}         → build_kind=full
+#     v{N}-patch-{slug}-{date}       → build_kind=patch
+#     v{N}-review-{date}             → build_kind=review
+#     v{N}-{cosmetic-keyword}-{date} → build_kind=cosmetic
+#     anything else                  → build_kind=patch (safe default)
+#
+# The event fans out via Postgres trigger into public.deliverables and
+# triggers the bwm-event-projector Worker to re-render HANDOFF.md +
+# HANDOFF-008-concrete.md.
+#
+# Why inlined (not a reusable workflow call):
+#   The canonical reusable emit workflow lives in
+#   https://github.com/buildwisemedia/bwm-ops-events/blob/main/.github/workflows/emit-build-shipped.yml
+#   Cross-repo private→private reusable-workflow calls require
+#   access_level=organization on the callee, which requires a paid GitHub
+#   plan (Team+). On Free, only `none` and `user` are permitted. We
+#   inline here instead. If the emit logic meaningfully changes, sync
+#   from the source-of-truth above.
+#
+# Added for PROJ-OPS-EVENT-WRITE-001 Phase 3 Bucket C (2026-04-19).
+#
+# Security:
+#   - github.ref flows via env: REF then is read as quoted $REF in shell
+#   - No untrusted input reaches a run: body via ${{ }} interpolation
+#   - Python heredoc reads ONLY from os.environ, never from string-interpolated values
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: read
+
+jobs:
+  emit:
+    name: Emit build.shipped
+    runs-on: ubuntu-latest
+    env:
+      CLIENT_SLUG: asap-pest-wildlife
+      NODE_ID: website_build
+      URL: https://asap-pest-wildlife.pages.dev
+      REPO: ${{ github.repository }}
+      COMMIT: ${{ github.sha }}
+      REF: ${{ github.ref }}
+      RUN_ID: ${{ github.run_id }}
+      SUPABASE_URL: https://lscifhwmmkjiobnthlak.supabase.co
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+    steps:
+      - name: Derive build_kind from tag
+        id: classify
+        run: |
+          TAG="${REF#refs/tags/}"
+          case "$TAG" in
+            *full-build*)                                                          KIND=full ;;
+            *review*)                                                              KIND=review ;;
+            *images-refresh*|*cosmetic*|*mobile-fold*|*asset-refresh*)             KIND=cosmetic ;;
+            *patch*|*fix*|*hotfix*)                                                KIND=patch ;;
+            *)                                                                     KIND=patch ;;
+          esac
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "build_kind=$KIND" >> "$GITHUB_OUTPUT"
+          echo "Classified tag '$TAG' as build_kind=$KIND"
+
+      - name: Resolve client UUID
+        id: resolve_client
+        run: |
+          HTTP_CODE=$(curl -sS -o /tmp/resp.json -w "%{http_code}" \
+            -H "apikey: $SUPABASE_SERVICE_ROLE_KEY" \
+            -H "Authorization: Bearer $SUPABASE_SERVICE_ROLE_KEY" \
+            "$SUPABASE_URL/rest/v1/clients?slug=eq.$CLIENT_SLUG&select=id")
+          if [ "$HTTP_CODE" != "200" ]; then
+            echo "::error::Client lookup failed: HTTP $HTTP_CODE"
+            echo "Response body:"; cat /tmp/resp.json; echo
+            exit 1
+          fi
+          CLIENT_ID=$(python3 <<'PY'
+          import sys, json
+          d = json.load(open('/tmp/resp.json'))
+          if isinstance(d, list):
+              print(d[0]['id'] if d else '')
+          else:
+              sys.stderr.write(f'Unexpected non-list response: {d}\n')
+              sys.exit(1)
+          PY
+          )
+          if [ -z "$CLIENT_ID" ]; then
+            echo "::error::No client found with slug=$CLIENT_SLUG"
+            exit 1
+          fi
+          echo "client_id=$CLIENT_ID" >> "$GITHUB_OUTPUT"
+
+      - name: Emit event to Supabase
+        env:
+          CLIENT_ID: ${{ steps.resolve_client.outputs.client_id }}
+          TAG: ${{ steps.classify.outputs.tag }}
+          BUILD_KIND: ${{ steps.classify.outputs.build_kind }}
+        run: |
+          python3 <<'PY'
+          import json, os, time, secrets, urllib.request, urllib.error
+
+          CROCKFORD = "0123456789ABCDEFGHJKMNPQRSTVWXYZ"
+          def ulid():
+              ts = int(time.time() * 1000)
+              rand = int.from_bytes(secrets.token_bytes(10), "big")
+              n = (ts << 80) | rand
+              out = []
+              for _ in range(26):
+                  out.append(CROCKFORD[n & 0x1F]); n >>= 5
+              return "".join(reversed(out))
+
+          payload = {
+              "repo": os.environ["REPO"],
+              "commit": os.environ["COMMIT"],
+              "build_kind": os.environ["BUILD_KIND"],
+          }
+          for src, key in [("URL","url"),("NODE_ID","node_id"),("TAG","tag")]:
+              v = os.environ.get(src, "")
+              if v:
+                  payload[key] = v
+          payload["qa_summary"] = f"tag={os.environ.get('TAG','')}"
+
+          row = {
+              "id": ulid(),
+              "event_type": "build.shipped",
+              "client_id": os.environ["CLIENT_ID"],
+              "payload": payload,
+              "session_id": f"asap-pest-wildlife-tag-push-{os.environ['RUN_ID']}",
+          }
+
+          req = urllib.request.Request(
+              f"{os.environ['SUPABASE_URL']}/rest/v1/operational_events",
+              method="POST",
+              headers={
+                  "apikey": os.environ["SUPABASE_SERVICE_ROLE_KEY"],
+                  "Authorization": f"Bearer {os.environ['SUPABASE_SERVICE_ROLE_KEY']}",
+                  "Content-Type": "application/json",
+                  "Prefer": "return=representation,resolution=ignore-duplicates",
+              },
+              data=json.dumps(row).encode(),
+          )
+          try:
+              with urllib.request.urlopen(req, timeout=15) as resp:
+                  print(f"OK: event emitted event_id={row['id']}")
+          except urllib.error.HTTPError as e:
+              print(f"::error::Supabase POST failed: {e.code} {e.reason}")
+              print(e.read().decode())
+              raise SystemExit(1)
+          PY
