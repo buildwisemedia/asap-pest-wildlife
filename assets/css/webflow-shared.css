@@ -5614,3 +5614,37 @@ blockquote {
     align-self: start;
   }
 }
+
+/* Animal hover reveal — "We Remove & Exclude" section
+   Pure CSS using :has() + :focus-visible. Matches the Webflow interaction
+   on removeasap.com (hover a row, animal fades in on the right). */
+.home-animals-section .home-pests-image,
+.home-animals-section .home-rodent-image-2,
+.home-animals-section .home-beaver-image,
+.home-animals-section .home-bee-image-2,
+.home-animals-section .home-more-image-2 {
+  transition: opacity 280ms ease;
+}
+
+/* Default (nothing hovered): show the "More" illustration */
+.home-animals-section:not(:has(a[data-animal]:is(:hover, :focus-visible))) .home-more-image-2 {
+  opacity: 1;
+}
+
+.home-animals-section:has(a[data-animal="rodents"]:is(:hover, :focus-visible)) .home-rodent-image-2 { opacity: 1; }
+.home-animals-section:has(a[data-animal="beaver"]:is(:hover, :focus-visible)) .home-beaver-image   { opacity: 1; }
+.home-animals-section:has(a[data-animal="bee"]:is(:hover, :focus-visible))    .home-bee-image-2   { opacity: 1; }
+.home-animals-section:has(a[data-animal="pests"]:is(:hover, :focus-visible))  .home-pests-image   { opacity: 1; }
+.home-animals-section:has(a[data-animal="more"]:is(:hover, :focus-visible))   .home-more-image-2  { opacity: 1; }
+
+/* Touch / no-hover devices: keep the default "More" image visible (already handled by the :not() rule above).
+   On <992px the image column is hidden from the Webflow layout — no change needed here. */
+@media (prefers-reduced-motion: reduce) {
+  .home-animals-section .home-pests-image,
+  .home-animals-section .home-rodent-image-2,
+  .home-animals-section .home-beaver-image,
+  .home-animals-section .home-bee-image-2,
+  .home-animals-section .home-more-image-2 {
+    transition: none;
+  }
+}
