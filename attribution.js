@@ -44,6 +44,28 @@
     setCookie(attr);
   }
 
+  // --- Form-mount timestamp + host-page URL (QLS Spam-Filter §4.3 + §4.5) ---
+  // Stamped on every form regardless of attribution cookie presence. Enables
+  // the form-handler to check (now - mount_ts) ≥3s for fill-time plausibility
+  // and to match Referer header origin against the form's host page URL.
+  function stampFormTiming(form) {
+    if (!form.querySelector('input[name="_form_mount_at"]')) {
+      var tsInp = document.createElement('input');
+      tsInp.type = 'hidden';
+      tsInp.name = '_form_mount_at';
+      tsInp.value = String(Date.now());
+      form.appendChild(tsInp);
+    }
+    if (!form.querySelector('input[name="_form_host_page"]')) {
+      var urlInp = document.createElement('input');
+      urlInp.type = 'hidden';
+      urlInp.name = '_form_host_page';
+      urlInp.value = window.location.href;
+      form.appendChild(urlInp);
+    }
+  }
+  document.querySelectorAll('form').forEach(stampFormTiming);
+
   // --- Read cookie (just-set or pre-existing) ---
   var data = getCookie();
   if (!data) return;
