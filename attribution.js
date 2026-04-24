@@ -158,3 +158,97 @@
   });
   obs.observe(calEl, { childList: true, subtree: true });
 })();
+
+/**
+ * BWM CAPI v2 — Browser-Mirror (M86 shadow-mode ship, 2026-04-24).
+ * LOCKED design: projects/Project-CAPI-Server-Side-Worker.md § "v2 Design".
+ *
+ * Shadow mode: window.__BWM_CAPI_V2.enabled === false → all capiMirror()
+ * calls no-op. Pages Function (/api/capi) also returns 204 unconditionally
+ * until env.CAPI_V2_ENABLED flips. Two gates = flip server first, then
+ * client, without a race.
+ *
+ * When enabled: generates crypto.randomUUID() eventID, tells Pixel via
+ * fbq('track', name, data, {eventID}), mirrors same event_id to /api/capi
+ * for server dispatch through bwm-capi-relay → Meta. Same event_id across
+ * both paths lets Meta dedup within its 48h window.
+ *
+ * Exposes window.bwmCapiMirror(eventName, customData) for Lead/Schedule
+ * dedup anchor use (form-handler returns capi_event_id in success JSON;
+ * browser fires Pixel Lead with that ID, not a fresh UUID).
+ */
+(function () {
+  'use strict';
+
+  var cfg = window.__BWM_CAPI_V2 || { enabled: false };
+  if (!cfg.enabled) return;  // shadow mode: exit silently
+
+  var events = cfg.events || {};
+
+  function getRawCookieV2(name) {
+    var m = document.cookie.match(new RegExp('(?:^|;\\s*)' + name + '=([^;]*)'));
+    return m ? m[1] : null;
+  }
+
+  function capiMirror(eventName, customData, forcedEventID) {
+    customData = customData || {};
+    if (!events[eventName]) return null;  // event not enabled for this client
+
+    var eventID = forcedEventID || (window.crypto && crypto.randomUUID
+      ? crypto.randomUUID()
+      : (Date.now() + '-' + Math.random().toString(36).slice(2)));
+
+    // 1. Tell Pixel (if loaded) — shared eventID is the dedup anchor
+    if (typeof window.fbq === 'function') {
+      try { window.fbq('track', eventName, customData, { eventID: eventID }); } catch (_) {}
+    }
+
+    // 2. Mirror to server — same-origin, fire-and-forget, keepalive for unload safety
+    var payload = {
+      event_name: eventName,
+      event_id: eventID,
+      event_time: Math.floor(Date.now() / 1000),
+      user_data: {
+        fbc: getRawCookieV2('_fbc') || undefined,
+        fbp: getRawCookieV2('_fbp') || undefined
+      },
+      custom_data: customData,
+      event_source_url: window.location.href
+    };
+    try {
+      fetch('/api/capi', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        keepalive: true,
+        body: JSON.stringify(payload)
+      }).catch(function () { /* best-effort */ });
+    } catch (_) { /* best-effort */ }
+
+    return eventID;
+  }
+
+  window.bwmCapiMirror = capiMirror;
+
+  // Auto-fire PageView on DOMContentLoaded if configured.
+  if (events.PageView) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function () { capiMirror('PageView'); });
+    } else {
+      capiMirror('PageView');
+    }
+  }
+
+  // Auto-fire Scroll at 75% depth if configured (debounced, fires once).
+  if (events.Scroll) {
+    var fired = false;
+    window.addEventListener('scroll', function () {
+      if (fired) return;
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (docHeight > 0 && (scrollTop / docHeight) >= 0.75) {
+        fired = true;
+        capiMirror('Scroll', { scroll_depth_pct: 75 });
+      }
+    }, { passive: true });
+  }
+})();
