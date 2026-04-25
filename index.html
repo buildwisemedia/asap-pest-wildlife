@@ -84,6 +84,17 @@
     }
   }
   </script>
+  <!-- Meta Pixel base — fires PageView; M89 v2 shadow in attribution.js mirrors fbq calls -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+  (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '26350078141329630');
+  fbq('track', 'PageView', {}, { eventID: 'pv_' + Date.now() + '_' + Math.random().toString(36).slice(2,8) });
+  </script>
+  <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=26350078141329630&ev=PageView&noscript=1"/></noscript>
   <!-- BWM Attribution Tracker — Phase 1 QLS M78 -->
   <script src="/attribution.js"></script>
 </head>
