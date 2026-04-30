@@ -152,3 +152,15 @@ jobs:
               print(e.read().decode())
               raise SystemExit(1)
           PY
+
+      - name: Notify done-check Worker
+        if: success()
+        env:
+          DONE_CHECK_WEBHOOK_SECRET: ${{ secrets.DONE_CHECK_WEBHOOK_SECRET }}
+        run: |
+          curl -fsS --max-time 10 -X POST \
+            -H "x-webhook-secret: $DONE_CHECK_WEBHOOK_SECRET" \
+            -H "content-type: application/json" \
+            -d "{\"repo\":\"$REPO\",\"branch\":\"main\"}" \
+            https://bwm-done-check.robert-ba0.workers.dev/webhook/git-push \
+          || echo "::warning::done-check webhook failed (non-fatal)"
