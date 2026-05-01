@@ -104,42 +104,49 @@
   <!-- GTM noscript -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K953HZ9R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <!-- Header / Navigation — matches removeasap.com: cream canvas, logo+tagline left, navy phone/email pill upper-right, nav row below -->
-  <header class="bg-cream sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 pt-4 pb-4">
-      <!-- Top row: logo + tagline on left, navy phone/email pill on right -->
-      <div class="flex items-start justify-between gap-4 mb-2">
+  <!--
+    Header / Navigation — translated directly from removeasap.com Webflow CSS:
+      .navbar             { padding: 10px 3.57vw 6px; position: fixed; inset: 0 0 auto; }
+      .div-block-4 (pill) { background: navy; width: 40%; max-width: 500px;
+                            border-radius: 4px 16px;  // TL/BR=4, TR/BL=16
+                            margin-left: auto; margin-bottom: -23px;
+                            padding: 12px 0; font-size: 16px; font-weight: 500;
+                            letter-spacing: 2px; }
+  -->
+  <header class="absolute top-0 inset-x-0 z-50">
+    <div class="max-w-7xl mx-auto px-[3.57vw] pt-[10px] pb-[6px]">
+      <div class="flex items-start justify-between gap-4">
         <a href="/" class="flex-shrink-0">
-          <img src="/assets/images/logos/logo-orange-tagline.png" alt="ASAP Pest &amp; Wildlife Removal — Your Pest &amp; Wildlife Extraordinaires" class="h-16 md:h-20 w-auto">
+          <img src="/assets/images/logos/logo-orange-tagline.png" alt="ASAP Pest &amp; Wildlife Removal — Your Pest &amp; Wildlife Extraordinaires" class="h-16 md:h-20 lg:h-24 w-auto">
         </a>
-        <div class="hidden md:flex items-center bg-navy text-cream rounded-lg px-5 py-2.5 text-sm whitespace-nowrap">
-          <span class="font-bold mr-2">Call now:</span>
-          <a href="tel:7706913636" class="underline hover:text-orange transition-colors font-bold">770-691-3636</a>
-          <span class="mx-2">Or</span>
-          <a href="mailto:info@wildliferemovalasap.com?subject=ASAP%20wildlife%20removal" class="underline hover:text-orange transition-colors font-bold">Email us</a>
-          <span class="ml-1">for quote</span>
+        <div class="flex flex-col items-end gap-3 flex-1">
+          <!-- Phone/email pill — asymmetric border-radius matches reference exactly -->
+          <div class="hidden md:flex items-center bg-navy text-cream w-[40%] max-w-[500px] -mb-[23px] py-3 px-5 text-base font-medium tracking-[2px] whitespace-nowrap justify-center" style="border-radius: 4px 16px 4px 16px;">
+            <span class="mr-2">Call now:</span>
+            <a href="tel:7706913636" class="underline hover:text-orange transition-colors font-bold">770-691-3636</a>
+            <span class="mx-2">Or</span>
+            <a href="mailto:info@wildliferemovalasap.com?subject=ASAP%20wildlife%20removal" class="underline hover:text-orange transition-colors font-bold">Email us</a>
+            <span class="ml-1">for quote</span>
+          </div>
+          <nav class="hidden lg:flex items-center gap-8">
+            <a href="/" class="text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors">Home</a>
+            <a href="/about/" class="text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors">About</a>
+            <a href="/wildlife/" class="text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors">Wildlife</a>
+            <a href="/pest-control-services/" class="text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors">Pest Control</a>
+            <a href="/commercial-services/" class="text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors">Commercial</a>
+            <a href="/services/" class="text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors">Services</a>
+            <a href="/blog/" class="text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors">Blog</a>
+            <a href="/book" class="bg-orange text-cream font-bold text-sm uppercase tracking-[0.15em] px-4 py-2 hover:bg-orange-dark transition-colors">Book</a>
+          </nav>
         </div>
-      </div>
-      <!-- Nav row -->
-      <div class="flex items-center justify-between md:justify-end gap-8">
-        <nav class="hidden lg:flex items-center gap-8">
-          <a href="/" class="text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors">Home</a>
-          <a href="/about/" class="text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors">About</a>
-          <a href="/wildlife/" class="text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors">Wildlife</a>
-          <a href="/pest-control-services/" class="text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors">Pest Control</a>
-          <a href="/commercial-services/" class="text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors">Commercial</a>
-          <a href="/services/" class="text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors">Services</a>
-          <a href="/blog/" class="text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors">Blog</a>
-          <a href="/book" class="bg-orange text-cream font-bold text-sm uppercase tracking-[0.15em] px-4 py-2 hover:bg-orange-dark transition-colors">Book</a>
-        </nav>
-        <button id="mobile-menu-btn" class="lg:hidden text-navy p-2 ml-auto" aria-label="Toggle menu">
+        <button id="mobile-menu-btn" class="lg:hidden text-navy p-2" aria-label="Toggle menu">
           <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
           </svg>
         </button>
       </div>
       <!-- Mobile Navigation -->
-      <nav id="mobile-menu" class="hidden lg:hidden pt-4 pb-2">
+      <nav id="mobile-menu" class="hidden lg:hidden pt-4 pb-2 bg-cream">
         <div class="flex flex-col gap-2">
           <a href="/" class="text-navy font-bold py-2 px-3 uppercase tracking-[0.15em] text-sm">Home</a>
           <a href="/about/" class="text-navy font-bold py-2 px-3 uppercase tracking-[0.15em] text-sm">About</a>
@@ -155,24 +162,35 @@
   </header>
 
   <main>
-    <!-- Hero Section — cream bg with scattered animal illustrations (sized to keep CTA bar in viewport at 1440x900) -->
-    <section class="reveal bg-cream relative overflow-hidden py-12 md:py-16 lg:py-20">
-      <!-- Background SVG pattern — prominent, matching the live site's organic leaf texture -->
+    <!--
+      Hero Section — translated directly from removeasap.com Webflow CSS:
+        .home-hero-background    { background-image: gradient + home-herobg.svg; }
+        .responsive-h2 (Giving)  { font-size: 6vw; font-weight: 900; line-height: 100%; }
+        .hero-h1 (Peace of Mind) { font-size: 11vw; font-weight: 900; line-height: 100%; outlined-navy }
+        .hero-h3 (One Person)    { font-size: 4vw; letter-spacing: 1vw; }
+        .home-bat-position       { width: 17.85vw; max-width: 257.5px; top: 0; left: 0; translate(20vw); }
+        .home-raccoon-position   { width: 12vw; max-width: 154.5px; top: 0; right: 15%; rotate(5deg); }
+        .home-armadillo-position { width: 17.85vw; max-width: 257.5px; bottom: 0; left: 0; translate(1vw, 4px); }
+        .home-groundhog-position { width: 7vw; max-width: 180px; bottom: 0; right: 0; translate(-10vw, 5vw); }
+      Top padding = navbar fixed height (~110px on desktop) + the -23px pill overlap.
+    -->
+    <section class="reveal bg-cream relative overflow-hidden pt-[140px] md:pt-[160px] lg:pt-[180px] pb-[3.57vw]">
+      <!-- Background SVG pattern -->
       <div class="absolute inset-0 opacity-50">
         <img src="/assets/images/backgrounds/home-hero-bg.svg" alt="" class="w-full h-full object-cover">
       </div>
 
-      <!-- Scattered animal illustrations — sized smaller to avoid overlapping the hero text -->
-      <img src="/assets/images/animals/bat.svg" alt="" class="hidden md:block absolute top-2 left-[40%] w-24 lg:w-32 opacity-80 z-10" loading="lazy">
-      <img src="/assets/images/animals/raccoon.png" alt="" class="hidden md:block absolute top-12 right-[5%] w-36 lg:w-44 xl:w-52 opacity-90 z-10" loading="lazy">
-      <img src="/assets/images/animals/armadillo.png" alt="" class="hidden md:block absolute bottom-4 left-[3%] w-32 lg:w-40 xl:w-44 opacity-90 z-10" loading="lazy">
-      <img src="/assets/images/animals/groundhog.png" alt="" class="hidden md:block absolute bottom-2 right-[6%] w-36 lg:w-44 xl:w-52 opacity-90 z-10" loading="lazy">
+      <!-- Scattered animal illustrations — vw-sized + transform offsets per reference -->
+      <img src="/assets/images/animals/bat.svg" alt="" class="hidden md:block absolute top-0 left-0 w-[17.85vw] max-w-[257px] opacity-80 z-10 translate-x-[20vw]" loading="lazy">
+      <img src="/assets/images/animals/raccoon.png" alt="" class="hidden md:block absolute top-[60px] right-[15%] w-[12vw] max-w-[154px] opacity-90 z-20 rotate-[5deg]" loading="lazy">
+      <img src="/assets/images/animals/armadillo.png" alt="" class="hidden md:block absolute bottom-0 left-0 w-[17.85vw] max-w-[257px] opacity-90 z-20 translate-x-[1vw] translate-y-[4px]" loading="lazy">
+      <img src="/assets/images/animals/groundhog.png" alt="" class="hidden md:block absolute bottom-0 right-0 w-[7vw] max-w-[180px] opacity-90 z-20 -translate-x-[10vw] translate-y-[5vw]" loading="lazy">
 
-      <div class="max-w-7xl mx-auto px-4 relative z-20 text-center">
-        <h1 class="font-heading font-black leading-[0.95]">
-          <span class="block text-navy text-4xl md:text-6xl lg:text-7xl uppercase tracking-[0.05em] mb-2">GIVING</span>
-          <span class="block text-outlined-navy text-5xl sm:text-6xl md:text-8xl lg:text-9xl uppercase tracking-[0.02em] whitespace-nowrap">PEACE OF MIND</span>
-          <span class="block text-navy text-lg md:text-2xl lg:text-4xl uppercase tracking-[0.25em] mt-4">ONE PERSON AT A TIME</span>
+      <div class="max-w-7xl mx-auto px-4 relative z-30 text-center">
+        <h1 class="font-heading font-black leading-none">
+          <span class="block text-navy text-[6vw] uppercase tracking-[0.05em] mb-[1.785vw]">Giving</span>
+          <span class="block text-outlined-navy text-[11vw] uppercase tracking-[0.02em] whitespace-nowrap mb-[1.785vw]">Peace of Mind</span>
+          <span class="block text-navy text-[4vw] uppercase tracking-[1vw]">One person at a time</span>
         </h1>
       </div>
     </section>
