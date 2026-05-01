@@ -207,43 +207,51 @@
       <div class="absolute right-[5%] md:right-[8%] top-full w-16 md:w-20 h-12 md:h-14 z-20" style="clip-path: polygon(0 0, 100% 0, 50% 100%); background: #B77537;"></div>
     </section>
 
-    <!-- "We Remove & Exclude" — Giant stacked text -->
+    <!--
+      We Remove & Exclude — tabs-with-image-swap pattern from removeasap.com.
+        Left column = 5 text labels (Rodents/Squirrels/Bees/bugs/More).
+        Right column = 5 absolutely-positioned animal images stacked, all opacity-0 by default.
+        Mouseenter on a tab fades in its corresponding image and fades out the others.
+        Reference uses .home-animals-tab-link-2 (font-size: 90px on lg) — we match.
+        Color hover only (no scale) per reference's `transition: color .2s`.
+    -->
     <section class="reveal bg-cream py-16 md:py-24 relative overflow-hidden">
-      <!-- Continuing background pattern from hero -->
       <div class="absolute inset-0 opacity-40">
         <img src="/assets/images/backgrounds/home-hero-bg.svg" alt="" class="w-full h-full object-cover" style="transform: scaleX(-1);">
       </div>
       <div class="max-w-7xl mx-auto px-4 relative z-10">
         <p class="text-navy uppercase tracking-[0.2em] font-bold text-sm mb-8">We Remove &amp; Exclude</p>
-        <div class="space-y-2 md:space-y-4">
-          <!--
-            Each row: text label on left, big animal sketch on right.
-            Sketch is visible by default at moderate size; on hover, text turns orange
-            AND the sketch scales up — replicating the Webflow reference's reveal feel.
-          -->
-          <a href="/peace-of-mind-from/rodents/" class="group flex items-center justify-between gap-4 md:gap-8">
-            <span class="font-heading font-black text-navy text-5xl md:text-7xl lg:text-[8rem] uppercase leading-[1.1] tracking-[0.02em] group-hover:text-orange transition-colors">RODENTS</span>
-            <img src="/assets/images/animals/rat-navy.png" alt="Rodent removal" class="hidden md:block w-32 lg:w-56 xl:w-64 opacity-85 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 origin-right" loading="lazy">
-          </a>
-          <a href="/wildlife/gray-squirrel/" class="group flex items-center justify-between gap-4 md:gap-8">
-            <span class="font-heading font-black text-navy text-5xl md:text-7xl lg:text-[8rem] uppercase leading-[1.1] tracking-[0.02em] group-hover:text-orange transition-colors">SQUIRRELS</span>
-            <img src="/assets/images/animals/squirrel.webp" alt="Squirrel removal" class="hidden md:block w-32 lg:w-56 xl:w-64 opacity-85 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 origin-right" loading="lazy">
-          </a>
-          <div class="py-2">
-            <img src="/assets/images/icons/ampersand.svg" alt="" class="w-12 h-12 md:w-16 md:h-16 opacity-60">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center we-remove-tabs-section">
+          <!-- Left: tab labels -->
+          <div class="space-y-2 md:space-y-4">
+            <a href="/peace-of-mind-from/rodents/" data-tab="rodent" class="we-remove-tab group block">
+              <span class="block font-heading font-black text-navy text-5xl md:text-7xl lg:text-[90px] uppercase leading-[1.25] tracking-[0.02em] group-hover:text-orange transition-colors duration-200">Rodents</span>
+            </a>
+            <a href="/wildlife/gray-squirrel/" data-tab="squirrel" class="we-remove-tab group block">
+              <span class="block font-heading font-black text-navy text-5xl md:text-7xl lg:text-[90px] uppercase leading-[1.25] tracking-[0.02em] group-hover:text-orange transition-colors duration-200">Squirrels</span>
+            </a>
+            <div class="py-2">
+              <img src="/assets/images/icons/ampersand.svg" alt="" class="w-12 h-12 md:w-16 md:h-16 opacity-60">
+            </div>
+            <a href="/peace-of-mind-from/bees-wasps-and-hornets/" data-tab="bee" class="we-remove-tab group block">
+              <span class="block font-heading font-black text-navy text-5xl md:text-7xl lg:text-[90px] uppercase leading-[1.25] tracking-[0.02em] group-hover:text-orange transition-colors duration-200">Bees</span>
+            </a>
+            <a href="/pest-control-services/" data-tab="bug" class="we-remove-tab group block">
+              <span class="block font-heading font-black text-navy text-5xl md:text-7xl lg:text-[90px] uppercase leading-[1.25] tracking-[0.02em] group-hover:text-orange transition-colors duration-200">bugs</span>
+            </a>
+            <a href="/wildlife/" data-tab="more" class="we-remove-tab group flex items-center gap-4">
+              <span class="block font-heading font-black text-navy text-5xl md:text-7xl lg:text-[90px] uppercase leading-[1.25] tracking-[0.02em] group-hover:text-orange transition-colors duration-200">More</span>
+              <img src="/assets/images/icons/ampersand.svg" alt="" class="w-10 h-10 md:w-12 md:h-12 opacity-60">
+            </a>
           </div>
-          <a href="/peace-of-mind-from/bees-wasps-and-hornets/" class="group flex items-center justify-between gap-4 md:gap-8">
-            <span class="font-heading font-black text-navy text-5xl md:text-7xl lg:text-[8rem] uppercase leading-[1.1] tracking-[0.02em] group-hover:text-orange transition-colors">BEES</span>
-            <img src="/assets/images/animals/bee.png" alt="Bee removal" class="hidden md:block w-32 lg:w-56 xl:w-64 opacity-85 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 origin-right" loading="lazy">
-          </a>
-          <a href="/pest-control-services/" class="group flex items-center justify-between gap-4 md:gap-8">
-            <span class="font-heading font-black text-navy text-5xl md:text-7xl lg:text-[8rem] uppercase leading-[1.1] tracking-[0.02em] group-hover:text-orange transition-colors">BUGS</span>
-            <img src="/assets/images/animals/ant.webp" alt="Bug extermination" class="hidden md:block w-32 lg:w-56 xl:w-64 opacity-85 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 origin-right" loading="lazy">
-          </a>
-          <a href="/wildlife/" class="group flex items-center justify-between gap-4 md:gap-8">
-            <span class="font-heading font-black text-navy text-5xl md:text-7xl lg:text-[8rem] uppercase leading-[1.1] tracking-[0.02em] group-hover:text-orange transition-colors">MORE</span>
-            <img src="/assets/images/animals/andmore.png" alt="More wildlife services" class="hidden md:block w-32 lg:w-56 xl:w-64 opacity-85 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 origin-right" loading="lazy">
-          </a>
+          <!-- Right: stacked animal images, only one visible at a time. Hidden on mobile (text-only there). -->
+          <div class="we-remove-images relative hidden lg:block min-h-[500px]">
+            <img src="/assets/images/animals/rat-navy.png" data-tab-image="rodent" alt="" class="we-remove-img absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-500" loading="lazy">
+            <img src="/assets/images/animals/squirrel.webp" data-tab-image="squirrel" alt="" class="we-remove-img absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-500" loading="lazy">
+            <img src="/assets/images/animals/bee.png" data-tab-image="bee" alt="" class="we-remove-img absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-500" loading="lazy">
+            <img src="/assets/images/animals/ant.webp" data-tab-image="bug" alt="" class="we-remove-img absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-500" loading="lazy">
+            <img src="/assets/images/animals/andmore.png" data-tab-image="more" alt="" class="we-remove-img absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-500" loading="lazy">
+          </div>
         </div>
       </div>
     </section>

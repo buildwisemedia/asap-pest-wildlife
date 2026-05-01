@@ -155,6 +155,24 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // ============================================
+  // We Remove & Exclude — tabs with animal image swap (homepage)
+  // Mouseenter on a tab label fades in its corresponding animal image
+  // and fades out the others. Reference: removeasap.com .home-animals-tab-link-2
+  // ============================================
+  var weRemoveTabs = document.querySelectorAll('.we-remove-tab');
+  var weRemoveImgs = document.querySelectorAll('.we-remove-img');
+  if (weRemoveTabs.length && weRemoveImgs.length) {
+    weRemoveTabs.forEach(function(tab) {
+      tab.addEventListener('mouseenter', function() {
+        var target = tab.dataset.tab;
+        weRemoveImgs.forEach(function(img) {
+          img.style.opacity = (img.dataset.tabImage === target) ? '1' : '0';
+        });
+      });
+    });
+  }
+
+  // ============================================
   // Scroll-reveal — fade-up on viewport enter
   // Any element with class="reveal" gets ".visible" added when it enters
   // the viewport. CSS handles the transition. Reduced-motion handled in CSS.
