@@ -167,38 +167,37 @@
 
   <main>
     <!-- Hero Section — cream bg with scattered animal illustrations -->
-    <section class="reveal bg-cream relative overflow-hidden py-16 md:py-24 lg:py-32">
+    <section class="reveal bg-cream relative overflow-hidden py-24 md:py-32 lg:py-48">
       <!-- Background SVG pattern — prominent, matching the live site's organic leaf texture -->
       <div class="absolute inset-0 opacity-50">
         <img src="/assets/images/backgrounds/home-hero-bg.svg" alt="" class="w-full h-full object-cover">
       </div>
 
-      <!-- Scattered animal illustrations -->
-      <img src="/assets/images/animals/raccoon.png" alt="" class="hidden md:block absolute top-8 right-[10%] w-40 lg:w-52 opacity-90 z-10" loading="lazy">
-      <img src="/assets/images/animals/bat.svg" alt="" class="hidden md:block absolute top-4 right-[35%] w-24 lg:w-32 opacity-80 z-10" loading="lazy">
-      <img src="/assets/images/animals/groundhog.png" alt="" class="hidden md:block absolute bottom-8 left-[5%] w-36 lg:w-44 opacity-90 z-10" loading="lazy">
-      <img src="/assets/images/animals/armadillo.png" alt="" class="hidden md:block absolute bottom-12 left-[20%] w-32 lg:w-40 opacity-90 z-10" loading="lazy">
+      <!-- Scattered animal illustrations — sized to fill hero like reference -->
+      <img src="/assets/images/animals/raccoon.png" alt="" class="hidden md:block absolute top-12 right-[8%] w-56 lg:w-72 xl:w-80 opacity-90 z-10" loading="lazy">
+      <img src="/assets/images/animals/bat.svg" alt="" class="hidden md:block absolute top-6 left-[42%] w-36 lg:w-48 xl:w-56 opacity-80 z-10" loading="lazy">
+      <img src="/assets/images/animals/groundhog.png" alt="" class="hidden md:block absolute bottom-16 right-[10%] w-48 lg:w-60 xl:w-72 opacity-90 z-10" loading="lazy">
+      <img src="/assets/images/animals/armadillo.png" alt="" class="hidden md:block absolute bottom-20 left-[6%] w-44 lg:w-56 xl:w-64 opacity-90 z-10" loading="lazy">
 
       <div class="max-w-7xl mx-auto px-4 relative z-20 text-center">
-        <h1 class="font-heading font-black leading-[0.9]">
-          <span class="block text-navy text-6xl md:text-8xl lg:text-[9rem] uppercase tracking-[0.05em]">GIVING</span>
-          <span class="block text-outlined-navy text-5xl sm:text-6xl md:text-7xl lg:text-[8rem] uppercase tracking-[0.02em] whitespace-nowrap">PEACE OF MIND</span>
-          <span class="block text-navy text-xl md:text-2xl lg:text-3xl uppercase tracking-[0.3em] mt-6">ONE PERSON AT A TIME</span>
+        <h1 class="font-heading font-black leading-[0.95]">
+          <span class="block text-navy text-5xl md:text-7xl lg:text-[7rem] uppercase tracking-[0.05em] mb-2 md:mb-4">GIVING</span>
+          <span class="block text-outlined-navy text-6xl sm:text-7xl md:text-9xl lg:text-[10rem] xl:text-[12rem] uppercase tracking-[0.02em] whitespace-nowrap">PEACE OF MIND</span>
+          <span class="block text-navy text-xl md:text-3xl lg:text-5xl uppercase tracking-[0.25em] mt-4 md:mt-8">ONE PERSON AT A TIME</span>
         </h1>
       </div>
     </section>
 
-    <!-- CTA Phone Banner — contained orange pill, left-aligned, tooth on pill's right edge -->
-    <section class="cta-banner-section relative py-6 md:py-8">
-      <div class="max-w-7xl mx-auto px-4 flex">
-        <div class="relative max-w-full">
-          <div class="bg-orange py-3 md:py-4 px-6 md:px-10 flex flex-wrap items-center gap-3 text-white relative z-10">
-            <span class="uppercase tracking-[0.15em] font-bold text-sm md:text-base">For services and immediate attention</span>
-            <a href="tel:7706913636" class="uppercase tracking-[0.15em] font-black text-lg md:text-xl hover:text-cream transition-colors">CALL NOW (770)691-3636</a>
-          </div>
-          <div class="absolute right-6 md:right-10 -bottom-3 w-8 h-4 z-20" style="clip-path: polygon(0 0, 100% 0, 50% 100%); background: #B77537;"></div>
+    <!-- CTA Phone Banner — full-width burnt-orange bar with downward arrow off the right (matches removeasap.com reference) -->
+    <section class="cta-banner-section relative">
+      <div class="bg-orange py-4 md:py-5 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 flex flex-wrap items-center justify-center gap-3 text-white">
+          <span class="uppercase tracking-[0.15em] font-bold text-sm md:text-base">For services and immediate attention</span>
+          <a href="tel:7706913636" class="uppercase tracking-[0.15em] font-black text-lg md:text-2xl hover:text-cream transition-colors">CALL NOW (770)691-3636</a>
         </div>
       </div>
+      <!-- Downward-pointing arrow tooth dropping off the right edge of the full-width bar -->
+      <div class="absolute right-[5%] md:right-[8%] top-full w-16 md:w-20 h-12 md:h-14 z-20" style="clip-path: polygon(0 0, 100% 0, 50% 100%); background: #B77537;"></div>
     </section>
 
     <!-- "We Remove & Exclude" — Giant stacked text -->
@@ -208,25 +207,35 @@
         <img src="/assets/images/backgrounds/home-hero-bg.svg" alt="" class="w-full h-full object-cover" style="transform: scaleX(-1);">
       </div>
       <div class="max-w-7xl mx-auto px-4 relative z-10">
-        <p class="text-navy uppercase tracking-[0.2em] font-bold text-sm mb-6">We Remove &amp; Exclude</p>
-        <div class="space-y-0">
-          <a href="/peace-of-mind-from/rodents/" class="group block">
-            <span class="block font-heading font-black text-navy text-5xl md:text-7xl lg:text-[7rem] uppercase leading-[1.1] tracking-[0.02em] group-hover:text-orange transition-colors">RODENTS</span>
+        <p class="text-navy uppercase tracking-[0.2em] font-bold text-sm mb-8">We Remove &amp; Exclude</p>
+        <div class="space-y-2 md:space-y-4">
+          <!--
+            Each row: text label on left, big animal sketch on right.
+            Sketch is visible by default at moderate size; on hover, text turns orange
+            AND the sketch scales up — replicating the Webflow reference's reveal feel.
+          -->
+          <a href="/peace-of-mind-from/rodents/" class="group flex items-center justify-between gap-4 md:gap-8">
+            <span class="font-heading font-black text-navy text-5xl md:text-7xl lg:text-[8rem] uppercase leading-[1.1] tracking-[0.02em] group-hover:text-orange transition-colors">RODENTS</span>
+            <img src="/assets/images/animals/rat-navy.png" alt="Rodent removal" class="hidden md:block w-32 lg:w-56 xl:w-64 opacity-85 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 origin-right" loading="lazy">
           </a>
-          <a href="/wildlife/gray-squirrel/" class="group block">
-            <span class="block font-heading font-black text-navy text-5xl md:text-7xl lg:text-[7rem] uppercase leading-[1.1] tracking-[0.02em] group-hover:text-orange transition-colors">SQUIRRELS</span>
+          <a href="/wildlife/gray-squirrel/" class="group flex items-center justify-between gap-4 md:gap-8">
+            <span class="font-heading font-black text-navy text-5xl md:text-7xl lg:text-[8rem] uppercase leading-[1.1] tracking-[0.02em] group-hover:text-orange transition-colors">SQUIRRELS</span>
+            <img src="/assets/images/animals/squirrel.webp" alt="Squirrel removal" class="hidden md:block w-32 lg:w-56 xl:w-64 opacity-85 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 origin-right" loading="lazy">
           </a>
           <div class="py-2">
             <img src="/assets/images/icons/ampersand.svg" alt="" class="w-12 h-12 md:w-16 md:h-16 opacity-60">
           </div>
-          <a href="/peace-of-mind-from/bees-wasps-and-hornets/" class="group block">
-            <span class="block font-heading font-black text-navy text-5xl md:text-7xl lg:text-[7rem] uppercase leading-[1.1] tracking-[0.02em] group-hover:text-orange transition-colors">BEES</span>
+          <a href="/peace-of-mind-from/bees-wasps-and-hornets/" class="group flex items-center justify-between gap-4 md:gap-8">
+            <span class="font-heading font-black text-navy text-5xl md:text-7xl lg:text-[8rem] uppercase leading-[1.1] tracking-[0.02em] group-hover:text-orange transition-colors">BEES</span>
+            <img src="/assets/images/animals/bee.png" alt="Bee removal" class="hidden md:block w-32 lg:w-56 xl:w-64 opacity-85 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 origin-right" loading="lazy">
           </a>
-          <a href="/pest-control-services/" class="group block">
-            <span class="block font-heading font-black text-navy text-5xl md:text-7xl lg:text-[7rem] uppercase leading-[1.1] tracking-[0.02em] group-hover:text-orange transition-colors">BUGS</span>
+          <a href="/pest-control-services/" class="group flex items-center justify-between gap-4 md:gap-8">
+            <span class="font-heading font-black text-navy text-5xl md:text-7xl lg:text-[8rem] uppercase leading-[1.1] tracking-[0.02em] group-hover:text-orange transition-colors">BUGS</span>
+            <img src="/assets/images/animals/ant.webp" alt="Bug extermination" class="hidden md:block w-32 lg:w-56 xl:w-64 opacity-85 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 origin-right" loading="lazy">
           </a>
-          <a href="/wildlife/" class="group block">
-            <span class="block font-heading font-black text-navy text-5xl md:text-7xl lg:text-[7rem] uppercase leading-[1.1] tracking-[0.02em] group-hover:text-orange transition-colors">MORE</span>
+          <a href="/wildlife/" class="group flex items-center justify-between gap-4 md:gap-8">
+            <span class="font-heading font-black text-navy text-5xl md:text-7xl lg:text-[8rem] uppercase leading-[1.1] tracking-[0.02em] group-hover:text-orange transition-colors">MORE</span>
+            <img src="/assets/images/animals/andmore.png" alt="More wildlife services" class="hidden md:block w-32 lg:w-56 xl:w-64 opacity-85 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 origin-right" loading="lazy">
           </a>
         </div>
       </div>
