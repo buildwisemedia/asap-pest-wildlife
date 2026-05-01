@@ -104,32 +104,24 @@
   <!-- GTM noscript -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K953HZ9R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <!-- Top Bar -->
-  <div class="bg-navy text-cream text-sm">
-    <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap justify-between items-center">
-      <div class="flex items-center gap-4 flex-wrap">
-        <a href="tel:7706913636" class="flex items-center gap-1 hover:text-orange transition-colors">
-          <img src="/assets/images/icons/speechbubble.svg" alt="" class="w-4 h-4 invert">
-          <span class="uppercase tracking-wider text-xs font-bold">Call now: 770-691-3636</span>
-        </a>
-        <a href="mailto:info@wildliferemovalasap.com?subject=ASAP%20wildlife%20removal" class="flex items-center gap-1 hover:text-orange transition-colors">
-          <img src="/assets/images/icons/email.svg" alt="" class="w-4 h-4 invert">
-          <span class="uppercase tracking-wider text-xs font-bold">Or Email us for quote</span>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Header / Navigation -->
-  <header class="bg-cream sticky top-0 z-50 border-b border-cream">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="flex items-center justify-between h-20">
-        <!-- Logo -->
+  <!-- Header / Navigation — matches removeasap.com: cream canvas, logo+tagline left, navy phone/email pill upper-right, nav row below -->
+  <header class="bg-cream sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 pt-4 pb-4">
+      <!-- Top row: logo + tagline on left, navy phone/email pill on right -->
+      <div class="flex items-start justify-between gap-4 mb-2">
         <a href="/" class="flex-shrink-0">
-          <img src="/assets/images/logos/logo-orange.png" alt="ASAP Pest & Wildlife Removal - Home" class="h-16 w-auto">
+          <img src="/assets/images/logos/logo-orange-tagline.png" alt="ASAP Pest &amp; Wildlife Removal — Your Pest &amp; Wildlife Extraordinaires" class="h-16 md:h-20 w-auto">
         </a>
-
-        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center bg-navy text-cream rounded-lg px-5 py-2.5 text-sm whitespace-nowrap">
+          <span class="font-bold mr-2">Call now:</span>
+          <a href="tel:7706913636" class="underline hover:text-orange transition-colors font-bold">770-691-3636</a>
+          <span class="mx-2">Or</span>
+          <a href="mailto:info@wildliferemovalasap.com?subject=ASAP%20wildlife%20removal" class="underline hover:text-orange transition-colors font-bold">Email us</a>
+          <span class="ml-1">for quote</span>
+        </div>
+      </div>
+      <!-- Nav row -->
+      <div class="flex items-center justify-between md:justify-end gap-8">
         <nav class="hidden lg:flex items-center gap-8">
           <a href="/" class="text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors">Home</a>
           <a href="/about/" class="text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors">About</a>
@@ -140,17 +132,14 @@
           <a href="/blog/" class="text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors">Blog</a>
           <a href="/book" class="bg-orange text-cream font-bold text-sm uppercase tracking-[0.15em] px-4 py-2 hover:bg-orange-dark transition-colors">Book</a>
         </nav>
-
-        <!-- Mobile Menu Button -->
-        <button id="mobile-menu-btn" class="lg:hidden text-navy p-2" aria-label="Toggle menu">
+        <button id="mobile-menu-btn" class="lg:hidden text-navy p-2 ml-auto" aria-label="Toggle menu">
           <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
           </svg>
         </button>
       </div>
-
       <!-- Mobile Navigation -->
-      <nav id="mobile-menu" class="hidden lg:hidden pb-4">
+      <nav id="mobile-menu" class="hidden lg:hidden pt-4 pb-2">
         <div class="flex flex-col gap-2">
           <a href="/" class="text-navy font-bold py-2 px-3 uppercase tracking-[0.15em] text-sm">Home</a>
           <a href="/about/" class="text-navy font-bold py-2 px-3 uppercase tracking-[0.15em] text-sm">About</a>
@@ -166,24 +155,24 @@
   </header>
 
   <main>
-    <!-- Hero Section — cream bg with scattered animal illustrations -->
-    <section class="reveal bg-cream relative overflow-hidden py-24 md:py-32 lg:py-48">
+    <!-- Hero Section — cream bg with scattered animal illustrations (sized to keep CTA bar in viewport at 1440x900) -->
+    <section class="reveal bg-cream relative overflow-hidden py-12 md:py-16 lg:py-20">
       <!-- Background SVG pattern — prominent, matching the live site's organic leaf texture -->
       <div class="absolute inset-0 opacity-50">
         <img src="/assets/images/backgrounds/home-hero-bg.svg" alt="" class="w-full h-full object-cover">
       </div>
 
-      <!-- Scattered animal illustrations — sized to fill hero like reference -->
-      <img src="/assets/images/animals/raccoon.png" alt="" class="hidden md:block absolute top-12 right-[8%] w-56 lg:w-72 xl:w-80 opacity-90 z-10" loading="lazy">
-      <img src="/assets/images/animals/bat.svg" alt="" class="hidden md:block absolute top-6 left-[42%] w-36 lg:w-48 xl:w-56 opacity-80 z-10" loading="lazy">
-      <img src="/assets/images/animals/groundhog.png" alt="" class="hidden md:block absolute bottom-16 right-[10%] w-48 lg:w-60 xl:w-72 opacity-90 z-10" loading="lazy">
-      <img src="/assets/images/animals/armadillo.png" alt="" class="hidden md:block absolute bottom-20 left-[6%] w-44 lg:w-56 xl:w-64 opacity-90 z-10" loading="lazy">
+      <!-- Scattered animal illustrations — sized smaller to avoid overlapping the hero text -->
+      <img src="/assets/images/animals/bat.svg" alt="" class="hidden md:block absolute top-2 left-[40%] w-24 lg:w-32 opacity-80 z-10" loading="lazy">
+      <img src="/assets/images/animals/raccoon.png" alt="" class="hidden md:block absolute top-12 right-[5%] w-36 lg:w-44 xl:w-52 opacity-90 z-10" loading="lazy">
+      <img src="/assets/images/animals/armadillo.png" alt="" class="hidden md:block absolute bottom-4 left-[3%] w-32 lg:w-40 xl:w-44 opacity-90 z-10" loading="lazy">
+      <img src="/assets/images/animals/groundhog.png" alt="" class="hidden md:block absolute bottom-2 right-[6%] w-36 lg:w-44 xl:w-52 opacity-90 z-10" loading="lazy">
 
       <div class="max-w-7xl mx-auto px-4 relative z-20 text-center">
         <h1 class="font-heading font-black leading-[0.95]">
-          <span class="block text-navy text-5xl md:text-7xl lg:text-[7rem] uppercase tracking-[0.05em] mb-2 md:mb-4">GIVING</span>
-          <span class="block text-outlined-navy text-6xl sm:text-7xl md:text-9xl lg:text-[10rem] xl:text-[12rem] uppercase tracking-[0.02em] whitespace-nowrap">PEACE OF MIND</span>
-          <span class="block text-navy text-xl md:text-3xl lg:text-5xl uppercase tracking-[0.25em] mt-4 md:mt-8">ONE PERSON AT A TIME</span>
+          <span class="block text-navy text-4xl md:text-6xl lg:text-7xl uppercase tracking-[0.05em] mb-2">GIVING</span>
+          <span class="block text-outlined-navy text-5xl sm:text-6xl md:text-8xl lg:text-9xl uppercase tracking-[0.02em] whitespace-nowrap">PEACE OF MIND</span>
+          <span class="block text-navy text-lg md:text-2xl lg:text-4xl uppercase tracking-[0.25em] mt-4">ONE PERSON AT A TIME</span>
         </h1>
       </div>
     </section>
