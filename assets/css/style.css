@@ -139,10 +139,22 @@ html {
 
 /* ============================================
    BODY TEXT DEFAULTS
+   The header is position: absolute at top:0 so it overlays content;
+   padding-top on body pushes the page content below the header height.
+   Reference (removeasap.com) uses position: fixed + matching hero
+   padding — we use absolute + body padding-top for the same effect
+   without per-page hero adjustments.
    ============================================ */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-top: 100px;
+}
+@media (min-width: 768px) {
+  body { padding-top: 120px; }
+}
+@media (min-width: 1024px) {
+  body { padding-top: 140px; }
 }
 
 /* ============================================
