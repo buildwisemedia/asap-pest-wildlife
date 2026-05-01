@@ -154,4 +154,24 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // ============================================
+  // Scroll-reveal — fade-up on viewport enter
+  // Any element with class="reveal" gets ".visible" added when it enters
+  // the viewport. CSS handles the transition. Reduced-motion handled in CSS.
+  // ============================================
+  var revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length && 'IntersectionObserver' in window) {
+    var revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+    revealEls.forEach(function(el) { revealObserver.observe(el); });
+  } else if (revealEls.length) {
+    revealEls.forEach(function(el) { el.classList.add('visible'); });
+  }
+
 });
