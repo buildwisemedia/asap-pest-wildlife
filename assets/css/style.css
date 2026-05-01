@@ -139,22 +139,26 @@ html {
 
 /* ============================================
    BODY TEXT DEFAULTS
-   The header is position: absolute at top:0 so it overlays content;
+   The header is position: fixed at top:0 so it overlays content;
    padding-top on body pushes the page content below the header height.
-   Reference (removeasap.com) uses position: fixed + matching hero
-   padding — we use absolute + body padding-top for the same effect
-   without per-page hero adjustments.
+   Heights account for the new two-row navbar:
+     - lg+ (1024): pill (44) + overlap (-23) + logo (260×0.69 ≈ 179) + paddings (16) ≈ 216
+     - md  (768) : pill (44) + overlap (-23) + logo (220×0.69 ≈ 152) + paddings (16) ≈ 189
+     - base      : no pill, hamburger only — logo (180×0.69 ≈ 124) + paddings (16) ≈ 140
+   Body padding ≈ navbar_height + small buffer.
+   On the home page, body.home-page overrides this to 0 at canvas+ where
+   the canvas-cap's pt:240 takes over navbar clearance.
    ============================================ */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-top: 100px;
+  padding-top: 140px;
 }
 @media (min-width: 768px) {
-  body { padding-top: 120px; }
+  body { padding-top: 200px; }
 }
 @media (min-width: 1024px) {
-  body { padding-top: 140px; }
+  body { padding-top: 230px; }
 }
 
 /* ============================================
@@ -196,6 +200,31 @@ body {
    navbar clearance. Below 1440 we keep the body padding so mobile/tablet hero
    text doesn't collide with the fixed navbar. */
 @media (min-width: 1440px) { body.home-page { padding-top: 0; } }
+
+/* ============================================
+   CTA BANNER — tooth clearance + mobile hide
+   The arrow-orange tooth is absolute-positioned inside the bar with top:0
+   and h-auto on a 14.28vw-wide SVG (aspect 320/341 ≈ 0.94). It hangs ~196px
+   below the bar at canvas+ and ~14vw on smaller viewports. Without bottom
+   padding on the section, the tooth overlaps content in the next section
+   (visible on contact / about / wildlife pages where text starts close).
+   Reference (.hero-arrow-wrapper.background---cream.blog) uses 14.28vw mb;
+   at canvas+ we lock to 200px so it stops scaling above the breakpoint.
+
+   Mobile (<768) hides the tooth to match reference's display:none — and
+   spares small viewports the extra padding-bottom they don't need.
+   ============================================ */
+.cta-banner-section { padding-bottom: 14.28vw; }
+@media (min-width: 1440px) {
+  .cta-banner-section { padding-bottom: 200px; }
+}
+.cta-tooth { display: none; }
+@media (min-width: 768px) {
+  .cta-tooth { display: block; }
+}
+@media (max-width: 767px) {
+  .cta-banner-section { padding-bottom: 0; }
+}
 
 /* ============================================
    CANVAS CAP @ 1440px
