@@ -184,3 +184,55 @@ body {
     transition: none;
   }
 }
+
+/* ============================================
+   HOME PAGE — body padding override
+   Reference uses position:fixed navbar + zero body padding so the hero
+   section starts at viewport y=0. We mirror that on the home page only,
+   keeping the absolute-navbar + body-padding pattern on inner pages.
+   Selector specificity (0,0,1,1) beats the base body rule (0,0,0,1).
+   ============================================ */
+/* Only zero body padding at canvas+ (≥1440), where canvas-cap's pt:240 provides
+   navbar clearance. Below 1440 we keep the body padding so mobile/tablet hero
+   text doesn't collide with the fixed navbar. */
+@media (min-width: 1440px) { body.home-page { padding-top: 0; } }
+
+/* ============================================
+   CANVAS CAP @ 1440px
+   Mirrors removeasap.com's `@media (min-width: 1440px)` block:
+   above this breakpoint reference switches from vw-based fluid
+   sizing to fixed pixels so the design stops scaling. Below 1440px
+   the existing vw-based fluidity stays. Selector specificity (0,0,2,0)
+   is chosen to beat Tailwind utility classes (0,0,1,0) without
+   requiring !important.
+   ============================================ */
+@media (min-width: 1440px) {
+  .canvas-cap {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 240px;          /* reference .padding---medium.stackable---bottom.position---relative pt:12vw locked */
+    padding-left: 103px;
+    padding-right: 103px;
+    padding-bottom: 0;
+  }
+  .canvas-cap .hero-giving { font-size: 90px; }
+  .canvas-cap .hero-peace  { font-size: 170px; }
+  .canvas-cap .hero-one    {
+    font-size: 60px;
+    letter-spacing: 16px;
+  }
+  /* animal canvas+ overrides — reference uses fixed-pixel translates above 1440 */
+  .canvas-cap .home-bat       { transform: translate(290px); }
+  .canvas-cap .home-groundhog { max-width: 103px; transform: translate(-123px, 74px); }
+  .canvas-cap .home-raccoon   { top: 3%; }
+  .cta-canvas-cap {
+    max-width: 1440px;
+    margin-right: 206px;
+    padding-left: 103px;
+    padding-right: 25.75px;
+  }
+  .cta-canvas-cap .cta-tooth {
+    right: -9%;
+  }
+}
