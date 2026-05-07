@@ -1,7 +1,9 @@
 /**
- * BWM Attribution Tracker
+ * BWM Attribution Tracker — v2.10
  * Captures UTM + click IDs from ad traffic, persists in a first-party
- * cookie, and injects into dataLayer, forms, and Cal.com embeds.
+ * cookie, and injects into dataLayer, forms, and Cal.com embeds. Also
+ * fires explicit phone_click + email_click GA4 events with privacy-
+ * redacted payloads (last-4 phone digits, email domain only).
  * No external deps. No localStorage. Cookie-only (cross-subdomain).
  */
 (function () {
@@ -251,4 +253,66 @@
       }
     }, { passive: true });
   }
+})();
+
+/**
+ * BWM phone_click + email_click delegated tracking — v2.10 (2026-05-07).
+ *
+ * Listens for clicks on tel: and mailto: anchors anywhere in the document
+ * via a single delegated handler on document (capture phase). Fires GA4
+ * events `phone_click` / `email_click` with privacy-redacted payloads:
+ *   phone_click → { phone_number_redacted: "<last 4 digits>", page_path, page_referrer }
+ *   email_click → { email_domain: "<provider>", page_path, page_referrer }
+ *
+ * Additive: does NOT preventDefault, so the browser's native tel:/mailto:
+ * handler still runs and any pre-existing generic `click` listeners
+ * (GTM auto-event tracking, etc.) keep firing.
+ *
+ * Uses transport_type='beacon' so the GA4 hit survives the navigation
+ * that tel:/mailto: triggers on mobile (phone app / mail client takeover).
+ */
+(function () {
+  'use strict';
+
+  function redactPhone(href) {
+    var digits = String(href || '').replace(/\D/g, '');
+    return digits.length >= 4 ? digits.slice(-4) : '';
+  }
+
+  function emailDomain(href) {
+    var addr = String(href || '').replace(/^mailto:/i, '').split(/[?#]/)[0];
+    var at = addr.indexOf('@');
+    return at >= 0 ? addr.slice(at + 1).toLowerCase() : '';
+  }
+
+  function fireClickEvent(eventName, params) {
+    var payload = {
+      page_path: location.pathname,
+      page_referrer: document.referrer || ''
+    };
+    Object.keys(params || {}).forEach(function (k) { payload[k] = params[k]; });
+
+    window.dataLayer = window.dataLayer || [];
+    var dlEvent = { event: eventName };
+    Object.keys(payload).forEach(function (k) { dlEvent[k] = payload[k]; });
+    window.dataLayer.push(dlEvent);
+
+    if (typeof window.gtag === 'function') {
+      var gtagParams = { transport_type: 'beacon' };
+      Object.keys(payload).forEach(function (k) { gtagParams[k] = payload[k]; });
+      try { window.gtag('event', eventName, gtagParams); } catch (_) {}
+    }
+  }
+
+  document.addEventListener('click', function (e) {
+    if (!e.target || typeof e.target.closest !== 'function') return;
+    var a = e.target.closest('a[href]');
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    if (/^tel:/i.test(href)) {
+      fireClickEvent('phone_click', { phone_number_redacted: redactPhone(href) });
+    } else if (/^mailto:/i.test(href)) {
+      fireClickEvent('email_click', { email_domain: emailDomain(href) });
+    }
+  }, true);
 })();
