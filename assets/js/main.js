@@ -39,9 +39,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
       const formData = new FormData(form);
       const data = Object.fromEntries(formData.entries());
+      data.client_slug = 'asap-pest-wildlife';
+      data.formType = 'contact';
 
       try {
-        const response = await fetch('https://leads.buildwisemedia.com/intake', {
+        const response = await fetch('https://bwm-form-handler.robert-ba0.workers.dev/submit', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(data)
