@@ -1,0 +1,39 @@
+{
+  "_doc": "BWM Client Locks — machine-checkable contract for asap-pest-wildlife. Each assertion is a perceptual failure mode the team committed to never recur. Loaded by Brain's tools/bwm-client-locks-qa.py during PATCH and FULL BUILD. Drift from these locks = build failure. Source incidents: John's 2026-05-08 website-review email + Nehemiah's 2026-05-11 meeting (transcript at ~/Downloads/nehemiah-2026-05-11-transcript.md).",
+  "client_slug": "asap-pest-wildlife",
+  "version": 1,
+  "last_updated": "2026-05-12",
+
+  "required_strings": [
+    {"url": "/wildlife/", "string": "Exclusion", "rationale": "Sealing entry points is core to wildlife process — was replaced by 'Empathy' in v6, restored 2026-05-12 per client review."},
+    {"url": "/wildlife/", "string": "Inspection", "rationale": "Step 1 of canonical 5-step process."},
+    {"url": "/wildlife/", "string": "Capture", "rationale": "Step 2 of canonical 5-step process."},
+    {"url": "/wildlife/", "string": "Release", "rationale": "Step 4 of canonical 5-step process."},
+    {"url": "/wildlife/", "string": "Warranty", "rationale": "Step 5 of canonical 5-step process."}
+  ],
+
+  "required_assets": [
+    {"url": "/about/", "asset": "arrow-orange.svg", "rationale": "Item #5: All inner pages have the orange-tooth CTA banner. About was missing it pre-2026-05-12."},
+    {"url": "/", "asset": "monster-icon.png", "rationale": "Item #9: Contact-form section uses the canonical monster, not the thin-mouth-line SVG."},
+    {"url": "/contact/", "asset": "monster-icon.png", "rationale": "Item #9: Contact-form section uses the canonical monster, not the thin-mouth-line SVG."},
+    {"url": "/", "asset": "arrow-orange.svg", "rationale": "Homepage CTA banner shows the orange-tooth element."}
+  ],
+
+  "forbidden_assets": [
+    {"url": "/", "asset": "mascots/orange-mascot.svg", "rationale": "Item #9: This is the deprecated thin-mouth-line monster. Never use in contact sections."},
+    {"url": "/contact/", "asset": "mascots/orange-mascot.svg", "rationale": "Item #9: Same."}
+  ],
+
+  "required_class_on_h1": [
+    {"url": "/wildlife/", "class_pattern": "text-outlined-", "rationale": "Item #1: Inner-page H1s use the hollowed-out style matching homepage Peace-of-Mind treatment."},
+    {"url": "/pest-control-services/", "class_pattern": "text-outlined-", "rationale": "Item #1: Same."},
+    {"url": "/services/", "class_pattern": "text-outlined-", "rationale": "Item #1: Same."},
+    {"url": "/blog/", "class_pattern": "text-outlined-", "rationale": "Item #1: Same."},
+    {"url": "/commercial-services/", "class_pattern": "text-outlined-", "rationale": "Item #1: Same."}
+  ],
+
+  "min_pattern_count": [
+    {"url": "/", "regex": "partners/[a-z0-9-]+\\.(svg|png)", "min": 9, "rationale": "Item #4: Homepage partner-logo grid has 9 logos in a normalized grid (was unaligned flex-wrap before 2026-05-12)."},
+    {"url": "/commercial-services/", "regex": "partners/[a-z0-9-]+\\.(svg|png)", "min": 9, "rationale": "Item #8: Commercial page partner-logo grid (Walmart alignment was the trigger)."}
+  ]
+}
