@@ -104,13 +104,16 @@
       </div>
     </section>
 
-    <!-- CTA Banner -->
-    <div class="bg-orange py-4" style="clip-path: polygon(0 0, 100% 0, 97% 100%, 0% 100%);">
-      <div class="max-w-7xl mx-auto px-4 flex flex-wrap items-center justify-center gap-2 text-white">
-        <span class="uppercase tracking-[0.15em] font-bold text-sm">For services and immediate attention</span>
-        <a href="tel:7706913636" class="uppercase tracking-[0.15em] font-black text-lg hover:text-cream transition-colors">CALL NOW (770)691-3636</a>
+    <!-- CTA Phone Banner with tooth — restored to match other pages (canonical sitewide pattern) -->
+    <section class="cta-banner-section relative">
+      <div class="cta-canvas-cap bg-orange py-4 md:py-5 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 flex flex-wrap items-center justify-end gap-3 text-white pr-[16vw] md:pr-[20vw]">
+          <span class="uppercase tracking-[0.15em] font-bold text-sm md:text-base">For services and immediate attention</span>
+          <a href="tel:7706913636" class="uppercase tracking-[0.15em] font-black text-lg md:text-2xl hover:text-cream transition-colors">CALL NOW (770)691-3636</a>
+        </div>
+        <img src="/assets/images/icons/arrow-orange.svg" alt="" class="cta-tooth absolute top-0 right-[5%] md:right-[8%] w-[14.28vw] h-auto z-20" loading="lazy">
       </div>
-    </div>
+    </section>
 
     <!-- Our Aim -->
     <section class="bg-cream py-16 md:py-24 relative overflow-hidden">
@@ -212,20 +215,20 @@
       </div>
     </section>
 
-    <!-- Photo Gallery Slider -->
+    <!-- Photo Gallery Slider — pulled back zoom per client feedback 2026-05-12 (was h-64/h-96 object-cover, too aggressive crop) -->
     <section class="bg-cream py-16">
-      <div class="max-w-4xl mx-auto px-4">
+      <div class="max-w-6xl mx-auto px-4">
         <p class="text-navy uppercase tracking-[0.2em] font-bold text-sm mb-6">Photo Gallery</p>
-        <div class="slider-container rounded-lg overflow-hidden">
+        <div class="slider-container rounded-lg overflow-hidden bg-navy/5">
           <div class="slider-track" id="about-slider">
             <div class="slider-slide">
-              <img src="/assets/images/photos/slider-2.png" alt="ASAP team at work" class="w-full h-64 md:h-96 object-cover">
+              <img src="/assets/images/photos/slider-2.png" alt="ASAP team at work" class="w-full h-72 md:h-[28rem] lg:h-[32rem] object-contain">
             </div>
             <div class="slider-slide">
-              <img src="/assets/images/photos/slider-1.png" alt="Wildlife removal in progress" class="w-full h-64 md:h-96 object-cover">
+              <img src="/assets/images/photos/slider-1.png" alt="Wildlife removal in progress" class="w-full h-72 md:h-[28rem] lg:h-[32rem] object-contain">
             </div>
             <div class="slider-slide">
-              <img src="/assets/images/photos/slider-3.png" alt="ASAP service truck" class="w-full h-64 md:h-96 object-cover">
+              <img src="/assets/images/photos/slider-3.png" alt="ASAP service truck" class="w-full h-72 md:h-[28rem] lg:h-[32rem] object-contain">
             </div>
           </div>
           <div class="flex justify-center gap-3 mt-4">
