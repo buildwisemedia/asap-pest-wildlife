@@ -2,7 +2,7 @@
   "_doc": "BWM Client Locks — machine-checkable contract for asap-pest-wildlife. Each assertion is a perceptual failure mode the team committed to never recur. Loaded by Brain's tools/bwm-client-locks-qa.py during PATCH and FULL BUILD. Drift from these locks = build failure. Source incidents: John's 2026-05-08 website-review email + Nehemiah's 2026-05-11 meeting (transcript at ~/Downloads/nehemiah-2026-05-11-transcript.md).",
   "client_slug": "asap-pest-wildlife",
   "version": 1,
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-13",
 
   "required_strings": [
     {"url": "/wildlife/", "string": "Exclusion", "rationale": "Sealing entry points is core to wildlife process — was replaced by 'Empathy' in v6, restored 2026-05-12 per client review."},
@@ -21,7 +21,8 @@
 
   "forbidden_assets": [
     {"url": "/", "asset": "mascots/orange-mascot.svg", "rationale": "Item #9: This is the deprecated thin-mouth-line monster. Never use in contact sections."},
-    {"url": "/contact/", "asset": "mascots/orange-mascot.svg", "rationale": "Item #9: Same."}
+    {"url": "/contact/", "asset": "mascots/orange-mascot.svg", "rationale": "Item #9: Same."},
+    {"url": "/", "asset": "icons/ampersand.svg", "rationale": "Nehemiah 2026-05-13 (via John): the two decorative '&' separators in the We-Remove-&-Exclude pest list (between Squirrels/Bees + after More) are visual noise — removed."}
   ],
 
   "required_class_on_h1": [
