@@ -1,0 +1,119 @@
+# BWM Post-Deploy QA Gate
+# Runs tools/bwm-website-qa.sh from the Brain against the live staging URL
+# after each Cloudflare Pages deployment completes.
+#
+# Repo secrets required:
+#   BRAIN_KEY              - fetches QA script from brain.buildwisemedia.com
+#   CLOUDFLARE_API_TOKEN   - polls CF Pages for deployment status
+#   CLOUDFLARE_ACCOUNT_ID  - CF account ID
+#
+# Repo variables required (Settings > Variables):
+#   PAGES_PROJECT_NAME     - e.g., asap-pest-wildlife
+#   STAGING_URL            - e.g., https://asap-pest-wildlife.pages.dev
+#
+# Client-agnostic: copy to any client repo and set the two variables above.
+# No per-client YAML edits needed.
+
+name: QA Gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: qa-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  qa-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Wait for Cloudflare Pages deployment
+        if: github.event_name == 'push'
+        env:
+          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          PROJECT: ${{ vars.PAGES_PROJECT_NAME }}
+          COMMIT_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          if [ -z "${PROJECT:-}" ]; then
+            echo "::error::PAGES_PROJECT_NAME repo variable is not set" >&2
+            exit 1
+          fi
+          echo "Polling CF Pages for deployment of commit ${COMMIT_SHA}..."
+          MAX_ATTEMPTS=60
+          ATTEMPT=0
+          while [ $ATTEMPT -lt $MAX_ATTEMPTS ]; do
+            ATTEMPT=$((ATTEMPT+1))
+            RESP=$(curl -fsS \
+              -H "Authorization: Bearer ${CF_API_TOKEN}" \
+              "https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT_ID}/pages/projects/${PROJECT}/deployments?per_page=10")
+            MATCH=$(echo "$RESP" | jq -r --arg sha "$COMMIT_SHA" '
+              .result[]
+              | select(.deployment_trigger.metadata.commit_hash == $sha)
+              | "\(.id) \(.latest_stage.name) \(.latest_stage.status)"
+            ' | head -1 || true)
+            if [ -n "$MATCH" ]; then
+              STAGE_NAME=$(echo "$MATCH" | awk '{print $2}')
+              STAGE_STATUS=$(echo "$MATCH" | awk '{print $3}')
+              echo "Attempt ${ATTEMPT}: stage=${STAGE_NAME} status=${STAGE_STATUS}"
+              if [ "$STAGE_NAME" = "deploy" ] && [ "$STAGE_STATUS" = "success" ]; then
+                echo "Deploy succeeded. Proceeding to QA."
+                exit 0
+              fi
+              if [ "$STAGE_STATUS" = "failure" ]; then
+                echo "::error::Cloudflare Pages deployment failed at stage ${STAGE_NAME}" >&2
+                exit 1
+              fi
+            else
+              echo "Attempt ${ATTEMPT}: no deployment yet for commit ${COMMIT_SHA}"
+            fi
+            sleep 10
+          done
+          echo "::error::Timed out waiting for CF Pages deployment after 10 minutes" >&2
+          exit 1
+
+      - name: Install QA prerequisites
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq curl jq bc
+          node --version
+          npm --version
+
+      - name: Fetch QA script from Brain
+        env:
+          BRAIN_KEY: ${{ secrets.BRAIN_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "${BRAIN_KEY:-}" ]; then
+            echo "::error::BRAIN_KEY repo secret is not set" >&2
+            exit 1
+          fi
+          curl -fsS \
+            -H "x-brain-key: ${BRAIN_KEY}" \
+            -H "User-Agent: github-actions-qa-gate" \
+            "https://brain.buildwisemedia.com/read?path=tools/bwm-website-qa.sh" \
+            | jq -r '.content' > bwm-website-qa.sh
+          chmod +x bwm-website-qa.sh
+          head -5 bwm-website-qa.sh
+          wc -l bwm-website-qa.sh
+
+      - name: Run QA gate
+        env:
+          STAGING_URL: ${{ vars.STAGING_URL }}
+        run: |
+          set -euo pipefail
+          if [ -z "${STAGING_URL:-}" ]; then
+            echo "::error::STAGING_URL repo variable is not set" >&2
+            exit 1
+          fi
+          echo "Running QA against: ${STAGING_URL}"
+          bash bwm-website-qa.sh "${STAGING_URL}"
