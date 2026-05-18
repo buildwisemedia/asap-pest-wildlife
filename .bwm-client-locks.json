@@ -21,6 +21,15 @@
     {"url": "/peace-of-mind-from/bees-wasps-and-hornets/", "string": "id=\"bee-faq\"", "rationale": "John Mukasa 2026-03-09 ask (v8.4): bee-specific FAQ accordion (5 items) on the bee page. The id anchors the section for lock + future deep-linking from ads."}
   ],
 
+  "forbidden_strings": [
+    {"url": "/about/", "string": ">More Photos<", "rationale": "Robert 2026-05-18 (v8.5): the 'More Photos' button on About linked to ASAP's Google Maps business listing. ASAP is a mobile-service company with no retail location; sending visitors to a Maps page implies otherwise. Removed in v8.5. Lock guards against re-insertion."},
+    {"url": "/wildlife/", "string": "Google Photos", "rationale": "Robert 2026-05-18 (v8.5): the 'Google Photos →' link on Wildlife had a text/destination mismatch (label said Google Photos, href pointed to Google Maps). Removed in v8.5. Lock guards both the broken label and re-insertion of any Google Photos CTA without a real photo album URL."}
+  ],
+
+  "forbidden_substring_in_svg_fill": [
+    {"path": "assets/images/partners/", "substring": "#F2EDDC", "rationale": "Robert 2026-05-18 (v8.5): partner logos tps.svg, ccm.svg, cw.svg, gfl.svg, ksm.svg were authored with cream (#F2EDDC) fills for a dark-bg context. On ASAP's cream partner band the logos rendered as cream-on-cream and were invisible to visitors. Fills swapped to navy (#212936). Lock prevents future regression where a partner SVG ships with cream fill against the cream partner section."}
+  ]
+
   "required_assets": [
     {"url": "/about/", "asset": "arrow-orange.svg", "rationale": "Item #5: All inner pages have the orange-tooth CTA banner. About was missing it pre-2026-05-12."},
     {"url": "/", "asset": "monster-icon.png", "rationale": "Item #9: Contact-form section uses the canonical monster, not the thin-mouth-line SVG."},
