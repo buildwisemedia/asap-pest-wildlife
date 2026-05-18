@@ -9,7 +9,11 @@
     {"url": "/wildlife/", "string": "Inspection", "rationale": "Step 1 of canonical 5-step process."},
     {"url": "/wildlife/", "string": "Capture", "rationale": "Step 2 of canonical 5-step process."},
     {"url": "/wildlife/", "string": "Release", "rationale": "Step 4 of canonical 5-step process."},
-    {"url": "/wildlife/", "string": "Warranty", "rationale": "Step 5 of canonical 5-step process."}
+    {"url": "/wildlife/", "string": "Warranty", "rationale": "Step 5 of canonical 5-step process."},
+    {"url": "/", "string": "id=\"site-header\"", "rationale": "Allaine 2026-05-18 flag: nav transparent overlapped content on scroll. Header MUST carry id=\"site-header\" so main.js can toggle .is-scrolled (CSS in style.css adds bg-cream/95 + backdrop-blur). Removing the id silently regresses nav readability on scroll."},
+    {"url": "/about/", "string": "id=\"site-header\"", "rationale": "Same — applies sitewide."},
+    {"url": "/wildlife/", "string": "id=\"site-header\"", "rationale": "Same — applies sitewide."},
+    {"url": "/", "string": "is-scrolled", "rationale": "Allaine 2026-05-18: scroll-state JS must remain in main.js (else nav stays transparent forever). Lock guards both the CSS class hook and the toggle handler."}
   ],
 
   "required_assets": [

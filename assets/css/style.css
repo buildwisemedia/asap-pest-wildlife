@@ -235,6 +235,15 @@ body {
    is chosen to beat Tailwind utility classes (0,0,1,0) without
    requiring !important.
    ============================================ */
+
+/* Allaine 2026-05-18 flag: nav transparent overlapped content on scroll. */
+#site-header.is-scrolled {
+  background-color: rgba(242, 237, 220, 0.95);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
 @media (min-width: 1440px) {
   .canvas-cap {
     max-width: 1440px;

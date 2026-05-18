@@ -2,6 +2,16 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
+  // Allaine 2026-05-18 flag: nav transparent overlapped content on scroll.
+  var siteHeader = document.getElementById('site-header');
+  if (siteHeader) {
+    var updateHeaderScroll = function() {
+      siteHeader.classList.toggle('is-scrolled', window.scrollY > 24);
+    };
+    updateHeaderScroll();
+    window.addEventListener('scroll', updateHeaderScroll, { passive: true });
+  }
+
   // ============================================
   // Mobile Menu Toggle
   // ============================================
