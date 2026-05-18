@@ -26,7 +26,7 @@
     {"url": "/", "asset": "monster-icon.png", "rationale": "Item #9: Contact-form section uses the canonical monster, not the thin-mouth-line SVG."},
     {"url": "/contact/", "asset": "monster-icon.png", "rationale": "Item #9: Contact-form section uses the canonical monster, not the thin-mouth-line SVG."},
     {"url": "/", "asset": "arrow-orange.svg", "rationale": "Homepage CTA banner shows the orange-tooth element."},
-    {"url": "/", "asset": "icons/ampersand.svg", "rationale": "John 2026-05-15 (correcting v8.1 over-removal): reference removeasap.com keeps ONE decorative '&' on the 'More' tab. We removed both in v8.1; restored the after-'More' instance in v8.2 to match reference. The Squirrels/Bees instance stays removed (reference doesn't have it)."}
+    {"url": "/", "asset": "icons/ampersand.svg", "rationale": "Required asset for the 'More' tab decorative '&'. Layout history: v8.1 over-removed both ampersands; v8.2 restored the after-'More' instance; v8.4 (Robert 2026-05-18) moved it BEFORE 'More' with negative margin-right per removeasap.com reference (underlaps the M from the left, larger, opacity-80). Current authoritative structure is anchored by the we-remove-amp class — see required_strings entry below."}
   ],
 
   "forbidden_assets": [
