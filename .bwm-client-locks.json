@@ -13,7 +13,12 @@
     {"url": "/", "string": "id=\"site-header\"", "rationale": "Allaine 2026-05-18 flag: nav transparent overlapped content on scroll. Header MUST carry id=\"site-header\" so main.js can toggle .is-scrolled (CSS in style.css adds bg-cream/95 + backdrop-blur). Removing the id silently regresses nav readability on scroll."},
     {"url": "/about/", "string": "id=\"site-header\"", "rationale": "Same — applies sitewide."},
     {"url": "/wildlife/", "string": "id=\"site-header\"", "rationale": "Same — applies sitewide."},
-    {"url": "/", "string": "is-scrolled", "rationale": "Allaine 2026-05-18: scroll-state JS must remain in main.js (else nav stays transparent forever). Lock guards both the CSS class hook and the toggle handler."}
+    {"url": "/", "string": "is-scrolled", "rationale": "Allaine 2026-05-18: scroll-state JS must remain in main.js (else nav stays transparent forever). Lock guards both the CSS class hook and the toggle handler."},
+    {"url": "/", "string": "we-remove-amp", "rationale": "Robert 2026-05-18 flag (v8.4): the More tab's ampersand must sit BEFORE 'More' with negative margin-right (underlaps the M from the left), matching removeasap.com reference. The we-remove-amp class on the img anchors the structure; removing it regresses to the spaced-after layout that prompted the flag."},
+    {"url": "/peace-of-mind-from/bees-wasps-and-hornets/", "string": "Certified Honey Bee Control", "rationale": "John Mukasa 2026-03-09 ask (v8.4 Phase 1 close-out): bee page must surface the HBR (Honey Bee Removal Operator) certification under the Georgia Structural Pest Control Act. This is ASAP's primary honey-bee differentiator versus generic pest spraying."},
+    {"url": "/peace-of-mind-from/bees-wasps-and-hornets/", "string": "Georgia Structural Pest Control Act", "rationale": "John Mukasa 2026-03-09 ask: legal statute name must appear verbatim per HBR licensure framing."},
+    {"url": "/peace-of-mind-from/bees-wasps-and-hornets/", "string": "Nonprofit Partnership", "rationale": "John Mukasa 2026-03-09 ask: bee page must call out ASAP's nonprofit-relocation partnership for live honey bee colonies."},
+    {"url": "/peace-of-mind-from/bees-wasps-and-hornets/", "string": "id=\"bee-faq\"", "rationale": "John Mukasa 2026-03-09 ask (v8.4): bee-specific FAQ accordion (5 items) on the bee page. The id anchors the section for lock + future deep-linking from ads."}
   ],
 
   "required_assets": [
