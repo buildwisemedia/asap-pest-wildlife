@@ -1,8 +1,8 @@
 {
-  "_doc": "BWM Client Locks — machine-checkable contract for asap-pest-wildlife. Each assertion is a perceptual failure mode the team committed to never recur. Loaded by Brain's tools/bwm-client-locks-qa.py during PATCH and FULL BUILD. Drift from these locks = build failure. Source incidents: John's 2026-05-08 website-review email + Nehemiah's 2026-05-11 meeting (transcript at ~/Downloads/nehemiah-2026-05-11-transcript.md).",
+  "_doc": "BWM Client Locks — machine-checkable contract for asap-pest-wildlife. Each assertion is a perceptual failure mode the team committed to never recur. Loaded by Brain's tools/bwm-client-locks-qa.py during PATCH and FULL BUILD. Drift from these locks = build failure. Source incidents: John's 2026-05-08 website-review email + Nehemiah's 2026-05-11 meeting (transcript at ~/Downloads/nehemiah-2026-05-11-transcript.md) + John's 2026-05-15 v8.1 review (over-removed ampersand + phone-tooth overlap).",
   "client_slug": "asap-pest-wildlife",
   "version": 1,
-  "last_updated": "2026-05-13",
+  "last_updated": "2026-05-18",
 
   "required_strings": [
     {"url": "/wildlife/", "string": "Exclusion", "rationale": "Sealing entry points is core to wildlife process — was replaced by 'Empathy' in v6, restored 2026-05-12 per client review."},
@@ -16,13 +16,13 @@
     {"url": "/about/", "asset": "arrow-orange.svg", "rationale": "Item #5: All inner pages have the orange-tooth CTA banner. About was missing it pre-2026-05-12."},
     {"url": "/", "asset": "monster-icon.png", "rationale": "Item #9: Contact-form section uses the canonical monster, not the thin-mouth-line SVG."},
     {"url": "/contact/", "asset": "monster-icon.png", "rationale": "Item #9: Contact-form section uses the canonical monster, not the thin-mouth-line SVG."},
-    {"url": "/", "asset": "arrow-orange.svg", "rationale": "Homepage CTA banner shows the orange-tooth element."}
+    {"url": "/", "asset": "arrow-orange.svg", "rationale": "Homepage CTA banner shows the orange-tooth element."},
+    {"url": "/", "asset": "icons/ampersand.svg", "rationale": "John 2026-05-15 (correcting v8.1 over-removal): reference removeasap.com keeps ONE decorative '&' on the 'More' tab. We removed both in v8.1; restored the after-'More' instance in v8.2 to match reference. The Squirrels/Bees instance stays removed (reference doesn't have it)."}
   ],
 
   "forbidden_assets": [
     {"url": "/", "asset": "mascots/orange-mascot.svg", "rationale": "Item #9: This is the deprecated thin-mouth-line monster. Never use in contact sections."},
-    {"url": "/contact/", "asset": "mascots/orange-mascot.svg", "rationale": "Item #9: Same."},
-    {"url": "/", "asset": "icons/ampersand.svg", "rationale": "Nehemiah 2026-05-13 (via John): the two decorative '&' separators in the We-Remove-&-Exclude pest list (between Squirrels/Bees + after More) are visual noise — removed."}
+    {"url": "/contact/", "asset": "mascots/orange-mascot.svg", "rationale": "Item #9: Same."}
   ],
 
   "required_class_on_h1": [
