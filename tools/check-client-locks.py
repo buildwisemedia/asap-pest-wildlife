@@ -25,6 +25,9 @@ import urllib.request
 from pathlib import Path
 
 
+_SCRIPT_CACHE: dict[str, str] = {}
+
+
 def fetch(url: str) -> str:
     req = urllib.request.Request(url, headers={"User-Agent": "bwm-client-locks-qa/1.0"})
     with urllib.request.urlopen(req, timeout=15) as resp:
@@ -34,6 +37,11 @@ def fetch(url: str) -> str:
 def check_required_strings(html: str, lock: dict) -> tuple[bool, str]:
     s = lock["string"]
     return (s in html, f'expected literal "{s}" in HTML')
+
+
+def check_forbidden_strings(html: str, lock: dict) -> tuple[bool, str]:
+    s = lock["string"]
+    return (s not in html, f'forbidden literal "{s}" must not appear in HTML')
 
 
 def check_required_assets(html: str, lock: dict) -> tuple[bool, str]:
@@ -74,13 +82,74 @@ def check_min_pattern_count(html: str, lock: dict) -> tuple[bool, str]:
     )
 
 
+def check_script_src_contains(html: str, lock: dict, *, base_url: str) -> tuple[bool, str]:
+    """Lock the BODY of an external JS file, not its presence in HTML.
+
+    Use when the asserted behavior lives in a <script src="..."></script> file
+    and absence from HTML would otherwise yield a false negative (e.g., the
+    `is-scrolled` CSS class is toggled inside main.js, never serialized to HTML).
+    """
+    src = lock["src"]
+    needle = lock["string"]
+    # Confirm the page actually loads the file we're about to fetch — otherwise
+    # the lock would pass against a JS file the page doesn't use.
+    if f'src="{src}"' not in html and f"src='{src}'" not in html:
+        return (False, f'page does not load <script src="{src}">')
+    js_url = base_url + src if src.startswith("/") else base_url + "/" + src
+    if js_url not in _SCRIPT_CACHE:
+        try:
+            _SCRIPT_CACHE[js_url] = fetch(js_url)
+        except Exception as e:
+            return (False, f"fetch {js_url} failed: {e}")
+    body = _SCRIPT_CACHE[js_url]
+    return (needle in body, f'expected literal "{needle}" in {src}')
+
+
+def check_forbidden_substring_in_svg_fill(html: str, lock: dict) -> tuple[bool, str]:
+    """Scan local SVG files in a directory for a forbidden substring.
+
+    Reads from disk (not the deployed URL) because:
+    (a) the build copies SVGs 1:1, so local == deployed for static assets;
+    (b) HTML-list-of-SVGs is not authoritative — the lock guards the file
+        itself, not whichever pages reference it.
+
+    The `html` arg is unused but kept for handler-signature uniformity.
+    """
+    del html  # signature uniformity with HTML-scoped checkers
+    dir_path = Path(lock["path"])
+    substring = lock["substring"]
+    if not dir_path.is_dir():
+        return (False, f"directory {dir_path} not found")
+    offenders = []
+    svgs = sorted(dir_path.glob("*.svg"))
+    for svg in svgs:
+        try:
+            text = svg.read_text(errors="replace")
+        except Exception as e:
+            return (False, f"read {svg} failed: {e}")
+        if substring in text:
+            offenders.append(svg.name)
+    if offenders:
+        return (
+            False,
+            f'forbidden substring "{substring}" found in {len(offenders)} SVG(s) under {dir_path}/: {", ".join(offenders)}',
+        )
+    return (True, f'no SVG under {dir_path}/ contains "{substring}" ({len(svgs)} scanned)')
+
+
 CHECKERS = {
     "required_strings": check_required_strings,
+    "forbidden_strings": check_forbidden_strings,
     "required_assets": check_required_assets,
     "forbidden_assets": check_forbidden_assets,
     "required_class_on_h1": check_required_class_on_h1,
     "min_pattern_count": check_min_pattern_count,
+    "script_src_contains": check_script_src_contains,
+    "forbidden_substring_in_svg_fill": check_forbidden_substring_in_svg_fill,
 }
+
+# Keys in .bwm-client-locks.json that are metadata, not lock sections.
+_METADATA_KEYS = {"_doc", "client_slug", "version", "last_updated"}
 
 
 def main(argv: list[str]) -> int:
@@ -98,13 +167,41 @@ def main(argv: list[str]) -> int:
     client = locks.get("client_slug", "?")
     print(f"BWM client-locks gate · client={client} · base={base_url}\n")
 
-    pages = {}
-    for kind, checker in CHECKERS.items():
-        for lock in locks.get(kind, []):
-            pages.setdefault(lock["url"], []).append((kind, lock))
+    # Schema drift guard: a JSON section without a handler is a silent skip,
+    # which is the exact failure mode that hid the v8.5→v8.6 forbidden_strings
+    # and forbidden_substring_in_svg_fill regressions. Fail loud instead.
+    unknown_sections = set(locks.keys()) - _METADATA_KEYS - set(CHECKERS.keys())
+    if unknown_sections:
+        print(
+            f"::error::Unknown lock section(s) in .bwm-client-locks.json: "
+            f"{sorted(unknown_sections)}. Either add a checker or remove the section.",
+            file=sys.stderr,
+        )
+        return 2
+
+    # URL-less locks (disk-scoped, e.g. SVG fill scans). Run before HTTP fetches.
+    diskless_kinds = {"forbidden_substring_in_svg_fill"}
 
     passed = 0
     failed_items = []
+
+    for kind in diskless_kinds:
+        for lock in locks.get(kind, []):
+            ok, msg = CHECKERS[kind]("", lock)
+            status = " PASS " if ok else "  FAIL"
+            scope = lock.get("path", "<disk>")
+            print(f"  {status}  [{kind}] {scope} — {msg}")
+            if ok:
+                passed += 1
+            else:
+                failed_items.append((scope, kind, msg, lock.get("rationale", "")))
+
+    # URL-scoped locks: group by URL so each page is fetched once.
+    pages: dict[str, list[tuple[str, dict]]] = {}
+    for kind in CHECKERS.keys() - diskless_kinds:
+        for lock in locks.get(kind, []):
+            pages.setdefault(lock["url"], []).append((kind, lock))
+
     for url, items in pages.items():
         full = base_url + url
         try:
@@ -114,7 +211,10 @@ def main(argv: list[str]) -> int:
             failed_items.append((url, "fetch", str(e), ""))
             continue
         for kind, lock in items:
-            ok, msg = CHECKERS[kind](html, lock)
+            if kind == "script_src_contains":
+                ok, msg = CHECKERS[kind](html, lock, base_url=base_url)
+            else:
+                ok, msg = CHECKERS[kind](html, lock)
             status = " PASS " if ok else "  FAIL"
             print(f"  {status}  [{kind}] {url} — {msg}")
             if ok:
