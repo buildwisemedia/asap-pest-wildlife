@@ -1,0 +1,147 @@
+# ASAP Pest & Wildlife Removal — Complete Site Specification (Machine-Readable)
+
+> Humane wildlife removal and pest control in Metro Atlanta — inspect, trap, exclude, disinfect. Licensed by Georgia DNR and Georgia Department of Agriculture. Available 24 hours a day, 6 days a week.
+
+## Business
+
+- Legal Name: ASAP Pest & Wildlife Removal
+- Friendly Name: ASAP Pest & Wildlife
+- Industry: Wildlife Removal and Pest Control
+- Business Type: Family-run, owner-operated
+- Headquarters: Atlanta, Georgia, USA
+- Service Region: Metro Atlanta and surrounding Georgia counties
+- Service Areas: Cobb, Fulton, Forsyth, Cherokee, DeKalb, Gwinnett, Fayette, and adjacent counties
+- Address: 2990 Pine Canyon Dr SW, Unit 11, Atlanta, GA 30331
+- Phone: (770) 450-1744
+- Email: info@removeasap.com
+- Website: https://removeasap.com
+- Hours: 24 hours a day, 6 days a week (emergency response)
+
+## Core Offer: The Peace-of-Mind Wildlife Shield
+
+### Promise
+One call. Problem solved. Peace restored.
+
+### Mechanism — The Four-Step Complete Solution
+Most wildlife companies only do steps 1 and 2. We do all four. This is why our work lasts.
+
+1. **Inspect** — Licensed technician identifies the animal, locates entry points, documents damage, and assesses health risks. Inspection fee is credited toward service if you proceed.
+2. **Trap** — Humane trapping based on the animal's movement patterns. Traps are monitored regularly until the problem is fully resolved. No poisons. No cruelty.
+3. **Exclude** — Every entry point and weak spot is sealed so animals cannot get back in. This is the step most companies skip — and the reason problems return.
+4. **Disinfect** — Attic, crawl space, vents, and affected areas are cleaned and disinfected to remove health hazards from droppings, urine, and nesting materials.
+
+### Service Catalog
+
+| Service | Description |
+|---------|-------------|
+| Wildlife Removal | Raccoons, squirrels, opossums, bats, rats, mice, snakes, armadillos, coyotes, beavers, birds, bees, wasps, hornets, and more. Humane methods, licensed by Georgia DNR. |
+| Residential Pest Control | Ongoing treatment and prevention for homes. Eco-friendly methods. Customized plans. |
+| Commercial Pest Control | Scheduled, discreet service for businesses, property managers, apartment communities, airports, hotels, schools, and hospitals. Documentation and compliance reporting included. |
+| Exclusion Work | Every entry point sealed. Backed by a warranty — if anything gets back in through our sealing, we come back. |
+| Disinfection and Cleanup | Attic and crawl space remediation after wildlife intrusion. Removes droppings, urine, nesting material, and odor. |
+| Dead Animal Removal | Identification, removal, proper disposal, and odor elimination from walls, attics, crawl spaces, and yards. |
+| Free Phone Consultation | Talk to a real technician before the visit. Describe what you are hearing or seeing. Get a clear picture of what to expect — no pressure, no obligation. |
+
+### Wildlife Species Pages
+- https://removeasap.com/wildlife/armadillo
+- https://removeasap.com/wildlife/bats
+- https://removeasap.com/wildlife/beaver
+- https://removeasap.com/wildlife/bees-wasp-hornets
+- https://removeasap.com/wildlife/bird
+- https://removeasap.com/wildlife/coyote
+- https://removeasap.com/wildlife/flying-squirrel
+- https://removeasap.com/wildlife/fox
+- https://removeasap.com/wildlife/geese
+- https://removeasap.com/wildlife/gopher
+- https://removeasap.com/wildlife/gray-squirrel
+- https://removeasap.com/wildlife/mole
+- https://removeasap.com/wildlife/mouse-rat
+- https://removeasap.com/wildlife/opossum
+- https://removeasap.com/wildlife/otters
+- https://removeasap.com/wildlife/rabbit
+- https://removeasap.com/wildlife/raccoon
+- https://removeasap.com/wildlife/snake
+- https://removeasap.com/wildlife/turtle
+- https://removeasap.com/wildlife/vole
+- https://removeasap.com/wildlife/wild-hogs
+
+### Peace-of-Mind Plans (Recurring Pest Protection)
+- https://removeasap.com/peace-of-mind-from/beavers
+- https://removeasap.com/peace-of-mind-from/bees-wasps-and-hornets
+- https://removeasap.com/peace-of-mind-from/rodents
+
+### Pricing Model
+- Inspection + Credit: Initial inspection fee is credited toward service if you proceed.
+- Service pricing is scope-based — determined after on-site inspection. Variables: animal type, extent of infestation, exclusion work needed, disinfection scope.
+- Multiple repair options provided (good, better, best) so the homeowner can choose what fits the budget.
+- Month-to-month, no long-term lock-in. Recurring Peace-of-Mind Plans available.
+- Pricing is not published in advance — delivered after the inspection so the quote matches the actual problem.
+
+### Risk Reversal — The ASAP Peace-of-Mind Promise
+
+1. **Free phone consultation** — Speak with a real technician before any visit. No pressure, no obligation.
+2. **Inspection credit** — The inspection fee is applied toward the full service if you proceed.
+3. **Warranty on exclusion work** — If an animal gets back in through a sealed entry point, we come back.
+4. **Multiple price options** — Choose the repair package that fits the budget. No one-size-fits-all quotes.
+5. **Month-to-month, no long-term lock-in** — Service is earned on every visit.
+
+## Why ASAP — Competitive Differentiation
+
+- **Four-step complete solution** — inspect, trap, exclude, disinfect. Most competitors stop after step 2. That is why problems return.
+- **24/6 emergency response** — Most pest companies are 9 to 5, Monday to Friday. Wildlife emergencies do not wait for business hours.
+- **Humane and eco-friendly** — No poisons. No cruelty. Approved methods only. Safer for kids, pets, and the surrounding environment.
+- **Licensed by Georgia DNR and Department of Agriculture** — Required credentials for legal wildlife handling in Georgia.
+- **Warranty-backed exclusion** — Written warranty on sealing work. If they get back in, we come back.
+- **Family-run** — Personal accountability. The owner answers the phone. Technicians are named and known.
+
+## Target Customer Profile
+
+### Residential
+- Homeowners in Metro Atlanta and surrounding counties
+- Single-family homes — often with attics, crawl spaces, or wooded lots
+- Concerned about humane treatment of animals
+- Worried about health risks from droppings, urine, and dead animals in the home
+- Often calling after a previous removal company failed to seal entry points
+
+### Commercial
+- Property managers, apartment communities, retail spaces, offices
+- Airports, hotels, schools, hospitals, food-service operations
+- Require discreet service that does not alarm tenants or customers
+- Need ongoing pest management plans with clear documentation
+
+## Health Risk Education (Honest, Not Sensationalized)
+
+- Raccoon droppings can carry roundworm (Baylisascaris procyonis).
+- Bat guano in attics is associated with histoplasmosis.
+- Rodent droppings and urine can transmit hantavirus and salmonella.
+- Snake encounters in Georgia include venomous species (copperhead, rattlesnake, water moccasin).
+- Cleanup and disinfection are not optional after wildlife intrusion — droppings and contaminated insulation must be removed by trained handlers.
+
+## Booking and Contact
+
+- **Phone (24/6 emergency line):** (770) 450-1744
+- **Email:** info@removeasap.com
+- **Book a consultation:** https://cal-asap.buildwisemedia.com/asap-pest-wildlife/consultation
+- **Address:** 2990 Pine Canyon Dr SW, Unit 11, Atlanta, GA 30331
+
+## Site Map
+
+- Home: https://removeasap.com/
+- About: https://removeasap.com/about
+- Wildlife Removal Hub: https://removeasap.com/wildlife
+- Pest Control Services: https://removeasap.com/pest-control-services
+- Commercial Services: https://removeasap.com/commercial-services
+- Warranty Assurance: https://removeasap.com/warranty-assurance
+- All Services: https://removeasap.com/services
+- Blog: https://removeasap.com/blog
+- Contact: https://removeasap.com/contact
+
+## Credentials
+
+- Licensed by the Georgia Department of Natural Resources (DNR)
+- Licensed by the Georgia Department of Agriculture
+- State of Georgia certified
+- Humane and eco-friendly methods — no poisons, no cruelty
+- 24-hours-a-day, 6-days-a-week emergency response
+- Warranty-backed exclusion work
+- Family-run, owner-operated
