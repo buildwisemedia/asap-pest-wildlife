@@ -259,8 +259,8 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
   <script src="https://use.typekit.net/dmg8gvn.js"></script>
   <script>try{{Typekit.load({{async:true}});}}catch(e){{}}</script>
   <script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);}})(window,document,'script','dataLayer','GTM-K953HZ9R');</script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQZJKG5JCK"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','G-GQZJKG5JCK');</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8M705Z89TE"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','G-8M705Z89TE');</script>
   <link rel="stylesheet" href="/assets/css/style.css">
 
   <script type="application/ld+json">
@@ -273,7 +273,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
         "name": "ASAP Pest & Wildlife Removal — {name}",
         "image": "https://removeasap.com/assets/images/logos/logo-orange.png",
         "url": "https://removeasap.com/locations/{slug}/",
-        "telephone": "770-450-1744",
+        "telephone": "770-691-3636",
         "email": "info@removeasap.com",
         "priceRange": "$$",
         "address": {{ "@type": "PostalAddress", "addressLocality": "{name}", "addressRegion": "GA", "postalCode": "{primary_zip}", "addressCountry": "US" }},
@@ -303,9 +303,9 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
   <div class="bg-navy text-cream text-sm">
     <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap justify-between items-center">
       <div class="flex items-center gap-4 flex-wrap">
-        <a href="tel:7704501744" class="flex items-center gap-1 hover:text-orange transition-colors">
+        <a href="tel:7706913636" class="flex items-center gap-1 hover:text-orange transition-colors">
           <img src="/assets/images/icons/speechbubble.svg" alt="" class="w-4 h-4 invert">
-          <span class="uppercase tracking-wider text-xs font-bold">Call now: 770-450-1744</span>
+          <span class="uppercase tracking-wider text-xs font-bold">Call now: 770-691-3636</span>
         </a>
         <a href="mailto:info@removeasap.com?subject=ASAP%20wildlife%20removal" class="flex items-center gap-1 hover:text-orange transition-colors">
           <img src="/assets/images/icons/email.svg" alt="" class="w-4 h-4 invert">
@@ -362,7 +362,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
         </h1>
         <p class="text-cream/70 mt-6 max-w-2xl">{hero_sub}</p>
         <div class="mt-8 flex flex-wrap gap-4">
-          <a href="tel:7704501744" class="inline-block bg-orange text-white font-bold uppercase tracking-[0.15em] px-8 py-3 rounded-sm hover:bg-orange-dark transition-colors text-sm">Call (770) 450-1744</a>
+          <a href="tel:7706913636" class="inline-block bg-orange text-white font-bold uppercase tracking-[0.15em] px-8 py-3 rounded-sm hover:bg-orange-dark transition-colors text-sm">Call (770) 691-3636</a>
           <a href="#contact" class="inline-block bg-transparent text-cream border-2 border-cream font-bold uppercase tracking-[0.15em] px-8 py-3 rounded-sm hover:bg-cream hover:text-navy transition-colors text-sm">Get an estimate</a>
         </div>
       </div>
@@ -372,7 +372,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     <div class="bg-orange py-4" style="clip-path: polygon(0 0, 100% 0, 97% 100%, 0% 100%);">
       <div class="max-w-7xl mx-auto px-4 flex flex-wrap items-center justify-center gap-2 text-white">
         <span class="uppercase tracking-[0.15em] font-bold text-sm">For services and immediate attention in {name}</span>
-        <a href="tel:7704501744" class="uppercase tracking-[0.15em] font-black text-lg hover:text-cream transition-colors">CALL NOW (770)450-1744</a>
+        <a href="tel:7706913636" class="uppercase tracking-[0.15em] font-black text-lg hover:text-cream transition-colors">CALL NOW (770)691-3636</a>
       </div>
     </div>
 
@@ -404,7 +404,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
         <div class="flex flex-wrap justify-center gap-3">
           {neighborhood_pills}
         </div>
-        <p class="text-cream/60 text-sm mt-8 max-w-2xl mx-auto">Don't see your neighborhood? We serve every address in ZIP codes {zip_list}. Call <a href="tel:7704501744" class="text-orange hover:underline">(770) 450-1744</a> and we'll confirm same-day.</p>
+        <p class="text-cream/60 text-sm mt-8 max-w-2xl mx-auto">Don't see your neighborhood? We serve every address in ZIP codes {zip_list}. Call <a href="tel:7706913636" class="text-orange hover:underline">(770) 691-3636</a> and we'll confirm same-day.</p>
       </div>
     </section>
 
@@ -448,7 +448,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
               </div>
               <div class="flex items-center gap-3">
                 <img src="/assets/images/icons/speechbubble.svg" alt="" class="w-6 h-6 invert">
-                <a href="tel:7704501744" class="hover:text-orange transition-colors">(770) 450-1744</a>
+                <a href="tel:7706913636" class="hover:text-orange transition-colors">(770) 691-3636</a>
               </div>
               <div class="flex items-center gap-3">
                 <img src="/assets/images/icons/email.svg" alt="" class="w-6 h-6 invert">
@@ -601,8 +601,8 @@ def build_index_page(cities: list[dict]) -> str:
 <body class="bg-cream text-dark-text font-sans">
   <div class="bg-navy text-cream text-sm">
     <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap justify-between items-center">
-      <a href="tel:7704501744" class="flex items-center gap-1 hover:text-orange transition-colors">
-        <span class="uppercase tracking-wider text-xs font-bold">Call now: 770-450-1744</span>
+      <a href="tel:7706913636" class="flex items-center gap-1 hover:text-orange transition-colors">
+        <span class="uppercase tracking-wider text-xs font-bold">Call now: 770-691-3636</span>
       </a>
     </div>
   </div>

@@ -2367,9 +2367,15 @@ blockquote {
 
 .arrow-point-wrapper {
   z-index: 0;
-  width: 14.28vw;
+  width: clamp(84px, 8vw, 112px);
   position: absolute;
-  inset: 0% -9% auto auto;
+  inset: 0% -4.5% auto auto;
+}
+
+.arrow-point-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .display-flex-horizontal-center {
@@ -4688,6 +4694,10 @@ blockquote {
     margin-bottom: 0;
   }
 
+  .padding---medium.stackable---bottom.pest-hero-spacing {
+    padding-top: 24vw;
+  }
+
   .padding---medium.stackable---bottom.position---relative {
     padding-top: 20vw;
   }
@@ -5254,6 +5264,10 @@ blockquote {
 }
 
 @media screen and (max-width: 479px) {
+  .padding---medium.stackable---bottom.pest-hero-spacing {
+    padding-top: 28vw;
+  }
+
   .padding---medium.stackable---bottom.position---relative {
     padding-top: 29vw;
   }
