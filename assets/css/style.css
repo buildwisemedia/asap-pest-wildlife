@@ -201,6 +201,23 @@ body {
    text doesn't collide with the fixed navbar. */
 @media (min-width: 1440px) { body.home-page { padding-top: 0; } }
 
+.home-hero-pattern-bg {
+  background-image: url('/assets/images/backgrounds/home-hero-bg-mobile.webp');
+}
+.home-lower-pattern-bg {
+  background-image: url('/assets/images/backgrounds/home-hero-bg.webp');
+  transform: scaleX(-1);
+}
+@media (min-width: 768px) {
+  .home-hero-pattern-bg {
+    background-image: url('/assets/images/backgrounds/home-hero-bg.webp');
+  }
+}
+@media (max-width: 767px) {
+  .home-hero-pattern-bg,
+  .home-lower-pattern-bg { background-image: none; }
+}
+
 /* ============================================
    CTA BANNER — tooth clearance + mobile hide
    The arrow-orange tooth is absolute-positioned inside the bar with top:0

@@ -6,16 +6,16 @@
   <title>Page Not Found | ASAP Pest & Wildlife Removal</title>
   <meta name="robots" content="noindex, nofollow">
   <link rel="icon" type="image/png" href="/assets/images/logos/favicon.png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config={theme:{extend:{colors:{navy:'#212936','navy-dark':'#1a2030',orange:'#B77537','orange-dark':'#9a6230',cream:'#F2EDDC'},fontFamily:{sans:['urw-din','Arial','sans-serif'],heading:['urw-din','Arial','sans-serif']}}}}</script>
-  <script src="https://use.typekit.net/dmg8gvn.js"></script>
-  <script>try{Typekit.load({async:true});}catch(e){}</script>
+  <link rel="stylesheet" href="/assets/css/tailwind.generated.css">
+  <style>body{font-size:16px;}@font-face{font-family:ASAPFontSwapProbe;src:local("Arial");font-display:swap;}</style>
+  <script>window.__bwmLoadTypekit=function(){if(window.__bwmTypekitLoaded)return;window.__bwmTypekitLoaded=true;var s=document.createElement('script');s.async=true;s.src='https://use.typekit.net/dmg8gvn.js';s.onload=function(){try{Typekit.load({async:true});}catch(e){}};document.head.appendChild(s);};(function(){var start=function(){setTimeout(window.__bwmLoadTypekit,5000)};if(document.readyState==='complete')start();else window.addEventListener('load',start,{once:true});})();</script>
   <link rel="stylesheet" href="/assets/css/style.css">
   <!-- BWM Attribution Tracker — Phase 1 QLS M78 -->
-  <script src="/attribution.js"></script>
+  <script src="/attribution.js" defer></script>
 </head>
 <body class="bg-cream text-navy font-sans">
-  <div class="min-h-screen flex items-center justify-center relative overflow-hidden">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:bg-cream focus:text-navy focus:px-4 focus:py-2 focus:rounded-sm focus:shadow-lg">Skip to content</a>
+  <main id="main-content" class="min-h-screen flex items-center justify-center relative overflow-hidden">
     <div class="absolute inset-0 opacity-30">
       <!-- @r020:F1 emotion: 404 page background illustration — calming atmosphere reduces bounce anxiety -->
       <img src="/assets/images/backgrounds/home-hero-bg.svg" alt="" class="w-full h-full object-cover">
@@ -23,7 +23,8 @@
     <div class="text-center px-4 relative z-10">
       <a href="/">
         <!-- @r020:identity: ASAP logo on 404 error page -->
-        <img src="/assets/images/logos/logo-orange.png" alt="ASAP Pest & Wildlife Removal" class="h-20 mx-auto mb-8">
+        <img src="/assets/images/logos/logo-orange.webp" alt="ASAP Pest & Wildlife Removal" class="h-20 mx-auto mb-8">
+
       </a>
       <h1 class="font-heading font-black text-8xl md:text-[12rem] text-outlined-navy leading-none mb-4">404</h1>
       <p class="font-heading font-bold text-2xl md:text-3xl uppercase tracking-[0.1em] mb-4">Page Not Found</p>
@@ -33,6 +34,6 @@
         <a href="tel:7706913636" class="bg-orange text-white font-bold uppercase tracking-[0.15em] px-8 py-3 rounded-sm hover:bg-orange-dark transition-colors text-sm">(770) 691-3636</a>
       </div>
     </div>
-  </div>
+  </main>
 </body>
 </html>

@@ -49,6 +49,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
       const formData = new FormData(form);
       const data = Object.fromEntries(formData.entries());
+      if (data.website) {
+        form.reset();
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit';
+        return;
+      }
       data.client_slug = 'asap-pest-wildlife';
       data.formType = 'contact';
 
@@ -59,7 +65,24 @@ document.addEventListener('DOMContentLoaded', function() {
           body: JSON.stringify(data)
         });
 
+        var result = {};
+        try { result = await response.json(); } catch (_) {}
+
         if (response.ok) {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({ event: 'lead_form_submit', client_slug: 'asap-pest-wildlife', formType: 'contact' });
+          if (typeof window.gtag === 'function') {
+            try { window.gtag('event', 'generate_lead', { event_category: 'lead', event_label: 'contact_form' }); } catch (_) {}
+          }
+          if (typeof window.__bwmLoadAnalytics === 'function') {
+            try { window.__bwmLoadAnalytics(); } catch (_) {}
+          }
+          if (typeof window.fbq === 'function') {
+            try {
+              var pixelOptions = result.capi_event_id ? { eventID: result.capi_event_id } : undefined;
+              window.fbq('track', 'Lead', { content_name: 'contact_form', client_slug: 'asap-pest-wildlife' }, pixelOptions);
+            } catch (_) {}
+          }
           successEl.classList.remove('hidden');
           form.reset();
         } else {

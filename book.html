@@ -15,56 +15,35 @@
   <link rel="icon" type="image/png" href="/assets/images/logos/favicon.png">
   <link rel="apple-touch-icon" href="/assets/images/logos/webclip.png">
   <link rel="preconnect" href="https://cal-asap.buildwisemedia.com">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/css/tailwind.generated.css">
+  <style>body{font-size:16px;}@font-face{font-family:ASAPFontSwapProbe;src:local("Arial");font-display:swap;}</style>
+  <script>window.__bwmLoadTypekit=function(){if(window.__bwmTypekitLoaded)return;window.__bwmTypekitLoaded=true;var s=document.createElement('script');s.async=true;s.src='https://use.typekit.net/dmg8gvn.js';s.onload=function(){try{Typekit.load({async:true});}catch(e){}};document.head.appendChild(s);};(function(){var start=function(){setTimeout(window.__bwmLoadTypekit,5000)};if(document.readyState==='complete')start();else window.addEventListener('load',start,{once:true});})();</script>
+  <!-- BWM analytics loader: delayed so third-party tags do not block first paint -->
   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy: '#212936',
-            'navy-dark': '#1a2030',
-            orange: '#B77537',
-            'orange-dark': '#9a6230',
-            cream: '#F2EDDC',
-            'dark-text': '#222222',
-          },
-          fontFamily: {
-            sans: ['urw-din', 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif'],
-            heading: ['urw-din', 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif'],
-          }
-        }
-      }
-    }
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}
+  window.__bwmLoadAnalytics=function(){
+    if(window.__bwmAnalyticsLoaded)return;window.__bwmAnalyticsLoaded=true;
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-K953HZ9R');
+    var ga=document.createElement('script');ga.async=true;ga.src='https://www.googletagmanager.com/gtag/js?id=G-8M705Z89TE';document.head.appendChild(ga);gtag('js',new Date());gtag('config','G-8M705Z89TE');
+    (function(c,l,a,r,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/whpri6g1yi';y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script');
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','26350078141329630');fbq('track','PageView',{}, {eventID:'pv_'+Date.now()+'_'+Math.random().toString(36).slice(2,8)});
+  };
+  (function(){var start=function(){setTimeout(window.__bwmLoadAnalytics,7000)};if(document.readyState==='complete')start();else window.addEventListener('load',start,{once:true});})();
   </script>
-  <script src="https://use.typekit.net/dmg8gvn.js"></script>
-  <script>try{Typekit.load({async:true});}catch(e){}</script>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-K953HZ9R');</script>
-  <!-- GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8M705Z89TE"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-8M705Z89TE');</script>
-  <!-- Microsoft Clarity -->
-  <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","whpri6g1yi");</script>
+
   <link rel="stylesheet" href="/assets/css/style.css">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://removeasap.com/"},{"@type":"ListItem","position":2,"name":"Book","item":"https://removeasap.com/book"}]}
   </script>
-  <!-- Meta Pixel base — fires PageView; M89 v2 shadow in attribution.js mirrors fbq calls -->
-  <script>
-  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
-  (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '26350078141329630');
-  fbq('track', 'PageView', {}, { eventID: 'pv_' + Date.now() + '_' + Math.random().toString(36).slice(2,8) });
-  </script>
   <!-- @r020:identity: Facebook pixel tracking noscript — 1x1 tracking pixel, no visual content -->
+
   <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=26350078141329630&ev=PageView&noscript=1"/></noscript>
   <!-- BWM Attribution Tracker — Phase 1 QLS M78 -->
-  <script src="/attribution.js"></script>
+  <script src="/attribution.js" defer></script>
 </head>
 <body class="bg-cream text-dark-text font-sans">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:bg-cream focus:text-navy focus:px-4 focus:py-2 focus:rounded-sm focus:shadow-lg">Skip to content</a>
   <!-- GTM noscript -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K953HZ9R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
@@ -83,14 +62,15 @@
       <span class="mr-2">Call now:</span>
       <a href="tel:7706913636" class="underline hover:text-orange transition-colors font-bold">770-691-3636</a>
       <span class="mx-2">Or</span>
-      <a href="mailto:info@wildliferemovalasap.com?subject=ASAP%20wildlife%20removal" class="underline hover:text-orange transition-colors font-bold">Email us</a>
+      <a href="/contact/#contact-form" class="underline hover:text-orange transition-colors font-bold">Email us</a>
       <span class="ml-1">for quote</span>
     </div>
     <!-- Row 2: logo + nav menu -->
     <div class="flex items-center justify-between gap-4">
       <a href="/" class="flex-shrink-0">
         <!-- @r020:identity: ASAP logo in header navigation -->
-        <img src="/assets/images/logos/logo-orange.png" alt="ASAP Pest &amp; Wildlife Removal — Your Pest &amp; Wildlife Extraordinaires" class="w-[180px] md:w-[220px] lg:w-[260px] h-auto" width="260">
+        <img src="/assets/images/logos/logo-orange.webp" alt="ASAP Pest &amp; Wildlife Removal — Your Pest &amp; Wildlife Extraordinaires" class="w-[180px] md:w-[220px] lg:w-[260px] h-auto" width="260" height="179" fetchpriority="high" decoding="sync">
+
       </a>
       <nav class="hidden lg:flex items-center gap-8">
         <a href="/" class="text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors">Home</a>
@@ -122,7 +102,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <!-- Hero -->
     <section class="bg-cream relative overflow-hidden py-12 md:py-20">
       <div class="absolute inset-0 opacity-50">
@@ -191,13 +171,14 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <!-- @r020:identity: ASAP logo in footer -->
-          <img src="/assets/images/logos/logo-orange.png" alt="ASAP Pest & Wildlife Removal" class="h-14 w-auto mb-3">
+          <img src="/assets/images/logos/logo-orange.webp" alt="ASAP Pest & Wildlife Removal" class="h-14 w-auto mb-3">
+
           <p class="text-cream/70 text-sm">Atlanta wildlife removal and pest control. Giving peace of mind one person at a time.</p>
         </div>
         <div>
           <h4 class="font-heading font-black uppercase tracking-[0.15em] text-sm mb-3">Get In Touch</h4>
           <p class="text-sm"><a href="tel:7706913636" class="text-orange font-bold hover:text-cream">(770) 691-3636</a></p>
-          <p class="text-sm"><a href="mailto:info@removeasap.com" class="text-cream/80 hover:text-cream">info@removeasap.com</a></p>
+          <p class="text-sm"><span class="text-cream/80 hover:text-cream">info@removeasap.com</span></p>
         </div>
         <div>
           <h4 class="font-heading font-black uppercase tracking-[0.15em] text-sm mb-3">Explore</h4>
@@ -207,7 +188,11 @@
           <p class="text-sm"><a href="/about/" class="text-cream/80 hover:text-cream">About</a></p>
         </div>
       </div>
-      <div class="border-t border-cream/10 mt-8 pt-6 text-cream/50 text-xs text-center">© <span id="year">2026</span> ASAP Pest &amp; Wildlife Removal · All rights reserved</div>
+      <div class="border-t border-cream/10 mt-8 pt-6 text-cream/50 text-xs text-center">
+        © <span id="year">2026</span> ASAP Pest &amp; Wildlife Removal · All rights reserved ·
+        <a href="/privacy-policy/" class="underline hover:text-cream">Privacy Policy</a> ·
+        <a href="/terms-of-service/" class="underline hover:text-cream">Terms of Service</a>
+      </div>
     </div>
   </footer>
 
