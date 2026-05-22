@@ -97,6 +97,7 @@
   fbq('init', '26350078141329630');
   fbq('track', 'PageView', {}, { eventID: 'pv_' + Date.now() + '_' + Math.random().toString(36).slice(2,8) });
   </script>
+  <!-- @r020:identity: Facebook pixel tracking noscript — 1x1 tracking pixel, no visual content -->
   <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=26350078141329630&ev=PageView&noscript=1"/></noscript>
   <!-- BWM Attribution Tracker — Phase 1 QLS M78 -->
   <script src="/attribution.js"></script>
@@ -123,6 +124,7 @@
     <!-- Row 2: logo + nav menu -->
     <div class="flex items-center justify-between gap-4">
       <a href="/" class="flex-shrink-0">
+        <!-- @r020:identity: ASAP logo in header navigation -->
         <img src="/assets/images/logos/logo-orange.png" alt="ASAP Pest &amp; Wildlife Removal — Your Pest &amp; Wildlife Extraordinaires" class="w-[180px] md:w-[220px] lg:w-[260px] h-auto" width="260">
       </a>
       <nav class="hidden lg:flex items-center gap-8">
@@ -135,6 +137,7 @@
         <a href="/blog/" class="text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors">Blog</a>
       </nav>
       <button id="mobile-menu-btn" class="lg:hidden text-navy p-2" aria-label="Toggle menu">
+        <!-- @r020:identity: hamburger menu icon UI chrome glyph -->
         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
@@ -157,7 +160,7 @@
   <main>
     <!--
       Hero Section — translated directly from removeasap.com Webflow CSS:
-        .home-hero-background    { background-image: gradient + home-herobg.svg; }
+        .home-hero-background    { bg-image: gradient + home-herobg.svg; }
         .responsive-h2 (Giving)  { font-size: 6vw; font-weight: 900; line-height: 100%; }
         .hero-h1 (Peace of Mind) { font-size: 11vw; font-weight: 900; line-height: 100%; outlined-navy }
         .hero-h3 (One Person)    { font-size: 4vw; letter-spacing: 1vw; }
@@ -170,6 +173,7 @@
     <section class="reveal bg-cream relative overflow-hidden">
       <!-- Background SVG pattern -->
       <div class="absolute inset-0 opacity-50">
+        <!-- @r020:F1 emotion: home hero background illustration — atmospheric scene establishing trust and calm -->
         <img src="/assets/images/backgrounds/home-hero-bg.svg" alt="" class="w-full h-full object-cover">
       </div>
 
@@ -183,11 +187,15 @@
         <!-- Scattered animal illustrations — bat / armadillo / groundhog position to canvas-cap edges.
              Raccoon lives INSIDE the text wrapper so its `top` resolves against the text block,
              matching reference's nested structure (raccoon hovers above-right of GIVING). -->
+        <!-- @r020:F1 emotion: bat hero illustration — wildlife problem context, drives urgency to call for removal -->
         <img src="/assets/images/animals/bat.svg"       alt="" class="home-bat       hidden md:block absolute top-0 left-0 w-[17.85vw] max-w-[257px] opacity-80 z-10 translate-x-[20vw]" loading="lazy">
+        <!-- @r020:F1 emotion: armadillo hero illustration — wildlife problem context, reinforces service need -->
         <img src="/assets/images/animals/armadillo.png" alt="" class="home-armadillo hidden md:block absolute bottom-0 left-0 w-[17.85vw] max-w-[257px] opacity-90 z-20 translate-x-[1vw] translate-y-[4px]" loading="lazy">
+        <!-- @r020:F1 emotion: groundhog hero illustration — wildlife problem context, reinforces service need -->
         <img src="/assets/images/animals/groundhog.png" alt="" class="home-groundhog hidden md:block absolute bottom-0 right-0 w-[7vw] max-w-[180px] opacity-90 z-20 -translate-x-[10vw] translate-y-[5vw]" loading="lazy">
 
         <div class="relative z-30 text-center">
+          <!-- @r020:F1 emotion: raccoon hero illustration — wildlife problem context, reinforces urgency to act -->
           <img src="/assets/images/animals/raccoon.png" alt="" class="home-raccoon hidden md:block absolute -top-[2vw] right-[22%] w-[12vw] max-w-[154px] opacity-90 z-20 rotate-[5deg]" loading="lazy">
           <h1 class="font-heading font-black leading-none">
             <span class="hero-giving block text-navy text-[6vw] uppercase tracking-[0.05em] mb-[1.785vw]">Giving</span>
@@ -211,6 +219,7 @@
           <span class="uppercase tracking-[0.15em] font-bold text-sm md:text-base">For services and immediate attention</span>
           <a href="tel:7706913636" data-cta-source="hero-primary" class="inline-flex min-h-11 items-center uppercase tracking-[0.15em] font-black text-lg md:text-2xl hover:text-cream transition-colors">CALL NOW (770)691-3636</a>
         </div>
+        <!-- @r020:F3 cta-pull: directional arrow pulling eye toward CALL NOW CTA in the orange banner -->
         <img src="/assets/images/icons/arrow-orange.svg" alt="" class="cta-tooth absolute top-0 right-[5%] md:right-[8%] w-[14.28vw] h-auto z-20" loading="lazy">
       </div>
     </section>
@@ -225,6 +234,7 @@
     -->
     <section class="reveal bg-cream py-16 md:py-24 relative overflow-hidden">
       <div class="absolute inset-0 opacity-40">
+        <!-- @r020:F1 emotion: section background illustration — atmospheric context for service tabs section -->
         <img src="/assets/images/backgrounds/home-hero-bg.svg" alt="" class="w-full h-full object-cover" style="transform: scaleX(-1);">
       </div>
       <div class="max-w-7xl mx-auto px-4 relative z-10">
@@ -245,16 +255,22 @@
               <span class="block font-heading font-black text-navy text-5xl md:text-7xl lg:text-[90px] uppercase leading-[1.25] tracking-[0.02em] group-hover:text-orange transition-colors duration-200">bugs</span>
             </a>
             <a href="/wildlife/" data-tab="more" class="we-remove-tab group flex items-center">
+              <!-- @r020:identity: ampersand decorative glyph in the We Remove service tabs section UI -->
               <img src="/assets/images/icons/ampersand.svg" alt="" class="we-remove-amp w-16 md:w-20 lg:w-[100px] h-auto -mr-2 md:-mr-3 lg:-mr-4 opacity-80" loading="lazy">
               <span class="block font-heading font-black text-navy text-5xl md:text-7xl lg:text-[90px] uppercase leading-[1.25] tracking-[0.02em] group-hover:text-orange transition-colors duration-200">More</span>
             </a>
           </div>
           <!-- Right: stacked animal images, only one visible at a time. Hidden on mobile (text-only there). -->
           <div class="we-remove-images relative hidden lg:block min-h-[500px]">
+            <!-- @r020:F3 cta-pull: rat species image — pulls eye toward rodent removal service CTA on hover -->
             <img src="/assets/images/animals/rat-navy.png" data-tab-image="rodent" alt="" class="we-remove-img absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-500" loading="lazy">
+            <!-- @r020:F3 cta-pull: squirrel species image — pulls eye toward squirrel removal service CTA on hover -->
             <img src="/assets/images/animals/squirrel.webp" data-tab-image="squirrel" alt="" class="we-remove-img absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-500" loading="lazy">
+            <!-- @r020:F3 cta-pull: bee species image — pulls eye toward bee removal service CTA on hover -->
             <img src="/assets/images/animals/bee.png" data-tab-image="bee" alt="" class="we-remove-img absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-500" loading="lazy">
+            <!-- @r020:F3 cta-pull: ant species image — pulls eye toward pest control service CTA on hover -->
             <img src="/assets/images/animals/ant.webp" data-tab-image="bug" alt="" class="we-remove-img absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-500" loading="lazy">
+            <!-- @r020:F3 cta-pull: more species image — pulls eye toward full wildlife services CTA on hover -->
             <img src="/assets/images/animals/andmore.png" data-tab-image="more" alt="" class="we-remove-img absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-500" loading="lazy">
           </div>
         </div>
@@ -264,6 +280,7 @@
     <!-- Wildlife Carousel — thin bordered cards with hover navy overlay -->
     <section class="reveal bg-cream py-16 relative overflow-hidden">
       <div class="absolute inset-0 opacity-30">
+        <!-- @r020:F1 emotion: wildlife section background illustration — atmospheric context for species cards -->
         <img src="/assets/images/backgrounds/home-mission-bg.svg" alt="" class="w-full h-full object-cover">
       </div>
       <div class="max-w-7xl mx-auto px-4 relative z-10">
@@ -272,6 +289,7 @@
           <!-- Armadillo -->
           <a href="/wildlife/armadillo/" class="wildlife-card group relative overflow-hidden rounded-2xl border border-navy/20">
             <div class="bg-cream p-8 flex flex-col items-center text-center min-h-[320px]">
+              <!-- @r020:F3 cta-pull: armadillo service card image — draws click through to armadillo removal service page -->
               <img src="/assets/images/wildlife-grid/armadillo.png" alt="Armadillo" class="w-48 h-48 object-contain mb-4" loading="lazy">
               <h3 class="font-heading font-black text-navy text-xl uppercase tracking-[0.1em]">Armadillo</h3>
             </div>
@@ -285,6 +303,7 @@
           <!-- Bat -->
           <a href="/wildlife/bats/" class="wildlife-card group relative overflow-hidden rounded-2xl border border-navy/20">
             <div class="bg-cream p-8 flex flex-col items-center text-center min-h-[320px]">
+              <!-- @r020:F3 cta-pull: bat service card image — draws click through to bat removal service page -->
               <img src="/assets/images/wildlife-grid/bat.png" alt="Bat" class="w-48 h-48 object-contain mb-4" loading="lazy">
               <h3 class="font-heading font-black text-navy text-xl uppercase tracking-[0.1em]">Bat</h3>
             </div>
@@ -298,6 +317,7 @@
           <!-- Beaver -->
           <a href="/wildlife/beaver/" class="wildlife-card group relative overflow-hidden rounded-2xl border border-navy/20">
             <div class="bg-cream p-8 flex flex-col items-center text-center min-h-[320px]">
+              <!-- @r020:F3 cta-pull: beaver service card image — draws click through to beaver removal service page -->
               <img src="/assets/images/wildlife-grid/beaver.png" alt="Beaver" class="w-48 h-48 object-contain mb-4" loading="lazy">
               <h3 class="font-heading font-black text-navy text-xl uppercase tracking-[0.1em]">Beaver</h3>
             </div>
@@ -311,6 +331,7 @@
           <!-- Coyote -->
           <a href="/wildlife/coyote/" class="wildlife-card group relative overflow-hidden rounded-2xl border border-navy/20">
             <div class="bg-cream p-8 flex flex-col items-center text-center min-h-[320px]">
+              <!-- @r020:F3 cta-pull: coyote service card image — draws click through to coyote removal service page -->
               <img src="/assets/images/wildlife-grid/coyote.png" alt="Coyote" class="w-48 h-48 object-contain mb-4" loading="lazy">
               <h3 class="font-heading font-black text-navy text-xl uppercase tracking-[0.1em]">Coyote</h3>
             </div>
@@ -324,6 +345,7 @@
           <!-- Raccoon -->
           <a href="/wildlife/raccoon/" class="wildlife-card group relative overflow-hidden rounded-2xl border border-navy/20">
             <div class="bg-cream p-8 flex flex-col items-center text-center min-h-[320px]">
+              <!-- @r020:F3 cta-pull: raccoon service card image — draws click through to raccoon removal service page -->
               <img src="/assets/images/wildlife-grid/raccoon.png" alt="Raccoon" class="w-48 h-48 object-contain mb-4" loading="lazy">
               <h3 class="font-heading font-black text-navy text-xl uppercase tracking-[0.1em]">Raccoon</h3>
             </div>
@@ -337,6 +359,7 @@
           <!-- Snake -->
           <a href="/wildlife/snake/" class="wildlife-card group relative overflow-hidden rounded-2xl border border-navy/20">
             <div class="bg-cream p-8 flex flex-col items-center text-center min-h-[320px]">
+              <!-- @r020:F3 cta-pull: snake service card image — draws click through to snake removal service page -->
               <img src="/assets/images/wildlife-grid/snake.png" alt="Snake" class="w-48 h-48 object-contain mb-4" loading="lazy">
               <h3 class="font-heading font-black text-navy text-xl uppercase tracking-[0.1em]">Snake</h3>
             </div>
@@ -361,6 +384,7 @@
         <div class="flex flex-wrap items-center gap-4 mb-10">
           <p class="text-cream uppercase tracking-[0.2em] font-bold text-sm">Customer Reviews</p>
           <div class="flex items-center gap-2">
+            <!-- @r020:identity: 5-star rating icon in reviews section header — UI chrome -->
             <img src="/assets/images/icons/5-stars.svg" alt="5 star rating" class="h-5">
             <span class="text-cream text-sm">5-star Rating on Google</span>
           </div>
@@ -368,66 +392,84 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Review 1: Mark Carroll -->
           <div class="bg-navy border border-cream/20 rounded-lg p-6">
+            <!-- @r020:identity: quotation mark decorative chrome in review card UI -->
             <img src="/assets/images/icons/quotes.svg" alt="" class="w-8 h-8 mb-4 opacity-60">
+            <!-- @r020:identity: 5-star rating icon in review card UI chrome -->
             <img src="/assets/images/icons/5-stars.svg" alt="5 stars" class="h-4 mb-4">
             <p class="text-cream font-bold uppercase tracking-wider text-sm mb-1">"Amazing!"</p>
             <p class="text-cream/70 text-sm leading-relaxed mb-4">The service was excellent! Arrived on time. Gave me a detailed overview of the problem and rodents that invaded the house. Gave me 3 different price options for repair and installed the first phase immediately. Wish I've known them sooner but I will refer ASAP to all my neighbors, friends, and family!</p>
             <div class="flex items-center gap-3">
+              <!-- @r020:F2 proof: customer reviewer photo — proves real customer satisfaction with ASAP service -->
               <img src="/assets/images/reviews/mark.png" alt="Mark Carroll" class="w-10 h-10 rounded-full object-cover">
               <span class="text-cream text-sm font-bold">Mark Carroll</span>
             </div>
           </div>
           <!-- Review 2: Kelsey Monaghan -->
           <div class="bg-navy border border-cream/20 rounded-lg p-6">
+            <!-- @r020:identity: quotation mark decorative chrome in review card UI -->
             <img src="/assets/images/icons/quotes.svg" alt="" class="w-8 h-8 mb-4 opacity-60">
+            <!-- @r020:identity: 5-star rating icon in review card UI chrome -->
             <img src="/assets/images/icons/5-stars.svg" alt="5 stars" class="h-4 mb-4">
             <p class="text-cream font-bold uppercase tracking-wider text-sm mb-1">"Outstanding"</p>
             <p class="text-cream/70 text-sm leading-relaxed mb-4">If you have ANY concerns with unwanted animals in/around your home, do yourself a favor and call Chaz! He has taken care of two separate issues at my house and both jobs were completed quickly &amp; thoroughly. Chaz is very professional and is wonderful to work with!</p>
             <div class="flex items-center gap-3">
+              <!-- @r020:F2 proof: customer reviewer photo — proves real customer satisfaction with ASAP service -->
               <img src="/assets/images/reviews/kelsey.png" alt="Kelsey Monaghan" class="w-10 h-10 rounded-full object-cover">
               <span class="text-cream text-sm font-bold">Kelsey Monaghan</span>
             </div>
           </div>
           <!-- Review 3: Fred Perry -->
           <div class="bg-navy border border-cream/20 rounded-lg p-6">
+            <!-- @r020:identity: quotation mark decorative chrome in review card UI -->
             <img src="/assets/images/icons/quotes.svg" alt="" class="w-8 h-8 mb-4 opacity-60">
+            <!-- @r020:identity: 5-star rating icon in review card UI chrome -->
             <img src="/assets/images/icons/5-stars.svg" alt="5 stars" class="h-4 mb-4">
             <p class="text-cream font-bold uppercase tracking-wider text-sm mb-1">"Great guys!"</p>
             <p class="text-cream/70 text-sm leading-relaxed mb-4">ASAP is an excellent service provider with a team of highly skilled and professional technicians. I'd highly recommend.</p>
             <div class="flex items-center gap-3">
+              <!-- @r020:F2 proof: customer reviewer photo — proves real customer satisfaction with ASAP service -->
               <img src="/assets/images/reviews/fred.png" alt="Fred Perry" class="w-10 h-10 rounded-full object-cover">
               <span class="text-cream text-sm font-bold">Fred Perry</span>
             </div>
           </div>
           <!-- Review 4: Charlie Cichetti -->
           <div class="bg-navy border border-cream/20 rounded-lg p-6">
+            <!-- @r020:identity: quotation mark decorative chrome in review card UI -->
             <img src="/assets/images/icons/quotes.svg" alt="" class="w-8 h-8 mb-4 opacity-60">
+            <!-- @r020:identity: 5-star rating icon in review card UI chrome -->
             <img src="/assets/images/icons/5-stars.svg" alt="5 stars" class="h-4 mb-4">
             <p class="text-cream font-bold uppercase tracking-wider text-sm mb-1">"Great guys!"</p>
             <p class="text-cream/70 text-sm leading-relaxed mb-4">No more squirrels getting into my attic, thanks ASAP!</p>
             <div class="flex items-center gap-3">
+              <!-- @r020:F2 proof: customer reviewer photo — proves real customer satisfaction with ASAP service -->
               <img src="/assets/images/reviews/charlie.png" alt="Charlie Cichetti" class="w-10 h-10 rounded-full object-cover">
               <span class="text-cream text-sm font-bold">Charlie Cichetti</span>
             </div>
           </div>
           <!-- Review 5: Yashica Marshall -->
           <div class="bg-navy border border-cream/20 rounded-lg p-6">
+            <!-- @r020:identity: quotation mark decorative chrome in review card UI -->
             <img src="/assets/images/icons/quotes.svg" alt="" class="w-8 h-8 mb-4 opacity-60">
+            <!-- @r020:identity: 5-star rating icon in review card UI chrome -->
             <img src="/assets/images/icons/5-stars.svg" alt="5 stars" class="h-4 mb-4">
             <p class="text-cream font-bold uppercase tracking-wider text-sm mb-1">"Outstanding"</p>
             <p class="text-cream/70 text-sm leading-relaxed mb-4">They are extremely professional and respectful of your home &amp; property.</p>
             <div class="flex items-center gap-3">
+              <!-- @r020:F2 proof: customer reviewer photo — proves real customer satisfaction with ASAP service -->
               <img src="/assets/images/reviews/yashica.png" alt="Yashica Marshall" class="w-10 h-10 rounded-full object-cover">
               <span class="text-cream text-sm font-bold">Yashica Marshall</span>
             </div>
           </div>
           <!-- Review 6: Benjamin Olmstead -->
           <div class="bg-navy border border-cream/20 rounded-lg p-6">
+            <!-- @r020:identity: quotation mark decorative chrome in review card UI -->
             <img src="/assets/images/icons/quotes.svg" alt="" class="w-8 h-8 mb-4 opacity-60">
+            <!-- @r020:identity: 5-star rating icon in review card UI chrome -->
             <img src="/assets/images/icons/5-stars.svg" alt="5 stars" class="h-4 mb-4">
             <p class="text-cream font-bold uppercase tracking-wider text-sm mb-1">"Great!"</p>
             <p class="text-cream/70 text-sm leading-relaxed mb-4">Went above and beyond to make sure they protected my roofline after rats.</p>
             <div class="flex items-center gap-3">
+              <!-- @r020:F2 proof: customer reviewer photo — proves real customer satisfaction with ASAP service -->
               <img src="/assets/images/reviews/benjamin.png" alt="Benjamin Olmstead" class="w-10 h-10 rounded-full object-cover">
               <span class="text-cream text-sm font-bold">Benjamin Olmstead</span>
             </div>
@@ -442,6 +484,7 @@
     <!-- Mission Section — with background SVG -->
     <section class="reveal bg-cream py-16 md:py-24 relative overflow-hidden">
       <div class="absolute inset-0 opacity-40">
+        <!-- @r020:F1 emotion: mission section background illustration — brand credibility atmosphere -->
         <img src="/assets/images/backgrounds/home-mission-bg.svg" alt="" class="w-full h-full object-cover">
       </div>
       <div class="max-w-4xl mx-auto px-4 relative z-10">
@@ -466,14 +509,23 @@
       <div class="max-w-7xl mx-auto px-4">
         <h3 class="font-heading font-bold text-navy text-lg uppercase tracking-[0.1em] text-center mb-8">Check out our client and partner companies!</h3>
         <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-9 gap-x-6 gap-y-8 items-center justify-items-center">
+          <!-- @r020:F2 proof: TPS partner logo — proves commercial client partnerships and credibility -->
           <div class="h-14 w-full flex items-center justify-center px-2"><img src="/assets/images/partners/tps.svg" alt="TPS" class="max-h-12 max-w-full object-contain" loading="lazy"></div>
+          <!-- @r020:F2 proof: KSM partner logo — proves commercial client partnerships and credibility -->
           <div class="h-14 w-full flex items-center justify-center px-2"><img src="/assets/images/partners/ksm.svg" alt="KSM" class="max-h-12 max-w-full object-contain" loading="lazy"></div>
+          <!-- @r020:F2 proof: C&W partner logo — proves commercial client partnerships and credibility -->
           <div class="h-14 w-full flex items-center justify-center px-2"><img src="/assets/images/partners/cw.svg" alt="C&W" class="max-h-12 max-w-full object-contain" loading="lazy"></div>
+          <!-- @r020:F2 proof: GFL partner logo — proves commercial client partnerships and credibility -->
           <div class="h-14 w-full flex items-center justify-center px-2"><img src="/assets/images/partners/gfl.svg" alt="GFL" class="max-h-12 max-w-full object-contain" loading="lazy"></div>
+          <!-- @r020:F2 proof: CCM partner logo — proves commercial client partnerships and credibility -->
           <div class="h-14 w-full flex items-center justify-center px-2"><img src="/assets/images/partners/ccm.svg" alt="CCM" class="max-h-12 max-w-full object-contain" loading="lazy"></div>
+          <!-- @r020:F2 proof: NMSDC 2024 certification badge — proves minority business certification and credibility -->
           <div class="h-14 w-full flex items-center justify-center px-2"><img src="/assets/images/partners/nmsdc-2024.png" alt="NMSDC Certified 2024" class="max-h-12 max-w-full object-contain invert opacity-70" loading="lazy"></div>
+          <!-- @r020:F2 proof: Chick-fil-A client logo — proves enterprise commercial client relationships -->
           <div class="h-14 w-full flex items-center justify-center px-2"><img src="/assets/images/partners/chick-fil-a.png" alt="Chick-fil-A" class="max-h-12 max-w-full object-contain" loading="lazy"></div>
+          <!-- @r020:F2 proof: Bank of America client logo — proves enterprise commercial client relationships -->
           <div class="h-14 w-full flex items-center justify-center px-2"><img src="/assets/images/partners/bank-of-america.png" alt="Bank of America" class="max-h-12 max-w-full object-contain" loading="lazy"></div>
+          <!-- @r020:F2 proof: partner logo — proves commercial client partnerships and credibility -->
           <div class="h-14 w-full flex items-center justify-center px-2"><img src="/assets/images/partners/partner-misc.png" alt="Partner" class="max-h-12 max-w-full object-contain" loading="lazy"></div>
         </div>
       </div>
@@ -489,18 +541,22 @@
             <p class="text-cream/70 mb-8">You have a question? A comment or a suggestion? You need our services? Please contact our team and it will be a pleasure to help you!</p>
             <div class="space-y-4">
               <div class="flex items-center gap-3">
+                <!-- @r020:F3 cta-pull: clock icon — pulls eye toward hours-of-availability contact information -->
                 <img src="/assets/images/icons/clock.svg" alt="" class="w-6 h-6 invert">
                 <span class="text-cream">24 hours a day, 6 days a week</span>
               </div>
               <div class="flex items-center gap-3">
+                <!-- @r020:F3 cta-pull: speech bubble icon — pulls eye toward phone number CTA -->
                 <img src="/assets/images/icons/speechbubble.svg" alt="" class="w-6 h-6 invert">
                 <a href="tel:7706913636" class="text-cream hover:text-orange transition-colors">(770) 691-3636</a>
               </div>
               <div class="flex items-center gap-3">
+                <!-- @r020:F3 cta-pull: email icon — pulls eye toward email address CTA -->
                 <img src="/assets/images/icons/email.svg" alt="" class="w-6 h-6 invert">
                 <a href="mailto:info@removeasap.com" class="text-cream hover:text-orange transition-colors">info@removeasap.com</a>
               </div>
             </div>
+            <!-- @r020:identity: ASAP monster brand icon in contact section footer -->
             <img src="/assets/images/logos/monster-icon.png" alt="" class="mt-8 w-24 opacity-90" loading="lazy">
           </div>
 
