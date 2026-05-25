@@ -1,6 +1,32 @@
-# Cloudflare Pages redirects
-# Redirect www to non-www
-# https://www.removeasap.com/* https://removeasap.com/:splat 301
+# Cloudflare Pages redirects — ASAP Pest & Wildlife
+# 301 redirect map: legacy Webflow site -> new site. Authored 2026-05-25.
+# Preserves SEO equity when removeasap.com cuts over to Cloudflare Pages.
+#
+# The new site is a verbatim URL clone of the old Webflow site: every old page path
+# (e.g. /about, /wildlife/armadillo) exists at the same path on the new site and is
+# normalized to its trailing-slash canonical automatically by the platform (permanent
+# redirect, equity-preserving) — so per-page slash redirects are intentionally NOT listed.
+# Only genuinely changed / removed / legacy paths need explicit 301s below.
+# Old URL inventory: removeasap.com/sitemap.xml + Wayback Machine (2026-05-25).
 
-# Legacy path redirects (if any)
-/home /  301
+# Force www -> apex (activates once www.removeasap.com is attached at cutover)
+https://www.removeasap.com/*   https://removeasap.com/:splat   301
+
+# Funnel legacy path
+/home   /   301
+
+# Pre-Webflow legacy URLs (old .asp/.htm era) -> nearest current page
+/default.asp    /                   301
+/about.htm      /about/             301
+/contact.asp    /contact/           301
+/privacy.htm    /privacy-policy/    301
+/news.htm       /blog/              301
+
+# Removed wildlife slug (legacy-domain parity) -> wildlife hub
+/wildlife/ground-hog   /wildlife/   301
+
+# Legacy alias domain -> canonical. Same path structure, so :splat carries the path.
+# ACTIVATES ONLY once wildliferemovalasap.com (+ www) is attached to this Pages project
+# and its DNS is pointed here. Confirm client still owns the alias before relying on this.
+https://wildliferemovalasap.com/*       https://removeasap.com/:splat   301
+https://www.wildliferemovalasap.com/*   https://removeasap.com/:splat   301
