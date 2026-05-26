@@ -199,59 +199,55 @@
     </section>
 
     <!-- Contact/Estimate Section -->
-    <footer id="contact" class="bg-navy py-16 relative">
-      <div class="max-w-7xl mx-auto px-4">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div class="text-cream">
-            <h2 class="font-heading font-black text-3xl md:text-4xl uppercase tracking-[0.1em] mb-4">CONTACT US FOR AN ESTIMATE !</h2>
-            <p class="text-cream/70 mb-8">You have a question? A comment or a suggestion? You need our services? Please contact our team and it will be a pleasure to help you!</p>
-            <div class="space-y-4">
-              <!-- @r020:F3 cta-pull: clock icon — pulls eye toward hours/availability contact info -->
-              <div class="flex items-center gap-3"><img src="/assets/images/icons/clock.svg" alt="" class="w-6 h-6 invert"><span class="text-cream">24 hours a day, 6 days a week</span></div>
-              <!-- @r020:F3 cta-pull: speech bubble icon — pulls eye toward phone number CTA -->
-              <div class="flex items-center gap-3"><img src="/assets/images/icons/speechbubble.svg" alt="" class="w-6 h-6 invert"><a href="tel:7706913636" class="text-cream hover:text-orange transition-colors">(770) 691-3636</a></div>
-              <!-- @r020:F3 cta-pull: email icon — pulls eye toward email address CTA -->
-              <div class="flex items-center gap-3"><img src="/assets/images/icons/email.svg" alt="" class="w-6 h-6 invert"><span class="text-cream hover:text-orange transition-colors">info@removeasap.com</span></div>
-              <div class="flex items-center gap-3"><img src="/assets/images/icons/calendar.svg" alt="" class="w-6 h-6 invert"><a href="/book" class="text-cream hover:text-orange transition-colors">Book online</a></div>
-
+    <footer id="contact" class="services-reference-contact">
+      <div class="services-contact-inner">
+        <div class="services-contact-grid">
+          <div class="services-contact-copy">
+            <h2>CONTACT US FOR AN ESTIMATE !</h2>
+            <p>You have a question? A comment or a suggestion? You need our services? Please contact our team and it will be a pleasure to help you!</p>
+            <div class="services-contact-lines">
+              <span>24 hours a day, 6 days a week</span>
+              <a href="tel:7706913636">(770) 691-3636</a>
+              <a href="mailto:info@removeasap.com">info@removeasap.com</a>
             </div>
-            <!-- @r020:identity: ASAP mascot brand mark in contact section -->
-            <img src="/assets/images/logos/monster-icon.png" alt="" class="mt-8 w-20 opacity-90" loading="lazy">
           </div>
-          <div>
-            <form id="contact-form" class="space-y-4">
+          <div class="services-contact-form-wrap">
+            <form id="contact-form" class="services-contact-form">
               <input type="hidden" name="client" value="asap-pest-wildlife">
               <div class="hidden" aria-hidden="true">
                 <label for="bot-field">Leave this field blank</label>
                 <input type="text" id="bot-field" name="website" tabindex="-1" autocomplete="off" class="hidden">
               </div>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div><label for="firstName" class="block text-cream text-xs font-bold uppercase tracking-wider mb-1">FIRST Name*</label><input type="text" id="firstName" name="firstName" required class="w-full bg-transparent border border-cream/40 text-cream px-4 py-2.5 focus:border-orange outline-none transition text-sm"></div>
-                <div><label for="lastName" class="block text-cream text-xs font-bold uppercase tracking-wider mb-1">LAST Name*</label><input type="text" id="lastName" name="lastName" required class="w-full bg-transparent border border-cream/40 text-cream px-4 py-2.5 focus:border-orange outline-none transition text-sm"></div>
+              <div class="services-form-row services-form-row-two">
+                <div><input type="text" id="firstName" name="firstName" required><label for="firstName">FIRST Name*</label></div>
+                <div><input type="text" id="lastName" name="lastName" required><label for="lastName">LAST Name*</label></div>
               </div>
-              <div><label for="company" class="block text-cream text-xs font-bold uppercase tracking-wider mb-1">company NAME</label><input type="text" id="company" name="company" class="w-full bg-transparent border border-cream/40 text-cream px-4 py-2.5 focus:border-orange outline-none transition text-sm"></div>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div><label for="phone" class="block text-cream text-xs font-bold uppercase tracking-wider mb-1">Phone*</label><input type="tel" id="phone" name="phone" required class="w-full bg-transparent border border-cream/40 text-cream px-4 py-2.5 focus:border-orange outline-none transition text-sm"></div>
-                <div><label for="email" class="block text-cream text-xs font-bold uppercase tracking-wider mb-1">Email*</label><input type="email" id="email" name="email" required class="w-full bg-transparent border border-cream/40 text-cream px-4 py-2.5 focus:border-orange outline-none transition text-sm"></div>
+              <div class="services-form-row"><input type="text" id="company" name="company"><label for="company">company NAME</label></div>
+              <div class="services-form-row services-form-row-two">
+                <div><input type="tel" id="phone" name="phone" required><label for="phone">Phone*</label></div>
+                <div><input type="email" id="email" name="email" required><label for="email">Email*</label></div>
               </div>
-              <div><label for="address" class="block text-cream text-xs font-bold uppercase tracking-wider mb-1">StREET Address*</label><input type="text" id="address" name="address" required class="w-full bg-transparent border border-cream/40 text-cream px-4 py-2.5 focus:border-orange outline-none transition text-sm"></div>
-              <div class="grid grid-cols-3 gap-4">
-                <div><label for="city" class="block text-cream text-xs font-bold uppercase tracking-wider mb-1">City*</label><input type="text" id="city" name="city" required class="w-full bg-transparent border border-cream/40 text-cream px-4 py-2.5 focus:border-orange outline-none transition text-sm"></div>
-                <div><label for="state" class="block text-cream text-xs font-bold uppercase tracking-wider mb-1">STATE*</label><input type="text" id="state" name="state" required class="w-full bg-transparent border border-cream/40 text-cream px-4 py-2.5 focus:border-orange outline-none transition text-sm"></div>
-                <div><label for="zip" class="block text-cream text-xs font-bold uppercase tracking-wider mb-1">Zip Code*</label><input type="text" id="zip" name="zip" required class="w-full bg-transparent border border-cream/40 text-cream px-4 py-2.5 focus:border-orange outline-none transition text-sm"></div>
+              <div class="services-form-row services-form-row-two">
+                <div><input type="text" id="address" name="address" required><label for="address">StREET Address*</label></div>
+                <div><input type="text" id="city" name="city" required><label for="city">City*</label></div>
               </div>
-              <div>
-                <label for="issue" class="block text-cream text-xs font-bold uppercase tracking-wider mb-1">I NEED PEACE WITH...*</label>
-                <select id="issue" name="issue" required class="w-full bg-transparent border border-cream/40 text-cream px-4 py-2.5 focus:border-orange outline-none transition text-sm"><option value="" class="bg-navy">Select one...</option><option value="Ant" class="bg-navy">Ant</option><option value="Armadillo" class="bg-navy">Armadillo</option><option value="Bat" class="bg-navy">Bat</option><option value="Beaver" class="bg-navy">Beaver</option><option value="Bee/Stinging Insect" class="bg-navy">Bee / Stinging Insect</option><option value="Bird" class="bg-navy">Bird</option><option value="Bird Nest" class="bg-navy">Bird Nest</option><option value="Cat" class="bg-navy">Cat</option><option value="Coyote" class="bg-navy">Coyote</option><option value="Dead Animal" class="bg-navy">Dead Animal</option><option value="Deer" class="bg-navy">Deer</option><option value="Flea" class="bg-navy">Flea</option><option value="Flying Squirrel" class="bg-navy">Flying Squirrel</option><option value="Fox" class="bg-navy">Fox</option><option value="Frog" class="bg-navy">Frog</option><option value="Fruit Fly" class="bg-navy">Fruit Fly</option><option value="Gray Squirrel" class="bg-navy">Gray Squirrel</option><option value="Ground Hog" class="bg-navy">Ground Hog</option><option value="Hog" class="bg-navy">Hog</option><option value="Honey Bee" class="bg-navy">Honey Bee</option><option value="Lizard" class="bg-navy">Lizard</option><option value="Mice" class="bg-navy">Mice</option><option value="Mole" class="bg-navy">Mole</option><option value="Opossum" class="bg-navy">Opossum</option><option value="Otter" class="bg-navy">Otter</option><option value="Raccoon" class="bg-navy">Raccoon</option><option value="Rat" class="bg-navy">Rat</option><option value="Roach" class="bg-navy">Roach</option><option value="Service Cleaning/Fecal Removal/Smell" class="bg-navy">Service Cleaning / Fecal Removal / Smell</option><option value="Snake" class="bg-navy">Snake</option><option value="Termite" class="bg-navy">Termite</option><option value="Squirrel" class="bg-navy">Squirrel</option><option value="Other" class="bg-navy">Other</option></select>
+              <div class="services-form-row services-form-row-two">
+                <div><input type="text" id="state" name="state" required><label for="state">STATE*</label></div>
+                <div><input type="text" id="zip" name="zip" required><label for="zip">Zip Code*</label></div>
               </div>
-              <div><label class="flex items-start gap-2 cursor-pointer"><input type="checkbox" name="smsConsent" class="mt-1 border-cream/40"><span class="text-xs text-cream/60">I agree to receive communications by text message about my inquiry. You may opt-out by replying STOP or reply HELP for more information. Message frequency varies. Message and data rates may apply. You may review our Privacy Policy below to learn how your data is used.</span></label></div>
-              <button type="submit" class="w-full bg-navy border-2 border-cream text-cream font-bold uppercase tracking-[0.15em] py-3 hover:bg-cream hover:text-navy transition-colors text-sm">Submit</button>
+              <div class="services-form-row services-select-row">
+                <label for="issue">I NEED PEACE WITH...*</label>
+                <select id="issue" name="issue" required><option value="">Select one...</option><option value="Ant">Ant</option><option value="Armadillo">Armadillo</option><option value="Bat">Bat</option><option value="Beaver">Beaver</option><option value="Bee/Stinging Insect">Bee / Stinging Insect</option><option value="Bird">Bird</option><option value="Bird Nest">Bird Nest</option><option value="Cat">Cat</option><option value="Coyote">Coyote</option><option value="Dead Animal">Dead Animal</option><option value="Deer">Deer</option><option value="Flea">Flea</option><option value="Flying Squirrel">Flying Squirrel</option><option value="Fox">Fox</option><option value="Frog">Frog</option><option value="Fruit Fly">Fruit Fly</option><option value="Gray Squirrel">Gray Squirrel</option><option value="Ground Hog">Ground Hog</option><option value="Hog">Hog</option><option value="Honey Bee">Honey Bee</option><option value="Lizard">Lizard</option><option value="Mice">Mice</option><option value="Mole">Mole</option><option value="Opossum">Opossum</option><option value="Otter">Otter</option><option value="Raccoon">Raccoon</option><option value="Rat">Rat</option><option value="Roach">Roach</option><option value="Service Cleaning/Fecal Removal/Smell">Service Cleaning / Fecal Removal / Smell</option><option value="Snake">Snake</option><option value="Termite">Termite</option><option value="Squirrel">Squirrel</option><option value="Other">Other</option></select>
+              </div>
+              <div class="services-form-row"><input type="text" id="issueOther" name="issueOther" placeholder="Type other" aria-label="Type other"></div>
+              <label class="services-consent"><input type="checkbox" name="smsConsent"><span>I agree to receive communications by text message about my inquiry. You may opt-out by replying STOP or reply HELP for more information. Message frequency varies. Message and data rates may apply. You may review our Privacy Policy below to learn how your data is used.</span></label>
+              <button type="submit">Submit</button>
               <div id="form-success" class="hidden mt-4 bg-green-900/50 border border-green-400/30 text-green-300 rounded p-4 text-center text-sm">Thank you! A member of our team will be in contact with you ASAP.</div>
               <div id="form-error" class="hidden mt-4 bg-red-900/50 border border-red-400/30 text-red-300 rounded p-4 text-center text-sm">Oops! Something went wrong. Please try again.</div>
             </form>
           </div>
         </div>
-        <p class="text-xs text-cream/50 mt-8">No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. Text messaging opt-in data and consent will not be shared with third parties. <a href="/privacy-policy/" class="underline hover:text-cream">Privacy Policy</a> · <a href="/terms-of-service/" class="underline hover:text-cream">Terms of Service</a></p>
+        <p class="services-privacy">Privacy Policy: "No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties"</p>
       </div>
     </footer>
   </main>
