@@ -77,7 +77,11 @@
     {"url": "/pest-control-services/", "href": "/assets/css/style.css", "string": "body.pest-control-page .pest-hero-phone-band", "rationale": "Robert 2026-05-26 Pest Control screenshot regression: the cream phone-band treatment must be locked in CSS, not inferred from HTML class presence."},
     {"url": "/pest-control-services/", "href": "/assets/css/style.css", "string": "body.pest-control-page .pest-roach", "rationale": "Robert 2026-05-26 Pest Control screenshot regression: the left roach art is part of the reference hero composition."},
     {"url": "/pest-control-services/", "href": "/assets/css/style.css", "string": "body.pest-control-page .pest-ant", "rationale": "Robert 2026-05-26 Pest Control screenshot regression: the right ant art is part of the reference hero composition."},
-    {"url": "/pest-control-services/", "href": "/assets/css/style.css", "string": "font-size: 42px;", "rationale": "Robert 2026-05-26 Pest Control mobile visual QA: mobile hero title must stay on one reference-sized line instead of wrapping into the oversized generic title."}
+    {"url": "/pest-control-services/", "href": "/assets/css/style.css", "string": "font-size: 42px;", "rationale": "Robert 2026-05-26 Pest Control mobile visual QA: mobile hero title must stay on one reference-sized line instead of wrapping into the oversized generic title."},
+    {"url": "/pest-control-services/", "href": "/assets/css/style.css", "string": "width: min(37.144vw, 500px) !important;", "rationale": "Gemini 2026-05-26 Pest Control QA block: wide/desktop header contact pill must use the Webflow constrained width so it does not break the header at 1280px or 1982px."},
+    {"url": "/pest-control-services/", "href": "/assets/css/style.css", "string": "transform: translateY(-46px);", "rationale": "Gemini 2026-05-26 Pest Control QA block: the navy header logo intentionally overflows upward like the Webflow reference; removing this makes the first viewport visibly wrong."},
+    {"url": "/pest-control-services/", "href": "/assets/css/style.css", "string": "line-height: 43px;", "rationale": "Gemini 2026-05-26 Pest Control QA block: mobile Pest Control title must keep the reference height and avoid crowding the hero."},
+    {"url": "/pest-control-services/", "href": "/assets/css/style.css", "string": "transform: scaleX(1.025);", "rationale": "Gemini 2026-05-26 Pest Control QA block: mobile Pest Control title width is tuned to the live Webflow screenshot; fallback structure checks alone missed this."}
   ],
 
   "forbidden_strings": [
