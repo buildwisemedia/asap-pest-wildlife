@@ -22,7 +22,7 @@
     body.home-page #site-header:not(.is-scrolled) nav a {
       color: #B77537 !important;
       font-size: 15px;
-      font-weight: 800;
+      font-weight: 700;
       letter-spacing: .5px;
       opacity: 1;
       padding-top: 10px;
@@ -30,30 +30,33 @@
     }
     body.home-page #site-header:not(.is-scrolled) nav a[aria-current="page"] {
       color: #212936 !important;
-      font-weight: 900;
+      font-weight: 700;
     }
     body.home-page .we-remove-kicker {
       display: inline-block;
+      font-size: 15px !important;
+      letter-spacing: 1px !important;
+      line-height: 1.5;
       margin-bottom: 56px !important;
       position: relative;
     }
     body.home-page .we-remove-kicker::before {
       background: #B77537;
-      bottom: -18px;
       content: "";
-      height: 3px;
+      height: 4px;
       left: 0;
       position: absolute;
-      width: 144px;
+      top: calc(100% + 4px);
+      width: 186.5625px;
     }
     body.home-page .we-remove-kicker::after {
-      border-left: 12px solid transparent;
-      border-right: 12px solid transparent;
-      border-top: 14px solid #B77537;
-      bottom: -32px;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 15px solid #B77537;
       content: "";
-      left: 120px;
+      left: 180.28125px;
       position: absolute;
+      top: calc(100% + 4px);
     }
     body.home-page .we-remove-tabs-section {
       margin-top: 0;
@@ -141,7 +144,7 @@
         transform: translateY(-46px);
       }
       body.home-page #site-header nav {
-        gap: 22px;
+        gap: 30px;
         transform: translateY(8px);
       }
       body.home-page .cta-tooth {
@@ -173,6 +176,11 @@
       }
       body.home-page .we-remove-tabs-section {
         margin-top: 86px;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1439px) {
+      body.home-page .we-remove-tabs-section {
+        margin-top: 54px;
       }
     }
     @media (max-width: 1439px) {
@@ -266,15 +274,7 @@
         padding-top: 28px !important;
       }
       body.home-page .we-remove-kicker {
-        margin-bottom: 42px !important;
-      }
-      body.home-page .we-remove-kicker::before {
-        bottom: -15px;
-        width: 128px;
-      }
-      body.home-page .we-remove-kicker::after {
-        bottom: -28px;
-        left: 106px;
+        margin-bottom: 37px !important;
       }
       body.home-page .we-remove-tabs-section {
         gap: 28px;
