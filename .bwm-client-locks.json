@@ -21,6 +21,12 @@
     {"url": "/", "string": "cid=7456357551456980082", "rationale": "Robert 2026-05-18 (v8.6): the More Reviews button must land on ASAP's verified Google Business Profile (CID-based Maps URL), not a generic '/place/Name/@coords/' search that resolves to a search result instead of the GBP listing. CID 7456357551456980082 = hex 0x677a4db004e50c72 from the canonical Maps data hash for ASAP Pest & Wildlife Removal."},
     {"url": "/about/", "string": "cid=7456357551456980082", "rationale": "Same — applies to the About-page More Reviews button."},
     {"url": "/about/", "string": "about-reference-divider", "rationale": "Robert 2026-05-26 screenshot regression: the About page reference uses a cream divider/carat below the navy hero, not the orange-tooth CTA banner. This lock anchors the page-specific Webflow reference structure after the stale 'all inner pages' banner rule caused a false QA pass."},
+    {"url": "/about/", "string": "about-contact-pill", "rationale": "Robert 2026-05-26 About screenshot regression: the About desktop header contact pill must use the Webflow orange pill treatment, not the generic dark navy pill that passed broad shared-header checks."},
+    {"url": "/about/", "string": "about-hero-subtitle", "rationale": "Robert 2026-05-26 About screenshot regression: 'The peace we give' must be a separately positioned subtitle matching removeasap.com/about geometry, not a second H1 span inheriting the wrong rhythm."},
+    {"url": "/about/", "string": "about-main-copy", "rationale": "Robert 2026-05-26 About screenshot regression: the Our Aim body must render as the large reference paragraph block, not the previous small stacked card-style text."},
+    {"url": "/about/", "string": "<br><br>Our fully qualified team", "rationale": "Robert 2026-05-26 About screenshot regression: reference About copy uses paragraph breaks inside the body copy; collapsing to separate small paragraphs changed visual height and rhythm."},
+    {"url": "/about/", "string": "d=\"M5 8h14M5 16h14\"", "rationale": "Robert 2026-05-26 About screenshot regression: mobile About header uses the same two-line Webflow menu glyph as the reference, not the generic three-line hamburger."},
+    {"url": "/about/", "string": "window.__bwmLoadTypekit();</script>", "rationale": "Robert 2026-05-26 About visual QA regression: About typography must load Adobe Fonts immediately; a delayed loader leaves fallback metrics that can falsely pass structure while rendering visibly wrong."},
     {"url": "/", "string": "id=\"asap-home-reference-locks\"", "rationale": "Robert 2026-05-26 homepage screenshot regression: the homepage needs page-specific Webflow reference overrides for hero rhythm, CTA bar sizing, mobile animals/backgrounds, and homepage nav color. Broad shared styling checks are insufficient."},
     {"url": "/", "string": "cta-service-copy", "rationale": "Robert 2026-05-26 homepage screenshot regression: the hero CTA copy must use the Webflow-style sentence-case service text plus CALL NOW label, not the all-caps letter-spaced block that drifted from removeasap.com."},
     {"url": "/", "string": "aria-current=\"page\" class=\"text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors\">Home", "rationale": "Robert 2026-05-26 homepage screenshot regression: homepage desktop nav must mark Home current so only Home renders navy while the inactive links render burnt orange like removeasap.com."},
@@ -43,6 +49,13 @@
 
   "script_src_contains": [
     {"url": "/", "src": "/assets/js/main.js", "string": "is-scrolled", "rationale": "Allaine 2026-05-18: scroll-state JS must remain in main.js (else nav stays transparent forever). The .is-scrolled class is toggled at runtime and never appears in HTML, so this lock fetches main.js itself and greps the body. Guards both the CSS class hook and the toggle handler."}
+  ],
+
+  "stylesheet_href_contains": [
+    {"url": "/about/", "href": "/assets/css/style.css", "string": "body.about-page .about-contact-pill", "rationale": "Robert 2026-05-26 About screenshot regression: About's orange Webflow contact pill styling lives in external CSS, so HTML-only locks are insufficient."},
+    {"url": "/about/", "href": "/assets/css/style.css", "string": "font-size: 16px !important;", "rationale": "Robert 2026-05-26 About visual QA: the desktop contact pill and intro copy must use Webflow-sized text, not Tailwind's smaller local defaults."},
+    {"url": "/about/", "href": "/assets/css/style.css", "string": "letter-spacing: 2px !important;", "rationale": "Robert 2026-05-26 About visual QA: the desktop contact pill must preserve the Webflow letter-spaced treatment."},
+    {"url": "/about/", "href": "/assets/css/style.css", "string": "width: min(1220px, 88vw);", "rationale": "Robert 2026-05-26 About visual QA: the Our Aim body copy must keep the reference line length at desktop while capping at the wide Webflow width."}
   ],
 
   "forbidden_strings": [

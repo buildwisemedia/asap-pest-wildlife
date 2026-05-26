@@ -26,6 +26,7 @@ from pathlib import Path
 
 
 _SCRIPT_CACHE: dict[str, str] = {}
+_STYLESHEET_CACHE: dict[str, str] = {}
 
 
 def fetch(url: str) -> str:
@@ -105,6 +106,22 @@ def check_script_src_contains(html: str, lock: dict, *, base_url: str) -> tuple[
     return (needle in body, f'expected literal "{needle}" in {src}')
 
 
+def check_stylesheet_href_contains(html: str, lock: dict, *, base_url: str) -> tuple[bool, str]:
+    """Lock the BODY of an external CSS file loaded by the page."""
+    href = lock["href"]
+    needle = lock["string"]
+    if f'href="{href}"' not in html and f"href='{href}'" not in html:
+        return (False, f'page does not load <link href="{href}">')
+    css_url = base_url + href if href.startswith("/") else base_url + "/" + href
+    if css_url not in _STYLESHEET_CACHE:
+        try:
+            _STYLESHEET_CACHE[css_url] = fetch(css_url)
+        except Exception as e:
+            return (False, f"fetch {css_url} failed: {e}")
+    body = _STYLESHEET_CACHE[css_url]
+    return (needle in body, f'expected literal "{needle}" in {href}')
+
+
 def check_forbidden_substring_in_svg_fill(html: str, lock: dict) -> tuple[bool, str]:
     """Scan local SVG files in a directory for a forbidden substring.
 
@@ -145,6 +162,7 @@ CHECKERS = {
     "required_class_on_h1": check_required_class_on_h1,
     "min_pattern_count": check_min_pattern_count,
     "script_src_contains": check_script_src_contains,
+    "stylesheet_href_contains": check_stylesheet_href_contains,
     "forbidden_substring_in_svg_fill": check_forbidden_substring_in_svg_fill,
 }
 
@@ -211,7 +229,7 @@ def main(argv: list[str]) -> int:
             failed_items.append((url, "fetch", str(e), ""))
             continue
         for kind, lock in items:
-            if kind == "script_src_contains":
+            if kind in {"script_src_contains", "stylesheet_href_contains"}:
                 ok, msg = CHECKERS[kind](html, lock, base_url=base_url)
             else:
                 ok, msg = CHECKERS[kind](html, lock)
