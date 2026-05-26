@@ -1946,15 +1946,15 @@ body.services-page .services-privacy {
     padding: 55.6875px 0;
   }
   body.services-page .services-section-title {
-    font-size: 43px;
-    line-height: 51.6px;
+    font-size: 32px;
+    line-height: 38.4px;
     margin-bottom: 14px;
     -webkit-text-stroke-width: 1.5px;
     text-stroke-width: 1.5px;
   }
   body.services-page .services-wildlife-cta h3 {
-    font-size: 35px;
-    line-height: 42px;
+    font-size: 30px;
+    line-height: 37.5px;
     margin-bottom: 27.84375px;
     text-align: left;
   }
@@ -1985,9 +1985,9 @@ body.services-page .services-privacy {
     margin-bottom: 44px;
   }
   body.services-page .services-contact-copy h2 {
-    font-size: 43px;
+    font-size: 32px;
     letter-spacing: .04em;
-    line-height: 1;
+    line-height: 38.4px;
   }
   body.services-page .services-contact-copy p {
     font-size: 13px;

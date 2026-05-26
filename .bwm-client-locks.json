@@ -118,6 +118,8 @@
     {"url": "/services/", "href": "/assets/css/style.css", "string": "padding: 156.75px 0 100px;", "rationale": "Robert 2026-05-26 Services full-page visual QA: contact section top/bottom padding must match Webflow's footer spacing."},
     {"url": "/services/", "href": "/assets/css/style.css", "string": "grid-template-columns: minmax(0, 525.78125px) minmax(0, 525.78125px);", "rationale": "Robert 2026-05-26 Services full-page visual QA: contact footer columns must match the Webflow two-column grid geometry."},
     {"url": "/services/", "href": "/assets/css/style.css", "string": "font-size: 43.23px;", "rationale": "Robert 2026-05-26 Services mobile visual QA: mobile Services hero title must match the Webflow 43.23px heading size."},
+    {"url": "/services/", "href": "/assets/css/style.css", "string": "font-size: 32px;", "rationale": "Claude 2026-05-26 Services mobile visual QA block: mobile Services section/contact headings must match Webflow's 32px heading size so Reocurring Service and Dead Animal Removal do not expand the page vertically."},
+    {"url": "/services/", "href": "/assets/css/style.css", "string": "line-height: 38.4px;", "rationale": "Claude 2026-05-26 Services mobile visual QA block: mobile Services headings must preserve the Webflow 32px/38.4px rhythm instead of the oversized 43px/51.6px fallback."},
     {"url": "/services/", "href": "/assets/css/style.css", "string": "width: 113.984375px !important;", "rationale": "Robert 2026-05-26 Services mobile visual QA: mobile header logo must match the live Webflow logo geometry."}
   ],
 
