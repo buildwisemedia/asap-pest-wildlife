@@ -64,7 +64,7 @@
     {"url": "/about/", "href": "/assets/css/style.css", "string": "margin-top: 12px;", "rationale": "Gemini 2026-05-26 About QA block: after lowering the mobile About title, the subtitle gap must tighten so The peace we give keeps the reference vertical position."},
     {"url": "/about/", "href": "/assets/css/style.css", "string": "background-image: url(\"/assets/images/backgrounds/about-bg.svg\");", "rationale": "Gemini 2026-05-26 About QA block: the Our Aim section must use the Webflow background SVG as a section background, not an object-cover layer that shifts the watermark on mobile."},
     {"url": "/about/", "href": "/assets/css/style.css", "string": "height: 51.21875px;", "rationale": "Robert 2026-05-26 About visual QA: mobile divider height must shrink when the hero grows so the intro section stays at the reference vertical position."},
-    {"url": "/about/", "href": "/assets/css/style.css", "string": "background-position: 100% 190px;", "rationale": "Gemini 2026-05-26 About QA block: mobile Our Aim watermark must sit behind the paragraph area instead of drifting into the intro lockup."}
+    {"url": "/about/", "href": "/assets/css/style.css", "string": "background-position: calc(100% - 16px) 182px;", "rationale": "Gemini 2026-05-26 About QA block: mobile Our Aim watermark must sit behind the paragraph area instead of drifting into the intro lockup."}
   ],
 
   "forbidden_strings": [

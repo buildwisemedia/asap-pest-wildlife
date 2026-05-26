@@ -487,7 +487,7 @@ body.about-page .about-main-copy {
     display: none;
   }
   body.about-page .about-aim-section {
-    background-position: 100% 190px;
+    background-position: calc(100% - 16px) 182px;
     background-size: 100vw auto;
     padding-top: 27.84375px;
   }
