@@ -20,20 +20,51 @@
   <style id="asap-home-reference-locks">
     body.home-page { padding-top: 0; }
     body.home-page #site-header:not(.is-scrolled) nav a {
-      color: #B77537;
+      color: #B77537 !important;
       font-size: 15px;
+      font-weight: 800;
       letter-spacing: .5px;
+      opacity: 1;
       padding-top: 10px;
       padding-bottom: 10px;
     }
     body.home-page #site-header:not(.is-scrolled) nav a[aria-current="page"] {
-      color: #212936;
+      color: #212936 !important;
+      font-weight: 900;
+    }
+    body.home-page .we-remove-kicker {
+      display: inline-block;
+      margin-bottom: 56px !important;
+      position: relative;
+    }
+    body.home-page .we-remove-kicker::before {
+      background: #B77537;
+      bottom: -18px;
+      content: "";
+      height: 3px;
+      left: 0;
+      position: absolute;
+      width: 144px;
+    }
+    body.home-page .we-remove-kicker::after {
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-top: 14px solid #B77537;
+      bottom: -32px;
+      content: "";
+      left: 120px;
+      position: absolute;
+    }
+    body.home-page .we-remove-tabs-section {
+      margin-top: 0;
     }
     body.home-page .hero-giving {
+      letter-spacing: 0 !important;
       line-height: 100%;
       margin-bottom: 0 !important;
     }
     body.home-page .hero-peace {
+      letter-spacing: 0 !important;
       line-height: 100%;
     }
     body.home-page .hero-one {
@@ -46,6 +77,14 @@
     }
     body.home-page main > section:nth-of-type(3).reveal {
       opacity: 1;
+      transform: none;
+    }
+    body.home-page main > section:nth-of-type(3) .home-lower-pattern-bg {
+      background-image: url('/assets/images/backgrounds/home-mission-bg.webp'), url('/assets/images/backgrounds/home-hero-bg.webp') !important;
+      background-position: center top, 70% top !important;
+      background-repeat: no-repeat, no-repeat !important;
+      background-size: cover, 160vw auto !important;
+      opacity: .38;
       transform: none;
     }
     body.home-page .canvas-cap {
@@ -82,6 +121,7 @@
     body.home-page .cta-phone-copy {
       color: #F2EDDC;
       font-weight: 900;
+      letter-spacing: 0 !important;
       text-transform: uppercase;
     }
     body.home-page .cta-phone-copy {
@@ -127,6 +167,19 @@
       body.home-page .cta-canvas-cap > div:first-child {
         padding-right: 0 !important;
       }
+      body.home-page main > section:nth-of-type(3) > .max-w-7xl {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+      }
+      body.home-page .we-remove-tabs-section {
+        margin-top: 86px;
+      }
+    }
+    @media (max-width: 1439px) {
+      body.home-page main > section:nth-of-type(3) > .max-w-7xl {
+        padding-left: 7.14vw !important;
+        padding-right: 7.14vw !important;
+      }
     }
     @media (max-width: 767px) {
       body.home-page .home-hero-pattern-bg {
@@ -135,9 +188,9 @@
         background-size: 130vw auto;
       }
       body.home-page .home-lower-pattern-bg {
-        background-image: url('/assets/images/backgrounds/home-hero-bg.webp') !important;
-        background-position: 50% 0;
-        background-size: 230vw auto;
+        background-image: url('/assets/images/backgrounds/home-mission-bg.webp'), url('/assets/images/backgrounds/home-hero-bg.webp') !important;
+        background-position: center top, 64% 0 !important;
+        background-size: cover, 230vw auto !important;
       }
       body.home-page #site-header {
         padding-top: 10px;
@@ -146,6 +199,10 @@
       body.home-page #site-header .flex.items-center.justify-between > a:first-child img {
         width: 114px;
         transform: none;
+      }
+      body.home-page #site-header nav a {
+        font-size: 12px;
+        letter-spacing: .12em;
       }
       body.home-page .canvas-cap {
         min-height: 259px;
@@ -204,6 +261,43 @@
       body.home-page .cta-phone-copy {
         font-size: 26px !important;
         line-height: 1.2;
+      }
+      body.home-page main > section:nth-of-type(3) {
+        padding-top: 28px !important;
+      }
+      body.home-page .we-remove-kicker {
+        margin-bottom: 42px !important;
+      }
+      body.home-page .we-remove-kicker::before {
+        bottom: -15px;
+        width: 128px;
+      }
+      body.home-page .we-remove-kicker::after {
+        bottom: -28px;
+        left: 106px;
+      }
+      body.home-page .we-remove-tabs-section {
+        gap: 28px;
+      }
+      body.home-page .we-remove-tabs-section > div:first-child > :not([hidden]) ~ :not([hidden]) {
+        margin-top: 20px !important;
+      }
+      body.home-page .we-remove-tab span {
+        font-size: 35px !important;
+        letter-spacing: 0 !important;
+        line-height: 1.25 !important;
+      }
+      body.home-page .we-remove-tab[data-tab="more"] {
+        display: block !important;
+        position: relative;
+      }
+      body.home-page .we-remove-amp {
+        left: -20px;
+        opacity: .78;
+        position: absolute;
+        top: 0;
+        transform: none;
+        width: 40px !important;
       }
     }
   </style>
@@ -291,7 +385,7 @@
       <button id="mobile-menu-btn" class="lg:hidden text-navy p-2" aria-label="Toggle menu">
         <!-- @r020:identity: hamburger menu icon UI chrome glyph -->
         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" d="M5 8h14M5 16h14"/>
         </svg>
       </button>
     </div>
@@ -388,7 +482,7 @@
       <div class="home-lower-pattern-bg absolute inset-0 opacity-40 bg-cover bg-center"></div>
 
       <div class="max-w-7xl mx-auto px-4 relative z-10">
-        <p class="text-navy uppercase tracking-[0.2em] font-bold text-sm mb-8">We Remove &amp; Exclude</p>
+        <p class="we-remove-kicker text-navy uppercase tracking-[0.2em] font-bold text-sm mb-8">We Remove &amp; Exclude</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center we-remove-tabs-section">
           <!-- Left: tab labels -->
           <div class="space-y-2 md:space-y-4">
@@ -839,7 +933,7 @@
   </main>
 
   <!-- Adobe Fonts — urw-din -->
-  <script>window.__bwmLoadTypekit=function(){if(window.__bwmTypekitLoaded)return;window.__bwmTypekitLoaded=true;var s=document.createElement('script');s.async=true;s.src='https://use.typekit.net/dmg8gvn.js';s.onload=function(){try{Typekit.load({async:true});}catch(e){}};document.head.appendChild(s);};(function(){var start=function(){setTimeout(window.__bwmLoadTypekit,5000)};if(document.readyState==='complete')start();else window.addEventListener('load',start,{once:true});})();</script>
+  <script>window.__bwmLoadTypekit=function(){if(window.__bwmTypekitLoaded)return;window.__bwmTypekitLoaded=true;var s=document.createElement('script');s.async=true;s.src='https://use.typekit.net/dmg8gvn.js';s.onload=function(){try{Typekit.load({async:true});}catch(e){}};document.head.appendChild(s);};window.__bwmLoadTypekit();</script>
   <!-- BWM analytics loader: delayed so third-party tags do not block first paint -->
   <script>
   window.dataLayer=window.dataLayer||[];
