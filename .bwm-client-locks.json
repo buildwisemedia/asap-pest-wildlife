@@ -135,46 +135,6 @@
       "rationale": "Robert 2026-05-26 About visual QA regression: About typography must load Adobe Fonts immediately; a delayed loader leaves fallback metrics that can falsely pass structure while rendering visibly wrong."
     },
     {
-      "url": "/commercial-services/",
-      "string": "id=\"asap-commercial-reference-locks\"",
-      "rationale": "Robert 2026-05-26 Commercial screenshot regression: Commercial needs its own Webflow reference hero, not the generic navy/hollow inner-page shell that falsely passed older shared locks."
-    },
-    {
-      "url": "/commercial-services/",
-      "string": "commercial-hero-title",
-      "rationale": "Robert 2026-05-26 Commercial screenshot regression: the reference uses a filled navy Commercial hero title on cream, not an outlined H1 inherited from other pages."
-    },
-    {
-      "url": "/commercial-services/",
-      "string": "commercial-process-image",
-      "rationale": "Robert 2026-05-26 Commercial screenshot regression: the full-width process artwork must sit directly under the cream hero/intro like removeasap.com/commercial-services."
-    },
-    {
-      "url": "/commercial-services/",
-      "string": "commercial-partners-section",
-      "rationale": "Robert 2026-05-26 Commercial screenshot regression: partner logos belong on the navy reference band, not a cream grid with mixed colored logos."
-    },
-    {
-      "url": "/commercial-services/",
-      "string": "commercial-business-grid",
-      "rationale": "Robert 2026-05-26 Commercial screenshot regression: the business type grid needs the Webflow rounded outlined card treatment."
-    },
-    {
-      "url": "/commercial-services/",
-      "string": "we step in - your trusted",
-      "rationale": "Claude 2026-05-26 Commercial QA note: reference copy uses a plain hyphen-minus here; lock it so typography cleanup cannot silently drift from the source page."
-    },
-    {
-      "url": "/commercial-services/",
-      "string": "d=\"M5 8h14M5 16h14\"",
-      "rationale": "Robert 2026-05-26 Commercial screenshot regression: mobile Commercial header uses the same two-line Webflow menu glyph as the reference, not the generic three-line hamburger."
-    },
-    {
-      "url": "/commercial-services/",
-      "string": "window.__bwmLoadTypekit();</script>",
-      "rationale": "Robert 2026-05-26 Commercial visual QA regression: Commercial typography must load Adobe Fonts immediately; fallback metrics were one cause of false page-level passes."
-    },
-    {
       "url": "/services/",
       "string": "class=\"contact-hero-background\"",
       "rationale": "2026-05-26 page-by-page reset: Services must be sourced from the live Webflow route structure, not the stale hand-built Tailwind clone."
@@ -388,6 +348,91 @@
       "url": "/pest-control-services/",
       "string": "https://use.typekit.net/dmg8gvn.js",
       "rationale": "Webflow Pest Control Typekit marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "string": "id=\"site-header\"",
+      "rationale": "Webflow Commercial header marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "string": "class=\"body\"",
+      "rationale": "Webflow Commercial body marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "string": "class=\"navbar w-nav\"",
+      "rationale": "Webflow Commercial cream header/nav marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "string": "nav-link w-nav-link w--current",
+      "rationale": "Webflow Commercial active navigation marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "string": "class=\"logo-normal\"",
+      "rationale": "Webflow Commercial normal header logo marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "string": "class=\"logo-scroll\"",
+      "rationale": "Webflow Commercial scroll-state header logo marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "string": "Commercial Pest &amp; Wildlife removal services for your business",
+      "rationale": "Webflow Commercial hero heading marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "string": "we step in - your trusted",
+      "rationale": "Claude 2026-05-26 Commercial QA note: reference copy uses a plain hyphen-minus here; lock it so typography cleanup cannot silently drift from the source page."
+    },
+    {
+      "url": "/commercial-services/",
+      "string": "6626ade011192e31a242a67b_Image%20(19).png",
+      "rationale": "Webflow Commercial full-width process artwork marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "string": "class=\"section background---navy\"",
+      "rationale": "Webflow Commercial navy partner band marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "string": "Check out some of the <span class=\"text-color---burnt-orange\">companies</span> we've serviced!",
+      "rationale": "Webflow Commercial partner section heading marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "string": "class=\"w-layout-grid grid-2\"",
+      "rationale": "Webflow Commercial business grid marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "string": "Commercial Buildings",
+      "rationale": "Webflow Commercial business card marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "string": "Learn more about our solutions for:",
+      "rationale": "Webflow Commercial solution links section marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "string": "CONTACT US FOR AN ESTIMATE !",
+      "rationale": "Webflow Commercial contact form marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "string": "No mobile information",
+      "rationale": "ASAP SMS privacy language marker that must remain visible in the Webflow contact block."
+    },
+    {
+      "url": "/commercial-services/",
+      "string": "https://use.typekit.net/dmg8gvn.js",
+      "rationale": "Webflow Commercial Typekit marker; source-first parity lock."
     }
   ],
   "script_src_contains": [
@@ -398,44 +443,7 @@
       "rationale": "Allaine 2026-05-18: scroll-state JS must remain in main.js (else nav stays transparent forever). The .is-scrolled class is toggled at runtime and never appears in HTML, so this lock fetches main.js itself and greps the body. Guards both the CSS class hook and the toggle handler."
     }
   ],
-  "stylesheet_href_contains": [
-    {
-      "url": "/commercial-services/",
-      "href": "/assets/css/style.css",
-      "string": "body.commercial-page .commercial-reference-hero",
-      "rationale": "Robert 2026-05-26 Commercial screenshot regression: page-specific hero CSS must exist so the generic theme-navy first section cannot take over."
-    },
-    {
-      "url": "/commercial-services/",
-      "href": "/assets/css/style.css",
-      "string": "body.commercial-page .commercial-process-image",
-      "rationale": "Robert 2026-05-26 Commercial screenshot regression: the process artwork must be locked as full-width section art, not a padded gallery thumbnail."
-    },
-    {
-      "url": "/commercial-services/",
-      "href": "/assets/css/style.css",
-      "string": "body.commercial-page .commercial-partners-section",
-      "rationale": "Robert 2026-05-26 Commercial screenshot regression: the partner section must keep the navy Webflow band."
-    },
-    {
-      "url": "/commercial-services/",
-      "href": "/assets/css/style.css",
-      "string": "body.commercial-page .commercial-business-grid > div",
-      "rationale": "Robert 2026-05-26 Commercial screenshot regression: the business grid card geometry must be locked in CSS."
-    },
-    {
-      "url": "/commercial-services/",
-      "href": "/assets/css/style.css",
-      "string": "font-size: 34px;",
-      "rationale": "Robert 2026-05-26 Commercial visual QA: mobile Commercial hero title must use the Webflow 34px filled-title size, not the oversized hollow inner-page default."
-    },
-    {
-      "url": "/commercial-services/",
-      "href": "/assets/css/style.css",
-      "string": "min-height: 112.5px;",
-      "rationale": "Robert 2026-05-26 Commercial visual QA: mobile partner-logo row must preserve the reference horizontal overflow rhythm rather than collapsing into a stacked grid."
-    }
-  ],
+  "stylesheet_href_contains": [],
   "forbidden_strings": [
     {
       "url": "/wildlife/",
@@ -502,11 +510,6 @@
       "rationale": "Robert 2026-05-26 screenshot regression: the About hero must carry the large orange bird from the removeasap.com/about/ reference, overlapping the cream divider/carat area."
     },
     {
-      "url": "/commercial-services/",
-      "asset": "gallery-1.png",
-      "rationale": "Robert 2026-05-26 Commercial screenshot regression: the live reference uses the full-width commercial process artwork directly under the hero."
-    },
-    {
       "url": "/services/",
       "asset": "69a1c28118c3adccdbcd26d5_Untitled%20design%20(36).png",
       "rationale": "Webflow Services hero mascot asset from the live reference source."
@@ -570,6 +573,51 @@
       "url": "/pest-control-services/",
       "asset": "61d91206c3c26395ece3f239_arrow-navy.png",
       "rationale": "Webflow Pest Control navy underline arrow marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "asset": "699f35309ec99464106dc35a_ASAP_LOGO_Orange.png",
+      "rationale": "Webflow Commercial orange logo marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "asset": "61aea59de7f1b769c777f498_orange-mascot.svg",
+      "rationale": "Webflow Commercial mascot marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "asset": "6626ade011192e31a242a67b_Image%20(19).png",
+      "rationale": "Webflow Commercial process artwork marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "asset": "620d2de1b367493c5c03650d_tps.svg",
+      "rationale": "Webflow Commercial TPS partner logo marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "asset": "620d2de1a42f27f6d64e0ae2_ksm.svg",
+      "rationale": "Webflow Commercial KSM partner logo marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "asset": "620d2de134456288431c8981_c%26w.svg",
+      "rationale": "Webflow Commercial C&W partner logo marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "asset": "620d2de08fa1e736f00db20a_gfl.svg",
+      "rationale": "Webflow Commercial GFL partner logo marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "asset": "620d2de11f40354d61e1d0ff_ccm.svg",
+      "rationale": "Webflow Commercial CCM partner logo marker; source-first parity lock."
+    },
+    {
+      "url": "/commercial-services/",
+      "asset": "6626aecaea4fa3bf0f711291_NMSDC_CERIFIED_2024.png",
+      "rationale": "Webflow Commercial NMSDC partner badge marker; source-first parity lock."
     }
   ],
   "forbidden_assets": [
@@ -630,9 +678,9 @@
     },
     {
       "url": "/commercial-services/",
-      "regex": "partners/[a-z0-9-]+\\.(svg|png)",
+      "regex": "620d2de|6626aecaea4fa3bf0f711291_NMSDC_CERIFIED_2024\\.png",
       "min": 6,
-      "rationale": "Robert 2026-05-26 Commercial screenshot regression: live Webflow Commercial reference shows the dark partner band with TPS, KSM, C&W, GFL, CCM, and NMSDC overflow badge, not the broader homepage-style 9-logo cream grid."
+      "rationale": "Webflow Commercial reference partner band has five SVG partner logos plus the NMSDC badge; source-first parity lock."
     }
   ]
 }
