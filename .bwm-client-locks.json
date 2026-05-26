@@ -13,7 +13,6 @@
     {"url": "/", "string": "id=\"site-header\"", "rationale": "Allaine 2026-05-18 flag: nav transparent overlapped content on scroll. Header MUST carry id=\"site-header\" so main.js can toggle .is-scrolled (CSS in style.css adds bg-cream/95 + backdrop-blur). Removing the id silently regresses nav readability on scroll."},
     {"url": "/about/", "string": "id=\"site-header\"", "rationale": "Same — applies sitewide."},
     {"url": "/wildlife/", "string": "id=\"site-header\"", "rationale": "Same — applies sitewide."},
-    {"url": "/", "string": "we-remove-amp", "rationale": "Robert 2026-05-18 flag (v8.4): the More tab's ampersand must sit BEFORE 'More' with negative margin-right (underlaps the M from the left), matching removeasap.com reference. The we-remove-amp class on the img anchors the structure; removing it regresses to the spaced-after layout that prompted the flag."},
     {"url": "/peace-of-mind-from/bees-wasps-and-hornets/", "string": "Certified Honey Bee Control", "rationale": "John Mukasa 2026-03-09 ask (v8.4 Phase 1 close-out): bee page must surface the HBR (Honey Bee Removal Operator) certification under the Georgia Structural Pest Control Act. This is ASAP's primary honey-bee differentiator versus generic pest spraying."},
     {"url": "/peace-of-mind-from/bees-wasps-and-hornets/", "string": "Georgia Structural Pest Control Act", "rationale": "John Mukasa 2026-03-09 ask: legal statute name must appear verbatim per HBR licensure framing."},
     {"url": "/peace-of-mind-from/bees-wasps-and-hornets/", "string": "Nonprofit Partnership", "rationale": "John Mukasa 2026-03-09 ask: bee page must call out ASAP's nonprofit-relocation partnership for live honey bee colonies."},
@@ -52,24 +51,18 @@
     {"url": "/services/", "string": "Privacy Policy: \"No mobile information", "rationale": "Robert 2026-05-26 Services full-page visual QA: the reference footer centers the quoted privacy policy copy below the form."},
     {"url": "/services/", "string": "d=\"M5 8h14M5 16h14\"", "rationale": "Robert 2026-05-26 Services screenshot regression: mobile Services header uses the same two-line Webflow menu glyph as the reference, not the generic three-line hamburger."},
     {"url": "/services/", "string": "window.__bwmLoadTypekit();</script>", "rationale": "Robert 2026-05-26 Services visual QA regression: Services typography must load Adobe Fonts immediately; fallback metrics change the hero and service-heading widths."},
-    {"url": "/", "string": "id=\"asap-home-reference-locks\"", "rationale": "Robert 2026-05-26 homepage screenshot regression: the homepage needs page-specific Webflow reference overrides for hero rhythm, CTA bar sizing, mobile animals/backgrounds, and homepage nav color. Broad shared styling checks are insufficient."},
-    {"url": "/", "string": "cta-service-copy", "rationale": "Robert 2026-05-26 homepage screenshot regression: the hero CTA copy must use the Webflow-style sentence-case service text plus CALL NOW label, not the all-caps letter-spaced block that drifted from removeasap.com."},
-    {"url": "/", "string": "aria-current=\"page\" class=\"text-navy font-bold text-sm uppercase tracking-[0.15em] hover:text-orange transition-colors\">Home", "rationale": "Robert 2026-05-26 homepage screenshot regression: homepage desktop nav must mark Home current so only Home renders navy while the inactive links render burnt orange like removeasap.com."},
-    {"url": "/", "string": "color: #B77537 !important;", "rationale": "Gemini 2026-05-26 homepage QA block: inactive desktop homepage nav links must be explicitly locked to the Webflow burnt-orange state rather than inheriting Tailwind navy or a muted browser-rendered variant."},
-    {"url": "/", "string": "color: #212936 !important;", "rationale": "Gemini 2026-05-26 homepage QA block: the Home nav item must be explicitly locked to the active navy state on the homepage."},
-    {"url": "/", "string": "we-remove-kicker", "rationale": "Gemini 2026-05-26 homepage QA block: the We Remove & Exclude eyebrow needs the reference-style orange underline and tooth accent, not a plain text label."},
-    {"url": "/", "string": "gap: 30px;", "rationale": "Robert 2026-05-26 homepage visual QA: desktop nav spacing must match the Webflow 30px rhythm; a 22px gap right-aligned the menu too far to the right."},
-    {"url": "/", "string": "font-size: 15px !important;", "rationale": "Robert 2026-05-26 homepage visual QA: We Remove & Exclude eyebrow typography must use the Webflow 15px subheading size, not Tailwind text-sm."},
-    {"url": "/", "string": "width: 186.5625px;", "rationale": "Robert 2026-05-26 homepage visual QA: We Remove underline must match the Webflow underline width under the full subheading text."},
-    {"url": "/", "string": "home-mission-bg.webp'), url('/assets/images/backgrounds/home-hero-bg.webp", "rationale": "Gemini 2026-05-26 homepage QA block: the We Remove section needs the grunge texture plus pale leaf field seen in the reference, not the plain/leaf-only cream background."},
-    {"url": "/", "string": "padding-left: 7.14vw !important;", "rationale": "Gemini 2026-05-26 homepage QA block: tablet/mobile We Remove content must keep the Webflow side inset instead of collapsing to a 16px Tailwind gutter."},
-    {"url": "/", "string": "font-size: 35px !important;", "rationale": "Gemini 2026-05-26 homepage QA block: mobile We Remove labels must match the reference 35px Webflow tab text, not the oversized 48px Tailwind mobile default."},
-    {"url": "/", "string": "left: -20px;", "rationale": "Gemini 2026-05-26 homepage QA block: the mobile ampersand must overlap from the left of the More label like the reference, not consume normal flex space before the word."},
-    {"url": "/", "string": "d=\"M5 8h14M5 16h14\"", "rationale": "Gemini 2026-05-26 homepage QA block: mobile header uses the reference two-line menu glyph, not the generic three-line hamburger."},
     {"url": "/", "string": "window.__bwmLoadTypekit();</script>", "rationale": "Robert 2026-05-26 homepage visual QA regression: the homepage hero must not wait 5 seconds for Adobe Fonts; fallback Arial changes the hero width and creates false visual mismatches against removeasap.com."},
-    {"url": "/", "string": "opacity-100 md:opacity-0 md:group-hover:opacity-100", "rationale": "Robert 2026-05-18 (v8.6): wildlife card overlays (Armadillo, Bat, etc.) previously used 'opacity-0 group-hover:opacity-100' with no mobile fallback — hover doesn't fire on touch so the animal descriptions were completely invisible on mobile. The new pattern always shows the overlay on mobile (opacity-100) and preserves hover-reveal on md+ (md:opacity-0 md:group-hover:opacity-100). Burn incident: bob 2026-05-18 marked 'optimize for Mobile View' addressed via v8.2 (closeout_ref bbf3100) when v8.2 didn't actually touch this overlay pattern."},
-    {"url": "/wildlife/", "string": "opacity-100 md:opacity-0 md:group-hover:opacity-100", "rationale": "Same — applies sitewide on the wildlife listing page."},
-    {"url": "/", "string": "nmsdc-2024.png\" alt=\"NMSDC Certified 2024\" class=\"max-h-12 max-w-full object-contain invert opacity-70\"", "rationale": "Robert 2026-05-18 (v8.6): the NMSDC certified-2024 PNG is rendered in light gray on transparent background (authored for dark-bg context). Without the 'invert' filter (and 70% opacity to match neighboring monochrome logo weight), it renders gray-on-cream and is invisible on ASAP's cream partner band. v8.5 fixed five other partner SVGs by swapping fill to navy; PNG can't be edited the same way, so the CSS filter is load-bearing. Removing 'invert' regresses to invisible."}
+    {"url": "/", "string": "class=\"home-hero-background\"", "rationale": "2026-05-26 page-by-page reset: homepage must be sourced from the live Webflow route structure, not the stale hand-built Tailwind clone."},
+    {"url": "/", "string": "class=\"div-block-4\"", "rationale": "Webflow homepage top contact pill marker; locks the source-first header structure without changing visible design."},
+    {"url": "/", "string": "class=\"nav-link w-nav-link w--current\">Home", "rationale": "Webflow homepage active Home nav marker; replaces stale Tailwind nav lock."},
+    {"url": "/", "string": "class=\"responsive-h2\">Giving", "rationale": "Webflow homepage hero title marker; source-first parity lock."},
+    {"url": "/", "string": "class=\"hero-h1 outlined-navy\">Peace of Mind", "rationale": "Webflow homepage hero outline title marker; source-first parity lock."},
+    {"url": "/", "string": "class=\"hero-arrow-wrapper\"", "rationale": "Webflow homepage CTA band/carat marker; source-first parity lock."},
+    {"url": "/", "string": "class=\"home-animals-tab-link-2\"", "rationale": "Webflow homepage We Remove section marker; source-first parity lock."},
+    {"url": "/", "string": "class=\"home-mission-background\"", "rationale": "Webflow homepage mission section marker; source-first parity lock."},
+    {"url": "/", "string": "ASAP_LOGO_Orange.png", "rationale": "Webflow homepage logo asset marker from the live reference source."},
+    {"url": "/", "string": "ASAP_MONSTER_ICON.png", "rationale": "Webflow homepage contact monster asset marker from the live reference source."},
+    {"url": "/wildlife/", "string": "opacity-100 md:opacity-0 md:group-hover:opacity-100", "rationale": "Same — applies sitewide on the wildlife listing page."}
   ],
 
   "script_src_contains": [
@@ -153,10 +146,10 @@
     {"url": "/services/", "asset": "services-hero-mascot.png", "rationale": "Robert 2026-05-26 Services screenshot regression: the reference places the gray ASAP monster above the Services hero title."},
     {"url": "/services/", "asset": "services-transition.png", "rationale": "Robert 2026-05-26 Services screenshot regression: the live Webflow Services page includes the full-width inspection/capture/exclude/warranty artwork before Trapping."},
     {"url": "/services/", "asset": "logo-orange-tagline.png", "rationale": "Robert 2026-05-26 Services screenshot regression: the navy Services header uses the orange logo with cream tagline, matching removeasap.com/services."},
-    {"url": "/", "asset": "monster-icon.png", "rationale": "Item #9: Contact-form section uses the canonical monster, not the thin-mouth-line SVG."},
     {"url": "/contact/", "asset": "monster-icon.png", "rationale": "Item #9: Contact-form section uses the canonical monster, not the thin-mouth-line SVG."},
     {"url": "/", "asset": "arrow-orange.svg", "rationale": "Homepage CTA banner shows the orange-tooth element."},
-    {"url": "/", "asset": "icons/ampersand.svg", "rationale": "Required asset for the 'More' tab decorative '&'. Layout history: v8.1 over-removed both ampersands; v8.2 restored the after-'More' instance; v8.4 (Robert 2026-05-18) moved it BEFORE 'More' with negative margin-right per removeasap.com reference (underlaps the M from the left, larger, opacity-80). Current authoritative structure is anchored by the we-remove-amp class — see required_strings entry below."}
+    {"url": "/", "asset": "ASAP_MONSTER_ICON.png", "rationale": "Homepage contact-form section uses the live Webflow monster artwork in the source-first parity build."},
+    {"url": "/", "asset": "61a6dc27848a3cccf01f0524_arrow-orange.svg", "rationale": "Homepage subheading arrow/carat artwork must come from the live Webflow source asset."}
   ],
 
   "forbidden_assets": [
@@ -176,7 +169,7 @@
   ],
 
   "min_pattern_count": [
-    {"url": "/", "regex": "partners/[a-z0-9-]+\\.(svg|png)", "min": 9, "rationale": "Item #4: Homepage partner-logo grid has 9 logos in a normalized grid (was unaligned flex-wrap before 2026-05-12)."},
+    {"url": "/", "regex": "cdn\\.prod\\.website-files\\.com/61a68c3ac2bbdc9f4c356d55/[^\\\"]+\\.(svg|png)", "min": 9, "rationale": "2026-05-26 source-first homepage parity: partner/client logo row is locked by Webflow CDN asset references, not local Tailwind partner paths."},
     {"url": "/commercial-services/", "regex": "partners/[a-z0-9-]+\\.(svg|png)", "min": 6, "rationale": "Robert 2026-05-26 Commercial screenshot regression: live Webflow Commercial reference shows the dark partner band with TPS, KSM, C&W, GFL, CCM, and NMSDC overflow badge, not the broader homepage-style 9-logo cream grid."}
   ]
 }
