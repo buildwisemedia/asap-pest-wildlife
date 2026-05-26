@@ -15,7 +15,7 @@
   <link rel="apple-touch-icon" href="/assets/images/logos/webclip.png">
   <link rel="stylesheet" href="/assets/css/tailwind.generated.css">
   <style>body{font-size:16px;}@font-face{font-family:ASAPFontSwapProbe;src:local("Arial");font-display:swap;}</style>
-  <script>window.__bwmLoadTypekit=function(){if(window.__bwmTypekitLoaded)return;window.__bwmTypekitLoaded=true;var s=document.createElement('script');s.async=true;s.src='https://use.typekit.net/dmg8gvn.js';s.onload=function(){try{Typekit.load({async:true});}catch(e){}};document.head.appendChild(s);};(function(){var start=function(){setTimeout(window.__bwmLoadTypekit,5000)};if(document.readyState==='complete')start();else window.addEventListener('load',start,{once:true});})();</script>
+  <script>window.__bwmLoadTypekit=function(){if(window.__bwmTypekitLoaded)return;window.__bwmTypekitLoaded=true;var s=document.createElement('script');s.async=true;s.src='https://use.typekit.net/dmg8gvn.js';s.onload=function(){try{Typekit.load({async:true});}catch(e){}};document.head.appendChild(s);};window.__bwmLoadTypekit();</script>
   <!-- BWM analytics loader: delayed so third-party tags do not block first paint -->
   <script>
   window.dataLayer=window.dataLayer||[];
@@ -36,7 +36,7 @@
   <!-- BWM Attribution Tracker — Phase 1 QLS M78 -->
   <script src="/attribution.js" defer></script>
 </head>
-<body class="bg-cream text-dark-text font-sans theme-orange theme-pest">
+<body class="bg-cream text-dark-text font-sans theme-orange pest-control-page">
   <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:bg-cream focus:text-navy focus:px-4 focus:py-2 focus:rounded-sm focus:shadow-lg">Skip to content</a>
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K953HZ9R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
@@ -62,7 +62,7 @@
     <div class="flex items-center justify-between gap-4">
       <a href="/" class="flex-shrink-0">
         <!-- @r020:identity: ASAP logo in header navigation -->
-        <img src="/assets/images/logos/logo-orange.webp" alt="ASAP Pest &amp; Wildlife Removal — Your Pest &amp; Wildlife Extraordinaires" class="w-[180px] md:w-[220px] lg:w-[260px] h-auto" width="260" height="179" fetchpriority="high" decoding="sync">
+        <img src="/assets/images/logos/logo-blue.png" alt="ASAP Pest &amp; Wildlife Removal — Your Pest &amp; Wildlife Extraordinaires" class="w-[180px] md:w-[220px] lg:w-[260px] h-auto" width="2551" height="1754" fetchpriority="high" decoding="sync">
 
       </a>
       <nav class="hidden lg:flex items-center gap-8">
@@ -77,7 +77,7 @@
       <button id="mobile-menu-btn" class="lg:hidden text-navy p-2" aria-label="Toggle menu">
         <!-- @r020:identity: hamburger menu icon UI chrome glyph -->
         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 16h14"/>
         </svg>
       </button>
     </div>
@@ -97,92 +97,81 @@
 
   <main id="main-content">
     <!-- Hero -->
-    <section class="bg-cream relative overflow-hidden py-16 md:py-24">
-      <div class="absolute inset-0 opacity-50">
-        <!-- @r020:F1 emotion: page hero background — atmospheric context establishing trust -->
-        <img src="/assets/images/backgrounds/contact-hero-bg.svg" alt="" class="w-full h-full object-cover">
+    <section id="asap-pest-reference-locks" class="pest-reference-hero">
+      <div class="pest-reference-hero-inner">
+        <img src="/assets/images/logos/pest-hero-mascot.png" alt="" class="pest-hero-mascot" loading="eager" aria-hidden="true">
+        <h1 class="pest-hero-title text-outlined-cream">Pest Control</h1>
       </div>
-      <div class="max-w-7xl mx-auto px-4 relative z-20">
-        <h1 class="font-heading font-black text-outlined-navy text-6xl md:text-8xl lg:text-[10rem] uppercase tracking-[0.05em] leading-[0.9]">Pest Control</h1>
+      <div class="pest-hero-phone-band" aria-label="Call ASAP Pest and Wildlife">
+        <a href="tel:7706913636" class="pest-hero-phone">(770)691-3636</a>
+        <img src="/assets/images/icons/carat-cream.svg" alt="" class="pest-hero-carat" aria-hidden="true">
       </div>
-    </section>
-
-    <!-- CTA Phone Banner -->
-    <section class="cta-banner-section relative">
-      <div class="cta-canvas-cap bg-orange py-4 md:py-5 relative z-10">
-        <div class="max-w-7xl mx-auto px-4 flex flex-wrap items-center justify-end gap-3 text-white pr-[16vw] md:pr-[26vw]">
-          <span class="uppercase tracking-[0.15em] font-bold text-sm md:text-base">For services and immediate attention</span>
-          <a href="tel:7706913636" class="uppercase tracking-[0.15em] font-black text-lg md:text-2xl hover:text-cream transition-colors">CALL NOW (770)691-3636</a>
-        </div>
-        <!-- @r020:F3 cta-pull: directional arrow pulling eye toward CALL NOW CTA -->
-        <img src="/assets/images/icons/arrow-orange.svg" alt="" class="cta-tooth absolute top-0 right-[5%] md:right-[8%] w-[14.28vw] h-auto z-20" loading="lazy">
+      <div class="pest-hero-copy-wrap">
+        <img src="/assets/images/animals/roach.svg" alt="" class="pest-roach" loading="eager" aria-hidden="true">
+        <img src="/assets/images/animals/pest-ant.webp" alt="" class="pest-ant" loading="eager" aria-hidden="true">
+        <p>We're the masters of 'pest-imonials' &mdash; our customers are buzzing about our exceptional pest control services!</p>
       </div>
     </section>
 
     <!-- Services Intro -->
-    <section class="bg-cream py-16 relative overflow-hidden">
-      <div class="absolute inset-0 opacity-30">
-        <!-- @r020:F1 emotion: section background illustration — atmospheric context -->
-        <img src="/assets/images/backgrounds/home-mission-bg.webp" alt="" class="w-full h-full object-cover" loading="lazy">
-
-      </div>
-      <div class="max-w-4xl mx-auto px-4 relative z-10">
-        <p class="text-outlined-orange font-heading font-black text-2xl md:text-4xl uppercase tracking-[0.1em] mb-6">Don't let pests take your 'PEACE' away</p>
-        <p class="text-navy/80 leading-relaxed mb-4">We're the masters of 'pest-imonials' &mdash; our customers are buzzing about our exceptional pest control services!</p>
-        <p class="text-navy/80 leading-relaxed mb-4">Our services include Extermination, Prevention, Inspections, and more, we specialize in the pest below but not limited to:</p>
-        <ul class="text-navy/80 leading-relaxed list-disc list-inside mb-6 space-y-1">
-          <li>Termite control</li>
-          <li>Rodent control</li>
-          <li>Mosquito control</li>
-          <li>Bed bug control</li>
-          <li>Ant control</li>
-          <li>Roach control</li>
-        </ul>
-        <p class="text-navy/80 leading-relaxed">At ASAP Pest &amp; Wildlife Removal, we understand how frustrating and inconvenient it can be to deal with a pest infestation. That's why we offer fast and effective solutions to eliminate pests and prevent them from coming back. Our team uses the latest techniques and equipment to ensure that your property is pest-free and safe for you and your family or customers.</p>
+    <section class="pest-intro-section">
+      <div class="pest-intro-inner">
+        <div class="pest-intro-heading-wrap">
+          <h2>Don't let pests take your <span>"Peace"</span> away</h2>
+          <div class="pest-intro-underline" aria-hidden="true"><img src="/assets/images/icons/arrow-navy.png" alt="" loading="lazy"></div>
+        </div>
+        <div class="pest-intro-copy">
+          <p>Our services include Extermination, Prevention, Inspections, and more, we specialize in the pest below but not limited to:</p>
+          <ul>
+            <li>Termite control</li>
+            <li>Rodent control</li>
+            <li>Mosquito control</li>
+            <li>Bed bug control</li>
+            <li>Ant control</li>
+            <li>Roach control</li>
+          </ul>
+          <p>At ASAP Pest &amp; Wildlife Removal, we understand how frustrating and inconvenient it can be to deal with a pest infestation. That's why we offer fast and effective solutions to eliminate pests and prevent them from coming back. Our team uses the latest techniques and equipment to ensure that your property is pest-free and safe for you and your family or customers.</p>
+        </div>
       </div>
     </section>
 
     <!-- Why Choose Us -->
-    <section class="bg-cream py-16 relative overflow-hidden">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="font-heading font-black text-navy text-3xl md:text-4xl uppercase tracking-[0.1em] mb-4">Why choose us?</h2>
-        <p class="text-navy/70 mb-10">There are many reasons why ASAP is the best choice for pest control services in Georgia. Here are just a few:</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="border border-navy/20 rounded-2xl p-8 bg-cream">
-            <h3 class="font-heading font-black text-navy text-lg uppercase tracking-[0.1em] mb-3">Rating</h3>
-            <p class="text-navy/70 text-sm leading-relaxed">We are a 5-Star rated company, with over 100 testimonies of our excellent service.</p>
-          </div>
-          <div class="border border-navy/20 rounded-2xl p-8 bg-cream">
-            <h3 class="font-heading font-black text-navy text-lg uppercase tracking-[0.1em] mb-3">Expertise</h3>
-            <p class="text-navy/70 text-sm leading-relaxed">Our team of professionals has years of experience in the pest control industry and is licensed and insured. We have the knowledge and skills to handle any pest problem, no matter how big or small.</p>
-          </div>
-          <div class="border border-navy/20 rounded-2xl p-8 bg-cream">
-            <h3 class="font-heading font-black text-navy text-lg uppercase tracking-[0.1em] mb-3">Customized Solutions</h3>
-            <p class="text-navy/70 text-sm leading-relaxed">We understand that every property and pest infestation is different. That's why we tailor our solutions to meet your specific needs and preferences.</p>
-          </div>
-          <div class="border border-navy/20 rounded-2xl p-8 bg-cream">
-            <h3 class="font-heading font-black text-navy text-lg uppercase tracking-[0.1em] mb-3">Safety</h3>
-            <p class="text-navy/70 text-sm leading-relaxed">The safety of our customers and their property is our top priority. We use eco-friendly and safe methods to eliminate pests without harming your health or the environment.</p>
-          </div>
-          <div class="border border-navy/20 rounded-2xl p-8 bg-cream">
-            <h3 class="font-heading font-black text-navy text-lg uppercase tracking-[0.1em] mb-3">Satisfaction Guaranteed</h3>
-            <p class="text-navy/70 text-sm leading-relaxed">We are confident in the quality of our services and offer a satisfaction guarantee. If you're not happy with our work, we'll do everything we can to make it right.</p>
-          </div>
+    <section class="pest-why-section">
+      <div class="pest-why-inner">
+        <h2>Why choose us?</h2>
+        <p class="pest-why-lead">There are many reasons why ASAP is the best choice for pest control services in Georgia. Here are just a few:</p>
+        <div class="pest-reason-list">
+          <article>
+            <h3>Rating</h3>
+            <p>We are a 5-Star rated company, with over 100 testimonies of our excellent service.</p>
+          </article>
+          <article>
+            <h3>Expertise</h3>
+            <p>Our team of professionals has years of experience in the pest control industry and is licensed and insured. We have the knowledge and skills to handle any pest problem, no matter how big or small.</p>
+          </article>
+          <article>
+            <h3>Customized Solutions</h3>
+            <p>We understand that every property and pest infestation is different. That's why we tailor our solutions to meet your specific needs and preferences.</p>
+          </article>
+          <article>
+            <h3>Safety</h3>
+            <p>The safety of our customers and their property is our top priority. We use eco-friendly and safe methods to eliminate pests without harming your health or the environment.</p>
+          </article>
+          <article>
+            <h3>Satisfaction Guaranteed</h3>
+            <p>We are confident in the quality of our services and offer a satisfaction guarantee. If you're not happy with our work, we'll do everything we can to make it right.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- Big CTA -->
-    <section class="bg-cream py-16 md:py-24 relative overflow-hidden">
-      <div class="absolute inset-0 opacity-40">
-        <!-- @r020:F1 emotion: section background illustration — atmospheric context -->
-        <img src="/assets/images/backgrounds/home-mission-bg.webp" alt="" class="w-full h-full object-cover" loading="lazy">
-
-      </div>
-      <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
-        <p class="text-outlined-orange font-heading font-black text-4xl md:text-6xl lg:text-8xl uppercase tracking-[0.05em] mb-6">Got bugs? call ASAP.</p>
-        <p class="text-navy/80 mb-8">We are a 24/6-hour company (closed on Sunday) and offer free phone consultations, if needed.</p>
-        <a href="tel:7706913636" class="inline-block bg-navy text-cream font-bold uppercase tracking-[0.15em] px-8 py-3.5 rounded-sm hover:bg-orange transition-colors text-sm">CALL ASAP TODAY</a>
+    <section class="pest-bugs-cta">
+      <div class="pest-bugs-inner">
+        <img src="/assets/images/logos/pest-hero-mascot.png" alt="" class="pest-bugs-mascot" loading="lazy" aria-hidden="true">
+        <h2>Got bugs? Call ASAP.</h2>
+        <p>We are a 24/6-hour company (closed on Sunday) and offer free phone consultations, if needed.</p>
+        <a href="tel:7706913636">CALL ASAP TODAY</a>
       </div>
     </section>
 

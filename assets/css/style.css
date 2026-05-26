@@ -574,6 +574,493 @@ body.about-page .about-main-copy {
 }
 
 /* ============================================
+   PEST CONTROL PAGE — Webflow reference match
+   John/Robert 2026-05-26: this page cannot reuse the generic orange
+   inner-page hero. The reference uses a burnt-orange hero with a cream phone
+   band, pest art, and a dedicated cream intro section.
+   ============================================ */
+body.pest-control-page {
+  background: #F2EDDC;
+}
+body.pest-control-page #site-header:not(.is-scrolled) nav {
+  gap: 30px;
+}
+body.pest-control-page #site-header:not(.is-scrolled) nav a {
+  color: #212936 !important;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+body.pest-control-page #site-header:not(.is-scrolled) nav a[aria-current="page"] {
+  color: #F2EDDC !important;
+}
+body.pest-control-page #site-header:not(.is-scrolled) #mobile-menu-btn {
+  color: #212936;
+}
+body.pest-control-page #site-header .flex.items-center.justify-between > a:first-child img,
+body.pest-control-page #site-header:not(.is-scrolled) .flex.items-center.justify-between > a:first-child img {
+  filter: none !important;
+  transform: none;
+  width: min(14.28vw, 206px);
+}
+body.pest-control-page main > section:first-child,
+body.pest-control-page .pest-reference-hero {
+  background-color: #B77537;
+  background-image: url("/assets/images/backgrounds/contact-hero-bg.svg");
+  background-position: 80% 20%;
+  background-repeat: no-repeat;
+  background-size: 130vw;
+  min-height: auto;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+body.pest-control-page .pest-reference-hero-inner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  padding: 13vw 7.14vw 0;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
+body.pest-control-page .pest-hero-mascot {
+  display: block;
+  height: auto;
+  margin: 0 auto 3.57vw;
+  width: 80px;
+}
+body.pest-control-page .pest-hero-title {
+  color: transparent;
+  font-family: urw-din, sans-serif;
+  font-size: clamp(82px, 11vw, 170px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: .92;
+  margin: 0;
+  transform: translateY(-15px);
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #F2EDDC;
+  text-stroke: 2px #F2EDDC;
+}
+body.pest-control-page .pest-hero-phone-band {
+  align-items: center;
+  background: #F2EDDC;
+  display: flex;
+  justify-content: flex-end;
+  margin: 2.6vw 14.28vw 7.14vw 0;
+  max-width: 1440px;
+  min-height: 72px;
+  padding: 15px 25.75px 15px 7.14vw;
+  position: relative;
+  z-index: 10;
+}
+body.pest-control-page .pest-hero-phone {
+  color: #212936;
+  font-family: urw-din, sans-serif;
+  font-size: 35px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  position: relative;
+  text-decoration: none;
+  z-index: 2;
+}
+body.pest-control-page .pest-hero-phone:hover {
+  color: #B77537;
+}
+body.pest-control-page .pest-hero-carat {
+  height: auto;
+  position: absolute;
+  right: -9%;
+  top: 0;
+  width: 14.28vw;
+  z-index: 1;
+}
+body.pest-control-page .pest-roach,
+body.pest-control-page .pest-ant {
+  height: auto;
+  pointer-events: none;
+  position: absolute;
+  z-index: 5;
+}
+body.pest-control-page .pest-roach {
+  left: -4%;
+  max-width: 270px;
+  top: -5%;
+  transform: translate(6vw, -18vw);
+  width: 60vw;
+}
+body.pest-control-page .pest-ant {
+  max-width: 410px;
+  right: 12%;
+  top: 9%;
+  transform: rotateY(180deg) translate(-10vw, -8vw);
+  width: 30vw;
+}
+body.pest-control-page .pest-hero-copy-wrap {
+  color: #F2EDDC;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  padding: 7.14vw 7.14vw 60px;
+  position: relative;
+  z-index: 10;
+}
+body.pest-control-page .pest-hero-copy-wrap p {
+  font-family: urw-din, sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 824px;
+  width: 57.1429vw;
+}
+body.pest-control-page .pest-intro-section {
+  background-color: #F2EDDC;
+  background-image: url("/assets/images/backgrounds/home-mission-bg.webp"), url("/assets/images/backgrounds/home-mission-bg.svg");
+  background-position: 50% 0, 50% 0;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, 100vw;
+  overflow: hidden;
+  padding: 7.14vw 0;
+  position: relative;
+}
+body.pest-control-page .pest-intro-inner,
+body.pest-control-page .pest-why-inner,
+body.pest-control-page .pest-bugs-inner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  padding-left: 7.14vw;
+  padding-right: 7.14vw;
+  position: relative;
+}
+body.pest-control-page .pest-intro-heading-wrap {
+  display: inline-block;
+  margin-bottom: 3.57vw;
+  max-width: 760px;
+}
+body.pest-control-page .pest-intro-heading-wrap h2 {
+  color: #212936;
+  font-family: urw-din, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 0;
+  text-transform: uppercase;
+}
+body.pest-control-page .pest-intro-heading-wrap h2 span {
+  color: #B77537;
+}
+body.pest-control-page .pest-intro-underline {
+  background: #212936;
+  border-top: 0;
+  height: 6px;
+  margin-top: 5px;
+  position: relative;
+  width: 100%;
+}
+body.pest-control-page .pest-intro-underline img {
+  height: auto;
+  object-fit: contain;
+  object-position: right center;
+  position: absolute;
+  right: -6px;
+  top: 0;
+  width: 25px;
+}
+body.pest-control-page .pest-intro-copy {
+  color: #212936;
+  font-family: urw-din, sans-serif;
+  font-size: clamp(18px, 1.736vw, 25px);
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 1030px;
+}
+body.pest-control-page .pest-intro-copy p {
+  margin: 0 0 24px;
+}
+body.pest-control-page .pest-intro-copy ul {
+  columns: 2;
+  list-style: disc;
+  margin: 0 0 24px 24px;
+  padding: 0;
+}
+body.pest-control-page .pest-intro-copy li {
+  break-inside: avoid;
+  margin-bottom: 8px;
+}
+body.pest-control-page .pest-why-section {
+  background: #212936;
+  color: #F2EDDC;
+  padding: 7.14vw 0;
+}
+body.pest-control-page .pest-why-section h2,
+body.pest-control-page .pest-bugs-cta h2 {
+  color: transparent;
+  font-family: urw-din, sans-serif;
+  font-size: clamp(48px, 7vw, 105px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1;
+  margin: 0 0 3.57vw;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #F2EDDC;
+  text-stroke: 2px #F2EDDC;
+}
+body.pest-control-page .pest-why-lead {
+  color: #B77537;
+  font-family: urw-din, sans-serif;
+  font-size: clamp(20px, 1.736vw, 25px);
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0 0 4.285vw;
+  max-width: 824px;
+}
+body.pest-control-page .pest-reason-list {
+  display: grid;
+  gap: 3.57vw;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 1050px;
+}
+body.pest-control-page .pest-reason-list article {
+  color: #B77537;
+}
+body.pest-control-page .pest-reason-list h3 {
+  background: #B77537;
+  border-radius: 4px 16px 4px 16px;
+  color: #F2EDDC;
+  display: inline-block;
+  font-family: urw-din, sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin: 0 0 18px;
+  padding: 8px 30px;
+  text-transform: uppercase;
+}
+body.pest-control-page .pest-reason-list p {
+  font-family: urw-din, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+body.pest-control-page .pest-bugs-cta {
+  background-color: #212936;
+  background-image: url("/assets/images/backgrounds/contact-hero-bg.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 110vw;
+  color: #F2EDDC;
+  overflow: hidden;
+  padding: 7.14vw 0;
+  text-align: center;
+}
+body.pest-control-page .pest-bugs-inner {
+  max-width: 1100px;
+}
+body.pest-control-page .pest-bugs-mascot {
+  display: block;
+  height: auto;
+  margin: 0 auto 28px;
+  width: 80px;
+}
+body.pest-control-page .pest-bugs-cta p {
+  font-family: urw-din, sans-serif;
+  font-size: clamp(18px, 1.736vw, 25px);
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0 auto 32px;
+  max-width: 690px;
+}
+body.pest-control-page .pest-bugs-cta a {
+  background: #F2EDDC;
+  border-radius: 4px 16px 4px 16px;
+  color: #212936;
+  display: inline-block;
+  font-family: urw-din, sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  padding: 14px 28px;
+  text-decoration: none;
+}
+body.pest-control-page .pest-bugs-cta a:hover {
+  background: #B77537;
+  color: #F2EDDC;
+}
+
+@media (max-width: 767px) {
+  body.pest-control-page #site-header .flex.items-center.justify-between > a:first-child img,
+  body.pest-control-page #site-header:not(.is-scrolled) .flex.items-center.justify-between > a:first-child img {
+    transform: none;
+    width: 113.984375px;
+  }
+  body.pest-control-page main > section:first-child,
+  body.pest-control-page .pest-reference-hero {
+    background-position: 55% 0;
+    background-size: 210vw;
+  }
+  body.pest-control-page .pest-reference-hero-inner {
+    padding: 62px 27.84375px 0;
+  }
+  body.pest-control-page .pest-hero-mascot {
+    margin-bottom: 10px;
+    width: 40px;
+  }
+  body.pest-control-page .pest-hero-title {
+    font-size: 42px;
+    line-height: 50px;
+    transform: none;
+    white-space: nowrap;
+    -webkit-text-stroke-width: 1.5px;
+    text-stroke-width: 1.5px;
+  }
+  body.pest-control-page .pest-hero-phone-band {
+    justify-content: center;
+    margin: 13px 0 0;
+    min-height: 87px;
+    padding: 12px 27.84375px;
+    text-align: center;
+  }
+  body.pest-control-page .pest-hero-phone {
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+  body.pest-control-page .pest-hero-carat,
+  body.pest-control-page .pest-roach,
+  body.pest-control-page .pest-ant {
+    display: none;
+  }
+  body.pest-control-page .pest-hero-copy-wrap {
+    padding: 56px 27.84375px 57px;
+  }
+  body.pest-control-page .pest-hero-copy-wrap p {
+    font-size: 18px;
+    line-height: 27px;
+    max-width: none;
+    width: 100%;
+  }
+  body.pest-control-page .pest-intro-section {
+    background-size: auto, 190vw;
+    padding: 27.84375px 0 55.6875px;
+  }
+  body.pest-control-page .pest-intro-inner,
+  body.pest-control-page .pest-why-inner,
+  body.pest-control-page .pest-bugs-inner {
+    padding-left: 27.84375px;
+    padding-right: 27.84375px;
+  }
+  body.pest-control-page .pest-intro-heading-wrap {
+    margin-bottom: 35px;
+  }
+  body.pest-control-page .pest-intro-heading-wrap h2 {
+    font-size: 15px;
+    line-height: 22.5px;
+  }
+  body.pest-control-page .pest-intro-underline {
+    height: 4px;
+    margin-top: 4px;
+    width: 100%;
+  }
+  body.pest-control-page .pest-intro-copy {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  body.pest-control-page .pest-intro-copy ul {
+    columns: 1;
+  }
+  body.pest-control-page .pest-why-section,
+  body.pest-control-page .pest-bugs-cta {
+    padding: 55.6875px 0;
+  }
+  body.pest-control-page .pest-why-section h2,
+  body.pest-control-page .pest-bugs-cta h2 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 35px;
+    -webkit-text-stroke-width: 1.5px;
+    text-stroke-width: 1.5px;
+  }
+  body.pest-control-page .pest-why-lead {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 42px;
+  }
+  body.pest-control-page .pest-reason-list {
+    gap: 35px;
+    grid-template-columns: 1fr;
+  }
+  body.pest-control-page .pest-reason-list h3 {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  body.pest-control-page .pest-bugs-mascot {
+    width: 56px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  body.pest-control-page .pest-hero-phone-band {
+    margin-top: calc(2.6vw + 2px);
+  }
+}
+
+@media (min-width: 1440px) {
+  body.pest-control-page .pest-reference-hero-inner,
+  body.pest-control-page .pest-intro-inner,
+  body.pest-control-page .pest-why-inner,
+  body.pest-control-page .pest-bugs-inner {
+    padding-left: 103px;
+    padding-right: 103px;
+  }
+  body.pest-control-page .pest-reference-hero-inner {
+    padding-top: 13vw;
+  }
+  body.pest-control-page .pest-hero-mascot {
+    margin-bottom: 51.5px;
+  }
+  body.pest-control-page .pest-hero-phone-band {
+    margin-bottom: 103px;
+    margin-right: 206px;
+    padding-left: 103px;
+  }
+  body.pest-control-page .pest-hero-carat {
+    width: 206px;
+  }
+  body.pest-control-page .pest-roach {
+    left: 0;
+    top: 0;
+    transform: translate(1vw, -16vw);
+    width: 14vw;
+  }
+  body.pest-control-page .pest-ant {
+    right: 0;
+    top: 0;
+    transform: rotateY(180deg) translate(2vw, -3vw);
+    width: 20vw;
+  }
+  body.pest-control-page .pest-hero-copy-wrap {
+    padding: 103px 103px 206px;
+  }
+  body.pest-control-page .pest-intro-section,
+  body.pest-control-page .pest-why-section,
+  body.pest-control-page .pest-bugs-cta {
+    padding-top: 103px;
+    padding-bottom: 103px;
+  }
+}
+
+/* ============================================
    SCROLL-REVEAL ANIMATIONS
    Add class="reveal" to any element to fade-up on viewport enter.
    Stagger via reveal-delay-1..4 on adjacent siblings.
