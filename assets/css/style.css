@@ -161,6 +161,113 @@ body {
   body { padding-top: 230px; }
 }
 
+@media (min-width: 1024px) {
+  #site-header .flex.items-center.justify-between > a:first-child img {
+    width: 220px;
+    transform: translateY(-55px);
+  }
+}
+
+/* Reference-matched interior hero treatment.
+   These pages use the fixed header over the first viewport, not a separate
+   cream spacer above the hero. */
+body.theme-navy,
+body.theme-orange {
+  padding-top: 0;
+}
+body.theme-navy main > section:first-child,
+body.theme-orange main > section:first-child {
+  min-height: 430px;
+  padding-top: clamp(150px, 15vw, 190px);
+}
+body.theme-navy main > section:first-child {
+  background-color: #212936;
+}
+body.theme-orange main > section:first-child {
+  background-color: #B77537;
+}
+body.theme-navy main > section:first-child .text-outlined-navy,
+body.theme-orange main > section:first-child .text-outlined-navy {
+  -webkit-text-stroke-color: #F2EDDC;
+}
+body.theme-navy main > section:first-child .text-navy,
+body.theme-orange main > section:first-child .text-navy {
+  color: #F2EDDC;
+}
+body.theme-navy #site-header:not(.is-scrolled) nav a {
+  color: #B77537;
+}
+body.theme-orange #site-header:not(.is-scrolled) nav a {
+  color: #212936;
+}
+body.theme-navy #site-header:not(.is-scrolled) nav a[aria-current="page"],
+body.theme-orange #site-header:not(.is-scrolled) nav a[aria-current="page"] {
+  color: #F2EDDC;
+}
+body.theme-orange #site-header:not(.is-scrolled) .flex.items-center.justify-between > a:first-child img {
+  filter: brightness(0) saturate(100%) invert(11%) sepia(18%) saturate(894%) hue-rotate(178deg) brightness(93%) contrast(92%);
+}
+body.theme-navy #site-header:not(.is-scrolled) #mobile-menu-btn,
+body.theme-orange #site-header:not(.is-scrolled) #mobile-menu-btn {
+  color: #F2EDDC;
+}
+body.theme-wildlife main > section:first-child,
+body.theme-pest main > section:first-child {
+  min-height: 433px;
+  padding-top: 160px;
+  padding-bottom: 28px;
+}
+body.theme-wildlife main > section:first-child > .max-w-7xl,
+body.theme-pest main > section:first-child > .max-w-7xl {
+  text-align: center;
+}
+body.theme-wildlife main > section:first-child h1,
+body.theme-pest main > section:first-child h1 {
+  display: inline-block;
+  margin: 0 auto;
+}
+body.theme-wildlife main > section:first-child h1::before,
+body.theme-pest main > section:first-child h1::before {
+  content: "";
+  display: block;
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 42px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body.theme-wildlife main > section:first-child h1::before {
+  background-image: url("/assets/images/mascots/orange-mascot.svg");
+}
+body.theme-pest main > section:first-child h1 {
+  font-size: clamp(4.5rem, 9vw, 8rem) !important;
+  white-space: nowrap;
+}
+body.theme-pest main > section:first-child h1::before {
+  background-image: url("/assets/images/animals/ant.webp");
+}
+@media (max-width: 767px) {
+  body.theme-navy,
+  body.theme-orange {
+    padding-top: 0;
+  }
+  body.theme-navy main > section:first-child,
+  body.theme-orange main > section:first-child {
+    min-height: 330px;
+    padding-top: 120px;
+  }
+  body.theme-wildlife main > section:first-child h1::before,
+  body.theme-pest main > section:first-child h1::before {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 24px;
+  }
+  body.theme-pest main > section:first-child h1 {
+    white-space: normal;
+  }
+}
+
 /* ============================================
    SCROLL-REVEAL ANIMATIONS
    Add class="reveal" to any element to fade-up on viewport enter.
@@ -232,15 +339,42 @@ body {
    spares small viewports the extra padding-bottom they don't need.
    ============================================ */
 .cta-banner-section { padding-bottom: 14.28vw; }
-@media (min-width: 1440px) {
-  .cta-banner-section { padding-bottom: 200px; }
+@media (min-width: 768px) and (max-width: 1439px) {
+  .cta-banner-section { padding-bottom: 40px; }
 }
-.cta-tooth { display: none; }
+@media (min-width: 1440px) {
+  .cta-banner-section { padding-bottom: 140px; }
+}
+.cta-tooth {
+  display: none;
+  height: auto;
+}
 @media (min-width: 768px) {
   .cta-tooth { display: block; }
+  .cta-canvas-cap > div:first-child {
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+    padding-right: clamp(9rem, 20vw, 21rem);
+    position: relative;
+    white-space: nowrap;
+    z-index: 30;
+  }
+  .cta-canvas-cap > div:first-child span {
+    font-size: clamp(0.68rem, 1.1vw, 1rem);
+    letter-spacing: clamp(0.08em, 0.16vw, 0.15em);
+  }
+  .cta-canvas-cap > div:first-child a {
+    font-size: clamp(1rem, 1.55vw, 1.5rem);
+    letter-spacing: clamp(0.08em, 0.16vw, 0.15em);
+  }
 }
 @media (max-width: 767px) {
   .cta-banner-section { padding-bottom: 0; }
+  .cta-canvas-cap > div:first-child {
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 /* ============================================
