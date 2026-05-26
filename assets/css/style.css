@@ -268,6 +268,135 @@ body.theme-pest main > section:first-child h1::before {
   }
 }
 
+body.about-page main > section:first-child {
+  min-height: clamp(426px, 24vw, 730px);
+  padding-top: clamp(170px, 12.7vw, 385px);
+  padding-bottom: 0;
+}
+body.about-page .about-reference-hero {
+  overflow: visible;
+}
+body.about-page .about-reference-hero > .max-w-7xl {
+  text-align: left;
+}
+body.about-page .about-hero-heading {
+  position: relative;
+  display: inline-block;
+  z-index: 20;
+  margin-left: clamp(4rem, 5vw, 6rem);
+}
+body.about-page .about-hero-title {
+  font-size: clamp(5rem, 8.5vw, 10.625rem);
+  color: transparent;
+  -webkit-text-stroke: 1.6px #B77537;
+  text-stroke: 1.6px #B77537;
+}
+body.about-page .about-hero-subtitle {
+  font-size: clamp(1.8rem, 2.35vw, 3rem);
+  font-weight: 900;
+}
+body.about-page .about-hero-bird {
+  position: absolute;
+  right: clamp(4rem, 7vw, 12rem);
+  bottom: clamp(-96px, -5.2vw, -72px);
+  width: clamp(230px, 20.3vw, 410px);
+  height: auto;
+  z-index: 30;
+  opacity: .92;
+  pointer-events: none;
+}
+body.about-page .about-reference-divider {
+  position: relative;
+  height: clamp(170px, 10vw, 300px);
+  background: #212936;
+  z-index: 10;
+}
+body.about-page .about-reference-divider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 28px;
+  background: #F2EDDC;
+}
+body.about-page .about-reference-divider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(100% - 220px);
+  width: 0;
+  height: 0;
+  border-left: clamp(100px, 8.1vw, 170px) solid transparent;
+  border-right: clamp(100px, 8.1vw, 170px) solid transparent;
+  border-top: clamp(170px, 10vw, 300px) solid #F2EDDC;
+}
+body.about-page .about-aim-section {
+  margin-top: 0;
+  padding-top: clamp(40px, 2.8vw, 64px);
+}
+body.about-page .about-intro-lockup {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: min(540px, 100%);
+  margin-left: auto;
+  margin-bottom: clamp(104px, 7vw, 150px);
+}
+body.about-page .about-intro-mascot {
+  flex: 0 0 auto;
+  width: 56px;
+  height: 56px;
+}
+body.about-page .about-aim-title {
+  font-size: clamp(3.6rem, 4.2vw, 5.625rem);
+  color: transparent;
+  -webkit-text-stroke: 1.5px #B77537;
+  text-stroke: 1.5px #B77537;
+}
+
+@media (max-width: 767px) {
+  body.about-page main > section:first-child {
+    min-height: 360px;
+    padding-top: 130px;
+  }
+  body.about-page .about-hero-title {
+    font-size: clamp(3.75rem, 17vw, 5rem);
+  }
+  body.about-page .about-hero-subtitle {
+    font-size: clamp(1.25rem, 6vw, 1.8rem);
+    letter-spacing: .1em;
+  }
+  body.about-page .about-reference-divider {
+    height: 140px;
+  }
+  body.about-page .about-reference-divider::after {
+    left: 50%;
+    transform: translateX(-50%);
+    border-left-width: 88px;
+    border-right-width: 88px;
+    border-top-width: 140px;
+  }
+  body.about-page .about-intro-lockup {
+    align-items: flex-start;
+    margin-bottom: 56px;
+  }
+  body.about-page .about-intro-mascot {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body.about-page .about-hero-bird {
+    left: calc(50% - 380px);
+    right: auto;
+  }
+  body.about-page .about-reference-divider::after {
+    left: calc(50% - 205px);
+  }
+}
+
 /* ============================================
    SCROLL-REVEAL ANIMATIONS
    Add class="reveal" to any element to fade-up on viewport enter.

@@ -33,7 +33,7 @@
   <!-- BWM Attribution Tracker — Phase 1 QLS M78 -->
   <script src="/attribution.js" defer></script>
 </head>
-<body class="bg-cream text-dark-text font-sans theme-navy">
+<body class="bg-cream text-dark-text font-sans theme-navy about-page">
   <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:bg-cream focus:text-navy focus:px-4 focus:py-2 focus:rounded-sm focus:shadow-lg">Skip to content</a>
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K953HZ9R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
@@ -94,45 +94,37 @@
 
   <main id="main-content">
     <!-- Hero -->
-    <section class="bg-navy relative overflow-hidden py-16 md:py-24">
+    <section class="about-reference-hero bg-navy relative overflow-visible py-16 md:py-24">
       <div class="absolute inset-0 opacity-30">
         <!-- @r020:F1 emotion: about page hero background — atmospheric scene establishing brand trust -->
         <img src="/assets/images/backgrounds/about-hero-bg.svg" alt="" class="w-full h-full object-cover">
       </div>
       <!-- @r020:F1 emotion: orange bird mascot illustration — brand character conveying approachability -->
-      <img src="/assets/images/mascots/orange-bird.svg" alt="" class="hidden md:block absolute top-8 right-[8%] w-32 lg:w-40 opacity-70 z-10" loading="lazy">
-      <!-- @r020:identity: ASAP white mascot brand mark variant -->
-      <img src="/assets/images/mascots/white-mascot.svg" alt="" class="hidden md:block absolute bottom-8 left-[5%] w-24 lg:w-32 opacity-60 z-10" loading="lazy">
+      <img src="/assets/images/mascots/orange-bird.svg" alt="" class="about-hero-bird hidden md:block" loading="lazy">
       <div class="max-w-7xl mx-auto px-4 relative z-20">
-        <h1 class="font-heading font-black leading-[0.9]">
-          <span class="block text-cream text-5xl md:text-7xl lg:text-8xl uppercase tracking-[0.05em]">About</span>
-          <span class="block text-outlined-cream text-4xl md:text-6xl lg:text-7xl uppercase tracking-[0.05em] mt-2">The peace we give</span>
+        <h1 class="about-hero-heading font-heading font-black leading-[0.9]">
+          <span class="about-hero-title block text-orange text-outlined-orange uppercase tracking-[0.05em]">About</span>
+          <span class="about-hero-subtitle block text-cream uppercase tracking-[0.15em] mt-2">The peace we give</span>
         </h1>
       </div>
     </section>
 
-    <!-- CTA Phone Banner with tooth — restored to match other pages (canonical sitewide pattern) -->
-    <section class="cta-banner-section relative">
-      <div class="cta-canvas-cap bg-orange py-4 md:py-5 relative z-10">
-        <div class="max-w-7xl mx-auto px-4 flex flex-wrap items-center justify-end gap-3 text-white pr-[16vw] md:pr-[26vw]">
-          <span class="uppercase tracking-[0.15em] font-bold text-sm md:text-base">For services and immediate attention</span>
-          <a href="tel:7706913636" class="uppercase tracking-[0.15em] font-black text-lg md:text-2xl hover:text-cream transition-colors">CALL NOW (770)691-3636</a>
-        </div>
-        <!-- @r020:F3 cta-pull: directional arrow pulling eye toward CALL NOW CTA -->
-        <img src="/assets/images/icons/arrow-orange.svg" alt="" class="cta-tooth absolute top-0 right-[5%] md:right-[8%] w-[14.28vw] h-auto z-20" loading="lazy">
-      </div>
-    </section>
+    <div class="about-reference-divider" aria-hidden="true"></div>
 
     <!-- Our Aim -->
-    <section class="bg-cream py-16 md:py-24 relative overflow-hidden">
+    <section class="about-aim-section bg-navy py-16 md:py-24 relative overflow-hidden">
       <div class="absolute inset-0 opacity-15">
         <!-- @r020:F1 emotion: about page section background — atmospheric context -->
         <img src="/assets/images/backgrounds/about-bg.svg" alt="" class="w-full h-full object-cover">
       </div>
       <div class="max-w-4xl mx-auto px-4 relative z-10">
-        <p class="text-orange uppercase tracking-[0.2em] font-bold text-sm mb-4">ASAP Pest &amp; Wildlife Removal is a pest control service with a fresh approach, redesigned for the 21st century.</p>
-        <h2 class="font-heading font-black text-navy text-3xl md:text-4xl uppercase tracking-[0.1em] mb-6">Our aim</h2>
-        <div class="space-y-4 text-navy/80 leading-relaxed">
+        <div class="about-intro-lockup">
+          <!-- @r020:identity: ASAP white mascot brand mark variant -->
+          <img src="/assets/images/mascots/white-mascot.svg" alt="" class="about-intro-mascot" loading="lazy">
+          <p class="text-cream uppercase tracking-[0.12em] font-bold text-sm">ASAP Pest &amp; Wildlife Removal is a pest control service with a fresh approach, redesigned for the 21st century.</p>
+        </div>
+        <h2 class="about-aim-title font-heading font-black text-orange text-outlined-orange text-3xl md:text-4xl uppercase tracking-[0.1em] mb-6">Our aim</h2>
+        <div class="space-y-4 text-cream leading-relaxed">
           <p>We provide 'peace of mind, one person at a time' through a comprehensive range of holistic solutions.</p>
           <p>Our fully qualified team handles all varieties of residential and commercial work with sensitivity and dedication.</p>
           <p>Our goal is to provide, you guessed it &mdash; Peace Of Mind. We do this through inspecting, trapping and excluding unwanted pests &amp; wildlife, with minimum disruption to your home or business.</p>

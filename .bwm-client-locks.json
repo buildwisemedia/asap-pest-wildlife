@@ -2,7 +2,7 @@
   "_doc": "BWM Client Locks — machine-checkable contract for asap-pest-wildlife. Each assertion is a perceptual failure mode the team committed to never recur. Loaded by Brain's tools/bwm-client-locks-qa.py during PATCH and FULL BUILD. Drift from these locks = build failure. Source incidents: John's 2026-05-08 website-review email + Nehemiah's 2026-05-11 meeting (transcript at ~/Downloads/nehemiah-2026-05-11-transcript.md) + John's 2026-05-15 v8.1 review (over-removed ampersand + phone-tooth overlap).",
   "client_slug": "asap-pest-wildlife",
   "version": 1,
-  "last_updated": "2026-05-18",
+  "last_updated": "2026-05-26",
 
   "required_strings": [
     {"url": "/wildlife/", "string": "Exclusion", "rationale": "Sealing entry points is core to wildlife process — was replaced by 'Empathy' in v6, restored 2026-05-12 per client review."},
@@ -20,6 +20,7 @@
     {"url": "/peace-of-mind-from/bees-wasps-and-hornets/", "string": "id=\"bee-faq\"", "rationale": "John Mukasa 2026-03-09 ask (v8.4): bee-specific FAQ accordion (5 items) on the bee page. The id anchors the section for lock + future deep-linking from ads."},
     {"url": "/", "string": "cid=7456357551456980082", "rationale": "Robert 2026-05-18 (v8.6): the More Reviews button must land on ASAP's verified Google Business Profile (CID-based Maps URL), not a generic '/place/Name/@coords/' search that resolves to a search result instead of the GBP listing. CID 7456357551456980082 = hex 0x677a4db004e50c72 from the canonical Maps data hash for ASAP Pest & Wildlife Removal."},
     {"url": "/about/", "string": "cid=7456357551456980082", "rationale": "Same — applies to the About-page More Reviews button."},
+    {"url": "/about/", "string": "about-reference-divider", "rationale": "Robert 2026-05-26 screenshot regression: the About page reference uses a cream divider/carat below the navy hero, not the orange-tooth CTA banner. This lock anchors the page-specific Webflow reference structure after the stale 'all inner pages' banner rule caused a false QA pass."},
     {"url": "/", "string": "opacity-100 md:opacity-0 md:group-hover:opacity-100", "rationale": "Robert 2026-05-18 (v8.6): wildlife card overlays (Armadillo, Bat, etc.) previously used 'opacity-0 group-hover:opacity-100' with no mobile fallback — hover doesn't fire on touch so the animal descriptions were completely invisible on mobile. The new pattern always shows the overlay on mobile (opacity-100) and preserves hover-reveal on md+ (md:opacity-0 md:group-hover:opacity-100). Burn incident: bob 2026-05-18 marked 'optimize for Mobile View' addressed via v8.2 (closeout_ref bbf3100) when v8.2 didn't actually touch this overlay pattern."},
     {"url": "/wildlife/", "string": "opacity-100 md:opacity-0 md:group-hover:opacity-100", "rationale": "Same — applies sitewide on the wildlife listing page."},
     {"url": "/", "string": "nmsdc-2024.png\" alt=\"NMSDC Certified 2024\" class=\"max-h-12 max-w-full object-contain invert opacity-70\"", "rationale": "Robert 2026-05-18 (v8.6): the NMSDC certified-2024 PNG is rendered in light gray on transparent background (authored for dark-bg context). Without the 'invert' filter (and 70% opacity to match neighboring monochrome logo weight), it renders gray-on-cream and is invisible on ASAP's cream partner band. v8.5 fixed five other partner SVGs by swapping fill to navy; PNG can't be edited the same way, so the CSS filter is load-bearing. Removing 'invert' regresses to invisible."}
@@ -32,6 +33,7 @@
   "forbidden_strings": [
     {"url": "/about/", "string": ">More Photos<", "rationale": "Robert 2026-05-18 (v8.5): the 'More Photos' button on About linked to ASAP's Google Maps business listing. ASAP is a mobile-service company with no retail location; sending visitors to a Maps page implies otherwise. Removed in v8.5. Lock guards against re-insertion."},
     {"url": "/wildlife/", "string": "Google Photos", "rationale": "Robert 2026-05-18 (v8.5): the 'Google Photos →' link on Wildlife had a text/destination mismatch (label said Google Photos, href pointed to Google Maps). Removed in v8.5. Lock guards both the broken label and re-insertion of any Google Photos CTA without a real photo album URL."},
+    {"url": "/about/", "string": "cta-banner-section", "rationale": "Robert 2026-05-26 screenshot regression: About must not render the orange CTA banner under the hero. The authoritative removeasap.com/about/ reference uses a navy hero, cream divider/carat, and navy intro section instead."},
     {"url": "/", "string": "logo-orange-tagline.png", "rationale": "Robert 2026-05-18 (v8.6): logo-orange-tagline.png has the 'Your pest and wildlife extraordinaires' cursive baked into the PNG in #F3EFDD (cream) — contrast ratio ~1.02:1 on the white/cream header. Tagline was invisible on desktop and mobile. logo-orange.png is the same logo with the tagline rendered in dark navy and is the canonical header asset. Lock guards against reverting to the broken asset."},
     {"url": "/about/", "string": "logo-orange-tagline.png", "rationale": "Same — applies sitewide."},
     {"url": "/wildlife/", "string": "logo-orange-tagline.png", "rationale": "Same — applies sitewide."},
@@ -44,7 +46,7 @@
   ],
 
   "required_assets": [
-    {"url": "/about/", "asset": "arrow-orange.svg", "rationale": "Item #5: All inner pages have the orange-tooth CTA banner. About was missing it pre-2026-05-12."},
+    {"url": "/about/", "asset": "orange-bird.svg", "rationale": "Robert 2026-05-26 screenshot regression: the About hero must carry the large orange bird from the removeasap.com/about/ reference, overlapping the cream divider/carat area."},
     {"url": "/", "asset": "monster-icon.png", "rationale": "Item #9: Contact-form section uses the canonical monster, not the thin-mouth-line SVG."},
     {"url": "/contact/", "asset": "monster-icon.png", "rationale": "Item #9: Contact-form section uses the canonical monster, not the thin-mouth-line SVG."},
     {"url": "/", "asset": "arrow-orange.svg", "rationale": "Homepage CTA banner shows the orange-tooth element."},
@@ -52,11 +54,13 @@
   ],
 
   "forbidden_assets": [
+    {"url": "/about/", "asset": "arrow-orange.svg", "rationale": "Robert 2026-05-26 screenshot regression: the About page does not use the orange-tooth CTA banner in the authoritative Webflow reference, so arrow-orange.svg on /about/ is now a page-specific regression."},
     {"url": "/", "asset": "mascots/orange-mascot.svg", "rationale": "Item #9: This is the deprecated thin-mouth-line monster. Never use in contact sections."},
     {"url": "/contact/", "asset": "mascots/orange-mascot.svg", "rationale": "Item #9: Same."}
   ],
 
   "required_class_on_h1": [
+    {"url": "/about/", "class_pattern": "text-outlined-", "rationale": "Robert 2026-05-26 screenshot regression: About's hero title uses the hollow orange outlined treatment from the Webflow reference, not a filled cream H1."},
     {"url": "/wildlife/", "class_pattern": "text-outlined-", "rationale": "Item #1: Inner-page H1s use the hollowed-out style matching homepage Peace-of-Mind treatment."},
     {"url": "/pest-control-services/", "class_pattern": "text-outlined-", "rationale": "Item #1: Same."},
     {"url": "/services/", "class_pattern": "text-outlined-", "rationale": "Item #1: Same."},
