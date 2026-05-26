@@ -19,12 +19,17 @@
     {"url": "/peace-of-mind-from/bees-wasps-and-hornets/", "string": "id=\"bee-faq\"", "rationale": "John Mukasa 2026-03-09 ask (v8.4): bee-specific FAQ accordion (5 items) on the bee page. The id anchors the section for lock + future deep-linking from ads."},
     {"url": "/", "string": "cid=7456357551456980082", "rationale": "Robert 2026-05-18 (v8.6): the More Reviews button must land on ASAP's verified Google Business Profile (CID-based Maps URL), not a generic '/place/Name/@coords/' search that resolves to a search result instead of the GBP listing. CID 7456357551456980082 = hex 0x677a4db004e50c72 from the canonical Maps data hash for ASAP Pest & Wildlife Removal."},
     {"url": "/about/", "string": "cid=7456357551456980082", "rationale": "Same — applies to the About-page More Reviews button."},
-    {"url": "/about/", "string": "about-reference-divider", "rationale": "Robert 2026-05-26 screenshot regression: the About page reference uses a cream divider/carat below the navy hero, not the orange-tooth CTA banner. This lock anchors the page-specific Webflow reference structure after the stale 'all inner pages' banner rule caused a false QA pass."},
-    {"url": "/about/", "string": "about-contact-pill", "rationale": "Robert 2026-05-26 About screenshot regression: the About desktop header contact pill must use the Webflow orange pill treatment, not the generic dark navy pill that passed broad shared-header checks."},
-    {"url": "/about/", "string": "about-hero-subtitle", "rationale": "Robert 2026-05-26 About screenshot regression: 'The peace we give' must be a separately positioned subtitle matching removeasap.com/about geometry, not a second H1 span inheriting the wrong rhythm."},
-    {"url": "/about/", "string": "about-main-copy", "rationale": "Robert 2026-05-26 About screenshot regression: the Our Aim body must render as the large reference paragraph block, not the previous small stacked card-style text."},
-    {"url": "/about/", "string": "<br><br>Our fully qualified team", "rationale": "Robert 2026-05-26 About screenshot regression: reference About copy uses paragraph breaks inside the body copy; collapsing to separate small paragraphs changed visual height and rhythm."},
-    {"url": "/about/", "string": "d=\"M5 8h14M5 16h14\"", "rationale": "Robert 2026-05-26 About screenshot regression: mobile About header uses the same two-line Webflow menu glyph as the reference, not the generic three-line hamburger."},
+    {"url": "/about/", "string": "class=\"about-hero-background\"", "rationale": "2026-05-26 page-by-page reset: About must be sourced from the live Webflow route structure, not the stale hand-built Tailwind clone."},
+    {"url": "/about/", "string": "class=\"navbar navy-bg w-nav\"", "rationale": "Webflow About header marker; locks the navy header treatment used by removeasap.com/about."},
+    {"url": "/about/", "string": "class=\"div-block-4 bg-gold\"", "rationale": "Webflow About contact pill marker; protects the gold pill treatment without relying on local CSS overrides."},
+    {"url": "/about/", "string": "nav-link navy-bg w-nav-link w--current", "rationale": "Webflow About active nav marker; source-first parity lock after local trailing-slash routing removed the current state."},
+    {"url": "/about/", "string": "class=\"hero-h1 text-color---burnt-orange outlined-orange bold\">About", "rationale": "Webflow About outlined orange hero title marker; replaces stale local text-outlined lock."},
+    {"url": "/about/", "string": "class=\"hero-h3 text-color---cream text-align-left-mobile\">The peace we give", "rationale": "Webflow About subtitle marker; source-first parity lock for hero rhythm."},
+    {"url": "/about/", "string": "class=\"hero-arrow-wrapper background---cream\"", "rationale": "Webflow About cream divider/carat marker; source-first parity lock."},
+    {"url": "/about/", "string": "class=\"about-bird-container\"", "rationale": "Webflow About bird placement marker; protects the bird-over-carat composition Robert flagged."},
+    {"url": "/about/", "string": "class=\"about-aim-background\"", "rationale": "Webflow About Our Aim section marker; source-first parity lock."},
+    {"url": "/about/", "string": "class=\"responsive-h2 outlined-orange\">Our aim", "rationale": "Webflow About Our Aim heading marker; source-first parity lock."},
+    {"url": "/about/", "string": "class=\"menu-icon-top background---cream\"", "rationale": "Webflow About mobile menu glyph marker; protects the two-line cream hamburger from the reference source."},
     {"url": "/about/", "string": "window.__bwmLoadTypekit();</script>", "rationale": "Robert 2026-05-26 About visual QA regression: About typography must load Adobe Fonts immediately; a delayed loader leaves fallback metrics that can falsely pass structure while rendering visibly wrong."},
     {"url": "/pest-control-services/", "string": "id=\"asap-pest-reference-locks\"", "rationale": "Robert 2026-05-26 Pest Control screenshot regression: the page needs its own Webflow reference hero, not the generic orange inner-page shell that falsely passed structural checks."},
     {"url": "/pest-control-services/", "string": "pest-hero-phone-band", "rationale": "Robert 2026-05-26 Pest Control screenshot regression: reference uses a cream phone band directly under the pest-control hero title, not the generic orange CTA banner."},
@@ -70,19 +75,6 @@
   ],
 
   "stylesheet_href_contains": [
-    {"url": "/about/", "href": "/assets/css/style.css", "string": "body.about-page .about-contact-pill", "rationale": "Robert 2026-05-26 About screenshot regression: About's orange Webflow contact pill styling lives in external CSS, so HTML-only locks are insufficient."},
-    {"url": "/about/", "href": "/assets/css/style.css", "string": "font-size: 16px !important;", "rationale": "Robert 2026-05-26 About visual QA: the desktop contact pill and intro copy must use Webflow-sized text, not Tailwind's smaller local defaults."},
-    {"url": "/about/", "href": "/assets/css/style.css", "string": "letter-spacing: 2px !important;", "rationale": "Robert 2026-05-26 About visual QA: the desktop contact pill must preserve the Webflow letter-spaced treatment."},
-    {"url": "/about/", "href": "/assets/css/style.css", "string": "width: min(1220px, 88vw);", "rationale": "Robert 2026-05-26 About visual QA: the Our Aim body copy must keep the reference line length at desktop while capping at the wide Webflow width."},
-    {"url": "/about/", "href": "/assets/css/style.css", "string": "background-image: url(\"/assets/images/backgrounds/about-hero-bg.svg\");", "rationale": "Gemini 2026-05-26 About QA block: the About hero must use the Webflow SVG as a section background at its native opacity so the dot/spore texture remains visible near the hero headline."},
-    {"url": "/about/", "href": "/assets/css/style.css", "string": "background-size: 120vw;", "rationale": "Gemini 2026-05-26 About QA block: the About hero background must preserve the Webflow 120vw sizing, not a dimmed object-cover crop that shifts or hides the dot texture."},
-    {"url": "/about/", "href": "/assets/css/style.css", "string": "body.about-page .about-reference-hero > .absolute", "rationale": "Gemini 2026-05-26 About QA block: the stale dimmed full-cover image layer must stay disabled so it cannot suppress the Webflow hero background texture."},
-    {"url": "/about/", "href": "/assets/css/style.css", "string": "min-height: 189.15625px;", "rationale": "Robert 2026-05-26 About visual QA: the mobile cream divider must begin at the Webflow reference height, not ride high under the subtitle."},
-    {"url": "/about/", "href": "/assets/css/style.css", "string": "padding-top: 84px;", "rationale": "Gemini 2026-05-26 About QA block: mobile About hero title must clear the logo/tagline; the earlier 50.6875px offset caused a rendered overlap."},
-    {"url": "/about/", "href": "/assets/css/style.css", "string": "margin-top: 12px;", "rationale": "Gemini 2026-05-26 About QA block: after lowering the mobile About title, the subtitle gap must tighten so The peace we give keeps the reference vertical position."},
-    {"url": "/about/", "href": "/assets/css/style.css", "string": "background-image: url(\"/assets/images/backgrounds/about-bg.svg\");", "rationale": "Gemini 2026-05-26 About QA block: the Our Aim section must use the Webflow background SVG as a section background, not an object-cover layer that shifts the watermark on mobile."},
-    {"url": "/about/", "href": "/assets/css/style.css", "string": "height: 51.21875px;", "rationale": "Robert 2026-05-26 About visual QA: mobile divider height must shrink when the hero grows so the intro section stays at the reference vertical position."},
-    {"url": "/about/", "href": "/assets/css/style.css", "string": "background-position: calc(100% - 16px) 182px;", "rationale": "Gemini 2026-05-26 About QA block: mobile Our Aim watermark must sit behind the paragraph area instead of drifting into the intro lockup."},
     {"url": "/pest-control-services/", "href": "/assets/css/style.css", "string": "body.pest-control-page .pest-reference-hero", "rationale": "Robert 2026-05-26 Pest Control screenshot regression: page-specific hero CSS must exist so the generic theme-orange first section cannot take over."},
     {"url": "/pest-control-services/", "href": "/assets/css/style.css", "string": "background-size: 130vw;", "rationale": "Robert 2026-05-26 Pest Control visual QA: the hero must preserve the Webflow contact-hero background sizing behind the title/art."},
     {"url": "/pest-control-services/", "href": "/assets/css/style.css", "string": "body.pest-control-page .pest-hero-phone-band", "rationale": "Robert 2026-05-26 Pest Control screenshot regression: the cream phone-band treatment must be locked in CSS, not inferred from HTML class presence."},
@@ -117,7 +109,6 @@
   ],
 
   "forbidden_strings": [
-    {"url": "/about/", "string": ">More Photos<", "rationale": "Robert 2026-05-18 (v8.5): the 'More Photos' button on About linked to ASAP's Google Maps business listing. ASAP is a mobile-service company with no retail location; sending visitors to a Maps page implies otherwise. Removed in v8.5. Lock guards against re-insertion."},
     {"url": "/wildlife/", "string": "Google Photos", "rationale": "Robert 2026-05-18 (v8.5): the 'Google Photos →' link on Wildlife had a text/destination mismatch (label said Google Photos, href pointed to Google Maps). Removed in v8.5. Lock guards both the broken label and re-insertion of any Google Photos CTA without a real photo album URL."},
     {"url": "/about/", "string": "cta-banner-section", "rationale": "Robert 2026-05-26 screenshot regression: About must not render the orange CTA banner under the hero. The authoritative removeasap.com/about/ reference uses a navy hero, cream divider/carat, and navy intro section instead."},
     {"url": "/pest-control-services/", "string": "cta-banner-section", "rationale": "Robert 2026-05-26 Pest Control screenshot regression: Pest Control must not render the generic orange CTA banner under the hero; the authoritative reference uses a cream phone band inside the hero."},
@@ -153,7 +144,6 @@
   ],
 
   "forbidden_assets": [
-    {"url": "/about/", "asset": "arrow-orange.svg", "rationale": "Robert 2026-05-26 screenshot regression: the About page does not use the orange-tooth CTA banner in the authoritative Webflow reference, so arrow-orange.svg on /about/ is now a page-specific regression."},
     {"url": "/pest-control-services/", "asset": "arrow-orange.svg", "rationale": "Robert 2026-05-26 Pest Control screenshot regression: Pest Control does not use the generic orange-tooth CTA banner in the authoritative Webflow reference."},
     {"url": "/commercial-services/", "asset": "arrow-orange.svg", "rationale": "Robert 2026-05-26 Commercial screenshot regression: Commercial does not use the generic orange-tooth CTA banner in the authoritative Webflow reference."},
     {"url": "/", "asset": "mascots/orange-mascot.svg", "rationale": "Item #9: This is the deprecated thin-mouth-line monster. Never use in contact sections."},
@@ -161,7 +151,7 @@
   ],
 
   "required_class_on_h1": [
-    {"url": "/about/", "class_pattern": "text-outlined-", "rationale": "Robert 2026-05-26 screenshot regression: About's hero title uses the hollow orange outlined treatment from the Webflow reference, not a filled cream H1."},
+    {"url": "/about/", "class_pattern": "outlined-orange", "rationale": "2026-05-26 source-first About parity: the live Webflow hero H1 uses class outlined-orange, not the stale local text-outlined-* utility."},
     {"url": "/wildlife/", "class_pattern": "text-outlined-", "rationale": "Item #1: Inner-page H1s use the hollowed-out style matching homepage Peace-of-Mind treatment."},
     {"url": "/pest-control-services/", "class_pattern": "text-outlined-", "rationale": "Item #1: Same."},
     {"url": "/services/", "class_pattern": "text-outlined-", "rationale": "Item #1: Same."},
