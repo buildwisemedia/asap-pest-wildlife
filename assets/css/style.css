@@ -1385,6 +1385,440 @@ body.pest-control-page .pest-bugs-cta a:hover {
 }
 
 /* ============================================
+   SERVICES PAGE — Webflow reference match
+   Robert 2026-05-26: Services is a navy reference page with an orange
+   outlined hero, orange phone band, process artwork, and navy service blocks.
+   It must not inherit the generic cream inner-page shell.
+   ============================================ */
+body.services-page {
+  background: #212936;
+  padding-top: 0;
+}
+body.services-page #site-header:not(.is-scrolled) nav {
+  gap: 30px;
+  margin-top: 20px;
+}
+body.services-page #site-header:not(.is-scrolled) nav a {
+  color: #B77537 !important;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  line-height: 150%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+body.services-page #site-header:not(.is-scrolled) nav a[aria-current="page"] {
+  color: #F2EDDC !important;
+}
+body.services-page #site-header.is-scrolled {
+  background-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+}
+body.services-page #site-header.is-scrolled nav a {
+  color: #B77537 !important;
+}
+body.services-page #site-header.is-scrolled nav a[aria-current="page"] {
+  color: #F2EDDC !important;
+}
+body.services-page #site-header:not(.is-scrolled) #mobile-menu-btn {
+  color: #F2EDDC;
+}
+body.services-page .services-contact-pill {
+  background: #B77537 !important;
+  color: #F2EDDC !important;
+  width: min(37.144vw, 500px) !important;
+}
+body.services-page .services-contact-pill a,
+body.services-page .services-contact-pill span {
+  color: #F2EDDC !important;
+}
+body.services-page #site-header .flex.items-center.justify-between > a:first-child {
+  overflow: visible;
+  width: min(14.28vw, 206px);
+}
+body.services-page #site-header .flex.items-center.justify-between > a:first-child img,
+body.services-page #site-header:not(.is-scrolled) .flex.items-center.justify-between > a:first-child img {
+  filter: none !important;
+  max-width: none !important;
+  transform: translateY(-46px);
+  width: 114% !important;
+}
+body.services-page .services-reference-hero {
+  background-color: #212936;
+  background-image: url("/assets/images/backgrounds/contact-hero-bg.svg");
+  background-position: 80% 20%;
+  background-repeat: no-repeat;
+  background-size: 130vw;
+  color: #F2EDDC;
+  overflow: hidden;
+  position: relative;
+}
+body.services-page .services-hero-inner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  padding: 13vw 7.14vw 0;
+  position: relative;
+  z-index: 10;
+}
+body.services-page .services-hero-mascot {
+  display: block;
+  height: auto;
+  margin: 0 auto 1.785vw;
+  width: 80px;
+}
+body.services-page .services-hero-title {
+  color: transparent;
+  font-family: urw-din, sans-serif;
+  font-size: clamp(43.23px, 11vw, 170px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #B77537;
+  text-stroke: 2px #B77537;
+}
+body.services-page .services-hero-phone-band {
+  align-items: center;
+  background: #B77537;
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.785vw 14.28vw 7.14vw 0;
+  max-width: 1440px;
+  min-height: 72px;
+  padding: 15px 25.75px 15px 7.14vw;
+  position: relative;
+  z-index: 10;
+}
+body.services-page .services-phone-copy {
+  color: #F2EDDC;
+  font-family: urw-din, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-right: 20px;
+}
+body.services-page .services-phone-copy span {
+  text-transform: uppercase;
+}
+body.services-page .services-phone-number {
+  color: #212936;
+  font-family: urw-din, sans-serif;
+  font-size: 35px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  position: relative;
+  text-decoration: none;
+  z-index: 2;
+}
+body.services-page .services-phone-number:hover {
+  color: #F2EDDC;
+}
+body.services-page .services-hero-tooth {
+  height: auto;
+  position: absolute;
+  right: -9%;
+  top: 0;
+  width: 14.28vw;
+  z-index: 1;
+}
+body.services-page .services-intro-wrap,
+body.services-page .services-section-inner,
+body.services-page .services-wildlife-inner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  padding-left: 7.14vw;
+  padding-right: 7.14vw;
+  position: relative;
+  z-index: 10;
+}
+body.services-page .services-intro-wrap {
+  padding-bottom: 7.14vw;
+  padding-top: 7.14vw;
+}
+body.services-page .services-kicker {
+  color: #F2EDDC;
+  display: inline-block;
+  font-family: urw-din, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin-bottom: 3.57vw;
+  text-transform: uppercase;
+}
+body.services-page .services-kicker span {
+  color: #B77537;
+}
+body.services-page .services-kicker-underline {
+  background: #B77537;
+  height: 6px;
+  margin-top: 8px;
+  position: relative;
+  width: 100%;
+}
+body.services-page .services-kicker-underline img {
+  height: auto;
+  object-fit: contain;
+  object-position: right center;
+  position: absolute;
+  right: -6px;
+  top: 0;
+  width: 25px;
+}
+body.services-page .services-copy {
+  color: #B77537;
+  font-family: urw-din, sans-serif;
+  font-size: clamp(18px, 1.736vw, 25px);
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0 0 10px;
+  max-width: 1220px;
+}
+body.services-page .services-process-image {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+body.services-page .services-detail-section {
+  background: #212936;
+  overflow: hidden;
+  padding: 7.14vw 0 40px;
+}
+body.services-page .services-section-title {
+  color: #F2EDDC;
+  font-family: urw-din, sans-serif;
+  font-size: clamp(43px, 6vw, 90px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1;
+  margin: 0 0 1.785vw;
+  text-transform: uppercase;
+  -webkit-text-fill-color: #F2EDDC;
+  -webkit-text-stroke: 0 #F2EDDC;
+  text-stroke: 0 #F2EDDC;
+}
+body.services-page .services-section-kicker {
+  margin-bottom: 3.57vw;
+}
+body.services-page .services-rich-copy ul {
+  list-style: disc;
+  margin: 0 0 0 28px;
+  padding: 0;
+}
+body.services-page .services-rich-copy li {
+  margin-bottom: 10px;
+}
+body.services-page .services-wildlife-cta {
+  background: #212936;
+  overflow: hidden;
+  padding: 7.14vw 0;
+}
+body.services-page .services-wildlife-inner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body.services-page .services-wildlife-cta h3 {
+  color: #F2EDDC;
+  font-family: urw-din, sans-serif;
+  font-size: clamp(35px, 4vw, 60px);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 3.57vw;
+}
+body.services-page .services-wildlife-cta h3 span {
+  color: #B77537;
+}
+body.services-page .services-wildlife-button-wrap {
+  position: relative;
+  width: min(356px, 100%);
+}
+body.services-page .services-wildlife-button {
+  background: #F2EDDC;
+  border: 2px solid #F2EDDC;
+  border-radius: 5px 20px;
+  color: #212936;
+  display: block;
+  font-family: urw-din, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  line-height: 1.2;
+  padding: 15px 24px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+body.services-page .services-wildlife-button:hover {
+  background: transparent;
+  color: #F2EDDC;
+}
+body.services-page .services-wildlife-mascot {
+  bottom: -15px;
+  height: auto;
+  left: 10px;
+  position: absolute;
+  width: 60px;
+}
+
+@media (max-width: 767px) {
+  body.services-page #site-header .flex.items-center.justify-between > a:first-child {
+    width: 100px;
+  }
+  body.services-page #site-header .flex.items-center.justify-between > a:first-child img,
+  body.services-page #site-header:not(.is-scrolled) .flex.items-center.justify-between > a:first-child img {
+    max-width: none !important;
+    transform: none;
+    width: 113.984375px !important;
+  }
+  body.services-page .services-reference-hero {
+    background-position: 55% 0;
+    background-size: 210vw;
+  }
+  body.services-page .services-hero-inner {
+    padding: 13vw 27.84375px 0;
+  }
+  body.services-page .services-hero-mascot {
+    margin-bottom: 3.57vw;
+    width: 40px;
+  }
+  body.services-page .services-hero-title {
+    font-size: 43.23px;
+    line-height: 43.23px;
+    -webkit-text-stroke-width: 1.5px;
+    text-stroke-width: 1.5px;
+  }
+  body.services-page .services-hero-phone-band {
+    flex-direction: column;
+    justify-content: center;
+    margin: 14px 0 28px;
+    min-height: 87.0625px;
+    padding: 11.79px 27.84375px;
+    text-align: center;
+  }
+  body.services-page .services-phone-copy {
+    font-size: 15px;
+    line-height: 22.5px;
+    margin: 0 0 15px;
+  }
+  body.services-page .services-phone-number {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  body.services-page .services-hero-tooth {
+    display: none;
+  }
+  body.services-page .services-intro-wrap,
+  body.services-page .services-section-inner,
+  body.services-page .services-wildlife-inner {
+    padding-left: 27.84375px;
+    padding-right: 27.84375px;
+  }
+  body.services-page .services-intro-wrap {
+    padding-bottom: 55.6875px;
+    padding-top: 27.84375px;
+  }
+  body.services-page .services-kicker {
+    font-size: 15px;
+    line-height: 22.5px;
+    margin-bottom: 28px;
+  }
+  body.services-page .services-kicker-underline {
+    height: 4px;
+    margin-top: 4px;
+  }
+  body.services-page .services-kicker-underline img {
+    width: 16px;
+  }
+  body.services-page .services-copy {
+    font-size: 18px;
+    line-height: 27px;
+    max-width: none;
+  }
+  body.services-page .services-detail-section,
+  body.services-page .services-wildlife-cta {
+    padding: 55.6875px 0;
+  }
+  body.services-page .services-section-title {
+    font-size: 43px;
+    line-height: 51.6px;
+    margin-bottom: 14px;
+    -webkit-text-stroke-width: 1.5px;
+    text-stroke-width: 1.5px;
+  }
+  body.services-page .services-wildlife-cta h3 {
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 27.84375px;
+    text-align: left;
+  }
+  body.services-page .services-wildlife-button-wrap {
+    width: 100%;
+  }
+  body.services-page .services-wildlife-button {
+    font-size: 14px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+  body.services-page .services-wildlife-mascot {
+    bottom: -20px;
+    left: 0;
+    width: 35px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body.services-page .services-hero-inner,
+  body.services-page .services-intro-wrap,
+  body.services-page .services-section-inner,
+  body.services-page .services-wildlife-inner {
+    padding-left: 103px;
+    padding-right: 103px;
+  }
+  body.services-page .services-hero-inner {
+    padding-top: 13vw;
+  }
+  body.services-page .services-hero-mascot {
+    margin-bottom: 25.75px;
+  }
+  body.services-page .services-hero-phone-band {
+    margin-right: 206px;
+    margin-top: 25.75px;
+    padding-left: 103px;
+  }
+  body.services-page .services-hero-tooth {
+    width: 14.28vw;
+  }
+  body.services-page .services-intro-wrap,
+  body.services-page .services-detail-section,
+  body.services-page .services-wildlife-cta {
+    padding-bottom: 103px;
+    padding-top: 103px;
+  }
+  body.services-page .services-kicker {
+    margin-bottom: 51.5px;
+  }
+  body.services-page .services-copy {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  body.services-page .services-section-title {
+    font-size: 90px;
+  }
+}
+
+/* ============================================
    SCROLL-REVEAL ANIMATIONS
    Add class="reveal" to any element to fade-up on viewport enter.
    Stagger via reveal-delay-1..4 on adjacent siblings.

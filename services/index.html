@@ -15,7 +15,7 @@
   <link rel="apple-touch-icon" href="/assets/images/logos/webclip.png">
   <link rel="stylesheet" href="/assets/css/tailwind.generated.css">
   <style>body{font-size:16px;}@font-face{font-family:ASAPFontSwapProbe;src:local("Arial");font-display:swap;}</style>
-  <script>window.__bwmLoadTypekit=function(){if(window.__bwmTypekitLoaded)return;window.__bwmTypekitLoaded=true;var s=document.createElement('script');s.async=true;s.src='https://use.typekit.net/dmg8gvn.js';s.onload=function(){try{Typekit.load({async:true});}catch(e){}};document.head.appendChild(s);};(function(){var start=function(){setTimeout(window.__bwmLoadTypekit,5000)};if(document.readyState==='complete')start();else window.addEventListener('load',start,{once:true});})();</script>
+  <script>window.__bwmLoadTypekit=function(){if(window.__bwmTypekitLoaded)return;window.__bwmTypekitLoaded=true;var s=document.createElement('script');s.async=true;s.src='https://use.typekit.net/dmg8gvn.js';s.onload=function(){try{Typekit.load({async:true});}catch(e){}};document.head.appendChild(s);};window.__bwmLoadTypekit();</script>
   <!-- BWM analytics loader: delayed so third-party tags do not block first paint -->
   <script>
   window.dataLayer=window.dataLayer||[];
@@ -36,7 +36,7 @@
   <!-- BWM Attribution Tracker — Phase 1 QLS M78 -->
   <script src="/attribution.js" defer></script>
 </head>
-<body class="bg-cream text-dark-text font-sans theme-navy">
+<body class="bg-navy text-dark-text font-sans services-page">
   <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:bg-cream focus:text-navy focus:px-4 focus:py-2 focus:rounded-sm focus:shadow-lg">Skip to content</a>
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K953HZ9R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
@@ -51,7 +51,7 @@
   -->
   <header id="site-header" class="fixed top-0 inset-x-0 z-50 px-[3.57vw] pt-[10px] pb-[6px] transition-colors duration-200">
     <!-- Row 1: phone/email pill -->
-    <div class="hidden md:flex items-center bg-navy text-cream w-auto lg:w-2/5 max-w-[500px] -mb-[23px] ml-auto py-3 px-4 lg:px-6 text-sm lg:text-base font-medium tracking-[1px] lg:tracking-[2px] whitespace-nowrap justify-center" style="border-radius: 4px 16px 4px 16px;">
+    <div class="services-contact-pill hidden md:flex items-center bg-orange text-cream w-auto lg:w-2/5 max-w-[500px] -mb-[23px] ml-auto py-3 px-4 lg:px-6 text-sm lg:text-base font-medium tracking-[1px] lg:tracking-[2px] whitespace-nowrap justify-center" style="border-radius: 4px 16px 4px 16px;">
       <span class="mr-2">Call now:</span>
       <a href="tel:7706913636" class="underline hover:text-orange transition-colors font-bold">770-691-3636</a>
       <span class="mx-2">Or</span>
@@ -62,7 +62,7 @@
     <div class="flex items-center justify-between gap-4">
       <a href="/" class="flex-shrink-0">
         <!-- @r020:identity: ASAP logo in header navigation -->
-        <img src="/assets/images/logos/logo-orange.webp" alt="ASAP Pest &amp; Wildlife Removal — Your Pest &amp; Wildlife Extraordinaires" class="w-[180px] md:w-[220px] lg:w-[260px] h-auto" width="260" height="179" fetchpriority="high" decoding="sync">
+        <img src="/assets/images/logos/logo-orange-tagline.png" alt="ASAP Pest &amp; Wildlife Removal — Your Pest &amp; Wildlife Extraordinaires" class="w-[180px] md:w-[220px] lg:w-[260px] h-auto" width="2550" height="1754" fetchpriority="high" decoding="sync">
 
       </a>
       <nav class="hidden lg:flex items-center gap-8">
@@ -77,7 +77,7 @@
       <button id="mobile-menu-btn" class="lg:hidden text-navy p-2" aria-label="Toggle menu">
         <!-- @r020:identity: hamburger menu icon UI chrome glyph -->
         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" d="M5 8h14M5 16h14"/>
         </svg>
       </button>
     </div>
@@ -96,109 +96,105 @@
   </header>
 
   <main id="main-content">
-    <!-- Hero -->
-    <section class="bg-cream relative overflow-hidden py-16 md:py-24">
-      <!-- @r020:F1 emotion: page hero background — atmospheric context establishing trust -->
-      <div class="absolute inset-0 opacity-50"><img src="/assets/images/backgrounds/contact-hero-bg.svg" alt="" class="w-full h-full object-cover"></div>
-      <div class="max-w-7xl mx-auto px-4 relative z-20">
-        <h1 class="font-heading font-black text-outlined-navy text-6xl md:text-8xl lg:text-[10rem] uppercase tracking-[0.05em] leading-[0.9]">Services</h1>
+    <!-- Hero / Intro -->
+    <section id="asap-services-reference-locks" class="services-reference-hero">
+      <div class="services-hero-inner">
+        <!-- @r020:identity: Services hero mascot from removeasap.com/services -->
+        <img src="/assets/images/logos/services-hero-mascot.png" alt="" class="services-hero-mascot" loading="eager" aria-hidden="true">
+        <h1 class="services-hero-title text-outlined-orange">Services</h1>
       </div>
-    </section>
-
-    <!-- CTA Phone Banner -->
-    <section class="cta-banner-section relative">
-      <div class="cta-canvas-cap bg-orange py-4 md:py-5 relative z-10">
-        <div class="max-w-7xl mx-auto px-4 flex flex-wrap items-center justify-end gap-3 text-white pr-[16vw] md:pr-[26vw]">
-          <span class="uppercase tracking-[0.15em] font-bold text-sm md:text-base">For services and immediate attention</span>
-          <a href="tel:7706913636" class="uppercase tracking-[0.15em] font-black text-lg md:text-2xl hover:text-cream transition-colors">CALL NOW (770)691-3636</a>
+      <div class="services-hero-phone-band">
+        <div class="services-phone-copy">For services and immediate attention <span>CALL NOW</span></div>
+        <a href="tel:7706913636" class="services-phone-number">(770) 691-3636</a>
+        <!-- @r020:F3 cta-pull: orange Webflow CTA tooth -->
+        <img src="/assets/images/icons/arrow-orange.svg" alt="" class="services-hero-tooth" loading="eager" aria-hidden="true">
+      </div>
+      <div class="services-intro-wrap">
+        <div class="services-kicker">
+          Complete Pest <span>&amp;</span> Wildlife Control Service
+          <div class="services-kicker-underline"><img src="/assets/images/icons/arrow-orange.svg" alt="" aria-hidden="true"></div>
         </div>
-        <!-- @r020:F3 cta-pull: directional arrow pulling eye toward CALL NOW CTA -->
-        <img src="/assets/images/icons/arrow-orange.svg" alt="" class="cta-tooth absolute top-0 right-[5%] md:right-[8%] w-[14.28vw] h-auto z-20" loading="lazy">
+        <p class="services-copy">At ASAP Wildlife Removal, we believe in providing pest &amp; wildlife control solutions that are reliable and get to the root of the problem. That&rsquo;s why we cover all aspects, from inspections to trapping. On top of that, we want to make sure unwanted visitors don&rsquo;t return, so we provide an effective pest &amp; wildlife exclusion solutions.We are a family-run business that is readily available and accountable. We know how urgently you want to get rid of your pest &amp; wildlife problem that&rsquo;s why we serve them an eviction letter ASAP! <br><br>With our 5 star service, we can confidently say, we have the best pest and wildlife solutions for your needs.</p>
       </div>
     </section>
 
-    <!-- Intro -->
-    <section class="bg-cream py-16 relative overflow-hidden">
-      <!-- @r020:F1 emotion: section background illustration — atmospheric context -->
-      <div class="absolute inset-0 opacity-30"><img src="/assets/images/backgrounds/home-mission-bg.webp" alt="" class="w-full h-full object-cover" loading="lazy"></div>
-
-      <div class="max-w-4xl mx-auto px-4 relative z-10">
-        <p class="text-outlined-orange font-heading font-black text-2xl md:text-4xl uppercase tracking-[0.1em] mb-6">Complete Pest &amp; Wildlife Control Service</p>
-        <p class="text-navy/80 leading-relaxed">At ASAP Wildlife Removal, we believe in providing pest &amp; wildlife control solutions that are reliable and get to the root of the problem. That's why we cover all aspects, from inspections to trapping. On top of that, we want to make sure unwanted visitors don't return, so we provide an effective pest &amp; wildlife exclusion solutions. We are a family-run business that is readily available and accountable. We know how urgently you want to get rid of your pest &amp; wildlife problem that's why we serve them an eviction letter ASAP! With our 5 star service, we can confidently say, we have the best pest and wildlife solutions for your needs.</p>
-      </div>
-    </section>
+    <!-- @r020:F2 proof: full-width Webflow services process artwork -->
+    <img src="/assets/images/photos/services-transition.png" alt="ASAP inspection capture exclude warranty and happy customer process" class="services-process-image" loading="eager" decoding="async">
 
     <!-- Trapping -->
-    <section class="bg-cream py-12 relative overflow-hidden">
-      <div class="max-w-4xl mx-auto px-4">
-        <h2 class="font-heading font-black text-navy text-3xl md:text-4xl uppercase tracking-[0.1em] mb-2">Trapping</h2>
-        <p class="text-outlined-orange font-heading font-black text-xl md:text-2xl uppercase tracking-[0.1em] mb-6">Expert Pest &amp; Wildlife Trapping</p>
-        <div class="space-y-4 text-navy/80 leading-relaxed">
-          <p>When it comes to catching your target problem, we analyze how they're interacting with your environment. Our multiple trapping methods allow us to position traps in relation to their movement patterns, droppings and entry points.</p>
-          <p class="font-bold text-navy">What to expect throughout a typical trapping session:</p>
-          <p>The typical length of trapping is around 10-14 days. Every 1-4 days we will come back out to re-bait the traps, remove what's caught and reposition traps.</p>
-          <p>For a lot of treatments, you can be in the property and we will try not to disturb you as much as possible. However, in some instances, there are treatments that require a vacated property. At ASAP, we understand the daunting nature of nature and we treat each property we visit as if it were our own!</p>
+    <section class="services-detail-section">
+      <div class="services-section-inner">
+        <h2 class="services-section-title">Trapping</h2>
+        <div class="services-kicker services-section-kicker">
+          Expert Pest <span>&amp;</span> Wildlife Trapping
+          <div class="services-kicker-underline"><img src="/assets/images/icons/arrow-orange.svg" alt="" aria-hidden="true"></div>
+        </div>
+        <div class="services-copy services-rich-copy">
+          <p>When it comes to catching your target problem, we analyze how they&rsquo;re interacting with your environment. Our multiple trapping methods allow us to position traps in relation to their movement patterns, droppings and entry points. <br><br>What to expect throughout a typical trapping session:</p>
+          <ul>
+            <li>The typical length of trapping is around 10-14 days. Every 1-4 days we will come back out to re-bait the traps, remove what&rsquo;s caught and reposition traps.</li>
+            <li>For a lot of treatments, you can be in the property and we will try not to disturb you as much as possible. However, in some instances, there are treatments that require a vacated property. At ASAP, we understand the daunting nature of nature and we treat each property we visit as if it were our own!</li>
+          </ul>
         </div>
       </div>
     </section>
 
     <!-- Exclusions -->
-    <section class="bg-cream py-12 relative overflow-hidden">
-      <div class="max-w-4xl mx-auto px-4">
-        <h2 class="font-heading font-black text-navy text-3xl md:text-4xl uppercase tracking-[0.1em] mb-2">Exclusions</h2>
-        <p class="text-outlined-orange font-heading font-black text-xl md:text-2xl uppercase tracking-[0.1em] mb-6">Expert Pest &amp; Wildlife Exclusion</p>
-        <div class="space-y-4 text-navy/80 leading-relaxed">
-          <p>We understand that nobody wants to have an infestation, and that's why we're on hand to pest-proof your property and keep those unwanted visitors at-bay.</p>
-          <p>Exclusions are key to helping prevent pests from entering or returning to your property. We aim to seal the main entry points as well as any potential areas that may become a problem down the line. And rest assured that we always use durable long-lasting material that withstand the test of time.</p>
-          <p>We have trusted, certified and discreet pest &amp; wildlife control methods, that prevent unwanted visitors, from pests as noisy as roosters to those that are as quiet as mice!</p>
+    <section class="services-detail-section">
+      <div class="services-section-inner">
+        <h2 class="services-section-title">Exclusions</h2>
+        <div class="services-kicker services-section-kicker">
+          Expert Pest <span>&amp;</span> Wildlife Exclusion
+          <div class="services-kicker-underline"><img src="/assets/images/icons/arrow-orange.svg" alt="" aria-hidden="true"></div>
         </div>
+        <p class="services-copy">We understand that nobody wants to have an infestation, and that&rsquo;s why we&rsquo;re on hand to pest-proof your property and keep those unwanted visitors at-bay.<br><br>Exclusions are key to helping prevent pests from entering or returning to your property. We aim to seal the main entry points as well as any potential areas that may become a problem down the line. And rest assured that we always use durable long-lasting material that withstand the test of time.<br><br>We have trusted, certified and discreet pest &amp; wildlife control methods, that prevent unwanted visitors, from pests as noisy as roosters to those that are as quiet as mice!</p>
       </div>
     </section>
 
     <!-- Recurring Service -->
-    <section class="bg-cream py-12 relative overflow-hidden">
-      <div class="max-w-4xl mx-auto px-4">
-        <h2 class="font-heading font-black text-navy text-3xl md:text-4xl uppercase tracking-[0.1em] mb-2">Reocurring Service</h2>
-        <p class="text-outlined-orange font-heading font-black text-xl md:text-2xl uppercase tracking-[0.1em] mb-6">Expert Pest &amp; Wildlife prevention</p>
-        <div class="space-y-4 text-navy/80 leading-relaxed">
-          <p>Recurring services are offered for almost every animal type. We recommend having a service to keep animals away after an invasion, but for those concerned about a potential threat, we provide preventative recurring services as well.</p>
-          <p>We'll recommend how frequent we should service your property to keep the problem animal(s) at-bay. Whether the service is monthly, bimonthly, quarterly or seasonal, we create a plan that is catered to your needs.</p>
-          <p>And the best part - If anything comes back, guess who is responsible.... You guessed it, WE ARE!</p>
+    <section class="services-detail-section">
+      <div class="services-section-inner">
+        <h2 class="services-section-title">Reocurring Service</h2>
+        <div class="services-kicker services-section-kicker">
+          Expert Pest <span>&amp;</span> Wildlife prevention
+          <div class="services-kicker-underline"><img src="/assets/images/icons/arrow-orange.svg" alt="" aria-hidden="true"></div>
         </div>
+        <p class="services-copy">Recurring services are offered for almost every animal type. We recommend having a service to keep animals away after an invasion, but for those concerned about a potential threat, we provide preventative recurring services as well. <br><br>We&rsquo;ll recommend how frequent we should service your property to keep the problem animal(s) at-bay. Whether the service is monthly, bimonthly, quarterly or seasonal, we create a plan that is catered to your needs. <br><br>And the best part - If anything comes back, guess who is responsible.... You guessed it, WE ARE!</p>
       </div>
     </section>
 
     <!-- Dead Animal Removal -->
-    <section class="bg-cream py-12 relative overflow-hidden">
-      <div class="max-w-4xl mx-auto px-4">
-        <h2 class="font-heading font-black text-navy text-3xl md:text-4xl uppercase tracking-[0.1em] mb-2">Dead animal removal</h2>
-        <p class="text-outlined-orange font-heading font-black text-xl md:text-2xl uppercase tracking-[0.1em] mb-6">Total Removal &amp; Disinfecting</p>
-        <div class="space-y-4 text-navy/80 leading-relaxed">
-          <p>The smell of decaying flesh at your property is not only obtrusive but also quite disturbing. Here at ASAP, we pride ourselves in giving peace to your nostrils.</p>
-          <p>We sniff out the dead carcass and completely remove it from the property by any means necessary.</p>
-          <p>To effectively remove a dead animal, it entails the proper disposal of the carcass, disinfecting and potentially deodorization of the affected area when necessary.</p>
+    <section class="services-detail-section">
+      <div class="services-section-inner">
+        <h2 class="services-section-title">Dead animal removal</h2>
+        <div class="services-kicker services-section-kicker">
+          Total Removal <span>&amp;</span> Disinfecting
+          <div class="services-kicker-underline"><img src="/assets/images/icons/arrow-orange.svg" alt="" aria-hidden="true"></div>
         </div>
+        <p class="services-copy">The smell of decaying flesh at your property is not only obtrusive but also quite disturbing. Here at ASAP, we pride ourselves in giving peace to your nostrils. <br><br>We sniff out the dead carcass and completely remove it from the property by any means necessary. <br><br>To effectively remove a dead animal, it entails the proper disposal of the carcass, disinfecting and potentially deodorization of the affected area when necessary.</p>
       </div>
     </section>
 
     <!-- Disinfecting -->
-    <section class="bg-cream py-12 relative overflow-hidden">
-      <div class="max-w-4xl mx-auto px-4">
-        <h2 class="font-heading font-black text-navy text-3xl md:text-4xl uppercase tracking-[0.1em] mb-2">Disinfecting</h2>
-        <p class="text-outlined-orange font-heading font-black text-xl md:text-2xl uppercase tracking-[0.1em] mb-6">Cleaning &amp; Disinfecting</p>
-        <div class="space-y-4 text-navy/80 leading-relaxed">
-          <p>At ASAP we're proud to offer a selection of dedicated disinfecting services in both residential and commercial environments.</p>
-          <p>We aim to eradicate any potential health hazards left behind from all forms of animal activity (fecal matter, dead animal, etc.), leaving a clean and safe space for your family or colleagues.</p>
-          <p>Our specialist team will work with you to establish the most effective disinfecting service for your needs, and will then implement this in a safe and environmentally friendly manner.</p>
+    <section class="services-detail-section">
+      <div class="services-section-inner">
+        <h2 class="services-section-title">Disinfecting</h2>
+        <div class="services-kicker services-section-kicker">
+          Cleaning <span>&amp;</span> Disinfecting
+          <div class="services-kicker-underline"><img src="/assets/images/icons/arrow-orange.svg" alt="" aria-hidden="true"></div>
         </div>
+        <p class="services-copy">At ASAP we&rsquo;re proud to offer a selection of dedicated disinfecting services in both residential and commercial environments.<br><br>We aim to eradicate any potential health hazards left behind from all forms of animal activity (fecal matter, dead animal, etc.), leaving a clean and safe space for your family or colleagues. <br><br>Our specialist team will work with you to establish the most effective disinfecting service for your needs, and will then implement this in a safe and environmentally friendly manner.</p>
       </div>
     </section>
 
     <!-- Wildlife CTA -->
-    <section class="bg-cream py-12">
-      <div class="max-w-4xl mx-auto px-4 text-center">
-        <h3 class="font-heading font-black text-navy text-2xl uppercase tracking-[0.1em] mb-4">See all the wildlife we service!</h3>
-        <a href="/wildlife/" class="inline-block bg-navy text-cream font-bold uppercase tracking-[0.15em] px-8 py-3.5 rounded-sm hover:bg-orange transition-colors text-sm">Wildlife List</a>
+    <section class="services-wildlife-cta">
+      <div class="services-wildlife-inner">
+        <h3>See all the <span>wildlife</span> we service!</h3>
+        <div class="services-wildlife-button-wrap">
+          <a href="/wildlife/" class="services-wildlife-button">Wildlife List</a>
+          <img src="/assets/images/logos/monster-icon.png" alt="" class="services-wildlife-mascot" loading="lazy" aria-hidden="true">
+        </div>
       </div>
     </section>
 
@@ -220,7 +216,7 @@
 
             </div>
             <!-- @r020:identity: ASAP mascot brand mark in contact section -->
-            <img src="/assets/images/mascots/orange-mascot.svg" alt="" class="mt-8 w-24 opacity-80" loading="lazy">
+            <img src="/assets/images/logos/monster-icon.png" alt="" class="mt-8 w-20 opacity-90" loading="lazy">
           </div>
           <div>
             <form id="contact-form" class="space-y-4">
