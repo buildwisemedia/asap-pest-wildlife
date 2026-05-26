@@ -308,7 +308,14 @@ body.about-page #site-header:not(.is-scrolled) #mobile-menu-btn {
   color: #F2EDDC;
 }
 body.about-page .about-reference-hero {
+  background-image: url("/assets/images/backgrounds/about-hero-bg.svg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 120vw;
   overflow: visible;
+}
+body.about-page .about-reference-hero > .absolute {
+  display: none;
 }
 body.about-page .about-reference-hero > .max-w-7xl {
   max-width: 1440px;
@@ -379,8 +386,15 @@ body.about-page .about-reference-divider::after {
   border-top: clamp(170px, 10vw, 300px) solid #F2EDDC;
 }
 body.about-page .about-aim-section {
+  background-image: url("/assets/images/backgrounds/about-bg.svg");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: 100vw;
   margin-top: 0;
   padding-top: 91.390625px;
+}
+body.about-page .about-aim-section > .absolute {
+  display: none;
 }
 body.about-page .about-aim-section > .max-w-4xl {
   max-width: 1440px;
@@ -433,8 +447,8 @@ body.about-page .about-main-copy {
     width: 113.984375px;
   }
   body.about-page main > section:first-child {
-    min-height: 174.5px;
-    padding-top: 50.6875px;
+    min-height: 189.15625px;
+    padding-top: 84px;
   }
   body.about-page .about-reference-hero > .max-w-7xl,
   body.about-page .about-aim-section > .max-w-4xl {
@@ -452,7 +466,7 @@ body.about-page .about-main-copy {
     font-size: 19px;
     letter-spacing: 3.9px;
     line-height: 22.8px;
-    margin-top: 45px;
+    margin-top: 12px;
     max-width: 334.3125px;
   }
   body.about-page .about-hero-bird {
@@ -464,7 +478,7 @@ body.about-page .about-main-copy {
   }
   body.about-page .about-reference-divider {
     display: block;
-    height: 65.875px;
+    height: 51.21875px;
   }
   body.about-page .about-reference-divider::before {
     height: 25px;
@@ -473,6 +487,8 @@ body.about-page .about-main-copy {
     display: none;
   }
   body.about-page .about-aim-section {
+    background-position: 100% 190px;
+    background-size: 100vw auto;
     padding-top: 27.84375px;
   }
   body.about-page .about-intro-lockup {
