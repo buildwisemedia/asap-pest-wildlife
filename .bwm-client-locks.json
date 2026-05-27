@@ -360,6 +360,71 @@
       "rationale": "ASAP SMS privacy language marker that must remain visible in the Webflow contact block."
     },
     {
+      "url": "/blog/",
+      "string": "id=\"site-header\"",
+      "rationale": "Webflow Blog header marker; source-first parity lock."
+    },
+    {
+      "url": "/blog/",
+      "string": "class=\"contact-hero-background section-with-overflow\"",
+      "rationale": "2026-05-27 page-by-page reset: Blog must be sourced from the live Webflow route structure, not the stale hand-built clone."
+    },
+    {
+      "url": "/blog/",
+      "string": "class=\"navbar navy-bg w-nav\"",
+      "rationale": "Webflow Blog navy header marker; source-first parity lock."
+    },
+    {
+      "url": "/blog/",
+      "string": "class=\"div-block-4 bg-gold\"",
+      "rationale": "Webflow Blog gold contact pill marker; source-first parity lock."
+    },
+    {
+      "url": "/blog/",
+      "string": "nav-link navy-bg w-nav-link w--current",
+      "rationale": "Webflow Blog active navigation marker; source-first parity lock."
+    },
+    {
+      "url": "/blog/",
+      "string": "class=\"hero-h1 text-color---burnt-orange outlined-orange text-align---center\">ASAP Blog",
+      "rationale": "Webflow Blog orange outlined centered hero title marker; source-first parity lock."
+    },
+    {
+      "url": "/blog/",
+      "string": "class=\"hero-arrow-wrapper blog\"",
+      "rationale": "Webflow Blog orange phone-band/carat marker; source-first parity lock."
+    },
+    {
+      "url": "/blog/",
+      "string": "class=\"blog-thumbnail-wrapper w-dyn-item\"",
+      "rationale": "Webflow Blog CMS card grid marker; source-first parity lock."
+    },
+    {
+      "url": "/blog/",
+      "string": "Discover the fascinating insights into the world of animals!",
+      "rationale": "Webflow Blog intro copy marker; source-first parity lock."
+    },
+    {
+      "url": "/blog/",
+      "string": "CONTACT US FOR AN ESTIMATE !",
+      "rationale": "Webflow Blog contact form marker; source-first parity lock."
+    },
+    {
+      "url": "/blog/",
+      "string": "Type other",
+      "rationale": "Webflow Blog form includes the Type other underline field below the issue selector."
+    },
+    {
+      "url": "/blog/",
+      "string": "No mobile information",
+      "rationale": "ASAP SMS privacy language marker that must remain visible in the Webflow contact block."
+    },
+    {
+      "url": "/blog/",
+      "string": "https://use.typekit.net/dmg8gvn.js",
+      "rationale": "Webflow Blog Typekit marker; source-first parity lock."
+    },
+    {
       "url": "/pest-control-services/",
       "string": "id=\"site-header\"",
       "rationale": "Webflow Pest Control header marker; source-first parity lock."
@@ -660,6 +725,36 @@
       "rationale": "Webflow Contact form-section mascot asset from the live reference source."
     },
     {
+      "url": "/blog/",
+      "asset": "69a16d343162410d17e50a7f_ASAP_LOGO_Orange_TanTag%20_Recovered_%204%20_Recovered_%203-19.png",
+      "rationale": "Webflow Blog navy-header logo asset from the live reference source."
+    },
+    {
+      "url": "/blog/",
+      "asset": "69a16d349bf9eb29fd93bcda_ASAP_MONSTER_ICON.png",
+      "rationale": "Webflow Blog hero/contact mascot asset from the live reference source."
+    },
+    {
+      "url": "/blog/",
+      "asset": "61ae98056198b351e9434fce_white-bat.svg",
+      "rationale": "Webflow Blog white bat hero asset from the live reference source."
+    },
+    {
+      "url": "/blog/",
+      "asset": "61d8fb421e774fcd0436dc49_white-bee.svg",
+      "rationale": "Webflow Blog white bee hero asset from the live reference source."
+    },
+    {
+      "url": "/blog/",
+      "asset": "61a6dc27848a3cccf01f0524_arrow-orange.svg",
+      "rationale": "Webflow Blog orange carat asset from the live reference source."
+    },
+    {
+      "url": "/blog/",
+      "asset": "6685501525803086539ddd50_0_clv6VcvVmtQnrsAq.webp",
+      "rationale": "Webflow Blog first CMS thumbnail asset from the live reference source."
+    },
+    {
       "url": "/",
       "asset": "arrow-orange.svg",
       "rationale": "Homepage CTA banner shows the orange-tooth element."
@@ -800,8 +895,8 @@
     },
     {
       "url": "/blog/",
-      "class_pattern": "text-outlined-",
-      "rationale": "Item #1: Same."
+      "class_pattern": "outlined-orange",
+      "rationale": "2026-05-27 source-first Blog parity: the live Webflow hero H1 uses class outlined-orange, not the stale local text-outlined-* utility."
     }
   ],
   "min_pattern_count": [
