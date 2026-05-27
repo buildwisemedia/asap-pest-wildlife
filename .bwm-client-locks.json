@@ -3223,6 +3223,171 @@
       "url": "/wildlife/rabbit/",
       "string": "wildlife-rabbit-webflow-reference",
       "rationale": "2026-05-27 source-first Rabbit parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "data-wf-item-slug=\"raccoon\"",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "id=\"site-header\"",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "class=\"navbar w-nav\"",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "class=\"div-block-4\"",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "class=\"nav-menu w-nav-menu\"",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "class=\"logo-normal\"",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "class=\"logo-scroll\"",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "class=\"section-2\"",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "class=\"text-block-2\">Raccoon",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "class=\"text-block-4\">Procyon lotor",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "Removal Services in Atlanta, GA| Expert Wildlife Solutions",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "12 Interesting Facts about",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "class=\"wildlife-details w-richtext\"",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "<strong>Diet: </strong>Raccoons are omnivores, feeding on a wide variety of foods including fruits, nuts, insects, small mammals, birds, eggs, and human food waste.",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "<strong>Diseases Carried by Raccoons: </strong>",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "Rabies",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "Canine Distemper Virus",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "Raccoon Roundworm (Baylisascaris procyonis)",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "Leptospirosis",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "Giardiasis",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "<strong>Habitat:</strong> Raccoons inhabit a wide range of habitats including forests, wetlands, suburban areas, and urban environments. They build dens in hollow trees, abandoned burrows, rock crevices, and other sheltered locations.",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "class=\"wildlife-details align-left w-richtext\"",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "class=\"image-5\"",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "Interesting Facts",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "Find out more animal facts",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "class=\"wildlife-grid w-dyn-items\"",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "class=\"wildlife-item-container w-inline-block\"",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "More Reviews",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "CONTACT US FOR AN ESTIMATE !",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "Type other",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "No mobile information",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "https://use.typekit.net/dmg8gvn.js",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "string": "wildlife-raccoon-webflow-reference",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
     }
   ],
   "script_src_contains": [
@@ -4318,6 +4483,51 @@
       "url": "/wildlife/rabbit/",
       "asset": "69a16d349bf9eb29fd93bcda_ASAP_MONSTER_ICON.png",
       "rationale": "2026-05-27 source-first Rabbit parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "asset": "699f35309ec99464106dc35a_ASAP_LOGO_Orange.png",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "asset": "61aea59de7f1b769c777f498_orange-mascot.svg",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "asset": "61d90636b70812fdd9c9a4d4_raccoon.png",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "asset": "61a6dc27848a3cccf01f0524_arrow-orange.svg",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "asset": "6626ade011192e31a242a67b_Image%20(19).png",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "asset": "61a6f3effb267a3a998a2875_quotes.svg",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "asset": "61a6f1fab330503d3df9434c_5-stars.svg",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "asset": "61a6f5480450e4fb7d3c7f04_darkmascot.svg",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/raccoon/",
+      "asset": "69a16d349bf9eb29fd93bcda_ASAP_MONSTER_ICON.png",
+      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
     }
   ],
   "forbidden_assets": [
