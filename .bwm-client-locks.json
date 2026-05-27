@@ -1,5 +1,5 @@
 {
-  "_doc": "BWM Client Locks \u2014 machine-checkable contract for asap-pest-wildlife. Each assertion is a perceptual failure mode the team committed to never recur. Loaded by Brain's tools/bwm-client-locks-qa.py during PATCH and FULL BUILD. Drift from these locks = build failure. Source incidents: John's 2026-05-08 website-review email + Nehemiah's 2026-05-11 meeting (transcript at ~/Downloads/nehemiah-2026-05-11-transcript.md) + John's 2026-05-15 v8.1 review (over-removed ampersand + phone-tooth overlap).",
+  "_doc": "BWM Client Locks — machine-checkable contract for asap-pest-wildlife. Each assertion is a perceptual failure mode the team committed to never recur. Loaded by Brain's tools/bwm-client-locks-qa.py during PATCH and FULL BUILD. Drift from these locks = build failure. Source incidents: John's 2026-05-08 website-review email + Nehemiah's 2026-05-11 meeting (transcript at ~/Downloads/nehemiah-2026-05-11-transcript.md) + John's 2026-05-15 v8.1 review (over-removed ampersand + phone-tooth overlap).",
   "client_slug": "asap-pest-wildlife",
   "version": 1,
   "last_updated": "2026-05-27",
@@ -67,12 +67,12 @@
     {
       "url": "/about/",
       "string": "id=\"site-header\"",
-      "rationale": "Same \u2014 applies sitewide."
+      "rationale": "Same — applies sitewide."
     },
     {
       "url": "/wildlife/",
       "string": "id=\"site-header\"",
-      "rationale": "Same \u2014 applies sitewide."
+      "rationale": "Same — applies sitewide."
     },
     {
       "url": "/",
@@ -82,7 +82,7 @@
     {
       "url": "/about/",
       "string": "cid=7456357551456980082",
-      "rationale": "Same \u2014 applies to the About-page More Reviews button."
+      "rationale": "Same — applies to the About-page More Reviews button."
     },
     {
       "url": "/about/",
@@ -741,7 +741,7 @@
     },
     {
       "url": "/pest-control-services/",
-      "string": "Don't let pests take your <span class=\"text-color---burnt-orange\">\u201cPEACE\u201d</span> away",
+      "string": "Don't let pests take your <span class=\"text-color---burnt-orange\">“PEACE”</span> away",
       "rationale": "Webflow Pest Control first cream content heading marker; source-first parity lock."
     },
     {
@@ -881,7 +881,7 @@
     },
     {
       "url": "/peace-of-mind-from/rodents/",
-      "string": "class=\"responsive-h5\">Rats \u2022 Mice \u2022 Squirrels \u2022 Beavers \u2022 Nutria \u2022 Moles \u2022 Voles \u2022 Groundhog",
+      "string": "class=\"responsive-h5\">Rats • Mice • Squirrels • Beavers • Nutria • Moles • Voles • Groundhog",
       "rationale": "2026-05-27 source-first Rodents parity: lock current live Webflow route markers after page-by-page rebuild."
     },
     {
@@ -1613,6 +1613,146 @@
       "url": "/wildlife/bird/",
       "string": "wildlife-bird-webflow-reference",
       "rationale": "2026-05-27 source-first Bird parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "data-wf-item-slug=\"coyote\"",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "id=\"site-header\"",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "class=\"navbar w-nav\"",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "class=\"div-block-4\"",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "class=\"nav-menu w-nav-menu\"",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "class=\"logo-normal\"",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "class=\"logo-scroll\"",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "class=\"section-2\"",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "class=\"text-block-2\">Coyote",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "class=\"text-block-4\">Canis Latrans",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "Removal Services in Atlanta, GA| Expert Wildlife Solutions",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "12 Interesting Facts about",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "class=\"wildlife-details w-richtext\"",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "<strong>Diet:</strong> Omnivore and Scavengers",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "<strong>Disease: </strong>Rabiers, Distemper and Canine Hepatitis",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "<strong>Location: </strong>North America and Mexico region",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "class=\"wildlife-details align-left w-richtext\"",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "class=\"image-5\"",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "Interesting Facts",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "Find out more animal facts",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "class=\"wildlife-grid w-dyn-items\"",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "class=\"wildlife-item-container w-inline-block\"",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "More Reviews",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "CONTACT US FOR AN ESTIMATE !",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "Type other",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "No mobile information",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "https://use.typekit.net/dmg8gvn.js",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "string": "wildlife-coyote-webflow-reference",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
     }
   ],
   "script_src_contains": [
@@ -1648,27 +1788,27 @@
     {
       "url": "/",
       "string": "logo-orange-tagline.png",
-      "rationale": "Robert 2026-05-18 (v8.6): logo-orange-tagline.png has the 'Your pest and wildlife extraordinaires' cursive baked into the PNG in #F3EFDD (cream) \u2014 contrast ratio ~1.02:1 on the white/cream header. Tagline was invisible on desktop and mobile. logo-orange.png is the same logo with the tagline rendered in dark navy and is the canonical header asset. Lock guards against reverting to the broken asset."
+      "rationale": "Robert 2026-05-18 (v8.6): logo-orange-tagline.png has the 'Your pest and wildlife extraordinaires' cursive baked into the PNG in #F3EFDD (cream) — contrast ratio ~1.02:1 on the white/cream header. Tagline was invisible on desktop and mobile. logo-orange.png is the same logo with the tagline rendered in dark navy and is the canonical header asset. Lock guards against reverting to the broken asset."
     },
     {
       "url": "/about/",
       "string": "logo-orange-tagline.png",
-      "rationale": "Same \u2014 applies sitewide."
+      "rationale": "Same — applies sitewide."
     },
     {
       "url": "/wildlife/",
       "string": "logo-orange-tagline.png",
-      "rationale": "Same \u2014 applies sitewide."
+      "rationale": "Same — applies sitewide."
     },
     {
       "url": "/",
       "string": "/place/ASAP+Wildlife+Removal/@33.734354",
-      "rationale": "Robert 2026-05-18 (v8.6): the original More Reviews href was a generic Google Maps search ('/place/ASAP+Wildlife+Removal/@33.734354,-84.242248,10z/') that doesn't anchor to ASAP's verified GBP \u2014 it resolves to a Maps search result, not the business listing. Replaced with a CID-based URL. Lock guards against reverting to the generic-search form."
+      "rationale": "Robert 2026-05-18 (v8.6): the original More Reviews href was a generic Google Maps search ('/place/ASAP+Wildlife+Removal/@33.734354,-84.242248,10z/') that doesn't anchor to ASAP's verified GBP — it resolves to a Maps search result, not the business listing. Replaced with a CID-based URL. Lock guards against reverting to the generic-search form."
     },
     {
       "url": "/about/",
       "string": "/place/ASAP+Wildlife+Removal/@33.734354",
-      "rationale": "Same \u2014 applies to the About-page button."
+      "rationale": "Same — applies to the About-page button."
     }
   ],
   "forbidden_substring_in_svg_fill": [
@@ -2213,6 +2353,51 @@
       "url": "/wildlife/bird/",
       "asset": "69a16d349bf9eb29fd93bcda_ASAP_MONSTER_ICON.png",
       "rationale": "2026-05-27 source-first Bird parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "asset": "699f35309ec99464106dc35a_ASAP_LOGO_Orange.png",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "asset": "61aea59de7f1b769c777f498_orange-mascot.svg",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "asset": "61d906428b986e4f864faf40_coyote.png",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "asset": "61a6dc27848a3cccf01f0524_arrow-orange.svg",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "asset": "6626ade011192e31a242a67b_Image%20(19).png",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "asset": "61a6f3effb267a3a998a2875_quotes.svg",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "asset": "61a6f1fab330503d3df9434c_5-stars.svg",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "asset": "61a6f5480450e4fb7d3c7f04_darkmascot.svg",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/coyote/",
+      "asset": "69a16d349bf9eb29fd93bcda_ASAP_MONSTER_ICON.png",
+      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
     }
   ],
   "forbidden_assets": [
