@@ -305,6 +305,61 @@
       "rationale": "Webflow Wildlife Typekit marker; source-first parity lock."
     },
     {
+      "url": "/contact/",
+      "string": "id=\"site-header\"",
+      "rationale": "Webflow Contact header marker; source-first parity lock."
+    },
+    {
+      "url": "/contact/",
+      "string": "class=\"contact-hero-background\"",
+      "rationale": "2026-05-27 page-by-page reset: Contact must be sourced from the live Webflow route structure, not the stale hand-built clone."
+    },
+    {
+      "url": "/contact/",
+      "string": "class=\"navbar bg-gold w-nav\"",
+      "rationale": "Webflow Contact gold navbar treatment; source-first parity lock."
+    },
+    {
+      "url": "/contact/",
+      "string": "class=\"div-block-4 bg-navy\"",
+      "rationale": "Webflow Contact navy top contact pill marker; source-first parity lock."
+    },
+    {
+      "url": "/contact/",
+      "string": "class=\"hero-h1 text-color---cream outlined-cream\">Get in touch",
+      "rationale": "Webflow Contact hero title marker; source-first parity lock."
+    },
+    {
+      "url": "/contact/",
+      "string": "class=\"hero-h3 text-color---cream\">With our peace makers",
+      "rationale": "Webflow Contact subtitle marker; source-first parity lock."
+    },
+    {
+      "url": "/contact/",
+      "string": "class=\"hero-arrow-wrapper background---cream\"",
+      "rationale": "Webflow Contact cream phone-band/carat marker; source-first parity lock."
+    },
+    {
+      "url": "/contact/",
+      "string": "class=\"phone-number-text\"",
+      "rationale": "Webflow Contact phone CTA marker; source-first parity lock."
+    },
+    {
+      "url": "/contact/",
+      "string": "CONTACT US FOR AN ESTIMATE !",
+      "rationale": "Webflow Contact form section marker; source-first parity lock."
+    },
+    {
+      "url": "/contact/",
+      "string": "Type other",
+      "rationale": "Webflow Contact form includes the Type other underline field below the issue selector."
+    },
+    {
+      "url": "/contact/",
+      "string": "No mobile information",
+      "rationale": "ASAP SMS privacy language marker that must remain visible in the Webflow contact block."
+    },
+    {
       "url": "/pest-control-services/",
       "string": "id=\"site-header\"",
       "rationale": "Webflow Pest Control header marker; source-first parity lock."
@@ -581,8 +636,28 @@
     },
     {
       "url": "/contact/",
-      "asset": "monster-icon.png",
-      "rationale": "Item #9: Contact-form section uses the canonical monster, not the thin-mouth-line SVG."
+      "asset": "61a6f5480450e4fb7d3c7f04_darkmascot.svg",
+      "rationale": "Webflow Contact hero mascot asset from the live reference source."
+    },
+    {
+      "url": "/contact/",
+      "asset": "61ae8e8b31ebe66157a64a8f_carat-cream.svg",
+      "rationale": "Webflow Contact cream carat asset from the live reference source."
+    },
+    {
+      "url": "/contact/",
+      "asset": "61ae98056198b351e9434fce_white-bat.svg",
+      "rationale": "Webflow Contact second-section bat asset from the live reference source."
+    },
+    {
+      "url": "/contact/",
+      "asset": "61ae986d6626741aed349fbd_whitebeaver.svg",
+      "rationale": "Webflow Contact second-section beaver asset from the live reference source."
+    },
+    {
+      "url": "/contact/",
+      "asset": "69a16d349bf9eb29fd93bcda_ASAP_MONSTER_ICON.png",
+      "rationale": "Webflow Contact form-section mascot asset from the live reference source."
     },
     {
       "url": "/",
@@ -707,6 +782,11 @@
       "url": "/wildlife/",
       "class_pattern": "outlined-cream",
       "rationale": "Webflow Wildlife hero h1 uses outlined-cream; source-first parity lock."
+    },
+    {
+      "url": "/contact/",
+      "class_pattern": "outlined-cream",
+      "rationale": "Webflow Contact hero h1 uses outlined-cream; source-first parity lock."
     },
     {
       "url": "/pest-control-services/",
