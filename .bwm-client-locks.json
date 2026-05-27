@@ -3883,6 +3883,166 @@
       "url": "/wildlife/vole/",
       "string": "wildlife-vole-webflow-reference",
       "rationale": "2026-05-27 source-first Vole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "data-wf-item-slug=\"wild-hogs\"",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "id=\"site-header\"",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "class=\"navbar w-nav\"",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "class=\"div-block-4\"",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "class=\"nav-menu w-nav-menu\"",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "class=\"logo-normal\"",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "class=\"logo-scroll\"",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "class=\"section-2\"",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "class=\"text-block-2\">Wild Hogs",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "class=\"text-block-4\">Sus Scrofa",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "Removal Services in Atlanta, GA| Expert Wildlife Solutions",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "12 Interesting Facts about",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "class=\"wildlife-details w-richtext\"",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "<strong>Diet:</strong>",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "<strong>Omnivore</strong> (plants, roots, crops, insects, small animals, eggs, and even carrion)",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "<strong>Disease: </strong>",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "<strong>Brucellosis, leptospirosis, swine influenza, trichinosis, salmonella, tuberculosis, and rabies(rare).</strong>",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "They can also carry <strong>ticks, fleas, and parasites</strong> that spread illness.",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "<strong>Location:</strong>",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "Wild hogs are found worldwide, but in the U.S. they are heavily concentrated in the <strong>Southeast</strong>,including <strong>Georgia</strong>.",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "class=\"wildlife-details align-left w-richtext\"",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "class=\"image-5\"",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "Interesting Facts",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "Find out more animal facts",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "class=\"wildlife-grid w-dyn-items\"",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "class=\"wildlife-item-container w-inline-block\"",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "More Reviews",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "CONTACT US FOR AN ESTIMATE !",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "Type other",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "No mobile information",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "https://use.typekit.net/dmg8gvn.js",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "string": "wildlife-wild-hogs-webflow-reference",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
     }
   ],
   "script_src_contains": [
@@ -5158,6 +5318,51 @@
       "url": "/wildlife/vole/",
       "asset": "69a16d349bf9eb29fd93bcda_ASAP_MONSTER_ICON.png",
       "rationale": "2026-05-27 source-first Vole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "asset": "699f35309ec99464106dc35a_ASAP_LOGO_Orange.png",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "asset": "61aea59de7f1b769c777f498_orange-mascot.svg",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "asset": "6998b4376f09a93e1c396bad_wild%20hog.png",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "asset": "61a6dc27848a3cccf01f0524_arrow-orange.svg",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "asset": "6626ade011192e31a242a67b_Image%20(19).png",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "asset": "61a6f3effb267a3a998a2875_quotes.svg",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "asset": "61a6f1fab330503d3df9434c_5-stars.svg",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "asset": "61a6f5480450e4fb7d3c7f04_darkmascot.svg",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/wild-hogs/",
+      "asset": "69a16d349bf9eb29fd93bcda_ASAP_MONSTER_ICON.png",
+      "rationale": "2026-05-27 source-first Wild Hogs parity: lock current live Webflow route markers after page-by-page rebuild."
     }
   ],
   "forbidden_assets": [
