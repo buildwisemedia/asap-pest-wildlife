@@ -510,6 +510,101 @@
       "rationale": "Webflow Warranty Assurance Typekit marker; source-first parity lock."
     },
     {
+      "url": "/peace-of-mind-from/beavers/",
+      "string": "id=\"site-header\"",
+      "rationale": "Webflow Beavers header marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "string": "class=\"contact-hero-background\"",
+      "rationale": "Webflow Beavers hero wrapper marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "string": "class=\"navbar bg-gold w-nav\"",
+      "rationale": "Webflow Beavers orange/gold navbar marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "string": "class=\"div-block-4 bg-navy\"",
+      "rationale": "Webflow Beavers navy top contact pill marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "string": "class=\"nav-menu orange-bg w-nav-menu\"",
+      "rationale": "Webflow Beavers orange nav-menu marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "string": "class=\"hero-h1 text-color---cream outlined-cream\">Beavers",
+      "rationale": "Webflow Beavers cream outlined h1 marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "string": "class=\"contact-hero-mascot-size\"",
+      "rationale": "Webflow Beavers hero mascot marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "string": "class=\"hero-arrow-wrapper background---cream\"",
+      "rationale": "Webflow Beavers cream phone-band/carat marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "string": "class=\"phone-number-text\"",
+      "rationale": "Webflow Beavers phone CTA marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "string": "class=\"beaver-position\"",
+      "rationale": "Webflow Beavers hero beaver placement marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "string": "Speacialist beaver control &amp; management",
+      "rationale": "Webflow Beavers section eyebrow marker, including current reference spelling; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "string": "Peace control",
+      "rationale": "Webflow Beavers main content heading marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "string": "Inspection",
+      "rationale": "Webflow Beavers service block marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "string": "Trapping",
+      "rationale": "Webflow Beavers service block marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "string": "Remediation",
+      "rationale": "Webflow Beavers service block marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "string": "Prevention",
+      "rationale": "Webflow Beavers service block marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "string": "CONTACT US FOR AN ESTIMATE !",
+      "rationale": "Webflow Beavers contact form marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "string": "No mobile information",
+      "rationale": "ASAP SMS privacy language marker that must remain visible in the Webflow contact block."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "string": "https://use.typekit.net/dmg8gvn.js",
+      "rationale": "Webflow Beavers Typekit marker; source-first parity lock."
+    },
+    {
       "url": "/pest-control-services/",
       "string": "id=\"site-header\"",
       "rationale": "Webflow Pest Control header marker; source-first parity lock."
@@ -875,6 +970,36 @@
       "rationale": "Webflow Warranty Assurance contact mascot asset from the live reference source."
     },
     {
+      "url": "/peace-of-mind-from/beavers/",
+      "asset": "699f3530bdf27bef91eca333_ASAP_LOGO_Blue.png",
+      "rationale": "Webflow Beavers blue logo asset from the live reference source."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "asset": "61a6f5480450e4fb7d3c7f04_darkmascot.svg",
+      "rationale": "Webflow Beavers hero mascot asset from the live reference source."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "asset": "61ae8e8b31ebe66157a64a8f_carat-cream.svg",
+      "rationale": "Webflow Beavers cream carat asset from the live reference source."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "asset": "61d9182d400573bfb618e580_beaver-navy.png",
+      "rationale": "Webflow Beavers navy beaver hero asset from the live reference source."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "asset": "61d91206c3c26395ece3f239_arrow-navy.png",
+      "rationale": "Webflow Beavers navy subheading arrow asset from the live reference source."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "asset": "69a16d349bf9eb29fd93bcda_ASAP_MONSTER_ICON.png",
+      "rationale": "Webflow Beavers contact mascot asset from the live reference source."
+    },
+    {
       "url": "/",
       "asset": "arrow-orange.svg",
       "rationale": "Homepage CTA banner shows the orange-tooth element."
@@ -1022,6 +1147,11 @@
       "url": "/warranty-assurance/",
       "class_pattern": "responsive-h2",
       "rationale": "2026-05-27 source-first Warranty Assurance parity: the live Webflow page uses responsive-h2 on the page H1."
+    },
+    {
+      "url": "/peace-of-mind-from/beavers/",
+      "class_pattern": "outlined-cream",
+      "rationale": "2026-05-27 source-first Beavers parity: the live Webflow page uses outlined-cream on the page H1."
     }
   ],
   "min_pattern_count": [
