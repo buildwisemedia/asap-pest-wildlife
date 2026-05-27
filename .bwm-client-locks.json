@@ -2,7 +2,7 @@
   "_doc": "BWM Client Locks \u2014 machine-checkable contract for asap-pest-wildlife. Each assertion is a perceptual failure mode the team committed to never recur. Loaded by Brain's tools/bwm-client-locks-qa.py during PATCH and FULL BUILD. Drift from these locks = build failure. Source incidents: John's 2026-05-08 website-review email + Nehemiah's 2026-05-11 meeting (transcript at ~/Downloads/nehemiah-2026-05-11-transcript.md) + John's 2026-05-15 v8.1 review (over-removed ampersand + phone-tooth overlap).",
   "client_slug": "asap-pest-wildlife",
   "version": 1,
-  "last_updated": "2026-05-26",
+  "last_updated": "2026-05-27",
   "required_strings": [
     {
       "url": "/wildlife/",
@@ -425,6 +425,91 @@
       "rationale": "Webflow Blog Typekit marker; source-first parity lock."
     },
     {
+      "url": "/warranty-assurance/",
+      "string": "id=\"site-header\"",
+      "rationale": "Webflow Warranty Assurance header marker; source-first parity lock."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "string": "class=\"body\"",
+      "rationale": "Webflow Warranty Assurance body class marker; source-first parity lock."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "string": "class=\"navbar w-nav\"",
+      "rationale": "Webflow Warranty Assurance navbar marker; source-first parity lock."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "string": "nav-link hide w-nav-link w--current",
+      "rationale": "Webflow Warranty Assurance active hidden navigation marker; source-first parity lock."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "string": "class=\"logo-normal\"",
+      "rationale": "Webflow Warranty Assurance normal logo marker; source-first parity lock."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "string": "class=\"logo-scroll\"",
+      "rationale": "Webflow Warranty Assurance scroll logo marker; source-first parity lock."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "string": "Warranty Assurance<br/>",
+      "rationale": "Webflow Warranty Assurance h1 text marker; source-first parity lock."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "string": "&quot;Giving you complete <strong class=\"text-color---burnt-orange\">PEACE</strong>&quot;",
+      "rationale": "Webflow Warranty Assurance hero statement marker; source-first parity lock."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "string": "Animal damage under <span class=\"text-color---burnt-orange\">warranty</span>",
+      "rationale": "Webflow Warranty Assurance animal-grid subheading marker; source-first parity lock."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "string": "class=\"wildlife-grid w-dyn-items\"",
+      "rationale": "Webflow Warranty Assurance wildlife grid marker; source-first parity lock."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "string": "class=\"wildlife-item-container w-inline-block\"",
+      "rationale": "Webflow Warranty Assurance wildlife item marker; source-first parity lock."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "string": "Scope of Coverage",
+      "rationale": "Webflow Warranty Assurance coverage block marker; source-first parity lock."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "string": "Re-Warranty Process",
+      "rationale": "Webflow Warranty Assurance re-warranty block marker; source-first parity lock."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "string": "Learn more about our solutions for:",
+      "rationale": "Webflow Warranty Assurance related-solutions marker; source-first parity lock."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "string": "CONTACT US FOR AN ESTIMATE !",
+      "rationale": "Webflow Warranty Assurance contact form marker; source-first parity lock."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "string": "No mobile information",
+      "rationale": "ASAP SMS privacy language marker that must remain visible in the Webflow contact block."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "string": "https://use.typekit.net/dmg8gvn.js",
+      "rationale": "Webflow Warranty Assurance Typekit marker; source-first parity lock."
+    },
+    {
       "url": "/pest-control-services/",
       "string": "id=\"site-header\"",
       "rationale": "Webflow Pest Control header marker; source-first parity lock."
@@ -755,6 +840,41 @@
       "rationale": "Webflow Blog first CMS thumbnail asset from the live reference source."
     },
     {
+      "url": "/warranty-assurance/",
+      "asset": "699f35309ec99464106dc35a_ASAP_LOGO_Orange.png",
+      "rationale": "Webflow Warranty Assurance orange logo asset from the live reference source."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "asset": "61aea59de7f1b769c777f498_orange-mascot.svg",
+      "rationale": "Webflow Warranty Assurance scroll logo and form-success mascot asset from the live reference source."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "asset": "61a6dc27848a3cccf01f0524_arrow-orange.svg",
+      "rationale": "Webflow Warranty Assurance subheading arrow asset from the live reference source."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "asset": "61d9dea30bdf291ad27ebe4a_bat-new.png",
+      "rationale": "Webflow Warranty Assurance bat grid asset from the live reference source."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "asset": "6620d2d18b046ab77d31c87a_6620be784ae1214dd3d44768_squirrel.png",
+      "rationale": "Webflow Warranty Assurance squirrel grid asset from the live reference source."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "asset": "61d9069b16eeed73079abd49_mouse.png",
+      "rationale": "Webflow Warranty Assurance mouse grid asset from the live reference source."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "asset": "69a16d349bf9eb29fd93bcda_ASAP_MONSTER_ICON.png",
+      "rationale": "Webflow Warranty Assurance contact mascot asset from the live reference source."
+    },
+    {
       "url": "/",
       "asset": "arrow-orange.svg",
       "rationale": "Homepage CTA banner shows the orange-tooth element."
@@ -897,6 +1017,11 @@
       "url": "/blog/",
       "class_pattern": "outlined-orange",
       "rationale": "2026-05-27 source-first Blog parity: the live Webflow hero H1 uses class outlined-orange, not the stale local text-outlined-* utility."
+    },
+    {
+      "url": "/warranty-assurance/",
+      "class_pattern": "responsive-h2",
+      "rationale": "2026-05-27 source-first Warranty Assurance parity: the live Webflow page uses responsive-h2 on the page H1."
     }
   ],
   "min_pattern_count": [
