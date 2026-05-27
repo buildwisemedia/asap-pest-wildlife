@@ -75,26 +75,6 @@
       "rationale": "Same \u2014 applies sitewide."
     },
     {
-      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
-      "string": "Certified Honey Bee Control",
-      "rationale": "John Mukasa 2026-03-09 ask (v8.4 Phase 1 close-out): bee page must surface the HBR (Honey Bee Removal Operator) certification under the Georgia Structural Pest Control Act. This is ASAP's primary honey-bee differentiator versus generic pest spraying."
-    },
-    {
-      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
-      "string": "Georgia Structural Pest Control Act",
-      "rationale": "John Mukasa 2026-03-09 ask: legal statute name must appear verbatim per HBR licensure framing."
-    },
-    {
-      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
-      "string": "Nonprofit Partnership",
-      "rationale": "John Mukasa 2026-03-09 ask: bee page must call out ASAP's nonprofit-relocation partnership for live honey bee colonies."
-    },
-    {
-      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
-      "string": "id=\"bee-faq\"",
-      "rationale": "John Mukasa 2026-03-09 ask (v8.4): bee-specific FAQ accordion (5 items) on the bee page. The id anchors the section for lock + future deep-linking from ads."
-    },
-    {
       "url": "/",
       "string": "cid=7456357551456980082",
       "rationale": "Robert 2026-05-18 (v8.6): the More Reviews button must land on ASAP's verified Google Business Profile (CID-based Maps URL), not a generic '/place/Name/@coords/' search that resolves to a search result instead of the GBP listing. CID 7456357551456980082 = hex 0x677a4db004e50c72 from the canonical Maps data hash for ASAP Pest & Wildlife Removal."
@@ -605,6 +585,106 @@
       "rationale": "Webflow Beavers Typekit marker; source-first parity lock."
     },
     {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "string": "id=\"site-header\"",
+      "rationale": "Webflow Bees Wasps and Hornets header marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "string": "class=\"contact-hero-background\"",
+      "rationale": "Webflow Bees Wasps and Hornets hero wrapper marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "string": "class=\"navbar bg-gold w-nav\"",
+      "rationale": "Webflow Bees Wasps and Hornets orange/gold navbar marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "string": "class=\"div-block-4 bg-navy\"",
+      "rationale": "Webflow Bees Wasps and Hornets navy top contact pill marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "string": "class=\"nav-menu orange-bg w-nav-menu\"",
+      "rationale": "Webflow Bees Wasps and Hornets orange nav-menu marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "string": "class=\"hero-h1 text-color---cream outlined-cream\">Bees, wasps,",
+      "rationale": "Webflow Bees Wasps and Hornets cream outlined h1 marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "string": "class=\"hero-h3 text-color---cream\">&amp; Hornets",
+      "rationale": "Webflow Bees Wasps and Hornets subtitle marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "string": "class=\"contact-hero-mascot-size\"",
+      "rationale": "Webflow Bees Wasps and Hornets hero mascot marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "string": "class=\"hero-arrow-wrapper background---cream\"",
+      "rationale": "Webflow Bees Wasps and Hornets cream phone-band/carat marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "string": "class=\"phone-number-text\"",
+      "rationale": "Webflow Bees Wasps and Hornets phone CTA marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "string": "class=\"bee-position\"",
+      "rationale": "Webflow Bees Wasps and Hornets hero bee placement marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "string": "Speacialist Stinging Insect control &amp; management",
+      "rationale": "Webflow Bees Wasps and Hornets section eyebrow marker, including current reference spelling; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "string": "Peace control",
+      "rationale": "Webflow Bees Wasps and Hornets main content heading marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "string": "Inspection",
+      "rationale": "Webflow Bees Wasps and Hornets service block marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "string": "Removal",
+      "rationale": "Webflow Bees Wasps and Hornets service block marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "string": "Exclusion",
+      "rationale": "Webflow Bees Wasps and Hornets service block marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "string": "Prevention",
+      "rationale": "Webflow Bees Wasps and Hornets service block marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "string": "CONTACT US FOR AN ESTIMATE !",
+      "rationale": "Webflow Bees Wasps and Hornets contact form marker; source-first parity lock."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "string": "No mobile information",
+      "rationale": "ASAP SMS privacy language marker that must remain visible in the Webflow contact block."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "string": "https://use.typekit.net/dmg8gvn.js",
+      "rationale": "Webflow Bees Wasps and Hornets Typekit marker; source-first parity lock."
+    },
+    {
       "url": "/pest-control-services/",
       "string": "id=\"site-header\"",
       "rationale": "Webflow Pest Control header marker; source-first parity lock."
@@ -1000,6 +1080,36 @@
       "rationale": "Webflow Beavers contact mascot asset from the live reference source."
     },
     {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "asset": "699f3530bdf27bef91eca333_ASAP_LOGO_Blue.png",
+      "rationale": "Webflow Bees Wasps and Hornets blue logo asset from the live reference source."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "asset": "61a6f5480450e4fb7d3c7f04_darkmascot.svg",
+      "rationale": "Webflow Bees Wasps and Hornets hero mascot asset from the live reference source."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "asset": "61ae8e8b31ebe66157a64a8f_carat-cream.svg",
+      "rationale": "Webflow Bees Wasps and Hornets cream carat asset from the live reference source."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "asset": "61d91a1d697fbd514db4a0cb_bee.png",
+      "rationale": "Webflow Bees Wasps and Hornets bee hero asset from the live reference source."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "asset": "61d91206c3c26395ece3f239_arrow-navy.png",
+      "rationale": "Webflow Bees Wasps and Hornets navy subheading arrow asset from the live reference source."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "asset": "69a16d349bf9eb29fd93bcda_ASAP_MONSTER_ICON.png",
+      "rationale": "Webflow Bees Wasps and Hornets contact mascot asset from the live reference source."
+    },
+    {
       "url": "/",
       "asset": "arrow-orange.svg",
       "rationale": "Homepage CTA banner shows the orange-tooth element."
@@ -1152,6 +1262,11 @@
       "url": "/peace-of-mind-from/beavers/",
       "class_pattern": "outlined-cream",
       "rationale": "2026-05-27 source-first Beavers parity: the live Webflow page uses outlined-cream on the page H1."
+    },
+    {
+      "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
+      "class_pattern": "outlined-cream",
+      "rationale": "2026-05-27 source-first Bees Wasps and Hornets parity: the live Webflow page uses outlined-cream on the page H1."
     }
   ],
   "min_pattern_count": [
