@@ -3388,6 +3388,171 @@
       "url": "/wildlife/raccoon/",
       "string": "wildlife-raccoon-webflow-reference",
       "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "data-wf-item-slug=\"snake\"",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "id=\"site-header\"",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "class=\"navbar w-nav\"",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "class=\"div-block-4\"",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "class=\"nav-menu w-nav-menu\"",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "class=\"logo-normal\"",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "class=\"logo-scroll\"",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "class=\"section-2\"",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "class=\"text-block-2\">Snake",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "class=\"text-block-4\">Squamata",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "Removal Services in Atlanta, GA| Expert Wildlife Solutions",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "12 Interesting Facts about",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "class=\"wildlife-details w-richtext\"",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "<strong>Diet: </strong>Snakes are carnivorous, feeding on various prey including rodents, birds, amphibians, insects, fish, and other reptiles.",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "<strong>Diseases Carried by Snakes: </strong>",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "Snake Fungal Disease",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "Infectious stomatitis (mouth rot)",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "Respiratory infections",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "Parasitic infections (e.g., ticks, mites, internal parasites)",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "Bacterial infections",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "<strong>Habitat: </strong>Snakes inhabit a wide range of habitats including forests, grasslands, deserts, wetlands, and aquatic environments. They can be found in both terrestrial and aquatic ecosystems, depending on the species.",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "class=\"wildlife-details align-left w-richtext\"",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "class=\"image-5\"",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "Interesting Facts",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "Find out more animal facts",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "class=\"wildlife-grid w-dyn-items\"",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "class=\"wildlife-item-container w-inline-block\"",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "More Reviews",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "CONTACT US FOR AN ESTIMATE !",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "Type other",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "No mobile information",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "https://use.typekit.net/dmg8gvn.js",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "string": "wildlife-snake-webflow-reference",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
     }
   ],
   "script_src_contains": [
@@ -4528,6 +4693,51 @@
       "url": "/wildlife/raccoon/",
       "asset": "69a16d349bf9eb29fd93bcda_ASAP_MONSTER_ICON.png",
       "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "asset": "699f35309ec99464106dc35a_ASAP_LOGO_Orange.png",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "asset": "61aea59de7f1b769c777f498_orange-mascot.svg",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "asset": "61d9066925700240d671b492_snake.png",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "asset": "61a6dc27848a3cccf01f0524_arrow-orange.svg",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "asset": "6626ade011192e31a242a67b_Image%20(19).png",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "asset": "61a6f3effb267a3a998a2875_quotes.svg",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "asset": "61a6f1fab330503d3df9434c_5-stars.svg",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "asset": "61a6f5480450e4fb7d3c7f04_darkmascot.svg",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/snake/",
+      "asset": "69a16d349bf9eb29fd93bcda_ASAP_MONSTER_ICON.png",
+      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
     }
   ],
   "forbidden_assets": [
