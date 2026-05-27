@@ -6,28 +6,58 @@
   "required_strings": [
     {
       "url": "/wildlife/",
-      "string": "Exclusion",
-      "rationale": "Sealing entry points is core to wildlife process \u2014 was replaced by 'Empathy' in v6, restored 2026-05-12 per client review."
+      "string": "class=\"contact-hero-background\"",
+      "rationale": "2026-05-26 page-by-page reset: Wildlife must be sourced from the live Webflow route structure, not the stale hand-built clone."
     },
     {
       "url": "/wildlife/",
-      "string": "Inspection",
-      "rationale": "Step 1 of canonical 5-step process."
+      "string": "class=\"navbar navy-bg w-nav\"",
+      "rationale": "Webflow Wildlife navy header marker; source-first parity lock."
     },
     {
       "url": "/wildlife/",
-      "string": "Capture",
-      "rationale": "Step 2 of canonical 5-step process."
+      "string": "class=\"div-block-4 bg-gold\"",
+      "rationale": "Webflow Wildlife gold contact pill marker; source-first parity lock."
     },
     {
       "url": "/wildlife/",
-      "string": "Release",
-      "rationale": "Step 4 of canonical 5-step process."
+      "string": "nav-link navy-bg w-nav-link w--current",
+      "rationale": "Webflow Wildlife active navigation marker; source-first parity lock."
     },
     {
       "url": "/wildlife/",
-      "string": "Warranty",
-      "rationale": "Step 5 of canonical 5-step process."
+      "string": "class=\"hero-h1 text-color---cream outlined-cream\">Wildlife",
+      "rationale": "Webflow Wildlife cream outlined hero title marker; source-first parity lock."
+    },
+    {
+      "url": "/wildlife/",
+      "string": "class=\"contact-hero-mascot-size\"",
+      "rationale": "Webflow Wildlife hero mascot marker; source-first parity lock."
+    },
+    {
+      "url": "/wildlife/",
+      "string": "class=\"hero-arrow-wrapper\"",
+      "rationale": "Webflow Wildlife phone band/carat marker; source-first parity lock."
+    },
+    {
+      "url": "/wildlife/",
+      "string": "class=\"phone-number-text text-color---cream\"",
+      "rationale": "Webflow Wildlife phone CTA marker; source-first parity lock."
+    },
+    {
+      "url": "/wildlife/",
+      "string": "class=\"wildlife-grid w-dyn-items\"",
+      "rationale": "Webflow Wildlife CMS animal grid marker; source-first parity lock."
+    },
+    {
+      "url": "/wildlife/",
+      "string": "class=\"wildlife-item-container w-inline-block\"",
+      "rationale": "Webflow Wildlife animal card marker; source-first parity lock."
+    },
+    {
+      "url": "/wildlife/",
+      "string": "Google Photos",
+      "rationale": "Current removeasap.com/wildlife Webflow source includes this visible gallery CTA; pixel parity takes precedence over stale local clone locks."
     },
     {
       "url": "/",
@@ -261,8 +291,18 @@
     },
     {
       "url": "/wildlife/",
-      "string": "opacity-100 md:opacity-0 md:group-hover:opacity-100",
-      "rationale": "Same \u2014 applies sitewide on the wildlife listing page."
+      "string": "CONTACT US FOR AN ESTIMATE !",
+      "rationale": "Webflow Wildlife contact form marker; source-first parity lock."
+    },
+    {
+      "url": "/wildlife/",
+      "string": "No mobile information",
+      "rationale": "ASAP SMS privacy language marker that must remain visible in the Webflow contact block."
+    },
+    {
+      "url": "/wildlife/",
+      "string": "https://use.typekit.net/dmg8gvn.js",
+      "rationale": "Webflow Wildlife Typekit marker; source-first parity lock."
     },
     {
       "url": "/pest-control-services/",
@@ -446,11 +486,6 @@
   "stylesheet_href_contains": [],
   "forbidden_strings": [
     {
-      "url": "/wildlife/",
-      "string": "Google Photos",
-      "rationale": "Robert 2026-05-18 (v8.5): the 'Google Photos \u2192' link on Wildlife had a text/destination mismatch (label said Google Photos, href pointed to Google Maps). Removed in v8.5. Lock guards both the broken label and re-insertion of any Google Photos CTA without a real photo album URL."
-    },
-    {
       "url": "/about/",
       "string": "cta-banner-section",
       "rationale": "Robert 2026-05-26 screenshot regression: About must not render the orange CTA banner under the hero. The authoritative removeasap.com/about/ reference uses a navy hero, cream divider/carat, and navy intro section instead."
@@ -523,6 +558,26 @@
       "url": "/services/",
       "asset": "69a16d343162410d17e50a7f_ASAP_LOGO_Orange_TanTag%20_Recovered_%204%20_Recovered_%203-19.png",
       "rationale": "Webflow Services navy-header logo asset from the live reference source."
+    },
+    {
+      "url": "/wildlife/",
+      "asset": "69a16d343162410d17e50a7f_ASAP_LOGO_Orange_TanTag%20_Recovered_%204%20_Recovered_%203-19.png",
+      "rationale": "Webflow Wildlife navy-header logo asset from the live reference source."
+    },
+    {
+      "url": "/wildlife/",
+      "asset": "69a16d349bf9eb29fd93bcda_ASAP_MONSTER_ICON.png",
+      "rationale": "Webflow Wildlife hero/contact mascot asset from the live reference source."
+    },
+    {
+      "url": "/wildlife/",
+      "asset": "6626ade011192e31a242a67b_Image%20(19).png",
+      "rationale": "Webflow Wildlife full-width process artwork marker; source-first parity lock."
+    },
+    {
+      "url": "/wildlife/",
+      "asset": "61d9dfc1a96206e79d12f49b_armadillo-new.png",
+      "rationale": "Webflow Wildlife animal grid armadillo marker; source-first parity lock."
     },
     {
       "url": "/contact/",
@@ -650,8 +705,8 @@
     },
     {
       "url": "/wildlife/",
-      "class_pattern": "text-outlined-",
-      "rationale": "Item #1: Inner-page H1s use the hollowed-out style matching homepage Peace-of-Mind treatment."
+      "class_pattern": "outlined-cream",
+      "rationale": "Webflow Wildlife hero h1 uses outlined-cream; source-first parity lock."
     },
     {
       "url": "/pest-control-services/",
