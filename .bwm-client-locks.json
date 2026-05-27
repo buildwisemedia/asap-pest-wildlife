@@ -2453,6 +2453,146 @@
       "url": "/wildlife/gray-squirrel/",
       "string": "wildlife-gray-squirrel-webflow-reference",
       "rationale": "2026-05-27 source-first Gray Squirrel parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "data-wf-item-slug=\"mole\"",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "id=\"site-header\"",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "class=\"navbar w-nav\"",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "class=\"div-block-4\"",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "class=\"nav-menu w-nav-menu\"",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "class=\"logo-normal\"",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "class=\"logo-scroll\"",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "class=\"section-2\"",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "class=\"text-block-2\">Mole",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "class=\"text-block-4\">Talpa Eropaea",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "Removal Services in Atlanta, GA| Expert Wildlife Solutions",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "12 Interesting Facts about",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "class=\"wildlife-details w-richtext\"",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "<strong>Diet:</strong> Insectivores",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "<strong>Disease: </strong>Tularemia, Leptospirosis",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "<strong>Location:</strong> North America, Europe, and Asia.",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "class=\"wildlife-details align-left w-richtext\"",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "class=\"image-5\"",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "Interesting Facts",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "Find out more animal facts",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "class=\"wildlife-grid w-dyn-items\"",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "class=\"wildlife-item-container w-inline-block\"",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "More Reviews",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "CONTACT US FOR AN ESTIMATE !",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "Type other",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "No mobile information",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "https://use.typekit.net/dmg8gvn.js",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "string": "wildlife-mole-webflow-reference",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
     }
   ],
   "script_src_contains": [
@@ -3323,6 +3463,51 @@
       "url": "/wildlife/gray-squirrel/",
       "asset": "69a16d349bf9eb29fd93bcda_ASAP_MONSTER_ICON.png",
       "rationale": "2026-05-27 source-first Gray Squirrel parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "asset": "699f35309ec99464106dc35a_ASAP_LOGO_Orange.png",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "asset": "61aea59de7f1b769c777f498_orange-mascot.svg",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "asset": "6620d4288fd60c549bb612b1_6620be784ae1214dd3d447e9_mole.png",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "asset": "61a6dc27848a3cccf01f0524_arrow-orange.svg",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "asset": "6626ade011192e31a242a67b_Image%20(19).png",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "asset": "61a6f3effb267a3a998a2875_quotes.svg",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "asset": "61a6f1fab330503d3df9434c_5-stars.svg",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "asset": "61a6f5480450e4fb7d3c7f04_darkmascot.svg",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
+    },
+    {
+      "url": "/wildlife/mole/",
+      "asset": "69a16d349bf9eb29fd93bcda_ASAP_MONSTER_ICON.png",
+      "rationale": "2026-05-27 source-first Mole parity: lock current live Webflow route markers after page-by-page rebuild."
     }
   ],
   "forbidden_assets": [
