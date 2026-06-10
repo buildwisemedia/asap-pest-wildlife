@@ -297,6 +297,10 @@
     Object.keys(payload).forEach(function (k) { dlEvent[k] = payload[k]; });
     window.dataLayer.push(dlEvent);
 
+    if (typeof window.__bwmLoadAnalytics === 'function') {
+      try { window.__bwmLoadAnalytics(); } catch (_) {}
+    }
+
     if (typeof window.gtag === 'function') {
       var gtagParams = { transport_type: 'beacon' };
       Object.keys(payload).forEach(function (k) { gtagParams[k] = payload[k]; });
