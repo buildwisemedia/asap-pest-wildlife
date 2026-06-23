@@ -1,0 +1,100 @@
+name: Promote to Production
+
+on:
+  workflow_dispatch:
+    inputs:
+      sha:
+        description: Exact 40-character commit SHA to promote
+        required: true
+        type: string
+      reason:
+        description: Optional approval reason or client signoff note
+        required: false
+        type: string
+
+concurrency:
+  group: client-production-release
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  qa:
+    name: QA gate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate SHA input
+        env:
+          INPUT_SHA: ${{ inputs.sha }}
+        run: |
+          if ! [[ "$INPUT_SHA" =~ ^[0-9a-f]{40}$ ]]; then
+            echo "::error::sha must be an exact lowercase 40-character commit SHA"
+            exit 1
+          fi
+
+      - name: Checkout release gate
+        uses: actions/checkout@v4
+        with:
+          path: gate
+
+      - name: Checkout target SHA
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.sha }}
+          fetch-depth: 0
+          path: target
+
+      - name: Confirm checkout matches requested SHA
+        env:
+          INPUT_SHA: ${{ inputs.sha }}
+        run: |
+          actual_sha="$(git -C target rev-parse HEAD)"
+          if [ "$actual_sha" != "$INPUT_SHA" ]; then
+            echo "::error::checked out $actual_sha, expected $INPUT_SHA"
+            exit 1
+          fi
+          echo "QA target: $actual_sha"
+
+      - name: Run production QA gate
+        run: gate/scripts/production-gate.sh qa-gate "$GITHUB_WORKSPACE/target"
+
+  promote:
+    name: Promote approved SHA
+    runs-on: ubuntu-latest
+    needs: qa
+    environment: client-production
+    concurrency:
+      group: production-branch-ref
+      cancel-in-progress: false
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate and push production ref
+        env:
+          INPUT_SHA: ${{ inputs.sha }}
+          RELEASE_REASON: ${{ inputs.reason }}
+        run: |
+          if ! [[ "$INPUT_SHA" =~ ^[0-9a-f]{40}$ ]]; then
+            echo "::error::sha must be an exact lowercase 40-character commit SHA"
+            exit 1
+          fi
+
+          git fetch --no-tags origin "+refs/heads/*:refs/remotes/origin/*"
+
+          if ! git cat-file -e "$INPUT_SHA^{commit}"; then
+            echo "::error::$INPUT_SHA is not a commit object reachable from origin"
+            exit 1
+          fi
+
+          echo "Promoting $INPUT_SHA to refs/heads/production"
+          if [ -n "$RELEASE_REASON" ]; then
+            echo "Reason: $RELEASE_REASON"
+          fi
+          git push origin "$INPUT_SHA:refs/heads/production"
+          echo "Production branch now points at $INPUT_SHA"
