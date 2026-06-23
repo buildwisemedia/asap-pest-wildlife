@@ -78,7 +78,7 @@ jobs:
             git commit -m "$commit_message"
           fi
 
-          restored_tree="$(git rev-parse HEAD^{tree})"
+          restored_tree="$(git rev-parse "HEAD^{tree}")"
           if [ "$restored_tree" != "$target_tree" ]; then
             echo "::error::restored tree $restored_tree does not match target tree $target_tree"
             exit 1
