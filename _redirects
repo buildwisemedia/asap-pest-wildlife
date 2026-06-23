@@ -14,6 +14,8 @@ https://www.removeasap.com/*   https://removeasap.com/:splat   301
 
 # Funnel legacy path
 /home   /   301
+/book   /contact/   301
+/book/  /contact/   301
 
 # Pre-Webflow legacy URLs (old .asp/.htm era) -> nearest current page
 /default.asp    /                   301
