@@ -30,3 +30,8 @@ https://www.removeasap.com/*   https://removeasap.com/:splat   301
 # and its DNS is pointed here. Confirm client still owns the alias before relying on this.
 https://wildliferemovalasap.com/*       https://removeasap.com/:splat   301
 https://www.wildliferemovalasap.com/*   https://removeasap.com/:splat   301
+
+# Removed booking/calendar page (2026-06-23) — ASAP does not use calendar booking.
+# Route booking intent to the contact form + phone instead of a dead /book path.
+/book     /contact/   301
+/book/    /contact/   301
