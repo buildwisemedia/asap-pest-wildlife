@@ -1,33 +1,27 @@
-# build output
-dist/
-# generated types
-.astro/
-
-# dependencies
-node_modules/
-
-# logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-
-# environment variables
-.env
-.env.production
-
-# macOS-specific files
-.DS_Store
-
-# jetbrains setting folder
-.idea/
-
-# wrangler
-.wrangler/
 
 # BWM preflight marker (per-clone state, not source)
-.bwm-preflight-passed
-
 # Local audit screenshots (large binaries, not source)
+# build output
+# dependencies
+# environment variables
+# generated types
+# jetbrains setting folder
+# logs
+# macOS-specific files
+# wrangler
+.DS_Store
+.astro/
+.bwm-preflight-passed
+.env
+.env.production
+.idea/
+.playwright-mcp/
+.wrangler/
 _audit/
+_verification/
+dist/
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
