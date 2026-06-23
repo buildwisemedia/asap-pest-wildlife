@@ -1,0 +1,66 @@
+name: Rollback Production
+
+on:
+  workflow_dispatch:
+    inputs:
+      sha:
+        description: Exact 40-character known-good commit SHA
+        required: true
+        type: string
+      reason:
+        description: Optional rollback reason
+        required: false
+        type: string
+
+concurrency:
+  group: client-production-release
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  rollback:
+    name: Roll back approved SHA
+    runs-on: ubuntu-latest
+    environment: client-production
+    concurrency:
+      group: production-branch-ref
+      cancel-in-progress: false
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate and reset production ref
+        env:
+          INPUT_SHA: ${{ inputs.sha }}
+          ROLLBACK_REASON: ${{ inputs.reason }}
+        run: |
+          if ! [[ "$INPUT_SHA" =~ ^[0-9a-f]{40}$ ]]; then
+            echo "::error::sha must be an exact lowercase 40-character commit SHA"
+            exit 1
+          fi
+
+          git fetch --no-tags origin "+refs/heads/*:refs/remotes/origin/*"
+
+          if ! git cat-file -e "$INPUT_SHA^{commit}"; then
+            echo "::error::$INPUT_SHA is not a commit object reachable from origin"
+            exit 1
+          fi
+
+          current_sha="$(git ls-remote origin refs/heads/production | awk '{print $1}')"
+          if [ -z "$current_sha" ]; then
+            echo "::error::origin production branch was not found"
+            exit 1
+          fi
+
+          echo "Rolling production back from $current_sha to $INPUT_SHA"
+          if [ -n "$ROLLBACK_REASON" ]; then
+            echo "Reason: $ROLLBACK_REASON"
+          fi
+          git push --force-with-lease=refs/heads/production:"$current_sha" origin "$INPUT_SHA:refs/heads/production"
+          echo "Production branch now points at $INPUT_SHA"
