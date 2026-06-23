@@ -29,4 +29,3 @@ User-agent: CCBot
 Allow: /
 
 Sitemap: https://removeasap.com/sitemap.xml
-<!-- g6-proof-e1b891 : G6 gate proof, safe to delete -->
