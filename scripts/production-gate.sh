@@ -4,10 +4,10 @@ set -euo pipefail
 REPO_SLUG_DEFAULT="buildwisemedia/asap-pest-wildlife"
 CF_PROJECT_NAME_DEFAULT="asap-pest-wildlife"
 PRODUCTION_DOMAIN_DEFAULT="https://removeasap.com"
-PRODUCTION_BRANCH="production"
-INTEGRATION_BRANCH="main"
-RULESET_NAME="production-release-gate"
-ENVIRONMENT_NAME="client-production"
+PRODUCTION_BRANCH="${PRODUCTION_BRANCH:-production}"
+INTEGRATION_BRANCH="${INTEGRATION_BRANCH:-main}"
+RULESET_NAME="${RULESET_NAME:-production-release-gate}"
+ENVIRONMENT_NAME="${ENVIRONMENT_NAME:-client-production}"
 
 usage() {
   cat <<'USAGE'
@@ -377,31 +377,17 @@ PY
 }
 
 write_ruleset_payload() {
-  local repo="$1"
-  local payload_file="$2"
-  local app_id
+  local payload_file="$1"
 
-  app_id="$(github_api /apps/github-actions --jq '.id')"
-  if [ -z "$app_id" ]; then
-    die "could not resolve GitHub Actions app id"
-  fi
-
-  python3 - "$RULESET_NAME" "$PRODUCTION_BRANCH" "$app_id" > "$payload_file" <<'PY'
+  python3 - "$RULESET_NAME" "$PRODUCTION_BRANCH" > "$payload_file" <<'PY'
 import json
 import sys
 
-name, branch, app_id = sys.argv[1], sys.argv[2], int(sys.argv[3])
+name, branch = sys.argv[1], sys.argv[2]
 payload = {
     "name": name,
     "target": "branch",
     "enforcement": "active",
-    "bypass_actors": [
-        {
-            "actor_id": app_id,
-            "actor_type": "Integration",
-            "bypass_mode": "always",
-        }
-    ],
     "conditions": {
         "ref_name": {
             "include": [f"refs/heads/{branch}"],
@@ -409,7 +395,6 @@ payload = {
         }
     },
     "rules": [
-        {"type": "update", "parameters": {"update_allows_fetch_and_merge": False}},
         {"type": "deletion"},
         {"type": "non_fast_forward"},
     ],
@@ -422,7 +407,7 @@ apply_ruleset() {
   local repo="$1"
   local payload_file ruleset_id
   payload_file="$(mktemp)"
-  write_ruleset_payload "$repo" "$payload_file"
+  write_ruleset_payload "$payload_file"
 
   ruleset_id="$(ruleset_id_for_name "$repo")"
   if [ -n "$ruleset_id" ]; then
@@ -520,8 +505,8 @@ Plan:
   Repo: $repo
   Ruleset: $RULESET_NAME
   Ruleset target: refs/heads/$PRODUCTION_BRANCH
-  Rules: update requires bypass, block deletion, block non-fast-forward
-  Ruleset bypass actor: GitHub Actions app
+  Rules: block deletion, block non-fast-forward
+  Ruleset bypass actor: none
   Environment: $ENVIRONMENT_NAME with a required reviewer
 
 This mutates GitHub repository settings. It does not touch Cloudflare.
@@ -664,4 +649,6 @@ main() {
   esac
 }
 
-main "$@"
+if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then
+  main "$@"
+fi
