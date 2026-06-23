@@ -35,7 +35,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Validate and reset production ref
+      - name: Validate and restore production tree
         env:
           INPUT_SHA: ${{ inputs.sha }}
           ROLLBACK_REASON: ${{ inputs.reason }}
@@ -58,9 +58,31 @@ jobs:
             exit 1
           fi
 
-          echo "Rolling production back from $current_sha to $INPUT_SHA"
+          git checkout -B production "$current_sha"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          target_tree="$(git rev-parse "$INPUT_SHA^{tree}")"
+
+          echo "Restoring production forward from $current_sha to tree at $INPUT_SHA"
           if [ -n "$ROLLBACK_REASON" ]; then
             echo "Reason: $ROLLBACK_REASON"
           fi
-          git push --force-with-lease=refs/heads/production:"$current_sha" origin "$INPUT_SHA:refs/heads/production"
-          echo "Production branch now points at $INPUT_SHA"
+
+          git read-tree -u --reset "$INPUT_SHA"
+
+          commit_message="rollback: restore production to ${INPUT_SHA}"
+          if git diff --cached --quiet; then
+            git commit --allow-empty -m "$commit_message"
+          else
+            git commit -m "$commit_message"
+          fi
+
+          restored_tree="$(git rev-parse "HEAD^{tree}")"
+          if [ "$restored_tree" != "$target_tree" ]; then
+            echo "::error::restored tree $restored_tree does not match target tree $target_tree"
+            exit 1
+          fi
+
+          git push origin HEAD:refs/heads/production
+          echo "Production branch now points at $(git rev-parse HEAD), with tree restored to $INPUT_SHA"

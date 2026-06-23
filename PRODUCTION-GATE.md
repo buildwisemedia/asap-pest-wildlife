@@ -2,14 +2,16 @@
 
 ## Architecture
 
-The live client domain is served only from the `production` branch. `main` is the integration branch and should produce previews only after the supervisor flips the Pages production branch.
+The live client domain is served from the `production` branch. `main` is the integration branch and produces previews only. This is the primary production gate: a push to `main` must not deploy to `removeasap.com`.
 
 The guard has two layers:
 
 1. Structural decouple: Pages production deploys from `production`, not `main`.
 2. Human approval: the manual GitHub workflows use the `client-production` environment before moving `production`.
 
-The `production` branch is protected by a repository ruleset named `production-release-gate`. It blocks deletion, non-fast-forward updates, and normal updates for everyone except the GitHub Actions app. The only intended branch-moving jobs are `Promote to Production` and `Rollback Production`, both environment-gated.
+The `production` branch is protected by a repository ruleset named `production-release-gate`. It blocks deletion and non-fast-forward updates. The blessed update path is through the environment-gated `Promote to Production` and `Rollback Production` workflows.
+
+Honest residual: this repository is owned by the `buildwisemedia` GitHub User account, not a GitHub organization. On a user-owned repository, the ruleset cannot use a GitHub Actions integration bypass actor, so it cannot safely include an `update` restriction while still allowing the promote workflow to write `production`. A deliberate direct fast-forward push to `production` is not hard-blocked by the ruleset. The production risk is still materially reduced because Cloudflare deploys production from `production`, while `main` produces previews only.
 
 ## One-Time Supervisor Apply
 
@@ -49,7 +51,7 @@ Use the `Rollback Production` workflow when the live domain needs to return to a
 2. Run `Rollback Production` manually.
 3. Enter the SHA and rollback reason.
 4. Approve the `client-production` environment hold.
-5. The workflow resets `production` to that SHA with `--force-with-lease`.
+5. The workflow checks out current `production`, restores the working tree to the known-good SHA, verifies the resulting tree matches that SHA, creates a new rollback commit, and pushes that commit to `production`.
 
 Emergency Cloudflare branch rollback, if the branch decouple itself must be backed out:
 
@@ -75,4 +77,9 @@ The gate verifies:
 
 ## Recommended Hardening
 
-The current repository uses a shared GitHub identity, so the structural branch decouple is the primary control and the environment approval click is secondary. Add Robert's personal GitHub account as a repository collaborator and make that account the required reviewer on `client-production`; then enable prevent-self-review for the environment.
+The environment currently defaults to the authenticated GitHub User as the required reviewer. Add Robert's personal GitHub account as a repository collaborator and make that account the required reviewer on `client-production`; then enable prevent-self-review for the environment.
+
+For stronger technical enforcement, either:
+
+- Migrate the repository to a GitHub organization, then add an `update` restriction with a valid GitHub Actions bypass actor so only the environment-gated workflows can write `production`.
+- Disable Cloudflare automatic production deployments and have the promote workflow trigger production deploys through the Cloudflare API after approval.
