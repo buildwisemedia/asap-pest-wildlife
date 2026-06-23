@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <script>/* bwm-ga-gate: suppress GA4 on CF Pages preview deploys + local dev; production (custom domain or canonical project.pages.dev) tracks normally */(function(){var id='G-8M705Z89TE';window.__bwmGaId=id;var h=location.hostname,p=h.split('.');if((/\.pages\.dev$/.test(h)&&p.length>3)||h==='localhost'||h==='127.0.0.1'||h==='0.0.0.0'||h===''){window['ga-disable-'+id]=true;}})();</script>
-<script src="/assets/js/bwm-analytics.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terms of Service | ASAP Pest &amp; Wildlife Removal</title>
@@ -21,14 +20,26 @@
   <script>window.__bwmLoadTypekit=function(){if(window.__bwmTypekitLoaded)return;window.__bwmTypekitLoaded=true;var s=document.createElement('script');s.async=true;s.src='https://use.typekit.net/dmg8gvn.js';s.onload=function(){try{Typekit.load({async:true});}catch(e){}};document.head.appendChild(s);};(function(){var start=function(){setTimeout(window.__bwmLoadTypekit,5000)};if(document.readyState==='complete')start();else window.addEventListener('load',start,{once:true});})();</script>
   <link rel="stylesheet" href="/assets/css/style.css">
   <!-- BWM analytics loader: delayed so third-party tags do not block first paint -->
-  
+  <script>
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}
+  window.__bwmLoadAnalytics=function(){
+    if(window.__bwmAnalyticsLoaded)return;window.__bwmAnalyticsLoaded=true;
+    var gtmId='GTM-K953HZ9R',gaId=window.__bwmGaId,clarityId='w91h0ljsbn',pixelId='26350078141329630';
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',gtmId);
+    var ga=document.createElement('script');ga.async=true;ga.src='https://www.googletagmanager.com/gtag/js?id='+gaId;document.head.appendChild(ga);gtag('js',new Date());gtag('config',gaId);
+    (function(c,l,a,r,t,y,i){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script',null,null,clarityId);
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init',pixelId);fbq('track','PageView',{}, {eventID:'pv_'+Date.now()+'_'+Math.random().toString(36).slice(2,8)});
+  };
+  (function(){var start=function(){setTimeout(window.__bwmLoadAnalytics,7000)};if(document.readyState==='complete')start();else window.addEventListener('load',start,{once:true});})();
+  </script>
   <script src="/attribution.js" defer></script>
 </head>
 <body class="bg-cream text-navy font-sans">
-  
+  <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM&#45;K953HZ9R"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  
+  <!-- End Google Tag Manager (noscript) -->
   <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=2635007814132963&#48;&ev=PageView&noscript=1"/></noscript>
   <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:bg-cream focus:text-navy focus:px-4 focus:py-2 focus:rounded-sm focus:shadow-lg">Skip to content</a>
   <header id="site-header" class="bg-cream px-[3.57vw] pt-[10px] pb-[6px]">

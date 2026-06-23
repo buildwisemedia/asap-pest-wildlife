@@ -217,20 +217,14 @@
       custom_data: customData,
       event_source_url: window.location.href
     };
-    // /api/capi is a Cloudflare Pages Function — present on prod + *.pages.dev previews,
-    // but not on a plain local static server. Skip the mirror on localhost to avoid a
-    // spurious same-origin 404 (the client-side fbq track above still fires).
-    var __h = location.hostname;
-    if (!(__h === 'localhost' || __h === '127.0.0.1' || __h === '0.0.0.0' || __h === '' || location.protocol === 'file:')) {
-      try {
-        fetch('/api/capi', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          keepalive: true,
-          body: JSON.stringify(payload)
-        }).catch(function () { /* best-effort */ });
-      } catch (_) { /* best-effort */ }
-    }
+    try {
+      fetch('/api/capi', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        keepalive: true,
+        body: JSON.stringify(payload)
+      }).catch(function () { /* best-effort */ });
+    } catch (_) { /* best-effort */ }
 
     return eventID;
   }

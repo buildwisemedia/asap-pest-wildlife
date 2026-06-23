@@ -31,5 +31,3 @@ pnpm-debug.log*
 
 # Local audit screenshots (large binaries, not source)
 _audit/
-
-_verification/
