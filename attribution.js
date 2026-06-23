@@ -217,14 +217,19 @@
       custom_data: customData,
       event_source_url: window.location.href
     };
-    try {
-      fetch('/api/capi', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        keepalive: true,
-        body: JSON.stringify(payload)
-      }).catch(function () { /* best-effort */ });
-    } catch (_) { /* best-effort */ }
+    // /api/capi is available on deployed hosts, not on a plain local static server.
+    // Skip the mirror locally to avoid same-origin 404 noise; the browser Pixel still fires.
+    var __h = location.hostname;
+    if (!(__h === 'localhost' || __h === '127.0.0.1' || __h === '0.0.0.0' || __h === '' || location.protocol === 'file:')) {
+      try {
+        fetch('/api/capi', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          keepalive: true,
+          body: JSON.stringify(payload)
+        }).catch(function () { /* best-effort */ });
+      } catch (_) { /* best-effort */ }
+    }
 
     return eventID;
   }
