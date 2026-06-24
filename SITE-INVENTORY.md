@@ -79,7 +79,7 @@
 Call now: 770-691-3636 Or Email us for quote
 ```
 - Phone link: tel:7706913636
-- Email link: mailto:info@wildliferemovalasap.com?subject=ASAP%20wildlife%20removal
+- Email link: mailto:info@removeasap.com?subject=ASAP%20wildlife%20removal
 
 ### Main Navigation (7 items)
 | Label | URL |
@@ -145,11 +145,11 @@ Learn more about our solutions for:
 |------|-------|
 | Phone (primary) | (770) 691-3636 |
 | Email (form display) | info@removeasap.com |
-| Email (mailto in nav) | info@wildliferemovalasap.com |
+| Email (mailto in nav) | info@removeasap.com |
 | Hours | 24 hours a day, 6 days a week (closed on Sundays) |
 | Service Area | Metro Atlanta & outside the perimeter, Georgia |
 | Physical Address | Not listed on website |
-| Google Maps listing | ASAP Wildlife Removal @ 33.734354, -84.242248 |
+| Google Maps listing | ASAP Pest & Wildlife Removal @ 33.734354, -84.242248 |
 | Google Reviews URL | https://www.google.com/maps/place/ASAP+Wildlife+Removal/@33.734354,-84.242248,10z/... |
 
 ---
@@ -264,7 +264,7 @@ SECTION: Contact/Estimate (dark navy background #212936)
 |--------|-------------|------|
 | Armadillo | As nocturnal animals, armadillos perform most activities -- foraging, eating, burrowing, mating -- at night. During the daylight hours, they spend up to 16 hours sleeping, usually in burrows. | `/wildlife/armadillo` |
 | Bat | While bats can eat tons of mosquitos, they can also spread diseases and illnesses if they are not properly removed. | `/wildlife/bats` |
-| Beaver | These orange tooth architect's are phenomenal sculptors of the land. While deeply admired, they can be a DAM nuisance, causing floods, cutting down tress and piling debris. | `/wildlife/beaver` |
+| Beaver | These orange-toothed architects are phenomenal sculptors of the land. While deeply admired, they can be a DAM nuisance, causing floods, cutting down trees and piling debris. | `/wildlife/beaver` |
 | Coyote | These canines may look like a neighborhood dog, however they can be a real threat to your pets and even yourself. | `/wildlife/coyote` |
 | Raccoon | While their mask can be considered cute to some, these villains love to break in and destroy whatever they can find. | `/wildlife/raccoon` |
 | Snake | Although snakes feed on pesky rodents that may be lurking in your home, they can prove a real threat to you. | `/wildlife/snake` |
@@ -351,7 +351,7 @@ SECTION: Contact/Estimate (dark navy background #212936)
 - H2: "Who is Asap?"
 - Body text:
   - "We are a family-run business based in Atlanta, Ga, operating in the Metro Atlanta area & outside the perimeter. We pride ourselves on our peace making as well as our accountability."
-  - "At ASAP Wildlife Removal, we provide a discreet and thorough service. We treat each property as if it were our own, leaving areas clean and as safe as possible."
+  - "At ASAP Pest & Wildlife Removal, we provide a discreet and thorough service. We treat each property as if it were our own, leaving areas clean and as safe as possible."
 
 #### Section 5: Reviews (single card)
 - H4: "Don't just take our word for it..."
@@ -372,7 +372,7 @@ SECTION: Contact/Estimate (dark navy background #212936)
 - Background SVG: `61d8f914de23d83a8f807806_careers-bg.svg`
 - H4: "Join ASAP's amazing team!"
 - P: "We give peace of mind one person at a time all while having fun. Want to join us? Send us your resume and we'll be in touch!"
-- CTA: "Apply now" -> mailto:info@wildliferemovalasap.com?subject=I%20want%20to%20work%20for%20ASAP!
+- CTA: "Apply now" -> mailto:info@removeasap.com?subject=I%20want%20to%20work%20for%20ASAP!
 
 #### Section 8: Contact/Estimate Form
 (Global)
@@ -409,7 +409,7 @@ SECTION: Contact/Estimate (dark navy background #212936)
 |--------|------------------|------|
 | Armadillo | As nocturnal animals, armadillos perform most activities -- foraging, eating, burrowing, mating -- at night. During the daylight hours, they spend up to 16 hours sleeping, usually in burrows. | `/wildlife/armadillo` |
 | Bat | While bats can eat tons of mosquitos, they can also spread diseases and illnesses if they are not properly removed. | `/wildlife/bats` |
-| Beaver | These orange tooth architect's are phenomenal sculptors of the land. While deeply admired, they can be a DAM nuisance, causing floods, cutting down tress and piling debris. | `/wildlife/beaver` |
+| Beaver | These orange-toothed architects are phenomenal sculptors of the land. While deeply admired, they can be a DAM nuisance, causing floods, cutting down trees and piling debris. | `/wildlife/beaver` |
 | Bees, Wasp, & Hornets | Food for thought -- 1 out of every 3 mouthfuls of our food depends on pollinators. While we love these insects, the thought of being stung isn't easy to digest. | `/wildlife/bees-wasp-hornets` |
 | Bird | Birds are a wonder to see in the air but when they encroach upon your space, their loud noises, disease and messes can make you pull out your hair. | `/wildlife/bird` |
 | Coyote | These canines may look like a neighborhood dog, however they can be a real threat to your pets and even yourself. | `/wildlife/coyote` |
@@ -527,7 +527,7 @@ SECTION: Contact/Estimate (dark navy background #212936)
 - H1: "Services"
 - CTA banner: "(770) 691-3636"
 - Subheading: "Complete Pest & Wildlife Control Service"
-- Body: "At ASAP Wildlife Removal, we believe in providing pest & wildlife control solutions that are reliable and get to the root of the problem. That's why we cover all aspects, from inspections to trapping. On top of that, we want to make sure unwanted visitors don't return, so we provide an effective pest & wildlife exclusion solutions. We are a family-run business that is readily available and accountable. We know how urgently you want to get rid of your pest & wildlife problem that's why we serve them an eviction letter ASAP! With our 5 star service, we can confidently say, we have the best pest and wildlife solutions for your needs."
+- Body: "At ASAP Pest & Wildlife Removal, we believe in providing pest & wildlife control solutions that are reliable and get to the root of the problem. That's why we cover all aspects, from inspections to trapping. On top of that, we want to make sure unwanted visitors don't return, so we provide an effective pest & wildlife exclusion solutions. We are a family-run business that is readily available and accountable. We know how urgently you want to get rid of your pest & wildlife problem that's why we serve them an eviction letter ASAP! With our 5 star service, we can confidently say, we have the best pest and wildlife solutions for your needs."
 
 #### Section 2: Trapping
 - H2: "Trapping"
@@ -546,7 +546,7 @@ SECTION: Contact/Estimate (dark navy background #212936)
   - "We have trusted, certified and discreet pest & wildlife control methods, that prevent unwanted visitors, from pests as noisy as roosters to those that are as quiet as mice!"
 
 #### Section 4: Recurring Service
-- H2: "Reocurring Service" [sic -- typo in original]
+- H2: "Recurring Service" [sic -- typo in original]
 - Subheading: "Expert Pest & Wildlife prevention"
 - Body:
   - "Recurring services are offered for almost every animal type. We recommend having a service to keep animals away after an invasion, but for those concerned about a potential threat, we provide preventative recurring services as well."
@@ -672,7 +672,7 @@ SECTION: Contact/Estimate (dark navy background #212936)
 - H2: "Peace control"
 - Body:
   - "If you have a rodent problem, you may be thinking, 'What Have I Done To Deserve This?' Well, you've come to the right place."
-  - "At ASAP Wildlife Removal, we know that if you have a rodent problem, you want to resolve it as fast as you can. Well, now you're just a phone call away!"
+  - "At ASAP Pest & Wildlife Removal, we know that if you have a rodent problem, you want to resolve it as fast as you can. Well, now you're just a phone call away!"
   - "Every rodent problem is different, so we offer custom-designed solutions, with the main focus of getting to the source of the problem, preventing future issues and ultimately delivering peace of mind."
 
 #### Section 3: Service Process (4 cards)
@@ -700,7 +700,7 @@ SECTION: Contact/Estimate (dark navy background #212936)
 - H2: "Peace control"
 - Body:
   - "Yup, The buzzing took you to infinity and BEEyond. You may be thinking, 'Why did they choose this home?' There are multiple reasons why and we're here to figure it out!"
-  - "At ASAP Wildlife Removal, we know that if you have a stinging insect problem, you want to resolve it as fast as you can. Well, now you're just a phone call away."
+  - "At ASAP Pest & Wildlife Removal, we know that if you have a stinging insect problem, you want to resolve it as fast as you can. Well, now you're just a phone call away."
   - "Every stinging insect problem is different, so we offer custom-designed solutions, with the main focus of getting to the source of the problem, preventing future issues and ultimately delivering peace of mind."
 
 #### Section 3: Service Process (4 cards)
@@ -722,7 +722,7 @@ All 21 wildlife detail pages follow this identical template structure:
 #### Section 1: Animal Profile (dark navy background)
 - Animal name (large text)
 - Scientific name (e.g., "Procyon lotor")
-- SEO intro paragraph: "Discover the #1 {Animal} removal services in Atlanta with ASAP Wildlife Removal. Unwanted {Animal} can quickly become a nuisance, causing damage to your property and posing potential health risks."
+- SEO intro paragraph: "Discover the #1 {Animal} removal services in Atlanta with ASAP Pest & Wildlife Removal. Unwanted {Animal} can quickly become a nuisance, causing damage to your property and posing potential health risks."
 - Trust paragraph: "Trust our experienced team to handle your {Animal} infestation promptly and professionally."
 - Facts label: "12 Interesting Facts about {Animal}"
 
@@ -930,8 +930,8 @@ Medium accounts: `@ASAPwildlife` (newer posts) and `@info_43708` (older posts)
 5. **Peace-of-mind-from pages** follow a similar template (hero + peace control + 4 service cards + form).
 6. **No footer** in the traditional sense -- the contact section IS the footer.
 7. **CSS text effects** use `-webkit-text-stroke` for outlined heading text (cream on dark, orange on cream).
-8. **Typos preserved** in original: "Speacialist" (specialist), "Reocurring" (Recurring), "tress" (trees), "architect's" (architects).
-9. **Two email addresses:** `info@removeasap.com` (displayed on site) and `info@wildliferemovalasap.com` (used in mailto links in nav).
+8. **Known typo cleanup:** the audit batch corrected the recurring-service heading and the beaver-description spelling and grammar issues. "Speacialist" remains in the historical inventory and should be handled in a separate copy pass.
+9. **Canonical email address:** `info@removeasap.com` is used for visible site text and mailto links.
 10. **Image CDN base URLs:**
     - Site assets: `https://cdn.prod.website-files.com/61a68c3ac2bbdc9f4c356d55/`
     - CMS items: `https://cdn.prod.website-files.com/61a6f04dba9e11e400c344e8/`

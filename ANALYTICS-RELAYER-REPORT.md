@@ -23,7 +23,7 @@ Scope: data/tracking only. No visible hero, nav, animal grid, CTA, page-set, or 
 
 ## Skipped
 
-- Did not normalize visible email text from `info@wildliferemovalasap.com` to `info@removeasap.com`. That correction would change visible page content, and this task's hard constraint was data/tracking only.
+- Historical note: this earlier data/tracking pass did not normalize the visible nav email. The audit batch now uses `info@removeasap.com` as the canonical sitewide email.
 - Did not edit pre-existing visible vendor-name copy in `lead-flow/index.html`. The diff for that file is head-only. Sampled client-facing pages passed the vendor-name grep.
 
 ## Changed Files

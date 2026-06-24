@@ -22,7 +22,7 @@
       return entry && entry.event === 'gtm.js';
     });
     var hasGaConfig = window.dataLayer.some(function (entry) {
-      return Array.isArray(entry) && entry[0] === 'config' && entry[1] === 'G-8M705Z89TE';
+      return entry && entry[0] === 'config' && entry[1] === 'G-8M705Z89TE';
     });
 
     // Google Tag Manager
