@@ -293,7 +293,7 @@ SECTION: Contact/Estimate (dark navy background #212936)
 - H2: "Our Mission"
 - Body text (4 paragraphs):
   - "ASAP Pest & Wildlife Removal is a nuisance control service with a fresh approach, redesigned for the 21st century."
-  - "We provide 'peace of mind, one person at a time' through a comprehensive range of holistic solutions."
+  - "We help people feel safe at home again through a full range of wildlife and pest solutions."
   - "Our fully qualified team handles all varieties of residential and commercial work with sensitivity and dedication."
   - "Our goal is to provide, you guessed it -- Peace Of Mind. We do this through inspecting, trapping and excluding unwanted pests & wildlife, with minimum disruption to your home or business."
   - "We currently cover all areas of Metro Atlanta & outside the perimeter. Call today to find out more."
@@ -331,7 +331,7 @@ SECTION: Contact/Estimate (dark navy background #212936)
 - Subtext: "ASAP Pest & Wildlife Removal is a pest control service with a fresh approach, redesigned for the 21st century."
 - H2: "Our aim"
 - Body text:
-  - "We provide 'peace of mind, one person at a time' through a comprehensive range of holistic solutions."
+  - "We help people feel safe at home again through a full range of wildlife and pest solutions."
   - "Our fully qualified team handles all varieties of residential and commercial work with sensitivity and dedication."
   - "Our goal is to provide, you guessed it -- Peace Of Mind. We do this through inspecting, trapping and excluding unwanted pests & wildlife, with minimum disruption to your home or business."
 
@@ -371,7 +371,7 @@ SECTION: Contact/Estimate (dark navy background #212936)
 #### Section 7: Careers / Join Us
 - Background SVG: `61d8f914de23d83a8f807806_careers-bg.svg`
 - H4: "Join ASAP's amazing team!"
-- P: "We give peace of mind one person at a time all while having fun. Want to join us? Send us your resume and we'll be in touch!"
+- P: "We help people feel safe at home while having fun. Want to join us? Send us your resume and we'll be in touch!"
 - CTA: "Apply now" -> mailto:info@wildliferemovalasap.com?subject=I%20want%20to%20work%20for%20ASAP!
 
 #### Section 8: Contact/Estimate Form
@@ -542,7 +542,7 @@ SECTION: Contact/Estimate (dark navy background #212936)
 - Subheading: "Expert Pest & Wildlife Exclusion"
 - Body:
   - "We understand that nobody wants to have an infestation, and that's why we're on hand to pest-proof your property and keep those unwanted visitors at-bay."
-  - "Exclusions are key to helping prevent pests from entering or returning to your property. We aim to seal the main entry points as well as any potential areas that may become a problem down the line. And rest assured that we always use durable long-lasting material that withstand the test of time."
+  - "Exclusions are key to helping prevent pests from entering or returning to your property. We aim to seal the main entry points as well as any potential areas that may become a problem down the line. We use durable, long-lasting materials built to stand up over time."
   - "We have trusted, certified and discreet pest & wildlife control methods, that prevent unwanted visitors, from pests as noisy as roosters to those that are as quiet as mice!"
 
 #### Section 4: Recurring Service
@@ -618,7 +618,7 @@ SECTION: Contact/Estimate (dark navy background #212936)
 - H1: "Get in touch"
 - H1 (line 2, outlined cream): "With our peace makers"
 - CTA banner: "(770)691-3636"
-- Body: "ASAP Pest & Wildlife Removal is a nuisance control service with a fresh approach, redesigned for the 21st century. We provide peace of mind through a comprehensive range of holistic solutions. Our fully qualified team handles all varieties of residential and commercial work with sensitivity and dedication. Our goal is to provide, you guessed it -- Peace Of Mind. We do this through inspecting, trapping and excluding unwanted pests & wildlife, with minimum disruption to your home or business. We currently cover all areas of Metro Atlanta & Outside the Perimeter. Call today to find out more."
+- Body: "ASAP Pest & Wildlife Removal is a nuisance control service with a fresh approach, redesigned for the 21st century. We help people feel safe again through a full range of wildlife and pest solutions. Our fully qualified team handles all varieties of residential and commercial work with sensitivity and dedication. Our goal is to provide, you guessed it -- Peace Of Mind. We do this through inspecting, trapping and excluding unwanted pests & wildlife, with minimum disruption to your home or business. We currently cover all areas of Metro Atlanta & Outside the Perimeter. Call today to find out more."
 
 #### Section 2: Help Intro
 - H1 (outlined cream): "We're here to help"
@@ -645,10 +645,10 @@ SECTION: Contact/Estimate (dark navy background #212936)
   - Mouse & Rat -> `/wildlife/mouse-rat`
 
 #### Section 3: Warranty Details (4 cards)
-- **Scope of Coverage** — Our warranty covers all exclusion work completed on your property. We stand by the excellence of our services and the durability of our solutions.
-- **Duration** — For your peace of mind, our warranty starts off for 1 year. We offer the option to re-warranty your services every year. This ensures ongoing coverage and protection for your investment.
-- **Re-Warranty Process** — As part of our commitment to your ongoing satisfaction, we offer an annual re-warranty process. We will contact you when your initial warranty is about to expire and guide you through the process to extend your coverage.
-- **Claims Process** — Should you encounter any issues covered by our warranty, our efficient claims process is designed to make resolution seamless. Contact our dedicated customer support team, and we'll promptly guide you through the next steps.
+- **Scope of Coverage** — Our warranty covers the exclusion work we do — the spots we seal to keep animals out. If a sealed entry point fails during the warranty term, we come back and fix it at no charge.
+- **Duration** — The warranty lasts one year. You can renew it each year so your home stays covered.
+- **Re-Warranty Process** — We reach out before your year is up and walk you through renewing. It takes a quick visit to check the seals, then your coverage keeps going.
+- **Claims Process** — If something covered by the warranty goes wrong, just call us at (770) 691-3636. We will set up a visit and take care of it.
 
 #### Section 4: Cross-links
 - "Learn more about our solutions for:" Bugs, Rodents, Beavers, Stinging Insects
@@ -673,13 +673,13 @@ SECTION: Contact/Estimate (dark navy background #212936)
 - Body:
   - "If you have a rodent problem, you may be thinking, 'What Have I Done To Deserve This?' Well, you've come to the right place."
   - "At ASAP Wildlife Removal, we know that if you have a rodent problem, you want to resolve it as fast as you can. Well, now you're just a phone call away!"
-  - "Every rodent problem is different, so we offer custom-designed solutions, with the main focus of getting to the source of the problem, preventing future issues and ultimately delivering peace of mind."
+  - "Every rodent problem is different, so we offer custom-designed solutions, with the main focus of getting to the source of the problem, preventing future issues and helping your home feel safe again."
 
 #### Section 3: Service Process (4 cards)
 - **Inspection** — Our inspections are different from your typical. We don't just do a quick glance, we conscientiously examine and evaluate what's disrupting your peace.
 - **Trapping** — When it comes to catching you target problem, we analyze how they're interacting with your environment. Our multiple trapping methods allow us to position traps in relation to their movement patterns, droppings and entry points.
-- **Exclusion** — Finding entry points along with proofing your dwelling place is one of our specialties. We make it our priority to seal those hard-to-reach areas. Rest assured that we will give you peace of mind that your property is fully covered!
-- **Prevention** — We offer an on-going population control service. This makes us one step ahead of whatever finds its way around your property, giving you long lasting peace of mind.
+- **Exclusion** — Finding entry points along with proofing your dwelling place is one of our specialties. We make it our priority to seal those hard-to-reach areas. We seal the hard-to-reach areas so your property is covered.
+- **Prevention** — We offer an on-going population control service. This makes us one step ahead of whatever finds its way around your property, giving you long-lasting relief.
 
 #### Section 4: Contact/Estimate Form
 (Global)
@@ -701,13 +701,13 @@ SECTION: Contact/Estimate (dark navy background #212936)
 - Body:
   - "Yup, The buzzing took you to infinity and BEEyond. You may be thinking, 'Why did they choose this home?' There are multiple reasons why and we're here to figure it out!"
   - "At ASAP Wildlife Removal, we know that if you have a stinging insect problem, you want to resolve it as fast as you can. Well, now you're just a phone call away."
-  - "Every stinging insect problem is different, so we offer custom-designed solutions, with the main focus of getting to the source of the problem, preventing future issues and ultimately delivering peace of mind."
+  - "Every stinging insect problem is different, so we offer custom-designed solutions, with the main focus of getting to the source of the problem, preventing future issues and helping your home feel safe again."
 
 #### Section 3: Service Process (4 cards)
 - **Inspection** — Our inspections are different from your typical. We don't just do a quick glance, we conscientiously examine and evaluate what's disrupting your peace.
-- **Removal** — When it comes to removing stinging insects, we analyze how they interact with your environment. Our methodology allow us to extract the nest and insects safely without endangering kids, pets or neighbors. We always perform a live removal of honeybees. These powerful pollinators help produce 80% of the world plants, so while we want to give you peace of mind from the endless buzzing sounds we also want to honor the bees that feed us!
-- **Exclusion** — Finding entry points along with proofing any potential openings is one of our specialties. We make it our priority to seal those hard-to-reach areas. Rest assured that we will give you peace of mind that your property is fully covered!
-- **Prevention** — We offer an on-going stinging insect control service. This makes us one step ahead of whatever finds its way around your property, giving you long lasting peace of mind.
+- **Removal** — When it comes to removing stinging insects, we analyze how they interact with your environment. Our methodology allow us to extract the nest and insects safely without endangering kids, pets or neighbors. We always perform a live removal of honeybees. These powerful pollinators help produce 80% of the world plants, so while we want to bring relief from the endless buzzing sounds we also want to honor the bees that feed us!
+- **Exclusion** — Finding entry points along with proofing any potential openings is one of our specialties. We make it our priority to seal those hard-to-reach areas. We seal the hard-to-reach areas so your property is covered.
+- **Prevention** — We offer an on-going stinging insect control service. This makes us one step ahead of whatever finds its way around your property, giving you long-lasting relief.
 
 #### Section 4: Contact/Estimate Form
 (Global)
