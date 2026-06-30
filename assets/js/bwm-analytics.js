@@ -22,7 +22,7 @@
       return entry && entry.event === 'gtm.js';
     });
     var hasGaConfig = window.dataLayer.some(function (entry) {
-      return Array.isArray(entry) && entry[0] === 'config' && entry[1] === 'G-8M705Z89TE';
+      return entry && typeof entry.length === 'number' && entry[0] === 'config' && entry[1] === 'G-8M705Z89TE';
     });
 
     // Google Tag Manager
@@ -78,6 +78,21 @@
     window.fbq('track', 'PageView', {}, {
       eventID: 'pv_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8)
     });
+
+    document.addEventListener('click', function (event) {
+      var link = event.target && typeof event.target.closest === 'function'
+        ? event.target.closest('a[href^="tel:"]')
+        : null;
+      if (!link) return;
+      var href = link.getAttribute('href') || '';
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'phone_call', {
+          event_category: 'engagement',
+          event_label: href
+        });
+      }
+      if (window.fbq) window.fbq('track', 'Contact');
+    });
   }
 
   try {
@@ -90,7 +105,7 @@
     window.__bwmLoadAnalytics = loadAnalytics;
   }
 
-  var start = function () { setTimeout(loadAnalytics, 7000); };
+  var start = function () { setTimeout(loadAnalytics, 1500); };
   if (document.readyState === 'complete') start();
   else window.addEventListener('load', start, { once: true });
 })();
