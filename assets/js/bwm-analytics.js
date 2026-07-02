@@ -2,7 +2,7 @@
  * One loader for every page. Delayed after load so tags do not block first paint.
  * - GTM: GTM-K953HZ9R
  * - GA4: G-8M705Z89TE
- * - Clarity: w91h0ljsbn
+ * - Clarity: whpri6g1yi
  * - Meta Pixel: 26350078141329630
  * Reddit pixel stays inline on pages where the approved base already has it.
  * The inline bwm-ga-gate script runs before this loader and suppresses GA4 on
@@ -54,7 +54,7 @@
       c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
       t = l.createElement(r);
       t.async = 1;
-      t.src = 'https://www.clarity.ms/tag/w91h0ljsbn';
+      t.src = 'https://www.clarity.ms/tag/whpri6g1yi';
       y = l.getElementsByTagName(r)[0];
       y.parentNode.insertBefore(t, y);
     })(window, document, 'clarity', 'script');
