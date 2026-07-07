@@ -28,3 +28,12 @@ Actual enforcement after this fix:
 - Blessed update path: environment-gated Promote/Rollback workflows.
 
 Residual on user-owned GitHub repositories: the ruleset cannot hard-block a deliberate direct fast-forward push to `production` without also blocking the workflow path. Future hardening options are to migrate the repository to a GitHub organization and add an Actions-bypass `update` restriction, or disable Cloudflare automatic production deployments and trigger production deploys from the promote workflow through the Cloudflare API.
+
+## 2026-06-29 - Connector Audit Cell 20 Remediation
+
+Scoped fix for the ASAP connector audit P0 behavioral finding on cell 20, mobile CTA visibility.
+
+- Baseline live audit cell reproduced the drift: homepage phone CTA was `189x34` and missing `data-cta-source`.
+- Added `data-cta-source="hero-phone"` to the existing first-viewport homepage phone CTA.
+- Added a narrow inline style override for that CTA so its tap target has `min-height: 44px`.
+- No brand, voice, copy, Cal.com, Clarity, OG, GA4, or bot-signal changes were made.
