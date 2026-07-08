@@ -22,7 +22,10 @@
       return entry && entry.event === 'gtm.js';
     });
     var hasGaConfig = window.dataLayer.some(function (entry) {
-      return Array.isArray(entry) && entry[0] === 'config' && entry[1] === 'G-8M705Z89TE';
+      // gtag() pushes an arguments object (array-like, NOT a real Array), so
+      // Array.isArray() was always false here — the dedup never matched and GA4
+      // double-fired on pages that also carry the inline gtag config block.
+      return entry && entry[0] === 'config' && entry[1] === 'G-8M705Z89TE';
     });
 
     // Google Tag Manager
@@ -78,6 +81,15 @@
     window.fbq('track', 'PageView', {}, {
       eventID: 'pv_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8)
     });
+
+    // Click-to-call conversion tracking — calls are the primary conversion path.
+    // Webflow's own data-wf-ao-click tracking never reaches GA4 or Meta, so wire it here.
+    document.querySelectorAll('a[href^="tel:"]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        window.gtag('event', 'phone_call', { event_category: 'engagement', event_label: a.getAttribute('href') });
+        if (window.fbq) window.fbq('track', 'Contact');
+      });
+    });
   }
 
   try {
@@ -90,7 +102,9 @@
     window.__bwmLoadAnalytics = loadAnalytics;
   }
 
-  var start = function () { setTimeout(loadAnalytics, 7000); };
+  // 1.5s is enough to stay off the critical render path without missing the many
+  // urgent visitors who tap-to-call and close the tab within the first few seconds.
+  var start = function () { setTimeout(loadAnalytics, 1500); };
   if (document.readyState === 'complete') start();
   else window.addEventListener('load', start, { once: true });
 })();
