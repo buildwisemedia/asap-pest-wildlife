@@ -70,8 +70,11 @@
     form.__asapLeadFlowBound = true;
 
     form.addEventListener('submit', async function (event) {
+      // preventDefault only — Webflow's own submit handler must still run so
+      // the lead also lands in the client's Webflow submissions (their
+      // automation chain hangs off it). Same contract as the per-page
+      // homepage-reference scripts.
       event.preventDefault();
-      event.stopImmediatePropagation();
 
       var submit = form.querySelector('[type="submit"]');
       var wrap = closestFormWrap(form);
@@ -115,11 +118,29 @@
       } finally {
         if (submit) submit.disabled = false;
       }
-    }, true);
+    });
+  }
+
+  // Homepage hides the "Type other" input until the Issue dropdown is set to
+  // "Other" (a homepage-only Webflow interaction). Replicate that behavior on
+  // every page so all forms look and act like the homepage form.
+  function bindOthersToggle(form) {
+    var sel = form.querySelector('select[name="Issue"]');
+    var other = form.querySelector('input[name="Others_Input"]');
+    if (!sel || !other || form.__bwmOthersBound) return;
+    form.__bwmOthersBound = true;
+    var sync = function () {
+      other.style.display = /^other$/i.test(sel.value) ? 'block' : 'none';
+    };
+    sel.addEventListener('change', sync);
+    sync();
   }
 
   function init() {
-    Array.prototype.forEach.call(document.querySelectorAll('form'), bindForm);
+    Array.prototype.forEach.call(document.querySelectorAll('form'), function (form) {
+      bindForm(form);
+      bindOthersToggle(form);
+    });
   }
 
   if (document.readyState === 'complete') {

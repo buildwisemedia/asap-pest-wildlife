@@ -28,3 +28,21 @@ Actual enforcement after this fix:
 - Blessed update path: environment-gated Promote/Rollback workflows.
 
 Residual on user-owned GitHub repositories: the ruleset cannot hard-block a deliberate direct fast-forward push to `production` without also blocking the workflow path. Future hardening options are to migrate the repository to a GitHub organization and add an Actions-bypass `update` restriction, or disable Cloudflare automatic production deployments and trigger production deploys from the promote workflow through the Cloudflare API.
+
+## 2026-07-15 - Form Routing Parity (client-reported: inner-page forms not reaching Webflow submissions)
+
+Client (John, 7/8 + 7/13 + 7/15) asked for every form to behave like the homepage form, whose submissions land in their Webflow submissions panel and fire their automation chain (email -> SMS -> Monday.com). Diagnosis:
+
+- Homepage inline handler used `preventDefault()` only, so the Webflow runtime's own submit still ran -> dual delivery (BWM worker + Webflow). That was the only correct page.
+- about/blog/contact/services/warranty-assurance inline handlers added `stopImmediatePropagation()` (+ capture), which killed Webflow's handler -> leads reached only the BWM worker.
+- wildlife/* and peace-of-mind-from/* used a third, document-level handler that never set `__bwmBound`, so `assets/js/asap-lead-flow.js` (fallback, also capture+stopProp) bound too and blocked Webflow.
+- commercial-services / pest-control-services / wildlife index had no inline handler; the fallback blocked Webflow there as well.
+- Visual mismatch the client screenshotted: the homepage hides `Others_Input` ("Type other") until Issue=Other via a homepage-only Webflow interaction chunk; all other pages showed the field naked.
+
+Changes:
+- Removed `stopImmediatePropagation` + capture flag from the 5 divergent inline handlers (now byte-equivalent to the homepage contract, per-page `source_form_type` labels kept).
+- Replaced the document-level variant on 24 wildlife/peace pages with the homepage-pattern handler; binds at parse time and respects `__asapLeadFlowBound` so the fallback can never double-post.
+- `assets/js/asap-lead-flow.js`: dropped stopProp/capture (Webflow must run); added a site-wide `Others_Input` toggle replicating the homepage show/hide on every page.
+- lead-flow/ LP untouched (own gated form, `data-no-bwm-lead-flow` opt-out).
+
+Verified locally (iframe harness, fetch/XHR instrumented): every page class = exactly 1 BWM worker post + 1 Webflow post, done-message shown, `Others_Input` hidden until Other. Real e2e test submission from /about/ accepted by the Webflow API (their panel + automation). Client's own 7/15 13:43 test appears in lead_submissions with `about-webflow-reference`, confirming the worker leg was never the gap.

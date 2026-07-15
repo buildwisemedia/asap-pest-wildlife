@@ -78,7 +78,6 @@ window.__bwmLoadAnalytics=function(){
     form.__bwmBound=true;
     form.addEventListener('submit', async function(e){
       e.preventDefault();
-      e.stopImmediatePropagation();
       var submit=form.querySelector('[type="submit"]');
       var done=form.parentElement && form.parentElement.querySelector('.w-form-done');
       var fail=form.parentElement && form.parentElement.querySelector('.w-form-fail');
@@ -105,7 +104,7 @@ window.__bwmLoadAnalytics=function(){
       } finally {
         if(submit) submit.disabled=false;
       }
-    }, true);
+    });
   }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', bindBwmWebflowForm);
   else bindBwmWebflowForm();
