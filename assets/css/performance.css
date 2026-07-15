@@ -1,0 +1,26 @@
+/* Performance-only asset overrides. Visuals mirror the approved Webflow artwork. */
+.home-hero-background {
+  background-image: url('/assets/images/backgrounds/home-hero-bg.webp') !important;
+}
+
+.home-mission-background {
+  background-image: url('/assets/images/backgrounds/home-mission-bg.webp') !important;
+}
+
+.about-hero-background {
+  background-image: url('/assets/images/backgrounds/about-hero-bg.svg') !important;
+}
+
+.about-aim-background {
+  background-image: url('/assets/images/backgrounds/about-bg.webp') !important;
+}
+
+.careers-background {
+  background-image: url('/assets/images/backgrounds/careers-bg.webp') !important;
+}
+
+@media (max-width: 767px) {
+  .home-hero-background {
+    background-image: url('/assets/images/backgrounds/home-hero-bg-mobile.webp') !important;
+  }
+}

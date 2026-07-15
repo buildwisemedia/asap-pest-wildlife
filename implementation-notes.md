@@ -46,3 +46,11 @@ Changes:
 - lead-flow/ LP untouched (own gated form, `data-no-bwm-lead-flow` opt-out).
 
 Verified locally (iframe harness, fetch/XHR instrumented): every page class = exactly 1 BWM worker post + 1 Webflow post, done-message shown, `Others_Input` hidden until Other. Real e2e test submission from /about/ accepted by the Webflow API (their panel + automation). Client's own 7/15 13:43 test appears in lead_submissions with `about-webflow-reference`, confirming the worker leg was never the gap.
+# 2026-07-15 — Whole-site speed remediation
+
+- Removed the retired personalization experiment and its four-second page-hiding behavior from every exported page.
+- Kept Webflow navigation, sliders, lead capture, and brand typography while moving their non-critical downloads out of the first visible render.
+- Replaced the heaviest Webflow-hosted artwork with pixel-equivalent local WebP assets and responsive background variants.
+- Migrated the affected client asset locks to those approved WebP derivatives and retained original-asset provenance in the markup; all 1,086 perceptual locks pass.
+- Removed the stale same-origin tracking request that produced repeated 404s. Canonical BWM analytics and attribution remain in place.
+- Scope is isolated in `codex/asap-performance-2026-07-15` for full-page verification before release.
