@@ -1,0 +1,466 @@
+<!doctype html>
+<!-- @r020-exempt: functional rating form page, no marketing imagery -->
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How Did We Do? | ASAP Pest &amp; Wildlife Removal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1B2A4A;
+      --cream: #F2EDDC;
+      --orange: #E87A2E;
+      --charcoal: #1B1B1B;
+      --text: #212121;
+      --light: #F0F0F0;
+      --white: #FFFFFF;
+      --muted: #6B6A65;
+      --line: #D8D0BA;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      min-width: 320px;
+      background: var(--cream);
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      background: var(--cream);
+      color: var(--text);
+      font-family: "Inter", Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    .site-header {
+      background: var(--navy);
+      color: var(--light);
+      box-shadow: 0 2px 12px rgba(27, 27, 27, 0.14);
+    }
+
+    .header-inner {
+      width: min(100% - 32px, 720px);
+      min-height: 78px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 52px;
+    }
+
+    .logo {
+      display: block;
+      width: 112px;
+      height: auto;
+    }
+
+    .header-phone {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      color: var(--orange);
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+      white-space: nowrap;
+    }
+
+    main {
+      width: 100%;
+      flex: 1;
+      display: grid;
+      place-items: center;
+      padding: 28px 16px 36px;
+    }
+
+    .rating-card {
+      width: min(100%, 620px);
+      padding: 30px 20px;
+      background: var(--white);
+      border: 1px solid rgba(27, 42, 74, 0.1);
+      border-radius: 22px;
+      box-shadow: 0 16px 40px rgba(27, 42, 74, 0.12);
+      text-align: center;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+      color: var(--navy);
+      font-family: "Poppins", Arial, sans-serif;
+      font-weight: 700;
+      line-height: 1.18;
+    }
+
+    h1 {
+      font-size: clamp(32px, 9vw, 48px);
+    }
+
+    h2 {
+      font-size: clamp(26px, 7vw, 34px);
+    }
+
+    .intro {
+      max-width: 34ch;
+      margin: 10px auto 22px;
+      color: #4C4B47;
+    }
+
+    .stars {
+      width: min(100%, 390px);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 4px;
+    }
+
+    .star-button {
+      min-width: 0;
+      min-height: 58px;
+      padding: 6px 3px;
+      display: grid;
+      place-items: center;
+      border: 2px solid transparent;
+      border-radius: 12px;
+      background: transparent;
+      color: #C4BDAA;
+      cursor: pointer;
+      transition: color 150ms ease, background-color 150ms ease, transform 150ms ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .star-button svg {
+      width: min(100%, 48px);
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 2px 1px rgba(27, 27, 27, 0.1));
+    }
+
+    .star-button:hover,
+    .star-button.is-active {
+      color: var(--orange);
+    }
+
+    .star-button:hover {
+      background: #FFF5ED;
+      transform: translateY(-2px);
+    }
+
+    .star-button:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible,
+    .button:focus-visible,
+    a:focus-visible {
+      outline: 3px solid var(--orange);
+      outline-offset: 3px;
+    }
+
+    .response-panel {
+      margin-top: 28px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+    }
+
+    .thank-you {
+      margin: 10px auto 20px;
+      color: #4C4B47;
+    }
+
+    .button {
+      width: 100%;
+      min-height: 58px;
+      padding: 14px 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      border-radius: 12px;
+      background: var(--orange);
+      color: var(--text);
+      font-weight: 800;
+      line-height: 1.25;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 8px 18px rgba(232, 122, 46, 0.22);
+    }
+
+    .button:hover {
+      background: #D96E26;
+    }
+
+    form {
+      margin-top: 22px;
+      text-align: left;
+    }
+
+    .field {
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--navy);
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      min-height: 54px;
+      padding: 13px 14px;
+      border: 2px solid #B9B19C;
+      border-radius: 10px;
+      background: var(--white);
+      color: var(--text);
+      font-size: 18px;
+    }
+
+    textarea {
+      min-height: 132px;
+      resize: vertical;
+    }
+
+    .w-form-done,
+    .w-form-fail {
+      margin-top: 18px;
+      padding: 16px;
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    .w-form-done {
+      background: var(--navy);
+      color: var(--light);
+    }
+
+    .w-form-fail {
+      border: 2px solid var(--orange);
+      background: #FFF5ED;
+      color: var(--text);
+    }
+
+    .w-form-fail a {
+      color: var(--navy);
+      font-weight: 800;
+    }
+
+    .public-review-link {
+      margin: 18px auto 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .public-review-link a {
+      color: var(--navy);
+      font-weight: 700;
+      text-underline-offset: 3px;
+    }
+
+    .site-footer {
+      padding: 18px 16px;
+      background: var(--charcoal);
+      color: var(--light);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .site-footer p {
+      margin: 0;
+    }
+
+    .site-footer a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      color: var(--orange);
+      font-weight: 700;
+      text-underline-offset: 3px;
+    }
+
+    @media (min-width: 560px) {
+      .rating-card {
+        padding: 44px;
+      }
+
+      .button {
+        width: auto;
+        min-width: 260px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo-link" href="/" aria-label="ASAP Pest and Wildlife Removal home">
+        <img class="logo" src="/assets/images/logos/logo-orange-tagline.png" alt="ASAP Pest &amp; Wildlife Removal">
+      </a>
+      <a class="header-phone" href="tel:7704501744">(770) 450-1744</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="rating-card" aria-labelledby="page-title">
+      <h1 id="page-title">How did we do?</h1>
+      <p class="intro">Tap a star to rate your visit.</p>
+
+      <div class="stars" role="group" aria-label="Choose a rating from 1 to 5 stars">
+        <button class="star-button" type="button" data-rating="1" aria-label="1 star" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 1.9 3.1 6.28 6.93 1.01-5.01 4.88 1.18 6.9L12 17.71l-6.2 3.26 1.18-6.9-5.01-4.88L8.9 8.18 12 1.9Z"/></svg>
+        </button>
+        <button class="star-button" type="button" data-rating="2" aria-label="2 stars" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 1.9 3.1 6.28 6.93 1.01-5.01 4.88 1.18 6.9L12 17.71l-6.2 3.26 1.18-6.9-5.01-4.88L8.9 8.18 12 1.9Z"/></svg>
+        </button>
+        <button class="star-button" type="button" data-rating="3" aria-label="3 stars" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 1.9 3.1 6.28 6.93 1.01-5.01 4.88 1.18 6.9L12 17.71l-6.2 3.26 1.18-6.9-5.01-4.88L8.9 8.18 12 1.9Z"/></svg>
+        </button>
+        <button class="star-button" type="button" data-rating="4" aria-label="4 stars" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 1.9 3.1 6.28 6.93 1.01-5.01 4.88 1.18 6.9L12 17.71l-6.2 3.26 1.18-6.9-5.01-4.88L8.9 8.18 12 1.9Z"/></svg>
+        </button>
+        <button class="star-button" type="button" data-rating="5" aria-label="5 stars" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 1.9 3.1 6.28 6.93 1.01-5.01 4.88 1.18 6.9L12 17.71l-6.2 3.26 1.18-6.9-5.01-4.88L8.9 8.18 12 1.9Z"/></svg>
+        </button>
+      </div>
+
+      <div id="five-star-panel" class="response-panel" hidden>
+        <h2 tabindex="-1">Thank you!</h2>
+        <p class="thank-you">We are glad we could help. Your kind words mean a lot to our team.</p>
+        <a class="button" href="https://search.google.com/local/writereview?placeid=ChIJV-ndmxkd9YgRcgzlBLBNemc">Share it on Google</a>
+      </div>
+
+      <div id="follow-up-panel" class="response-panel" hidden>
+        <h2 tabindex="-1">We want to make it right</h2>
+        <p class="thank-you">Tell us what went wrong. We will call you soon.</p>
+
+        <div class="w-form">
+          <form data-bwm-source-form-type="rating-followup" method="post">
+            <div class="field">
+              <label for="rating-name">Name</label>
+              <input id="rating-name" type="text" name="Name" autocomplete="name">
+            </div>
+
+            <div class="field">
+              <label for="rating-phone">Best number to call you back</label>
+              <input id="rating-phone" type="tel" name="Phone" autocomplete="tel" inputmode="tel" required>
+            </div>
+
+            <div class="field">
+              <label for="rating-message">What happened?</label>
+              <textarea id="rating-message" name="Message" required></textarea>
+            </div>
+
+            <input id="rating-value" type="hidden" name="rating" value="">
+            <input type="text" name="website" value="" autocomplete="off" tabindex="-1" aria-hidden="true" style="display:none">
+            <button class="button" type="submit">Send my note</button>
+          </form>
+
+          <div class="w-form-done" style="display:none">Thank you. We got your note and will call you soon.</div>
+          <div class="w-form-fail" style="display:none">We could not send your note. Please call <a href="tel:7704501744">(770) 450-1744</a>.</div>
+        </div>
+
+        <p class="public-review-link">You can also <a href="https://search.google.com/local/writereview?placeid=ChIJV-ndmxkd9YgRcgzlBLBNemc">share your experience publicly on Google</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Need help? Call <a href="tel:7704501744">(770) 450-1744</a>.</p>
+  </footer>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var reviewUrl = "https://search.google.com/local/writereview?placeid=ChIJV-ndmxkd9YgRcgzlBLBNemc";
+      var params = new URLSearchParams(window.location.search);
+      var score = Number(params.get("score"));
+
+      if (score >= 5 && params.get("go") === "1") {
+        window.location.replace(reviewUrl);
+        return;
+      }
+
+      var buttons = Array.prototype.slice.call(document.querySelectorAll(".star-button"));
+      var fiveStarPanel = document.getElementById("five-star-panel");
+      var followUpPanel = document.getElementById("follow-up-panel");
+      var ratingInput = document.getElementById("rating-value");
+
+      function selectRating(rating, moveFocus) {
+        buttons.forEach(function (button) {
+          var buttonRating = Number(button.getAttribute("data-rating"));
+          var selected = buttonRating <= rating;
+          button.classList.toggle("is-active", selected);
+          button.setAttribute("aria-pressed", buttonRating === rating ? "true" : "false");
+        });
+
+        ratingInput.value = String(rating);
+        fiveStarPanel.hidden = rating !== 5;
+        followUpPanel.hidden = rating === 5;
+
+        if (moveFocus) {
+          var heading = rating === 5 ? fiveStarPanel.querySelector("h2") : followUpPanel.querySelector("h2");
+          heading.focus({ preventScroll: true });
+          heading.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+      }
+
+      buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          selectRating(Number(button.getAttribute("data-rating")), true);
+        });
+      });
+
+      if (Number.isFinite(score) && score >= 1) {
+        selectRating(Math.min(5, Math.floor(score)), false);
+      }
+    })();
+  </script>
+  <script src="/assets/js/asap-lead-flow.js" defer></script>
+</body>
+</html>
