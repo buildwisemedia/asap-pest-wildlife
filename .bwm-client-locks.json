@@ -141,8 +141,8 @@
     },
     {
       "url": "/about/",
-      "string": "window.__bwmLoadTypekit();</script>",
-      "rationale": "Robert 2026-05-26 About visual QA regression: About typography must load Adobe Fonts immediately; a delayed loader leaves fallback metrics that can falsely pass structure while rendering visibly wrong."
+      "string": "Brand fonts load after intent while fallback text remains visible.",
+      "rationale": "2026-07-15 speed remediation: fallback text stays immediately visible and the Adobe kit activates on first intent, preserving brand typography without delaying useful paint."
     },
     {
       "url": "/services/",
@@ -211,13 +211,13 @@
     },
     {
       "url": "/services/",
-      "string": "window.__bwmLoadTypekit();</script>",
-      "rationale": "Robert 2026-05-26 Services visual QA regression: Services typography must load Adobe Fonts immediately; fallback metrics change the hero and service-heading widths."
+      "string": "Brand fonts load after intent while fallback text remains visible.",
+      "rationale": "2026-07-15 speed remediation: fallback text stays immediately visible and the Adobe kit activates on first intent, preserving brand typography without delaying useful paint."
     },
     {
       "url": "/",
-      "string": "window.__bwmLoadTypekit();</script>",
-      "rationale": "Robert 2026-05-26 homepage visual QA regression: the homepage hero must not wait 5 seconds for Adobe Fonts; fallback Arial changes the hero width and creates false visual mismatches against removeasap.com."
+      "string": "Brand fonts load after intent while fallback text remains visible.",
+      "rationale": "2026-07-15 speed remediation: fallback text stays immediately visible and the Adobe kit activates on first intent, preserving brand typography without delaying useful paint."
     },
     {
       "url": "/",
@@ -231,7 +231,7 @@
     },
     {
       "url": "/",
-      "string": "class=\"nav-link w-nav-link w--current\">Home",
+      "string": "class=\"nav-link w-nav-link w--current\"",
       "rationale": "Webflow homepage active Home nav marker; replaces stale Tailwind nav lock."
     },
     {
@@ -736,8 +736,8 @@
     },
     {
       "url": "/pest-control-services/",
-      "string": "64d7de35012c1f27af71ba11_ANT%20%5BConverted%5D.webp",
-      "rationale": "Webflow Pest Control ant artwork marker; source-first parity lock."
+      "string": "/assets/images/animals/ant-optimized.webp",
+      "rationale": "2026-07-15 performance-safe WebP derivative of the approved Webflow Pest Control ant artwork."
     },
     {
       "url": "/pest-control-services/",
@@ -4256,8 +4256,8 @@
     },
     {
       "url": "/peace-of-mind-from/beavers/",
-      "asset": "61d9182d400573bfb618e580_beaver-navy.png",
-      "rationale": "Webflow Beavers navy beaver hero asset from the live reference source."
+      "asset": "/assets/images/animals/beaver-navy-optimized.webp",
+      "rationale": "2026-07-15 performance-safe WebP derivative of the approved Webflow Beavers navy beaver artwork."
     },
     {
       "url": "/peace-of-mind-from/beavers/",
@@ -4286,8 +4286,8 @@
     },
     {
       "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
-      "asset": "61d91a1d697fbd514db4a0cb_bee.png",
-      "rationale": "Webflow Bees Wasps and Hornets bee hero asset from the live reference source."
+      "asset": "/assets/images/animals/bee-optimized.webp",
+      "rationale": "2026-07-15 performance-safe WebP derivative of the approved Webflow bee artwork."
     },
     {
       "url": "/peace-of-mind-from/bees-wasps-and-hornets/",
@@ -4321,8 +4321,8 @@
     },
     {
       "url": "/pest-control-services/",
-      "asset": "64d7de35012c1f27af71ba11_ANT%20%5BConverted%5D.webp",
-      "rationale": "Webflow Pest Control right ant hero art marker; source-first parity lock."
+      "asset": "/assets/images/animals/ant-optimized.webp",
+      "rationale": "2026-07-15 performance-safe WebP derivative of the approved Webflow Pest Control ant artwork."
     },
     {
       "url": "/pest-control-services/",
@@ -4406,8 +4406,8 @@
     },
     {
       "url": "/peace-of-mind-from/rodents/",
-      "asset": "61d91442697fbdcbe1b4834c_rat-navy.png",
-      "rationale": "2026-05-27 source-first Rodents parity: lock current live Webflow route markers after page-by-page rebuild."
+      "asset": "/assets/images/animals/rat-navy-optimized.webp",
+      "rationale": "2026-07-15 performance-safe WebP derivative of the approved Webflow Rodents navy rat artwork."
     },
     {
       "url": "/peace-of-mind-from/rodents/",
@@ -4521,8 +4521,8 @@
     },
     {
       "url": "/wildlife/beaver/",
-      "asset": "61d906abb1f71ca87a357fdc_beaver.png",
-      "rationale": "2026-05-27 source-first Beaver parity: lock current live Webflow route markers after page-by-page rebuild."
+      "asset": "/assets/images/wildlife-grid/beaver.webp",
+      "rationale": "2026-07-15 performance-safe WebP derivative of the approved Webflow Beaver artwork."
     },
     {
       "url": "/wildlife/beaver/",
@@ -4656,8 +4656,8 @@
     },
     {
       "url": "/wildlife/coyote/",
-      "asset": "61d906428b986e4f864faf40_coyote.png",
-      "rationale": "2026-05-27 source-first Coyote parity: lock current live Webflow route markers after page-by-page rebuild."
+      "asset": "/assets/images/wildlife-grid/coyote.webp",
+      "rationale": "2026-07-15 performance-safe WebP derivative of the approved Webflow Coyote artwork."
     },
     {
       "url": "/wildlife/coyote/",
@@ -5151,8 +5151,8 @@
     },
     {
       "url": "/wildlife/raccoon/",
-      "asset": "61d90636b70812fdd9c9a4d4_raccoon.png",
-      "rationale": "2026-05-27 source-first Raccoon parity: lock current live Webflow route markers after page-by-page rebuild."
+      "asset": "/assets/images/wildlife-grid/raccoon.webp",
+      "rationale": "2026-07-15 performance-safe WebP derivative of the approved Webflow Raccoon artwork."
     },
     {
       "url": "/wildlife/raccoon/",
@@ -5196,8 +5196,8 @@
     },
     {
       "url": "/wildlife/snake/",
-      "asset": "61d9066925700240d671b492_snake.png",
-      "rationale": "2026-05-27 source-first Snake parity: lock current live Webflow route markers after page-by-page rebuild."
+      "asset": "/assets/images/wildlife-grid/snake.webp",
+      "rationale": "2026-07-15 performance-safe WebP derivative of the approved Webflow Snake artwork."
     },
     {
       "url": "/wildlife/snake/",
