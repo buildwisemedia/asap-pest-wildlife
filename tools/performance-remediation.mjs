@@ -49,6 +49,9 @@ for (const file of htmlFiles) {
   const usesWebflowDesign = /asap-wildlife-removal\.webflow\.shared|use\.typekit\.net|Typekit\.load/i.test(html);
 
   html = html.replace(/\sdata-wf-intellimize-customer-id=(?:"[^"]*"|'[^']*')/gi, '');
+  html = html.replace(/\sdata-wf-hidden-variation(?:=(?:"[^"]*"|'[^']*'))?/gi, '');
+  html = html.replace(/<style\b[^>]*>\s*\.anti-flicker[\s\S]*?<\/style>/gi, '');
+  html = html.replace(/<style\b[^>]*>\s*\[data-wf-hidden-variation\][\s\S]*?<\/style>/gi, '');
   html = html.replace(/<link\b[^>]*(?:intellimize\.co|intellimizeio\.com)[^>]*\/?\s*>/gi, '');
   html = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, (tag) => {
     if (/intellimize|\/g0lnomhfn3mg/i.test(tag)) return '';
