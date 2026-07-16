@@ -1,26 +1,59 @@
 /* Performance-only asset overrides. Visuals mirror the approved Webflow artwork. */
+img {
+  height: auto;
+}
+
 .home-hero-background {
   background-image: url('/assets/images/backgrounds/home-hero-bg.webp') !important;
 }
 
 .home-mission-background {
+  background-image: none !important;
+}
+
+.home-mission-background.bwm-background-ready {
   background-image: url('/assets/images/backgrounds/home-mission-bg.webp') !important;
 }
 
 .about-hero-background {
-  background-image: url('/assets/images/backgrounds/about-hero-bg.svg') !important;
+  background-image: url('/assets/images/backgrounds/about-hero-bg.webp') !important;
 }
 
 .about-aim-background {
+  background-image: none !important;
+}
+
+.about-aim-background.bwm-background-ready {
   background-image: url('/assets/images/backgrounds/about-bg.webp') !important;
 }
 
 .careers-background {
+  background-image: none !important;
+}
+
+.careers-background.bwm-background-ready {
   background-image: url('/assets/images/backgrounds/careers-bg.webp') !important;
+}
+
+.contact-section-2-background,
+.services-bg {
+  background-image: none !important;
+}
+
+.contact-section-2-background.bwm-background-ready {
+  background-image: url('/assets/images/vendor/61ae96a074c2004c5736237f-contact-bg-6343d65ed89d0ef7.webp') !important;
+}
+
+.services-bg.bwm-background-ready {
+  background-image: url('/assets/images/vendor/61aea4b28f0ef66ccfaff8b9-services-bg-af4fdcd712e414a7.webp') !important;
 }
 
 @media (max-width: 767px) {
   .home-hero-background {
     background-image: url('/assets/images/backgrounds/home-hero-bg-mobile.webp') !important;
+  }
+
+  .home-bat-position {
+    display: none !important;
   }
 }
