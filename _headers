@@ -9,3 +9,6 @@
 /lead-flow/*
   X-Robots-Tag: noindex, nofollow, noarchive
   Cache-Control: no-store
+
+/*
+  Content-Security-Policy: default-src 'self' https: data: blob: 'unsafe-inline' 'unsafe-eval'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; upgrade-insecure-requests
