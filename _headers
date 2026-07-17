@@ -9,3 +9,14 @@
 /lead-flow/*
   X-Robots-Tag: noindex, nofollow, noarchive
   Cache-Control: no-store
+
+# Same-origin framing carve-out for the city-heading review previews
+# (preview/city-pages embeds live crops of these four pages; DENY blocked them).
+# frame-ancestors 'self' keeps cross-origin framing blocked — posture unchanged.
+/variants/*
+  ! X-Frame-Options
+  Content-Security-Policy: frame-ancestors 'self'
+
+/wildlife-removal-canton/
+  ! X-Frame-Options
+  Content-Security-Policy: frame-ancestors 'self'
