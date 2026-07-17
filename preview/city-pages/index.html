@@ -1,56 +1,701 @@
 <!doctype html>
-<!-- @sdt-exempt: client review chooser — the subject visuals ARE the five linked live pages; this page is the index to them -->
+<!-- @sdt-exempt: client review chooser — the live page crops are the comparison content -->
 <!-- @creative-exempt: review-navigation page; copy is instructional, not campaign creative -->
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<title>Your new city pages — ASAP Pest &amp; Wildlife</title>
-<style>
-  body { font-family: -apple-system, system-ui, sans-serif; background: #f5efe1; color: #1d2b3a; max-width: 640px; margin: 0 auto; padding: 2rem 1.2rem 4rem; line-height: 1.6; }
-  h1 { font-size: 1.7rem; line-height: 1.2; color: #b35719; }
-  h2 { font-size: 1.15rem; margin-top: 2.2rem; color: #1d2b3a; }
-  a.card { display: block; background: #fff; border: 1px solid #d8cfba; border-radius: 10px; padding: .9rem 1.1rem; margin: .55rem 0; text-decoration: none; color: inherit; }
-  a.card strong { color: #b35719; }
-  a.card small { opacity: .75; display: block; }
-  .step { background: #1d2b3a; color: #f5efe1; border-radius: 10px; padding: 1rem 1.2rem; margin-top: 1rem; }
-  .step b { color: #f0b23e; }
-  ul { padding-left: 1.2rem; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Choose your city-page heading — ASAP Pest &amp; Wildlife</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --navy: #1B2A4A;
+      --cream: #F2EDDC;
+      --orange: #E87A2E;
+      --charcoal: #1B1B1B;
+      --ink: #212121;
+      --soft-white: #F0F0F0;
+      --heading: 'DM Sans', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --body: 'Inter', 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --shell: min(100% - 40px, 1480px);
+      --radius-lg: 24px;
+      --radius-md: 16px;
+      --ease: cubic-bezier(.22, 1, .36, 1);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      min-width: 320px;
+      background: var(--cream);
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      background:
+        linear-gradient(rgba(27, 42, 74, .035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(27, 42, 74, .035) 1px, transparent 1px),
+        var(--cream);
+      background-size: 32px 32px;
+      color: var(--ink);
+      font-family: var(--body);
+      line-height: 1.5;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--navy);
+      outline-offset: 3px;
+      box-shadow: 0 0 0 6px var(--orange);
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      z-index: 100;
+      min-height: 44px;
+      padding: 11px 16px;
+      border-radius: 10px;
+      background: var(--orange);
+      color: var(--navy);
+      font-weight: 850;
+      transform: translateY(-180%);
+      transition: transform 160ms ease;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .shell {
+      width: var(--shell);
+      margin-inline: auto;
+    }
+
+    .masthead {
+      position: relative;
+      overflow: hidden;
+      border-bottom: 6px solid var(--orange);
+      background: var(--navy);
+      color: var(--soft-white);
+    }
+
+    .masthead::before,
+    .masthead::after {
+      position: absolute;
+      content: '';
+      pointer-events: none;
+    }
+
+    .masthead::before {
+      right: clamp(30px, 8vw, 150px);
+      bottom: -122px;
+      width: 230px;
+      height: 230px;
+      border: 1px solid rgba(242, 237, 220, .16);
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 28px rgba(242, 237, 220, .035),
+        0 0 0 56px rgba(242, 237, 220, .022);
+    }
+
+    .masthead::after {
+      right: clamp(84px, 12vw, 225px);
+      bottom: 24px;
+      width: 12px;
+      height: 12px;
+      border: 3px solid var(--cream);
+      border-radius: 50%;
+      background: var(--orange);
+      box-shadow: 0 0 0 8px var(--navy);
+    }
+
+    .masthead-inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 60px minmax(0, 1fr) auto;
+      align-items: center;
+      gap: clamp(16px, 2.5vw, 34px);
+      min-height: 162px;
+      padding: 22px 0;
+    }
+
+    .brandmark {
+      position: relative;
+      display: grid;
+      place-items: center;
+      width: 60px;
+      height: 60px;
+      border: 2px solid var(--orange);
+      border-radius: 50%;
+      color: var(--cream);
+      font-family: var(--heading);
+      font-size: 1.24rem;
+      font-weight: 900;
+      letter-spacing: -.05em;
+    }
+
+    .brandmark::after {
+      position: absolute;
+      right: -4px;
+      bottom: 6px;
+      width: 12px;
+      height: 12px;
+      border: 3px solid var(--navy);
+      border-radius: 50%;
+      background: var(--orange);
+      content: '';
+    }
+
+    .eyebrow,
+    .section-kicker,
+    .option-code {
+      font-family: var(--heading);
+      font-weight: 850;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow {
+      margin: 0 0 5px;
+      color: rgba(242, 237, 220, .72);
+      font-size: .72rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: var(--heading);
+      text-wrap: balance;
+    }
+
+    h1 {
+      max-width: 20ch;
+      margin-bottom: 6px;
+      font-size: clamp(1.85rem, 3.1vw, 3rem);
+      font-weight: 900;
+      letter-spacing: -.04em;
+      line-height: 1.02;
+    }
+
+    .intro {
+      max-width: 58ch;
+      margin-bottom: 0;
+      color: rgba(240, 240, 240, .78);
+      font-size: clamp(.9rem, 1.25vw, 1rem);
+    }
+
+    .decision-chip {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      min-height: 52px;
+      padding: 8px 14px 8px 9px;
+      border: 1px solid rgba(242, 237, 220, .2);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, .045);
+    }
+
+    .decision-chip strong {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: var(--orange);
+      color: var(--navy);
+      font-family: var(--heading);
+      font-size: 1rem;
+      font-weight: 900;
+    }
+
+    .decision-chip span {
+      color: var(--cream);
+      font-family: var(--heading);
+      font-size: .73rem;
+      font-weight: 800;
+      letter-spacing: .04em;
+      line-height: 1.25;
+      text-transform: uppercase;
+    }
+
+    main {
+      padding: 22px 0 30px;
+    }
+
+    .gallery-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 14px;
+    }
+
+    .section-kicker {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 4px;
+      color: var(--navy);
+      font-size: .7rem;
+    }
+
+    .section-kicker::before {
+      width: 20px;
+      height: 3px;
+      flex: 0 0 auto;
+      border-radius: 999px;
+      background: var(--orange);
+      content: '';
+    }
+
+    .gallery-heading h2 {
+      margin-bottom: 0;
+      color: var(--navy);
+      font-size: clamp(1.25rem, 2.1vw, 1.8rem);
+      font-weight: 900;
+      letter-spacing: -.03em;
+      line-height: 1.1;
+    }
+
+    .gallery-hint {
+      max-width: 38ch;
+      margin-bottom: 1px;
+      color: rgba(33, 33, 33, .72);
+      font-size: .88rem;
+      text-align: right;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .option-card {
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid rgba(27, 42, 74, .18);
+      border-radius: var(--radius-lg);
+      background: rgba(255, 255, 255, .7);
+      box-shadow: 0 16px 42px rgba(27, 42, 74, .09);
+    }
+
+    .option-topline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 61px;
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(27, 42, 74, .12);
+    }
+
+    .option-code {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      margin: 0;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: var(--navy);
+      color: var(--cream);
+      font-size: .65rem;
+      white-space: nowrap;
+    }
+
+    .option-title {
+      margin: 0;
+      color: var(--navy);
+      font-size: clamp(1.05rem, 1.7vw, 1.32rem);
+      font-weight: 900;
+      letter-spacing: -.025em;
+      line-height: 1.12;
+      text-align: right;
+    }
+
+    .preview-shell {
+      padding: 12px;
+      border-bottom: 1px solid rgba(27, 42, 74, .12);
+      background: var(--navy);
+    }
+
+    .preview-window {
+      position: relative;
+      width: 100%;
+      min-height: 180px;
+      overflow: hidden;
+      border: 1px solid rgba(242, 237, 220, .26);
+      border-radius: 12px;
+      background: var(--cream);
+      box-shadow: 0 8px 26px rgba(0, 0, 0, .22);
+    }
+
+    .preview-window::after {
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .28);
+      content: '';
+      pointer-events: none;
+    }
+
+    .preview-window iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 1280px;
+      height: 900px;
+      border: 0;
+      pointer-events: none;
+      transform-origin: top left;
+    }
+
+    .option-meta {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 18px;
+      min-height: 70px;
+      padding: 11px 14px 11px 18px;
+    }
+
+    .option-note {
+      margin: 0;
+      color: rgba(33, 33, 33, .78);
+      font-size: .88rem;
+      line-height: 1.35;
+    }
+
+    .full-page-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 10px 15px;
+      border: 1px solid rgba(27, 42, 74, .25);
+      border-radius: 12px;
+      color: var(--navy);
+      font-family: var(--heading);
+      font-size: .78rem;
+      font-weight: 850;
+      text-decoration: none;
+      white-space: nowrap;
+      transition:
+        border-color 180ms ease,
+        background-color 180ms ease,
+        color 180ms ease,
+        transform 180ms var(--ease);
+    }
+
+    .full-page-link:hover {
+      border-color: var(--orange);
+      background: var(--orange);
+      color: var(--navy);
+      transform: translateY(-2px);
+    }
+
+    .reply-bar {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      align-items: center;
+      gap: 14px;
+      margin-top: 18px;
+      padding: 14px 18px;
+      border-radius: var(--radius-md);
+      background: var(--charcoal);
+      color: var(--soft-white);
+    }
+
+    .reply-number {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: var(--orange);
+      color: var(--navy);
+      font-family: var(--heading);
+      font-weight: 900;
+    }
+
+    .reply-bar p {
+      margin: 0;
+      color: rgba(240, 240, 240, .82);
+      font-size: .9rem;
+    }
+
+    .reply-bar strong {
+      color: var(--cream);
+    }
+
+    @media (min-width: 1500px) {
+      :root {
+        --shell: min(100% - 96px, 1520px);
+      }
+    }
+
+    @media (max-width: 960px) {
+      .decision-chip {
+        display: none;
+      }
+
+      .masthead-inner {
+        grid-template-columns: 60px minmax(0, 1fr);
+      }
+
+      .gallery-hint {
+        display: none;
+      }
+
+      .comparison-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      :root {
+        --shell: min(100% - 28px, 1480px);
+        --radius-lg: 18px;
+      }
+
+      .masthead-inner {
+        grid-template-columns: 48px minmax(0, 1fr);
+        gap: 13px;
+        min-height: 140px;
+        padding: 17px 0;
+      }
+
+      .brandmark {
+        width: 48px;
+        height: 48px;
+        font-size: 1rem;
+      }
+
+      .brandmark::after {
+        right: -3px;
+        bottom: 4px;
+        width: 10px;
+        height: 10px;
+      }
+
+      .masthead::before,
+      .masthead::after {
+        display: none;
+      }
+
+      h1 {
+        font-size: clamp(1.55rem, 7.8vw, 2rem);
+      }
+
+      .intro {
+        font-size: .84rem;
+        line-height: 1.4;
+      }
+
+      main {
+        padding: 18px 0 24px;
+      }
+
+      .gallery-heading {
+        margin-bottom: 12px;
+      }
+
+      .comparison-grid {
+        gap: 14px;
+      }
+
+      .option-topline {
+        min-height: 58px;
+        padding: 10px 12px;
+      }
+
+      .option-title {
+        font-size: 1rem;
+      }
+
+      .preview-shell {
+        padding: 9px;
+      }
+
+      .preview-window {
+        min-height: 126px;
+      }
+
+      .option-meta {
+        grid-template-columns: 1fr;
+        gap: 9px;
+        padding: 12px;
+      }
+
+      .full-page-link {
+        width: 100%;
+      }
+
+      .reply-bar {
+        align-items: start;
+        padding: 13px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
 </head>
 <body>
-<h1>Your new city pages are ready to preview</h1>
-<p>On the call, you asked for dedicated pages for your five target cities. The team built them — this page is your one stop to see everything and tell us what you think.</p>
+  <a class="skip-link" href="#heading-options">Skip to heading options</a>
 
-<h2>What you're getting</h2>
-<ul>
-  <li>A page for each city: Canton, Woodstock, Acworth, Kennesaw, and Cartersville.</li>
-  <li>Each page is written for that city — the neighborhoods you serve, the animal problems common there, and a fast way to call or request an estimate.</li>
-  <li>Every lead from these pages is tagged with its city, so you'll see exactly which market each lead comes from.</li>
-  <li>Once live, all five cities also get added to your Google Business Profile service areas.</li>
-</ul>
+  <header class="masthead">
+    <div class="shell masthead-inner">
+      <div class="brandmark" aria-hidden="true">AS</div>
+      <div>
+        <p class="eyebrow">City pages / One quick decision</p>
+        <h1>Pick the heading you like best</h1>
+        <p class="intro">These are the real Canton page headings. Your pick will be used across all five city pages.</p>
+      </div>
+      <div class="decision-chip" aria-label="Choose one of four options">
+        <strong>4</strong>
+        <span>real options<br>to compare</span>
+      </div>
+    </div>
+  </header>
 
-<h2>1 — Look over the five pages</h2>
-<a class="card" href="/wildlife-removal-canton/"><strong>Canton</strong></a>
-<a class="card" href="/wildlife-removal-woodstock/"><strong>Woodstock</strong></a>
-<a class="card" href="/wildlife-removal-acworth/"><strong>Acworth</strong></a>
-<a class="card" href="/wildlife-removal-kennesaw/"><strong>Kennesaw</strong></a>
-<a class="card" href="/wildlife-removal-cartersville/"><strong>Cartersville</strong></a>
+  <main class="shell" id="heading-options">
+    <div class="gallery-heading">
+      <div>
+        <p class="section-kicker">Compare the real pages</p>
+        <h2>Look at the heading—not a description of it.</h2>
+      </div>
+      <p class="gallery-hint">Each window is a live crop of the actual page. Open any full page for a closer look.</p>
+    </div>
 
-<h2>2 — Pick the heading style you like best</h2>
-<p>The big heading at the top of each page can look four different ways. These all use the Canton page as the example:</p>
-<a class="card" href="/wildlife-removal-canton/"><strong>Current</strong><small>The heading as it is today.</small></a>
-<a class="card" href="/variants/heading-a/"><strong>Option A — Balanced</strong><small>Same style, calmer size.</small></a>
-<a class="card" href="/variants/heading-b/"><strong>Option B — Location badge</strong><small>The city sits in a small orange badge.</small></a>
-<a class="card" href="/variants/heading-c/"><strong>Option C — City first</strong><small>Your city name is the star of the page.</small></a>
+    <section class="comparison-grid" aria-label="Four city-page heading options">
+      <article class="option-card">
+        <div class="option-topline">
+          <p class="option-code">Current</p>
+          <h3 class="option-title">Current heading</h3>
+        </div>
+        <div class="preview-shell">
+          <div class="preview-window">
+            <iframe src="/wildlife-removal-canton/" title="Live preview of the current Canton page heading" loading="eager" scrolling="no" tabindex="-1"></iframe>
+          </div>
+        </div>
+        <div class="option-meta">
+          <p class="option-note">The heading exactly as it is today.</p>
+          <a class="full-page-link" href="/wildlife-removal-canton/">Open the full page&nbsp;↗</a>
+        </div>
+      </article>
 
-<div class="step">
-  <b>3 — Reply to our email</b><br>
-  Reply to the email this link came in and tell us:<br>
-  1. Your heading pick — <b>Current, A, B, or C</b>.<br>
-  2. Anything you want changed on the pages.<br><br>
-  That's it. Once we have your reply, the pages go live, your business profile gets all five cities, and city-by-city lead tracking turns on.
-</div>
+      <article class="option-card">
+        <div class="option-topline">
+          <p class="option-code">Option A</p>
+          <h3 class="option-title">Balanced</h3>
+        </div>
+        <div class="preview-shell">
+          <div class="preview-window">
+            <iframe src="/variants/heading-a/" title="Live preview of heading Option A, Balanced" loading="eager" scrolling="no" tabindex="-1"></iframe>
+          </div>
+        </div>
+        <div class="option-meta">
+          <p class="option-note">The same layout with a calmer heading size.</p>
+          <a class="full-page-link" href="/variants/heading-a/">Open the full page&nbsp;↗</a>
+        </div>
+      </article>
+
+      <article class="option-card">
+        <div class="option-topline">
+          <p class="option-code">Option B</p>
+          <h3 class="option-title">Location badge</h3>
+        </div>
+        <div class="preview-shell">
+          <div class="preview-window">
+            <iframe src="/variants/heading-b/" title="Live preview of heading Option B, Location badge" loading="eager" scrolling="no" tabindex="-1"></iframe>
+          </div>
+        </div>
+        <div class="option-meta">
+          <p class="option-note">Canton sits in an orange location badge.</p>
+          <a class="full-page-link" href="/variants/heading-b/">Open the full page&nbsp;↗</a>
+        </div>
+      </article>
+
+      <article class="option-card">
+        <div class="option-topline">
+          <p class="option-code">Option C</p>
+          <h3 class="option-title">City first</h3>
+        </div>
+        <div class="preview-shell">
+          <div class="preview-window">
+            <iframe src="/variants/heading-c/" title="Live preview of heading Option C, City first" loading="eager" scrolling="no" tabindex="-1"></iframe>
+          </div>
+        </div>
+        <div class="option-meta">
+          <p class="option-note">The city leads, with the service line underneath.</p>
+          <a class="full-page-link" href="/variants/heading-c/">Open the full page&nbsp;↗</a>
+        </div>
+      </article>
+    </section>
+
+    <aside class="reply-bar" aria-label="How to send your choice">
+      <span class="reply-number" aria-hidden="true">✓</span>
+      <p><strong>When you know your favorite, reply to our email with Current, A, B, or C.</strong> We’ll use that heading on Canton, Woodstock, Acworth, Kennesaw, and Cartersville.</p>
+    </aside>
+  </main>
+
+  <script>
+    (function () {
+      var frameWidth = 1280;
+      var cropTop = 170;
+      var cropHeight = 820;
+      var frames = document.querySelectorAll('.preview-window iframe');
+
+      function sizePreview(frame) {
+        var windowElement = frame.parentElement;
+        var scale = windowElement.clientWidth / frameWidth;
+        windowElement.style.height = Math.round(cropHeight * scale) + 'px';
+        frame.style.transform = 'scale(' + scale + ') translateY(-' + cropTop + 'px)';
+      }
+
+      function sizeAllPreviews() {
+        frames.forEach(sizePreview);
+      }
+
+      sizeAllPreviews();
+
+      if ('ResizeObserver' in window) {
+        var observer = new ResizeObserver(sizeAllPreviews);
+        document.querySelectorAll('.preview-window').forEach(function (windowElement) {
+          observer.observe(windowElement);
+        });
+      } else {
+        window.addEventListener('resize', sizeAllPreviews);
+      }
+    }());
+  </script>
 </body>
 </html>
