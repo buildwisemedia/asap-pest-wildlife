@@ -33,6 +33,11 @@ on:
   push:
     tags:
       - 'v*'
+  # Manual runs are a read-only key check: they resolve the client with the
+  # live SUPABASE_SERVICE_ROLE_KEY and stop. Only a v* tag push emits. Use this
+  # after rotating the key instead of re-running an old tag run — a re-run mints
+  # a fresh event id, so it would log a duplicate build.shipped.
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -54,6 +59,7 @@ jobs:
     steps:
       - name: Derive build_kind from tag
         id: classify
+        if: github.event_name == 'push'
         run: |
           TAG="${REF#refs/tags/}"
           case "$TAG" in
@@ -94,8 +100,10 @@ jobs:
             exit 1
           fi
           echo "client_id=$CLIENT_ID" >> "$GITHUB_OUTPUT"
+          echo "Supabase key accepted: client lookup for $CLIENT_SLUG returned HTTP $HTTP_CODE"
 
       - name: Emit event to Supabase
+        if: github.event_name == 'push'
         env:
           CLIENT_ID: ${{ steps.resolve_client.outputs.client_id }}
           TAG: ${{ steps.classify.outputs.tag }}
@@ -154,7 +162,7 @@ jobs:
           PY
 
       - name: Notify done-check Worker
-        if: success()
+        if: success() && github.event_name == 'push'
         env:
           DONE_CHECK_WEBHOOK_SECRET: ${{ secrets.DONE_CHECK_WEBHOOK_SECRET }}
         run: |
