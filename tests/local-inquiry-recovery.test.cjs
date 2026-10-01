@@ -1,11 +1,50 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const os = require('node:os');
+const path = require('node:path');
+const {execFileSync} = require('node:child_process');
 const {createLocalLedger} = require('../tools/local-inquiry-contract.cjs');
 const input = extra => ({synthetic:true,client_slug:'asap-pest-wildlife',request_id:'synthetic-restart-1',
   source_page:'/rodent-removal/',identity_fixture:'synthetic-person-a',category:'homeowner_project',
   occurred_at:'2026-10-01T20:00:00Z',utm_source:'synthetic-newsletter',...extra});
 const clone = value => JSON.parse(JSON.stringify(value));
 function saved() {const ledger=createLocalLedger();ledger.accept(input());return clone(ledger.checkpoint());}
+
+test('JSON null checkpoint is rejected while omitted input starts a fresh ledger',()=>{
+  assert.throws(()=>createLocalLedger(JSON.parse('null')),/invalid_checkpoint/);
+  assert.deepEqual(createLocalLedger().snapshot(),[]);
+  assert.equal(createLocalLedger().accept(input()).created,true);
+});
+
+test('checkpoint written by an exited process restores in a separate process',()=>{
+  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'asap-synthetic-recovery-'));
+  const file=path.join(dir,'checkpoint.json');
+  const modulePath=require.resolve('../tools/local-inquiry-contract.cjs');
+  const fixture=JSON.stringify(input());
+  try {
+    const writer=JSON.parse(execFileSync(process.execPath,['-e',`
+      const fs=require('node:fs');const {createLocalLedger}=require(process.argv[1]);
+      const ledger=createLocalLedger();ledger.accept(JSON.parse(process.argv[3]));
+      ledger.attempt('synthetic-restart-1','timeout');
+      fs.writeFileSync(process.argv[2],JSON.stringify(ledger.checkpoint()));
+      process.stdout.write(JSON.stringify({pid:process.pid}));
+    `,modulePath,file,fixture],{encoding:'utf8'}));
+    const reader=JSON.parse(execFileSync(process.execPath,['-e',`
+      const fs=require('node:fs');const {createLocalLedger}=require(process.argv[1]);
+      const ledger=createLocalLedger(JSON.parse(fs.readFileSync(process.argv[2],'utf8')));
+      const retry=ledger.accept(JSON.parse(process.argv[3]));
+      const next=ledger.accept({...JSON.parse(process.argv[3]),request_id:'synthetic-restart-2'});
+      process.stdout.write(JSON.stringify({pid:process.pid,retryCreated:retry.created,nextCreated:next.created,
+        count:ledger.snapshot().length,record:retry.record}));
+    `,modulePath,file,fixture],{encoding:'utf8'}));
+    assert.notEqual(reader.pid,writer.pid);assert.notEqual(reader.pid,process.pid);
+    assert.equal(reader.retryCreated,false);assert.equal(reader.nextCreated,true);assert.equal(reader.count,2);
+    assert.equal(reader.record.source_page,'/rodent-removal/');
+    assert.equal(reader.record.attribution.utm_source,'synthetic-newsletter');
+    assert.equal(reader.record.delivery_state,'mapping_pending');assert.equal(reader.record.provider_actions,0);
+  } finally {fs.rmSync(dir,{recursive:true,force:true});}
+});
 
 test('JSON checkpoint survives cold restart with source and pending mapping intact',()=>{
   const original=createLocalLedger();original.accept(input());original.attempt('synthetic-restart-1','timeout');
@@ -31,9 +70,8 @@ for(const [label,change] of [
   ['non-synthetic input',r=>r.synthetic=false],['invalid screening',r=>r.assessment='won']
 ]) test('restore rejects '+label,()=>{const data=saved();change(data.records[0]);assert.throws(()=>createLocalLedger(data));});
 test('malformed, oversized, unknown-version and duplicate checkpoints fail closed',()=>{
-  for(const data of [undefined,false,{}, {...saved(),schema:'asap-synthetic-ledger/2'},
+  for(const data of [null,false,{}, {...saved(),schema:'asap-synthetic-ledger/2'},
     {...saved(),extra:'unexpected'}, {...saved(),records:null}, {...saved(),records:Array(1001).fill(saved().records[0])}]) {
-    if(data===undefined) continue;
     assert.throws(()=>createLocalLedger(data));
   }
   const data=saved();data.records.push(clone(data.records[0]));

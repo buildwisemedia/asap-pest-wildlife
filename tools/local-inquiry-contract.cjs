@@ -53,9 +53,9 @@ function restoreRecord(record) {
   return rebuilt;
 }
 
-function createLocalLedger(checkpoint = null) {
+function createLocalLedger(checkpoint) {
   const records = new Map();
-  if (checkpoint !== null) {
+  if (checkpoint !== undefined) {
     if (!checkpoint || checkpoint.schema !== 'asap-synthetic-ledger/1' || checkpoint.client_slug !== TENANT ||
       checkpoint.mode !== 'local_only_no_network' || checkpoint.provider_actions !== 0 ||
       !Array.isArray(checkpoint.records) || checkpoint.records.length > 1000 ||
