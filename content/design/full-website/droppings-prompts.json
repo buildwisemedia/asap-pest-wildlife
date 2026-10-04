@@ -1,0 +1,33 @@
+{
+  "source_capture": "ASAP-DROPPINGS-PROMPTS-20260903",
+  "retrieved_at": "2026-09-07",
+  "source_task": {
+    "id": "6a99614b-c44c-83e9-9108-370609a038f8",
+    "title": "Create Mouse Dropping Reference Photo",
+    "created_at": 1788436840.825141
+  },
+  "attachments": [],
+  "prompts": [
+    {
+      "message_id": "c335269a-e011-451c-9392-b5feee2bdb74",
+      "timestamp": 1788436839.663,
+      "text": "Create a photorealistic macro reference photograph, shot straight down, of HOUSE MOUSE droppings on a clean light-gray concrete floor beside a white baseboard. Details that matter: about 14 droppings, each only 4 to 6 mm long (1/8 to 1/4 inch), very thin and spindle-shaped with sharply POINTED tips at both ends, dark brown to near black, scattered randomly in two or three loose small groups. A real US quarter lies flat in the same frame as a scale reference, and each dropping must read as clearly tiny next to it, roughly one fifth of the quarter's diameter. Natural soft daylight, crisp focus, plain uncluttered background. No text, no labels, no arrows, no watermark, no borders. Landscape 4:3 framing."
+    },
+    {
+      "message_id": "d472ba59-1bea-488f-8a18-bf2ca06dd3d1",
+      "timestamp": 1788437123.168,
+      "text": "Now create a second photorealistic macro reference photograph in the same documentary style, but this one is NORWAY RAT droppings, and it must look obviously different from the mouse image. Shoot straight down on a bare gray unfinished basement floor along the base of a concrete block wall. About 9 droppings, each 13 to 19 mm long (1/2 to 3/4 inch): large, thick, capsule-shaped, with BLUNT ROUNDED ends, not pointed. Dark brown-black with a slight sheen. They lie in a loose trail following the wall line. A real US quarter lies flat in the frame for scale, and each dropping must read as roughly half to three-quarters of the quarter's diameter in length, so clearly much bigger and fatter than mouse droppings. Natural soft light, crisp focus. No text, no labels, no arrows, no watermark, no borders. Landscape 4:3 framing."
+    },
+    {
+      "message_id": "b4fb2529-ae97-43ff-bb1e-021289ec109b",
+      "timestamp": 1788437231.698,
+      "text": "Now the third image: GRAY SQUIRREL droppings. Same documentary macro style, shot straight down, but this one is in an attic on bare plywood decking beside the edge of yellow fiberglass batt insulation. About 12 droppings, each roughly 9 to 10 mm long (3/8 inch): short oblong barrel-shaped pellets, noticeably fatter and stubbier than rat droppings and with ROUNDED BLUNT tips at both ends, never pointed. Mixed ages, so some are fresh dark chocolate brown and others have faded to a dull light tan. They sit in one loose cluster, a latrine pile, rather than a trail. A real US quarter lies flat in the frame for scale, and each dropping must read as roughly 40 percent of the quarter's diameter in length, clearly bigger than a mouse dropping but clearly shorter and stubbier than a rat dropping. Warm dim attic light, crisp focus. No text, no labels, no arrows, no watermark, no borders. Landscape 4:3 framing."
+    },
+    {
+      "message_id": "d0444e7b-46ff-4684-917c-5c7d6f1f9f29",
+      "timestamp": 1788437356.978,
+      "text": "Now the fourth and final droppings image: FLYING SQUIRREL droppings. Same documentary macro style, shot straight down, but this one sits directly on top of yellow fiberglass attic insulation, no wood visible. About 20 droppings, each only 6 to 9 mm long (1/4 to 3/8 inch): small, smooth-surfaced, softly rounded ovals with no sharp points, uniform dark brown. They are packed together in one tight, neat, dense clustered pile, an attic latrine, much more concentrated than the loose gray squirrel cluster. A real US quarter lies flat in the frame for scale, and each dropping must read as clearly SMALLER than a gray squirrel pellet, around a quarter to a third of the quarter's diameter in length. Warm dim attic light, crisp focus. No text, no labels, no arrows, no watermark, no borders. Landscape 4:3 framing."
+    }
+  ],
+  "qualification": "The task reader exposes four full text prompts and no attached reference photographs. It does not expose generated image output IDs or byte hashes. Candidate file mapping is based on species, composition, local file grouping, and timing; exact output-byte linkage is not claimed."
+}

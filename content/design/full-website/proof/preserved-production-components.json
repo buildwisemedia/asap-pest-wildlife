@@ -1,0 +1,37 @@
+{
+  "functions/rate.js": {
+    "current_sha256": "bf59f712fbca43865c5c31b1fc70867d7e95516e71e23abaebdf216d6e95403a",
+    "production_sha256": "bf59f712fbca43865c5c31b1fc70867d7e95516e71e23abaebdf216d6e95403a",
+    "unchanged": true
+  },
+  "functions/api/capi.ts": {
+    "current_sha256": "190797336fcd5979be8f00f79b067a9aee7f3569356cdd925bc375313be826e8",
+    "production_sha256": "190797336fcd5979be8f00f79b067a9aee7f3569356cdd925bc375313be826e8",
+    "unchanged": true
+  },
+  "functions/api/capi-auth-probe.ts": {
+    "current_sha256": "69c1121d7c175f83ea1ef220cf2cee09f3eaf9ca77cb168e75b285a9e66272c6",
+    "production_sha256": "69c1121d7c175f83ea1ef220cf2cee09f3eaf9ca77cb168e75b285a9e66272c6",
+    "unchanged": true
+  },
+  "rate/review-engine-contract.js": {
+    "current_sha256": "9dc100ffc15e8d082fdf3dc308f9a6b0c74e972d1c0f8d26a7592d8d003ed9b6",
+    "production_sha256": "9dc100ffc15e8d082fdf3dc308f9a6b0c74e972d1c0f8d26a7592d8d003ed9b6",
+    "unchanged": true
+  },
+  "assets/js/asap-lead-flow.js": {
+    "current_sha256": "26c6c2097cb748c20e161e2639c3363373bd3cffa53878d524637a150e470c7b",
+    "production_sha256": "26c6c2097cb748c20e161e2639c3363373bd3cffa53878d524637a150e470c7b",
+    "unchanged": true
+  },
+  "assets/js/bwm-analytics.js": {
+    "current_sha256": "63afb83c7633b940bee670e5221833723a7e316f0c8b764d492202fef262ce19",
+    "production_sha256": "b7806ab715201a421a98e939d196996b4fd21105d7539f94ca22943494563942",
+    "unchanged": false
+  },
+  "attribution.js": {
+    "current_sha256": "101c5e9f637b5bb549ea71ff87881608e99fe4a8a74a70d0aa50d6235fc36784",
+    "production_sha256": "101c5e9f637b5bb549ea71ff87881608e99fe4a8a74a70d0aa50d6235fc36784",
+    "unchanged": true
+  }
+}

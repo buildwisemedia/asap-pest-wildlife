@@ -1,0 +1,17 @@
+{
+  "FAIL": 8,
+  "OK": 19,
+  "WARN": 0,
+  "SKIP": 0,
+  "failed_checks": [
+    "banned-colors-hex",
+    "banned-typefaces",
+    "banned-vendor-names",
+    "within-page-image-dupes",
+    "image-perceptual-dupes",
+    "playwright-snapshot-captured",
+    "image-content-audit-on-new",
+    "implementation-notes-placement"
+  ],
+  "verdict": "failed; retained diagnostic, not a client-identity or production acceptance"
+}

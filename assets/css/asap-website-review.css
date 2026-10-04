@@ -1,0 +1,18 @@
+/* @r020-exempt: navigation and review state; no added imagery */
+.asap-preview-note{font:14px/1.5 Arial,sans-serif;background:#212936;color:#f2eddc;text-align:center;padding:10px 16px;position:sticky;top:0;z-index:10001}
+.asap-reviewing .w-nav,.asap-reviewing .site-header{top:var(--asap-review-notice-height,41px)}
+html.asap-reviewing{scroll-padding-top:calc(var(--asap-review-notice-height,41px) + var(--asap-review-header-height,0px) + 24px)}
+html.asap-reviewing .skip-link,html.asap-reviewing .skip-link:focus{z-index:10002}
+.asap-preview-note a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.asap-preview-note a:focus-visible{outline:3px solid #f2eddc;outline-offset:3px}
+.review-overview{max-width:1160px;margin:auto;padding:48px 24px 72px}
+.review-overview h1{font:700 clamp(32px,5vw,56px)/1.1 "Arial Narrow",Arial,sans-serif;margin:0 0 24px}
+.review-overview h2{font:700 30px/1.2 "Arial Narrow",Arial,sans-serif;margin:0 0 16px}
+.review-overview section{padding:28px 0;border-top:1px solid #dcd6c7;margin-top:28px}
+.review-overview p{max-width:78ch}
+.review-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 24px;list-style:none;padding:0}
+.review-links a{display:block;border-bottom:1px solid #dcd6c7;padding:12px 0;min-height:48px;text-decoration:underline;text-underline-offset:4px}
+.review-images{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:24px}
+.review-images figure{margin:0}.review-images img{width:100%;height:auto;display:block}.review-images figcaption{font-size:15px;line-height:1.5;padding:12px 0}
+.asap-new-articles{padding:32px 24px;background:#f2eddc;color:#212936;text-align:left;margin:32px 0}.asap-new-articles .article-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.asap-new-articles h2{font-size:32px;color:#212936;line-height:1.2;margin:0 0 24px}.asap-new-articles h3{font-size:24px;color:#212936;line-height:1.25;margin:16px 0}.asap-new-articles a{color:#212936;text-decoration:underline}.asap-new-articles img{width:100%;height:auto}.asap-new-articles p{color:#212936;line-height:1.6}
+@media(max-width:650px){.review-links,.review-images,.asap-new-articles .article-grid{grid-template-columns:1fr}.review-overview{padding:32px 20px 48px}}

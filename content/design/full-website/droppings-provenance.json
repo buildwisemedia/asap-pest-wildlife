@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-07",
+  "assets": [
+    {
+      "filename": "droppings-house-mouse.jpg",
+      "sha256": "3a1a989df244fa6210e879fef942d62c875fad4df86c11f12cbd06256012ad9b",
+      "state": "existing September 3 review candidate; not installed on the site"
+    },
+    {
+      "filename": "droppings-norway-rat.jpg",
+      "sha256": "1a11ba6d0eeac898751e9e590a4ac133729d214d6f8feb107db6721aa8ec4a92",
+      "state": "existing September 3 review candidate; not installed on the site"
+    },
+    {
+      "filename": "droppings-gray-squirrel.jpg",
+      "sha256": "c3a9bec3c65f9ea4ab7a57114179c4f30d51b6a84e8f6a82221f314679fd34a4",
+      "state": "existing September 3 review candidate; not installed on the site"
+    },
+    {
+      "filename": "droppings-flying-squirrel.jpg",
+      "sha256": "3d4b40871e8423166f62417b231a809cf314c5bdef2dd271577c7251a89fdaa3",
+      "state": "existing September 3 review candidate; not installed on the site"
+    },
+    {
+      "filename": "ASAP-droppings-images-for-approval-v2.jpg",
+      "sha256": "8739d7f6bd81e0479e14ff4ccba1b77919cd502610b0ee5bafcdd6c2d002bafd",
+      "state": "existing September 3 review candidate; not installed on the site"
+    }
+  ],
+  "technical_approval": "pending Nehemiah exact-image approval",
+  "generation_prompts": "source-prompts.json",
+  "source_photographs_attached_to_recovered_task": false,
+  "exact_generator_output_id_to_file_hash_link": "not exposed by task reader"
+}

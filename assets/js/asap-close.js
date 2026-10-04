@@ -2,7 +2,8 @@
   "use strict";
 
   const root = document.documentElement;
-  const reviewOnly = root.dataset.buildState === "local-review";
+  const liveHost = ["removeasap.com", "www.removeasap.com"].includes(window.location.hostname);
+  const reviewOnly = !liveHost || root.dataset.buildState === "local-review";
 
   function uuid() {
     if (window.crypto && typeof window.crypto.randomUUID === "function") {
@@ -40,7 +41,8 @@
   document.querySelectorAll("[data-asap-lead-form]").forEach(function (form) {
     const submit = form.querySelector("[data-fixture-submit]");
     const fixtureOnly = form.dataset.integrationState === "fixture-only";
-    if (!reviewOnly || !fixtureOnly) {
+    const liveForm = form.dataset.integrationState === "live" && liveHost && !reviewOnly;
+    if (!(reviewOnly && fixtureOnly) && !liveForm) {
       if (submit) submit.disabled = true;
       return;
     }
@@ -69,9 +71,9 @@
       form.dataset.fixtureResult = "validation-error-no-send";
     }, true);
 
-    form.addEventListener("submit", function (event) {
-      if (!reviewOnly) return;
+    form.addEventListener("submit", async function (event) {
       event.preventDefault();
+      if (form.dataset.sending === "true") return;
       const status = form.querySelector("[data-form-status]");
       if (!form.checkValidity()) {
         form.reportValidity();
@@ -80,6 +82,53 @@
         return;
       }
 
+      if (liveForm) {
+        const payload = Object.fromEntries(new FormData(form));
+        payload.client_slug = "asap-pest-wildlife";
+        payload.formType = "contact";
+        payload.formSource = "asap-website";
+        payload.source_page = form.dataset.sourcePage;
+        payload.source_form_type = form.dataset.sourcePage;
+        payload.page_url = window.location.href;
+        payload.submission_page = window.location.pathname;
+        payload.referrer = document.referrer || "";
+        payload.service = form.dataset.service;
+        payload.city = form.dataset.city;
+        payload.Issue = payload.issue;
+        payload.message = payload.details;
+        payload.sms_consent = Boolean(form.elements.namedItem("sms_consent").checked);
+        form.dataset.sending = "true";
+        submit.disabled = true;
+        status.textContent = "Sending your request…";
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 20000);
+        try {
+          const response = await fetch("https://bwm-form-handler.robert-ba0.workers.dev/submit", {
+            method: "POST", headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload), signal: controller.signal
+          });
+          const result = await response.json();
+          if (!response.ok || result.ok !== true || result.filtered || result.test_mode) throw new Error("Request not accepted");
+          status.textContent = "Thank you. Your request has been received. The ASAP team will contact you about the next step.";
+          form.reset();
+          setField(form, "lead_id", uuid());
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({ event: "lead_form_submit", client_slug: payload.client_slug,
+            source_page: payload.source_page, page_type: form.dataset.pageType,
+            service: payload.service, city: payload.city, event_id: result.capi_event_id || payload.lead_id });
+          if (typeof window.fbq === "function" && result.capi_event_id) {
+            window.fbq("track", "Lead", { client_slug: payload.client_slug }, { eventID: result.capi_event_id });
+          }
+        } catch (_) {
+          status.textContent = "We could not confirm your request. Your details are still here. Try again, or call 770-691-3636.";
+        } finally {
+          clearTimeout(timeout);
+          form.dataset.sending = "false";
+          submit.disabled = false;
+          status.focus();
+        }
+        return;
+      }
       const detail = contextFor(form);
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push(detail);
@@ -109,8 +158,7 @@
 })();
 
 
-// Keep the accepted five-page mobile header clear of in-page destinations.
-// This shared asset also serves other review pages; leave their behavior alone.
+// Close the shared animal/article menu before following an in-page destination.
 (function () {
   "use strict";
   const routes = new Set([
@@ -121,7 +169,7 @@
     "/wildlife/bats/"
   ]);
   const path = window.location.pathname.replace(/\/index\.html$/, "/");
-  if (!routes.has(path)) return;
+  if (!routes.has(path) && !path.startsWith("/blog/") && path !== "/website-review/") return;
   const menu = document.querySelector(".site-header details.mobile-nav");
   if (!menu) return;
 

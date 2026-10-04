@@ -1,0 +1,42 @@
+{
+  "articles": [
+    {
+      "key": "raccoon",
+      "title": "Raccoons in Georgia: signs to check before fall",
+      "description": "Raccoons near your Georgia home? Learn which signs to check, how to avoid contact with droppings, and what to ask before removal and repairs.",
+      "path": "/blog/raccoon-signs-and-next-steps/",
+      "service": "/wildlife/raccoon/",
+      "source_sha256": "ce84de67c66254513831ea49ac561d835902f88621b431e87ff02f660d61324a",
+      "body_text_sha256": "170b548a6e868488b21948bf23a6d31e66401f841246c68855fcc603da57d83e",
+      "image": "/assets/images/articles/raccoon-hero-v1.webp",
+      "original_image_sha256": "21b8bf596ce680b99313184b6f1b1a33ac4eacba56d212380ecd8a71a893f451",
+      "image_sha256": "392b1af39ee7ea514d01c5fa680659beafc4ec1115902d3279ff980256dcd560"
+    },
+    {
+      "key": "bat",
+      "title": "Bat removal in Georgia: plan around maternity season",
+      "description": "Learn which bat signs to check, why maternity season matters, and what to ask before bat removal and sealing in Georgia.",
+      "path": "/blog/bat-removal-georgia-maternity-season/",
+      "service": "/wildlife/bats/",
+      "source_sha256": "5636a5bcf38e95a02e2235a7ddfa6dc511b485276a3b24c55131bd2fab455e7a",
+      "body_text_sha256": "0c2727e4b1044834532eb96ba8ab68dbc489c30a392e8d2fcd4717f8c8a0e5ad",
+      "image": "/assets/images/articles/bat-hero-v1.webp",
+      "original_image_sha256": "c7f385619e045c397ce6c81bb0cac3d9ce07227012a1450726b997c1548bf467",
+      "image_sha256": "937d45098f4f08bc2c3f0a45080a9daa45a9d6398b25191c34b87aff5f5d8da0"
+    },
+    {
+      "key": "rat",
+      "title": "Rats in Georgia: check your property before winter",
+      "description": "Check for rat activity, reduce food and shelter, and learn what to ask about removal, entry points, and safe cleanup.",
+      "path": "/blog/rat-signs-and-next-steps/",
+      "service": "/wildlife/mouse-rat/",
+      "source_sha256": "5ca555f5febed74091d8e97d1c1dff65779deb55c0622fef72d84239ae175c81",
+      "body_text_sha256": "ff2c1875837154a5e15d87d63babda3765da15cabddfd3ac546442f7d54146bc",
+      "image": "/assets/images/articles/rat-hero-v1.webp",
+      "original_image_sha256": "bc3ae48557d19b885a5d6edfc60a7bf532ee2e7caade22b549dc3f5152439b25",
+      "image_sha256": "beef404f63f67297a7d25b7f9bf0219d725016400e90cd2713917bc87bf1e562"
+    }
+  ],
+  "body_text_preserved": true,
+  "client_approval": false
+}

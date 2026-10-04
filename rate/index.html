@@ -2,6 +2,8 @@
 <!-- @r020-exempt: functional rating form page, no marketing imagery -->
 <html lang="en">
 <head>
+<script src="/assets/js/asap-review-mode.js"></script>
+<link rel="stylesheet" href="/assets/css/asap-website-review.css">
   <script>/* bwm-ga-gate: suppress GA4 in review preview/staging/local modes */(function(){var h=location.hostname,p=h.split('.'),preview=new URLSearchParams(location.search).get('preview')==='1';if(preview||(/\.pages\.dev$/.test(h)&&p.length>3)||h==='localhost'||h==='127.0.0.1'||h==='0.0.0.0'||h===''){window['ga-disable-G-GQZJKG5JCK']=true;}})();</script>
   <script defer src="/assets/js/bwm-analytics.js"></script>
   <meta name="robots" content="noindex,nofollow">
@@ -190,6 +192,8 @@
     }
 
     h1,
+    #page-title { font-family: urw-din, sans-serif; font-weight: 900; }
+
     h2 {
       margin: 0;
       color: var(--navy);
@@ -592,7 +596,7 @@
 
             <input id="rating-value" type="hidden" name="rating" value="">
             <input type="text" name="website" value="" autocomplete="off" tabindex="-1" aria-hidden="true" style="display:none">
-            <button class="button" type="submit">Send my note</button>
+            <button class="button" type="submit" disabled data-review-disable>Send my note</button>
           </form>
 
           <div class="w-form-done" role="status" aria-live="polite" tabindex="-1" style="display:none">Thank you. Your note was sent directly to Nehemiah. He will follow up with you.</div>
@@ -606,7 +610,7 @@
 
   <footer class="site-footer">
     <p>Need help? Call <a href="tel:7706913636">(770) 691-3636</a>.</p>
-  </footer>
+  <p><a href="/privacy-policy/">Privacy</a> · <a href="/terms-of-service/">Terms</a></p></footer>
 
   <script src="/rate/review-engine-contract.js"></script>
   <script>

@@ -1,0 +1,178 @@
+{
+  "base": "https://adb2e631.asap-pest-wildlife.pages.dev",
+  "readiness": "visible page heading and review notice",
+  "checks": [
+    {
+      "path": "/website-review/",
+      "h1": [
+        "One website. One full review."
+      ],
+      "homeLabels": [],
+      "notice": "Full website review · Preview forms send nothing.",
+      "robots": "noindex,nofollow,noarchive",
+      "scrollWidth": 390,
+      "title": "ASAP — Complete Website Approval",
+      "width": 390
+    },
+    {
+      "path": "/rodent-removal/",
+      "h1": [
+        "RODENT REMOVAL"
+      ],
+      "homeLabels": [],
+      "notice": "Full website review · Preview forms send nothing.",
+      "robots": "noindex,nofollow,noarchive",
+      "scrollWidth": 390,
+      "title": "Rodent Removal in Metro Atlanta | ASAP Pest & Wildlife",
+      "width": 390
+    },
+    {
+      "path": "/wildlife/mouse-rat/",
+      "h1": [
+        "Rat and Mouse Removal"
+      ],
+      "homeLabels": [],
+      "notice": "Full website review · Preview forms send nothing.",
+      "robots": "noindex,nofollow,noarchive",
+      "scrollWidth": 390,
+      "title": "Rat and Mouse Removal in Metro ATL | ASAP Pest & Wildlife",
+      "width": 390
+    },
+    {
+      "path": "/wildlife/gray-squirrel/",
+      "h1": [
+        "Gray Squirrel Removal"
+      ],
+      "homeLabels": [],
+      "notice": "Full website review · Preview forms send nothing.",
+      "robots": "noindex,nofollow,noarchive",
+      "scrollWidth": 390,
+      "title": "Gray Squirrel Removal in Metro Atlanta | ASAP Pest & Wildlife",
+      "width": 390
+    },
+    {
+      "path": "/wildlife/raccoon/",
+      "h1": [
+        "Raccoon Removal"
+      ],
+      "homeLabels": [],
+      "notice": "Full website review · Preview forms send nothing.",
+      "robots": "noindex,nofollow,noarchive",
+      "scrollWidth": 390,
+      "title": "Raccoon Removal in Metro ATL | ASAP Pest & Wildlife",
+      "width": 390
+    },
+    {
+      "path": "/wildlife/bats/",
+      "h1": [
+        "Bat and Guano Removal"
+      ],
+      "homeLabels": [],
+      "notice": "Full website review · Preview forms send nothing.",
+      "robots": "noindex,nofollow,noarchive",
+      "scrollWidth": 390,
+      "title": "Bat Removal in Metro ATL | ASAP Pest & Wildlife",
+      "width": 390
+    },
+    {
+      "path": "/wildlife-removal-canton/",
+      "h1": [
+        "CantonPest + Wildlife"
+      ],
+      "homeLabels": [],
+      "notice": "Full website review · Preview forms send nothing.",
+      "robots": "noindex,nofollow,noarchive",
+      "scrollWidth": 390,
+      "title": "Pest and Wildlife Removal in Canton, Georgia | ASAP Pest & Wildlife",
+      "width": 390
+    },
+    {
+      "path": "/wildlife-removal-woodstock/",
+      "h1": [
+        "WoodstockPest + Wildlife"
+      ],
+      "homeLabels": [],
+      "notice": "Full website review · Preview forms send nothing.",
+      "robots": "noindex,nofollow,noarchive",
+      "scrollWidth": 390,
+      "title": "Pest and Wildlife Removal in Woodstock, Georgia | ASAP Pest & Wildlife",
+      "width": 390
+    },
+    {
+      "path": "/wildlife-removal-acworth/",
+      "h1": [
+        "AcworthPest + Wildlife"
+      ],
+      "homeLabels": [],
+      "notice": "Full website review · Preview forms send nothing.",
+      "robots": "noindex,nofollow,noarchive",
+      "scrollWidth": 390,
+      "title": "Pest and Wildlife Removal in Acworth, Georgia | ASAP Pest & Wildlife",
+      "width": 390
+    },
+    {
+      "path": "/wildlife-removal-kennesaw/",
+      "h1": [
+        "KennesawPest + Wildlife"
+      ],
+      "homeLabels": [],
+      "notice": "Full website review · Preview forms send nothing.",
+      "robots": "noindex,nofollow,noarchive",
+      "scrollWidth": 390,
+      "title": "Pest and Wildlife Removal in Kennesaw, Georgia | ASAP Pest & Wildlife",
+      "width": 390
+    },
+    {
+      "path": "/wildlife-removal-cartersville/",
+      "h1": [
+        "CartersvillePest + Wildlife"
+      ],
+      "homeLabels": [],
+      "notice": "Full website review · Preview forms send nothing.",
+      "robots": "noindex,nofollow,noarchive",
+      "scrollWidth": 390,
+      "title": "Pest and Wildlife Removal in Cartersville, Georgia | ASAP Pest & Wildlife",
+      "width": 390
+    },
+    {
+      "path": "/blog/raccoon-signs-and-next-steps/",
+      "h1": [
+        "Raccoons in Georgia: signs to check before fall"
+      ],
+      "homeLabels": [],
+      "notice": "Full website review · Preview forms send nothing.",
+      "robots": "noindex,nofollow,noarchive",
+      "scrollWidth": 390,
+      "title": "Raccoons in Georgia: signs to check before fall | ASAP Pest & Wildlife Removal",
+      "width": 390
+    },
+    {
+      "path": "/blog/bat-removal-georgia-maternity-season/",
+      "h1": [
+        "Bat removal in Georgia: plan around maternity season"
+      ],
+      "homeLabels": [
+        "/"
+      ],
+      "notice": "Full website review · Preview forms send nothing.",
+      "robots": "noindex,nofollow,noarchive",
+      "scrollWidth": 390,
+      "title": "Bat removal in Georgia: plan around maternity season | ASAP Pest & Wildlife Removal",
+      "width": 390
+    },
+    {
+      "path": "/blog/rat-signs-and-next-steps/",
+      "h1": [
+        "Rats in Georgia: check your property before winter"
+      ],
+      "homeLabels": [
+        "/"
+      ],
+      "notice": "Full website review · Preview forms send nothing.",
+      "robots": "noindex,nofollow,noarchive",
+      "scrollWidth": 390,
+      "title": "Rats in Georgia: check your property before winter | ASAP Pest & Wildlife Removal",
+      "width": 390
+    }
+  ]
+}

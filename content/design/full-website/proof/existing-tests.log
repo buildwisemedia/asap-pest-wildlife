@@ -1,0 +1,139 @@
+TAP version 13
+# ✓ phone_click event includes privacy-safe required fields
+# ✓ email_click event includes domain and required fields
+# ✓ unrelated links do not create conversion events
+# === Attribution tracking: 3 passed, 0 failed ===
+# Subtest: attribution.test.js
+ok 1 - attribution.test.js
+  ---
+  duration_ms: 28.747875
+  type: 'test'
+  ...
+# Subtest: private feedback payload contains no browser-supplied identity fields
+ok 2 - private feedback payload contains no browser-supplied identity fields
+  ---
+  duration_ms: 0.750666
+  type: 'test'
+  ...
+# Subtest: GA4 events use the frozen privacy-safe field allowlist
+ok 3 - GA4 events use the frozen privacy-safe field allowlist
+  ---
+  duration_ms: 0.328333
+  type: 'test'
+  ...
+# Subtest: preview mode suppresses GA4 writes
+ok 4 - preview mode suppresses GA4 writes
+  ---
+  duration_ms: 0.063583
+  type: 'test'
+  ...
+# Subtest: live-mode GA4 writes one structured dataLayer event
+ok 5 - live-mode GA4 writes one structured dataLayer event
+  ---
+  duration_ms: 0.174583
+  type: 'test'
+  ...
+# Subtest: unsupported analytics names fail closed
+ok 6 - unsupported analytics names fail closed
+  ---
+  duration_ms: 0.31725
+  type: 'test'
+  ...
+# Subtest: rating page preserves exact routing copy and removes identity inputs
+ok 7 - rating page preserves exact routing copy and removes identity inputs
+  ---
+  duration_ms: 0.139375
+  type: 'test'
+  ...
+# Subtest: rating page keeps public Google access and the verified five-star destination
+ok 8 - rating page keeps public Google access and the verified five-star destination
+  ---
+  duration_ms: 0.16025
+  type: 'test'
+  ...
+# Subtest: rating page uses the verified phone, current palette, and no old values
+ok 9 - rating page uses the verified phone, current palette, and no old values
+  ---
+  duration_ms: 0.119208
+  type: 'test'
+  ...
+# Subtest: rating page is noindex and the sitemap excludes it
+ok 10 - rating page is noindex and the sitemap excludes it
+  ---
+  duration_ms: 0.603833
+  type: 'test'
+  ...
+# Subtest: all rating controls meet the touch-target and accessibility contract
+ok 11 - all rating controls meet the touch-target and accessibility contract
+  ---
+  duration_ms: 0.565333
+  type: 'test'
+  ...
+# Subtest: all four GA4 contract events are wired on the page
+ok 12 - all four GA4 contract events are wired on the page
+  ---
+  duration_ms: 0.28725
+  type: 'test'
+  ...
+# (node:59223) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:59223) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/robertechevarria/Documents/Codex/2026-09-07/whe-3/work/asap-website-complete/functions/api/capi-auth-probe.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/robertechevarria/package.json.
+# Subtest: auth probe rejects a missing caller key without fetching
+ok 13 - auth probe rejects a missing caller key without fetching
+  ---
+  duration_ms: 25.41575
+  type: 'test'
+  ...
+# Subtest: auth probe rejects a wrong caller key without fetching
+ok 14 - auth probe rejects a wrong caller key without fetching
+  ---
+  duration_ms: 0.499166
+  type: 'test'
+  ...
+# Subtest: auth probe rejects an empty primary binding without fetching
+ok 15 - auth probe rejects an empty primary binding without fetching
+  ---
+  duration_ms: 0.250125
+  type: 'test'
+  ...
+# Subtest: auth probe accepts the correct caller key and maps relay 400 to 204
+ok 16 - auth probe accepts the correct caller key and maps relay 400 to 204
+  ---
+  duration_ms: 0.249917
+  type: 'test'
+  ...
+# Subtest: auth probe maps relay 401 to 502
+ok 17 - auth probe maps relay 401 to 502
+  ---
+  duration_ms: 0.486667
+  type: 'test'
+  ...
+# Subtest: auth probe maps network failures to 502
+ok 18 - auth probe maps network failures to 502
+  ---
+  duration_ms: 0.305209
+  type: 'test'
+  ...
+# Subtest: auth probe maps every other relay status to 502
+ok 19 - auth probe maps every other relay status to 502
+  ---
+  duration_ms: 0.263792
+  type: 'test'
+  ...
+# Subtest: normal browser-event POST behavior is unchanged
+ok 20 - normal browser-event POST behavior is unchanged
+  ---
+  duration_ms: 2.669041
+  type: 'test'
+  ...
+1..20
+# tests 20
+# suites 0
+# pass 20
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 139.486375

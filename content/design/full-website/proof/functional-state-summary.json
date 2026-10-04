@@ -1,0 +1,21 @@
+{
+  "existing_regression_tests": {
+    "passed": 20,
+    "failed": 0
+  },
+  "form_unit_tests": {
+    "passed": 10,
+    "failed": 0,
+    "network": "mocked only"
+  },
+  "browser_states": {
+    "rodent_empty_form": "required-field error visible",
+    "rodent_filled_form": "passed-no-send",
+    "acworth_beaver_form": "passed-no-send",
+    "contact_form": "passed-no-send",
+    "rate_three_stars": "private-note form and Google link visible; no send"
+  },
+  "client_approval": false,
+  "production_deployed": false,
+  "email_sent": false
+}

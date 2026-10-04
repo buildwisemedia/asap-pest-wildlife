@@ -1,0 +1,60 @@
+{
+  "results": [
+    {
+      "page": "rodent-removal",
+      "canonical_correct": true,
+      "noindex": false,
+      "in_sitemap": true
+    },
+    {
+      "page": "wildlife-removal-canton",
+      "canonical_correct": true,
+      "noindex": false,
+      "in_sitemap": true
+    },
+    {
+      "page": "wildlife-removal-woodstock",
+      "canonical_correct": true,
+      "noindex": false,
+      "in_sitemap": true
+    },
+    {
+      "page": "wildlife-removal-acworth",
+      "canonical_correct": true,
+      "noindex": false,
+      "in_sitemap": true
+    },
+    {
+      "page": "wildlife-removal-kennesaw",
+      "canonical_correct": true,
+      "noindex": false,
+      "in_sitemap": true
+    },
+    {
+      "page": "wildlife-removal-cartersville",
+      "canonical_correct": true,
+      "noindex": false,
+      "in_sitemap": true
+    },
+    {
+      "page": "blog/raccoon-signs-and-next-steps",
+      "canonical_correct": true,
+      "noindex": false,
+      "in_sitemap": true
+    },
+    {
+      "page": "blog/bat-removal-georgia-maternity-season",
+      "canonical_correct": true,
+      "noindex": false,
+      "in_sitemap": true
+    },
+    {
+      "page": "blog/rat-signs-and-next-steps",
+      "canonical_correct": true,
+      "noindex": false,
+      "in_sitemap": true
+    }
+  ],
+  "all_pass": true,
+  "published": false
+}

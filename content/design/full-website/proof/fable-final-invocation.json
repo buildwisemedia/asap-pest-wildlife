@@ -1,0 +1,8 @@
+{
+  "start": "2026-09-09T13:47:44.606520+00:00",
+  "wrapper": "bwm-fable-review",
+  "effort": "high",
+  "mode": "subscription-only; read-only tools; no MCP servers",
+  "end": "2026-09-09T13:51:04.060208+00:00",
+  "exit_code": 0
+}
